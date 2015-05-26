@@ -1,0 +1,22 @@
+# gitignore yogavihar
+
+# Allgemein
+cache.properties
+.settings
+.buildpath
+.project
+_notes
+*.bak
+
+
+# Mac Spezielle Dateien
+*/.DS_Store
+.DS_Store
+.DS_Store?
+
+classes/webapp/codekit-config.json
+config.codekit
+.codekit-cache/*
+
+# PhpStorm Projekt Dateien und Verzeichnisse
+.idea/*

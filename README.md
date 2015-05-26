@@ -1,5 +1,4 @@
-# website
-Wordpress Project of Yogavihar Webpage
+# Wordpress Project of Yogavihar Webpage
 
 -- mit github Account verbinden (vorher in ssh Key unter .ssh und github abgelegt)
 git remote add origin git@github-yv:yogavihar/website.git
