@@ -13,20 +13,29 @@
                             <?php
 
                             query_posts(array(
-                                'term' => 'retreat',
                                 'post_type' => 'tribe_events',
                                 'posts_per_page' => 6
                             ));
 
+                            $today = date('Y-m-d');
+
                             if (have_posts()):
-                                //echo"<pre>";
+
                                 $number=0;
                                 while (have_posts()):
-                                    $number++;
+
                                     the_post();
                                     $custom_fields = get_post_custom();
-                                    //var_dump($custom_fields);
-                                    //var_dump(get_post());
+
+
+                                    //nur Kategorie Retreat
+                                    if(!tribe_event_in_category("retreat"))
+                                        continue;
+
+                                    $number++;
+
+                                    if($number >5)
+                                        break;
 
                                     //Datum des Events
                                     $event_date=date('d.m.Y', strtotime(get_post_meta(get_the_ID(), "_EventStartDate", true)))." - ".date('d.m.Y', strtotime(get_post_meta(get_the_ID(), "_EventEndDate", true)));
