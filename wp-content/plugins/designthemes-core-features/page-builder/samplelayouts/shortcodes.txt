@@ -1,0 +1,1447 @@
+<div class="dt_module dt_m_column dt_disable_resize dt_m_column_one_half ui-draggable dt_m_column_has_modules dt_active_column dt_first" data-name="one_half" data-placeholder="1/2 Column" style="opacity: 1; z-index: 1;">
+  <div class="dt_module_controls"> <span style="opacity: 1;" class="dt_module_name dt_column_name">1/2 Column</span> <span style="display: none;" class="dt_move"></span>
+    <div class="dt_module_options"> <span style="display: block;" class="dt_delete_column" title="Delete"></span> <span style="display: block;" class="dt_clone_column" title="Clone"></span> <span style="display: block;" class="dt_settings_arrow_column" title="Settings"></span> <span class="dt_add_module_column" title="Add Module" style="display:none;">A</span> </div>
+    <div class="dt_columndata_settings"></div>
+  </div>
+  <div aria-disabled="false" class="dt_modules_container ui-droppable ui-sortable">
+    <div class="dt_module dt_m_h2 dt_module_others  ui-draggable ui-resizable dt_first" data-name="h2" data-placeholder="Heading 2" style="opacity: 1; z-index: 1;"><span class="ico-headings dt_icon"></span> <span class="dt_module_name">Heading 2</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="class" class="class dt_module_setting"></div>
+        <div data-option_name="content" class="content dt_module_setting dtthemes_module_content">HORIZONTAL TABS</div>
+      </div>
+    </div>
+    <div class="dt_module dt_m_hr_invisible_small dt_module_others dt_disable_resize ui-draggable dt_first" data-name="hr_invisible_small" data-placeholder="Whitespace Small" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Whitespace Small</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings"></div>
+    </div>
+    <div class="dt_module dt_m_tabs_horizontal dt_module_general  ui-draggable ui-resizable dt_first" data-name="tabs_horizontal" data-placeholder="Tabs - Horizontal" style="opacity: 1; z-index: 1;"><span class="ico-tabs dt_icon"></span> <span class="dt_module_name">Tabs - Horizontal</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="class" class="class dt_module_setting">alignleft</div>
+        <div data-option_name="th_content" class="th_content dt_module_setting dtthemes_module_content">
+          <p>[dt_sc_tab title="Preparation" number="01"]<br>
+            On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain.<br>
+            [/dt_sc_tab]</p>
+          <p>[dt_sc_tab title="Process" number="02"]<br>
+            Process Tab Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.<br>
+            [/dt_sc_tab]</p>
+          <p>[dt_sc_tab title="Spa Treatment" number="03"]<br>
+            Spa Treatment Tab Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.<br>
+            [/dt_sc_tab]</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dt_module dt_m_column dt_disable_resize dt_m_column_one_half ui-draggable dt_m_column_has_modules dt_active_column" data-name="one_half" data-placeholder="1/2 Column" style="opacity: 1; z-index: 1;">
+  <div class="dt_module_controls"> <span style="opacity: 1;" class="dt_module_name dt_column_name">1/2 Column</span> <span style="display: none;" class="dt_move"></span>
+    <div class="dt_module_options"> <span style="display: block;" class="dt_delete_column" title="Delete"></span> <span style="display: block;" class="dt_clone_column" title="Clone"></span> <span style="display: block;" class="dt_settings_arrow_column" title="Settings"></span> <span class="dt_add_module_column" title="Add Module" style="display:none;">A</span> </div>
+    <div class="dt_columndata_settings"></div>
+  </div>
+  <div aria-disabled="false" class="dt_modules_container ui-droppable ui-sortable">
+    <div class="dt_module dt_m_h2 dt_module_others  ui-draggable ui-resizable dt_first" data-name="h2" data-placeholder="Heading 2" style="opacity: 1; z-index: 1;"><span class="ico-headings dt_icon"></span> <span class="dt_module_name">Heading 2</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="class" class="class dt_module_setting"></div>
+        <div data-option_name="content" class="content dt_module_setting dtthemes_module_content">HORIZONTAL TABS</div>
+      </div>
+    </div>
+    <div class="dt_module dt_m_hr_invisible_small dt_module_others dt_disable_resize ui-draggable dt_first" data-name="hr_invisible_small" data-placeholder="Whitespace Small" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Whitespace Small</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings"></div>
+    </div>
+    <div class="dt_module dt_m_tabs_vertical dt_module_general ui-draggable dt_first" data-name="tabs_vertical" data-placeholder="Tabs Vertical" style="opacity: 1; z-index: 1;"><span class="ico-tabs dt_icon"></span> <span class="dt_module_name">Tabs Vertical</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="tv_content" class="tv_content dt_module_setting dtthemes_module_content">
+          <p>[dt_sc_tab title="Preparation" number="01"]<br>
+            On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain.<br>
+            [/dt_sc_tab]</p>
+          <p>[dt_sc_tab title="Process" number="02"]<br>
+            Process Tab Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.<br>
+            [/dt_sc_tab]</p>
+          <p>[dt_sc_tab title="Spa Treatment" number="03"]<br>
+            Spa Treatment Tab Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.<br>
+            [/dt_sc_tab]</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dt_module dt_m_clear dt_module_others dt_disable_resize ui-draggable dt_first" data-name="clear" data-placeholder="Clear" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Clear</span>
+  <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+  <div class="dt_preview"></div>
+  <div class="dt_module_settings"></div>
+</div>
+<div class="dt_module dt_m_hr_invisible_medium dt_module_others dt_disable_resize ui-draggable dt_first" data-name="hr_invisible_medium" data-placeholder="Whitespace Medium" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Whitespace Medium</span>
+  <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+  <div class="dt_preview"></div>
+  <div class="dt_module_settings"></div>
+</div>
+<div class="dt_module dt_m_column dt_disable_resize dt_m_column_one_half ui-draggable dt_m_column_has_modules dt_active_column dt_first" data-name="one_half" data-placeholder="1/2 Column" style="opacity: 1; z-index: 1;">
+  <div class="dt_module_controls"> <span style="opacity: 1;" class="dt_module_name dt_column_name">1/2 Column</span> <span style="display: none;" class="dt_move"></span>
+    <div class="dt_module_options"> <span style="display: block;" class="dt_delete_column" title="Delete"></span> <span style="display: block;" class="dt_clone_column" title="Clone"></span> <span style="display: block;" class="dt_settings_arrow_column" title="Settings"></span> <span class="dt_add_module_column" title="Add Module" style="display:none;">A</span> </div>
+    <div class="dt_columndata_settings"></div>
+  </div>
+  <div aria-disabled="false" class="dt_modules_container ui-droppable ui-sortable">
+    <div class="dt_module dt_m_h2 dt_module_others  ui-draggable ui-resizable dt_first" data-name="h2" data-placeholder="Heading 2" style="opacity: 1; z-index: 1;"><span class="ico-headings dt_icon"></span> <span class="dt_module_name">Heading 2</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="class" class="class dt_module_setting"></div>
+        <div data-option_name="content" class="content dt_module_setting dtthemes_module_content">STANDARD  TOGGLE</div>
+      </div>
+    </div>
+    <div class="dt_module dt_m_hr_invisible_small dt_module_others dt_disable_resize ui-draggable dt_first" data-name="hr_invisible_small" data-placeholder="Whitespace Small" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Whitespace Small</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings"></div>
+    </div>
+    <div class="dt_module dt_m_doshortcode_toggledefault dt_module_general ui-draggable ui-resizable dt_first" data-name="doshortcode_toggledefault" data-placeholder="Toggle Default" style="opacity: 1; z-index: 1;"><span class="ico-toggle dt_icon"></span> <span class="dt_module_name">Toggle Default</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="td_content" class="td_content dt_module_setting dtthemes_module_content">
+          <p>[dt_sc_toggle title="Toggle 1"]<br>
+            Toggle 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.<br>
+            [/dt_sc_toggle]</p>
+          <p>[dt_sc_toggle title="Toggle 2"]<br>
+            Toggle  2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.<br>
+            [/dt_sc_toggle]</p>
+          <p>[dt_sc_toggle title="Toggle 3"]<br>
+            Toggle  3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.<br>
+            [/dt_sc_toggle]</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dt_module dt_m_column dt_disable_resize dt_m_column_one_half ui-draggable dt_m_column_has_modules dt_active_column" data-name="one_half" data-placeholder="1/2 Column" style="opacity: 1; z-index: 1;">
+  <div class="dt_module_controls"> <span style="opacity: 1;" class="dt_module_name dt_column_name">1/2 Column</span> <span style="display: none;" class="dt_move"></span>
+    <div class="dt_module_options"> <span style="display: block;" class="dt_delete_column" title="Delete"></span> <span style="display: block;" class="dt_clone_column" title="Clone"></span> <span style="display: block;" class="dt_settings_arrow_column" title="Settings"></span> <span class="dt_add_module_column" title="Add Module" style="display:none;">A</span> </div>
+    <div class="dt_columndata_settings"></div>
+  </div>
+  <div aria-disabled="false" class="dt_modules_container ui-droppable ui-sortable">
+    <div class="dt_module dt_m_h2 dt_module_others  ui-draggable ui-resizable dt_first" data-name="h2" data-placeholder="Heading 2" style="opacity: 1; z-index: 1;"><span class="ico-headings dt_icon"></span> <span class="dt_module_name">Heading 2</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="class" class="class dt_module_setting"></div>
+        <div data-option_name="content" class="content dt_module_setting dtthemes_module_content">STANDARD  TOGGLE</div>
+      </div>
+    </div>
+    <div class="dt_module dt_m_hr_invisible_small dt_module_others dt_disable_resize ui-draggable dt_first" data-name="hr_invisible_small" data-placeholder="Whitespace Small" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Whitespace Small</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings"></div>
+    </div>
+    <div class="dt_module dt_m_doshortcode_toggleframed dt_module_general ui-draggable ui-resizable dt_first" data-name="doshortcode_toggleframed" data-placeholder="Toggle Framed" style="opacity: 1; z-index: 1;"><span class="ico-toggle dt_icon"></span> <span class="dt_module_name">Toggle Framed</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="tf_content" class="tf_content dt_module_setting dtthemes_module_content">
+          <p>[dt_sc_toggle_framed title="Toggle 1"]<br>
+            Toggle  1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.<br>
+            [/dt_sc_toggle_framed]</p>
+          <p>[dt_sc_toggle_framed title="Toggle 2"]<br>
+            Toggle  2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.<br>
+            [/dt_sc_toggle_framed]</p>
+          <p>[dt_sc_toggle_framed title="Toggle 3"]<br>
+            Toggle  3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.<br>
+            [/dt_sc_toggle_framed]</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dt_module dt_m_clear dt_module_others dt_disable_resize ui-draggable dt_first" data-name="clear" data-placeholder="Clear" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Clear</span>
+  <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+  <div class="dt_preview"></div>
+  <div class="dt_module_settings"></div>
+</div>
+<div class="dt_module dt_m_hr_invisible_medium dt_module_others dt_disable_resize ui-draggable dt_first" data-name="hr_invisible_medium" data-placeholder="Whitespace Medium" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Whitespace Medium</span>
+  <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+  <div class="dt_preview"></div>
+  <div class="dt_module_settings"></div>
+</div>
+<div class="dt_module dt_m_column dt_disable_resize dt_m_column_one_half ui-draggable dt_m_column_has_modules dt_active_column dt_first" data-name="one_half" data-placeholder="1/2 Column" style="opacity: 1; z-index: 1;">
+  <div class="dt_module_controls"> <span style="opacity: 1;" class="dt_module_name dt_column_name">1/2 Column</span> <span style="display: none;" class="dt_move"></span>
+    <div class="dt_module_options"> <span style="display: block;" class="dt_delete_column" title="Delete"></span> <span style="display: block;" class="dt_clone_column" title="Clone"></span> <span style="display: block;" class="dt_settings_arrow_column" title="Settings"></span> <span class="dt_add_module_column" title="Add Module" style="display:none;">A</span> </div>
+    <div class="dt_columndata_settings"></div>
+  </div>
+  <div aria-disabled="false" class="dt_modules_container ui-droppable ui-sortable">
+    <div class="dt_module dt_m_h2 dt_module_others  ui-draggable ui-resizable dt_first" data-name="h2" data-placeholder="Heading 2" style="opacity: 1; z-index: 1;"><span class="ico-headings dt_icon"></span> <span class="dt_module_name">Heading 2</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="class" class="class dt_module_setting"></div>
+        <div data-option_name="content" class="content dt_module_setting dtthemes_module_content">STANDARD  ACCORDION</div>
+      </div>
+    </div>
+    <div class="dt_module dt_m_hr_invisible_small dt_module_others dt_disable_resize ui-draggable dt_first" data-name="hr_invisible_small" data-placeholder="Whitespace Small" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Whitespace Small</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings"></div>
+    </div>
+    <div class="dt_module dt_m_doshortcode_accordion_default dt_module_general ui-draggable ui-resizable dt_first" data-name="doshortcode_accordion_default" data-placeholder="Accordion Default" style="opacity: 1; z-index: 1;"><span class="ico-accordion dt_icon"></span> <span class="dt_module_name">Accordion Default</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="acc_content" class="acc_content dt_module_setting dtthemes_module_content">
+          <p> [dt_sc_accordion_group]<br>
+            [dt_sc_toggle title="Accordion 1"]<br>
+            Accordion  1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.<br>
+            [/dt_sc_toggle]<br>
+            [dt_sc_toggle title="Accordion 2"]<br>
+            Accordion  2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.<br>
+            [/dt_sc_toggle]<br>
+            [dt_sc_toggle title="Accordion 3"]<br>
+            Accordion  3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.<br>
+            [/dt_sc_toggle]<br>
+            [dt_sc_toggle title="Accordion 4"]<br>
+            Accordion  4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.<br>
+            [/dt_sc_toggle]<br>
+            [/dt_sc_accordion_group]</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dt_module dt_m_column dt_disable_resize dt_m_column_one_half ui-draggable dt_m_column_has_modules" data-name="one_half" data-placeholder="1/2 Column" style="opacity: 1; z-index: 1;">
+  <div class="dt_module_controls"> <span style="opacity: 1;" class="dt_module_name dt_column_name">1/2 Column</span> <span style="display: none;" class="dt_move"></span>
+    <div class="dt_module_options"> <span style="display: block;" class="dt_delete_column" title="Delete"></span> <span style="display: block;" class="dt_clone_column" title="Clone"></span> <span style="display: block;" class="dt_settings_arrow_column" title="Settings"></span> <span class="dt_add_module_column" title="Add Module" style="display:none;">A</span> </div>
+    <div class="dt_columndata_settings"></div>
+  </div>
+  <div aria-disabled="false" class="dt_modules_container ui-droppable ui-sortable">
+    <div class="dt_module dt_m_h2 dt_module_others  ui-draggable ui-resizable dt_first" data-name="h2" data-placeholder="Heading 2" style="opacity: 1; z-index: 1;"><span class="ico-headings dt_icon"></span> <span class="dt_module_name">Heading 2</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="class" class="class dt_module_setting"></div>
+        <div data-option_name="content" class="content dt_module_setting dtthemes_module_content">FRAMED  ACCORDION</div>
+      </div>
+    </div>
+    <div class="dt_module dt_m_hr_invisible_small dt_module_others dt_disable_resize ui-draggable dt_first" data-name="hr_invisible_small" data-placeholder="Whitespace Small" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Whitespace Small</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings"></div>
+    </div>
+    <div class="dt_module dt_m_doshortcode_accordion_framed dt_module_general ui-draggable ui-resizable dt_first" data-name="doshortcode_accordion_framed" data-placeholder="Accordion Framed" style="opacity: 1; z-index: 1;"><span class="ico-accordion dt_icon"></span> <span class="dt_module_name">Accordion Framed</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="acc_content" class="acc_content dt_module_setting dtthemes_module_content">
+          <p>[dt_sc_accordion_group]<br>
+            [dt_sc_toggle_framed title="Accordion 1"]<br>
+            Accordion  1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.<br>
+            [/dt_sc_toggle_framed]<br>
+            [dt_sc_toggle_framed title="Accordion 2"]<br>
+            Accordion  2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.<br>
+            [/dt_sc_toggle_framed]<br>
+            [dt_sc_toggle_framed title="Accordion 3"]<br>
+            Accordion  3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.<br>
+            [/dt_sc_toggle_framed]<br>
+            [/dt_sc_accordion_group]</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dt_module dt_m_clear dt_module_others dt_disable_resize ui-draggable dt_first" data-name="clear" data-placeholder="Clear" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Clear</span>
+  <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+  <div class="dt_preview"></div>
+  <div class="dt_module_settings"></div>
+</div>
+<div class="dt_module dt_m_hr_invisible_medium dt_module_others dt_disable_resize ui-draggable dt_first" data-name="hr_invisible_medium" data-placeholder="Whitespace Medium" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Whitespace Medium</span>
+  <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+  <div class="dt_preview"></div>
+  <div class="dt_module_settings"></div>
+</div>
+<div class="dt_module dt_m_h2 dt_module_others  ui-draggable ui-resizable dt_first" data-name="h2" data-placeholder="Heading 2" style="opacity: 1; z-index: 1;"><span class="ico-headings dt_icon"></span> <span class="dt_module_name">Heading 2</span>
+  <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+  <div class="dt_preview"></div>
+  <div class="dt_module_settings">
+    <div data-option_name="class" class="class dt_module_setting"></div>
+    <div data-option_name="content" class="content dt_module_setting dtthemes_module_content">BUTTONS</div>
+  </div>
+  <div style="z-index: 90;" class="ui-resizable-handle ui-resizable-e"></div>
+</div>
+<div class="dt_module dt_m_hr_invisible_small dt_module_others dt_disable_resize ui-draggable dt_first" data-name="hr_invisible_small" data-placeholder="Whitespace Small" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Whitespace Small</span>
+  <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+  <div class="dt_preview"></div>
+  <div class="dt_module_settings"></div>
+</div>
+<div class="dt_module dt_m_column dt_disable_resize dt_m_column_one_third ui-draggable dt_m_column_has_modules dt_first" data-name="one_third" data-placeholder="1/3 Column" style="opacity: 1; z-index: 1;">
+  <div class="dt_module_controls"> <span style="opacity: 1;" class="dt_module_name dt_column_name">1/3 Column</span> <span style="display: none;" class="dt_move"></span>
+    <div class="dt_module_options"> <span style="display: block;" class="dt_delete_column" title="Delete"></span> <span style="display: block;" class="dt_clone_column" title="Clone"></span> <span style="display: block;" class="dt_settings_arrow_column" title="Settings"></span> <span class="dt_add_module_column" title="Add Module" style="display:none;">A</span> </div>
+    <div class="dt_columndata_settings"></div>
+  </div>
+  <div aria-disabled="false" class="dt_modules_container ui-droppable ui-sortable">
+    <div class="dt_module dt_m_button dt_module_general ui-draggable ui-resizable dt_first" data-name="button" data-placeholder="Button" style="opacity: 1; z-index: 1;"><span class="ico-button dt_icon"></span> <span class="dt_module_name">Button</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">without-icon</div>
+        <div data-option_name="icon" class="icon dt_module_setting"></div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="size" class="size dt_module_setting">small</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting"></div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="target" class="target dt_module_setting">_blank</div>
+        <div data-option_name="class" class="class dt_module_setting dtthemes_module_content"></div>
+        <div data-option_name="button_content" class="button_content dt_module_setting dtthemes_module_content">Button Text</div>
+      </div>
+    </div>
+    <div class="dt_module dt_m_clear dt_module_others dt_disable_resize ui-draggable dt_first" data-name="clear" data-placeholder="Clear" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Clear</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings"></div>
+    </div>
+    <div class="dt_module dt_m_button dt_module_general ui-draggable ui-resizable dt_first" data-name="button" data-placeholder="Button" style="opacity: 1; z-index: 1;"><span class="ico-button dt_icon"></span> <span class="dt_module_name">Button</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">without-icon</div>
+        <div data-option_name="icon" class="icon dt_module_setting"></div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="size" class="size dt_module_setting">medium</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting"></div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="target" class="target dt_module_setting">_blank</div>
+        <div data-option_name="class" class="class dt_module_setting dtthemes_module_content"></div>
+        <div data-option_name="button_content" class="button_content dt_module_setting dtthemes_module_content">Button Text</div>
+      </div>
+    </div>
+    <div class="dt_module dt_m_clear dt_module_others dt_disable_resize ui-draggable dt_first" data-name="clear" data-placeholder="Clear" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Clear</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings"></div>
+    </div>
+    <div class="dt_module dt_m_button dt_module_general ui-draggable ui-resizable dt_first" data-name="button" data-placeholder="Button" style="opacity: 1; z-index: 1;"><span class="ico-button dt_icon"></span> <span class="dt_module_name">Button</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">without-icon</div>
+        <div data-option_name="icon" class="icon dt_module_setting"></div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="size" class="size dt_module_setting">large</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting"></div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="target" class="target dt_module_setting">_blank</div>
+        <div data-option_name="class" class="class dt_module_setting dtthemes_module_content"></div>
+        <div data-option_name="button_content" class="button_content dt_module_setting dtthemes_module_content">Button Text</div>
+      </div>
+    </div>
+    <div class="dt_module dt_m_clear dt_module_others dt_disable_resize ui-draggable dt_first" data-name="clear" data-placeholder="Clear" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Clear</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings"></div>
+    </div>
+    <div class="dt_module dt_m_button dt_module_general ui-draggable ui-resizable dt_first" data-name="button" data-placeholder="Button" style="opacity: 1; z-index: 1;"><span class="ico-button dt_icon"></span> <span class="dt_module_name">Button</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">without-icon</div>
+        <div data-option_name="icon" class="icon dt_module_setting"></div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="size" class="size dt_module_setting">xlarge</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting"></div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="target" class="target dt_module_setting">_blank</div>
+        <div data-option_name="class" class="class dt_module_setting dtthemes_module_content"></div>
+        <div data-option_name="button_content" class="button_content dt_module_setting dtthemes_module_content">Button Text</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dt_module dt_m_column dt_disable_resize dt_m_column_one_third ui-draggable dt_m_column_has_modules" data-name="one_third" data-placeholder="1/3 Column" style="opacity: 1; z-index: 1;">
+  <div class="dt_module_controls"> <span style="opacity: 1;" class="dt_module_name dt_column_name">1/3 Column</span> <span style="display: none;" class="dt_move"></span>
+    <div class="dt_module_options"> <span style="display: block;" class="dt_delete_column" title="Delete"></span> <span style="display: block;" class="dt_clone_column" title="Clone"></span> <span style="display: block;" class="dt_settings_arrow_column" title="Settings"></span> <span class="dt_add_module_column" title="Add Module" style="display:none;">A</span> </div>
+    <div class="dt_columndata_settings"></div>
+  </div>
+  <div aria-disabled="false" class="dt_modules_container ui-droppable ui-sortable">
+    <div class="dt_module dt_m_button dt_module_general ui-draggable ui-resizable dt_first" data-name="button" data-placeholder="Button" style="opacity: 1; z-index: 1;"><span class="ico-button dt_icon"></span> <span class="dt_module_name">Button</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">without-icon</div>
+        <div data-option_name="icon" class="icon dt_module_setting"></div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="size" class="size dt_module_setting">small</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting">blue</div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="target" class="target dt_module_setting">_blank</div>
+        <div data-option_name="class" class="class dt_module_setting dtthemes_module_content"></div>
+        <div data-option_name="button_content" class="button_content dt_module_setting dtthemes_module_content">Button Text</div>
+      </div>
+    </div>
+    <div class="dt_module dt_m_clear dt_module_others dt_disable_resize ui-draggable dt_first" data-name="clear" data-placeholder="Clear" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Clear</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings"></div>
+    </div>
+    <div class="dt_module dt_m_button dt_module_general ui-draggable ui-resizable dt_first" data-name="button" data-placeholder="Button" style="opacity: 1; z-index: 1;"><span class="ico-button dt_icon"></span> <span class="dt_module_name">Button</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">without-icon</div>
+        <div data-option_name="icon" class="icon dt_module_setting"></div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="size" class="size dt_module_setting">medium</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting">blue</div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="target" class="target dt_module_setting">_blank</div>
+        <div data-option_name="class" class="class dt_module_setting dtthemes_module_content"></div>
+        <div data-option_name="button_content" class="button_content dt_module_setting dtthemes_module_content">Button Text</div>
+      </div>
+    </div>
+    <div class="dt_module dt_m_clear dt_module_others dt_disable_resize ui-draggable dt_first" data-name="clear" data-placeholder="Clear" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Clear</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings"></div>
+    </div>
+    <div class="dt_module dt_m_button dt_module_general ui-draggable ui-resizable dt_first" data-name="button" data-placeholder="Button" style="opacity: 1; z-index: 1;"><span class="ico-button dt_icon"></span> <span class="dt_module_name">Button</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">without-icon</div>
+        <div data-option_name="icon" class="icon dt_module_setting"></div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="size" class="size dt_module_setting">large</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting">blue</div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="target" class="target dt_module_setting">_blank</div>
+        <div data-option_name="class" class="class dt_module_setting dtthemes_module_content"></div>
+        <div data-option_name="button_content" class="button_content dt_module_setting dtthemes_module_content">Button Text</div>
+      </div>
+    </div>
+    <div class="dt_module dt_m_clear dt_module_others dt_disable_resize ui-draggable dt_first" data-name="clear" data-placeholder="Clear" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Clear</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings"></div>
+    </div>
+    <div class="dt_module dt_m_button dt_module_general ui-draggable ui-resizable dt_first" data-name="button" data-placeholder="Button" style="opacity: 1; z-index: 1;"><span class="ico-button dt_icon"></span> <span class="dt_module_name">Button</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">without-icon</div>
+        <div data-option_name="icon" class="icon dt_module_setting"></div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="size" class="size dt_module_setting">xlarge</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting">blue</div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="target" class="target dt_module_setting">_blank</div>
+        <div data-option_name="class" class="class dt_module_setting dtthemes_module_content"></div>
+        <div data-option_name="button_content" class="button_content dt_module_setting dtthemes_module_content">Button Text</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dt_module dt_m_column dt_disable_resize dt_m_column_one_third ui-draggable dt_m_column_has_modules" data-name="one_third" data-placeholder="1/3 Column" style="opacity: 1; z-index: 1;">
+  <div class="dt_module_controls"> <span style="opacity: 1;" class="dt_module_name dt_column_name">1/3 Column</span> <span style="display: none;" class="dt_move"></span>
+    <div class="dt_module_options"> <span style="display: block;" class="dt_delete_column" title="Delete"></span> <span style="display: block;" class="dt_clone_column" title="Clone"></span> <span style="display: block;" class="dt_settings_arrow_column" title="Settings"></span> <span class="dt_add_module_column" title="Add Module" style="display:none;">A</span> </div>
+    <div class="dt_columndata_settings"></div>
+  </div>
+  <div aria-disabled="false" class="dt_modules_container ui-droppable ui-sortable">
+    <div class="dt_module dt_m_button dt_module_general ui-draggable ui-resizable dt_first" data-name="button" data-placeholder="Button" style="opacity: 1; z-index: 1;"><span class="ico-button dt_icon"></span> <span class="dt_module_name">Button</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">without-icon</div>
+        <div data-option_name="icon" class="icon dt_module_setting"></div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="size" class="size dt_module_setting">small</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting">green</div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="target" class="target dt_module_setting">_blank</div>
+        <div data-option_name="class" class="class dt_module_setting dtthemes_module_content"></div>
+        <div data-option_name="button_content" class="button_content dt_module_setting dtthemes_module_content">Button Text</div>
+      </div>
+    </div>
+    <div class="dt_module dt_m_clear dt_module_others dt_disable_resize ui-draggable dt_first" data-name="clear" data-placeholder="Clear" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Clear</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings"></div>
+    </div>
+    <div class="dt_module dt_m_button dt_module_general ui-draggable ui-resizable dt_first" data-name="button" data-placeholder="Button" style="opacity: 1; z-index: 1;"><span class="ico-button dt_icon"></span> <span class="dt_module_name">Button</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">without-icon</div>
+        <div data-option_name="icon" class="icon dt_module_setting"></div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="size" class="size dt_module_setting">medium</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting">green</div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="target" class="target dt_module_setting">_blank</div>
+        <div data-option_name="class" class="class dt_module_setting dtthemes_module_content"></div>
+        <div data-option_name="button_content" class="button_content dt_module_setting dtthemes_module_content">Button Text</div>
+      </div>
+    </div>
+    <div class="dt_module dt_m_clear dt_module_others dt_disable_resize ui-draggable dt_first" data-name="clear" data-placeholder="Clear" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Clear</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings"></div>
+    </div>
+    <div class="dt_module dt_m_button dt_module_general ui-draggable ui-resizable dt_first" data-name="button" data-placeholder="Button" style="opacity: 1; z-index: 1;"><span class="ico-button dt_icon"></span> <span class="dt_module_name">Button</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">without-icon</div>
+        <div data-option_name="icon" class="icon dt_module_setting"></div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="size" class="size dt_module_setting">large</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting">green</div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="target" class="target dt_module_setting">_blank</div>
+        <div data-option_name="class" class="class dt_module_setting dtthemes_module_content"></div>
+        <div data-option_name="button_content" class="button_content dt_module_setting dtthemes_module_content">Button Text</div>
+      </div>
+    </div>
+    <div class="dt_module dt_m_clear dt_module_others dt_disable_resize ui-draggable dt_first" data-name="clear" data-placeholder="Clear" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Clear</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings"></div>
+    </div>
+    <div class="dt_module dt_m_button dt_module_general ui-draggable ui-resizable dt_first" data-name="button" data-placeholder="Button" style="opacity: 1; z-index: 1;"><span class="ico-button dt_icon"></span> <span class="dt_module_name">Button</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">without-icon</div>
+        <div data-option_name="icon" class="icon dt_module_setting"></div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="size" class="size dt_module_setting">xlarge</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting">green</div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="target" class="target dt_module_setting">_blank</div>
+        <div data-option_name="class" class="class dt_module_setting dtthemes_module_content"></div>
+        <div data-option_name="button_content" class="button_content dt_module_setting dtthemes_module_content">Button Text</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dt_module dt_m_hr_invisible dt_module_others dt_disable_resize  ui-draggable dt_first" data-name="hr_invisible" data-placeholder="Whitespace" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Whitespace</span>
+  <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+  <div class="dt_preview"></div>
+  <div class="dt_module_settings"></div>
+</div>
+<div class="dt_module dt_m_column dt_disable_resize dt_m_column_one_third ui-draggable dt_m_column_has_modules dt_first" data-name="one_third" data-placeholder="1/3 Column" style="opacity: 1; z-index: 1;">
+  <div class="dt_module_controls"> <span style="opacity: 1;" class="dt_module_name dt_column_name">1/3 Column</span> <span style="display: none;" class="dt_move"></span>
+    <div class="dt_module_options"> <span style="display: block;" class="dt_delete_column" title="Delete"></span> <span style="display: block;" class="dt_clone_column" title="Clone"></span> <span style="display: block;" class="dt_settings_arrow_column" title="Settings"></span> <span class="dt_add_module_column" title="Add Module" style="display:none;">A</span> </div>
+    <div class="dt_columndata_settings"></div>
+  </div>
+  <div aria-disabled="false" class="dt_modules_container ui-droppable ui-sortable">
+    <div class="dt_module dt_m_button dt_module_general ui-draggable ui-resizable dt_first" data-name="button" data-placeholder="Button" style="opacity: 1; z-index: 1;"><span class="ico-button dt_icon"></span> <span class="dt_module_name">Button</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">with-icon</div>
+        <div data-option_name="icon" class="icon dt_module_setting">fa-download</div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="size" class="size dt_module_setting">small</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting"></div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="target" class="target dt_module_setting">_blank</div>
+        <div data-option_name="class" class="class dt_module_setting dtthemes_module_content"></div>
+        <div data-option_name="button_content" class="button_content dt_module_setting dtthemes_module_content">Icon Button</div>
+      </div>
+    </div>
+    <div class="dt_module dt_m_clear dt_module_others dt_disable_resize ui-draggable dt_first" data-name="clear" data-placeholder="Clear" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Clear</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings"></div>
+    </div>
+    <div class="dt_module dt_m_button dt_module_general ui-draggable ui-resizable dt_first" data-name="button" data-placeholder="Button" style="opacity: 1; z-index: 1;"><span class="ico-button dt_icon"></span> <span class="dt_module_name">Button</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">with-icon</div>
+        <div data-option_name="icon" class="icon dt_module_setting">fa-download</div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="size" class="size dt_module_setting">medium</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting"></div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="target" class="target dt_module_setting">_blank</div>
+        <div data-option_name="class" class="class dt_module_setting dtthemes_module_content"></div>
+        <div data-option_name="button_content" class="button_content dt_module_setting dtthemes_module_content">Icon Button</div>
+      </div>
+    </div>
+    <div class="dt_module dt_m_clear dt_module_others dt_disable_resize ui-draggable dt_first" data-name="clear" data-placeholder="Clear" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Clear</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings"></div>
+    </div>
+    <div class="dt_module dt_m_button dt_module_general ui-draggable ui-resizable dt_first" data-name="button" data-placeholder="Button" style="opacity: 1; z-index: 1;"><span class="ico-button dt_icon"></span> <span class="dt_module_name">Button</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">with-icon</div>
+        <div data-option_name="icon" class="icon dt_module_setting">fa-download</div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="size" class="size dt_module_setting">large</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting"></div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="target" class="target dt_module_setting">_blank</div>
+        <div data-option_name="class" class="class dt_module_setting dtthemes_module_content"></div>
+        <div data-option_name="button_content" class="button_content dt_module_setting dtthemes_module_content">Icon Button</div>
+      </div>
+    </div>
+    <div class="dt_module dt_m_clear dt_module_others dt_disable_resize ui-draggable dt_first" data-name="clear" data-placeholder="Clear" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Clear</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings"></div>
+    </div>
+    <div class="dt_module dt_m_button dt_module_general ui-draggable ui-resizable dt_first" data-name="button" data-placeholder="Button" style="opacity: 1; z-index: 1;"><span class="ico-button dt_icon"></span> <span class="dt_module_name">Button</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">with-icon</div>
+        <div data-option_name="icon" class="icon dt_module_setting">fa-download</div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="size" class="size dt_module_setting">xlarge</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting"></div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="target" class="target dt_module_setting">_blank</div>
+        <div data-option_name="class" class="class dt_module_setting dtthemes_module_content"></div>
+        <div data-option_name="button_content" class="button_content dt_module_setting dtthemes_module_content">Icon Button</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dt_module dt_m_column dt_disable_resize dt_m_column_one_third ui-draggable dt_m_column_has_modules" data-name="one_third" data-placeholder="1/3 Column" style="opacity: 1; z-index: 1;">
+  <div class="dt_module_controls"> <span style="opacity: 1;" class="dt_module_name dt_column_name">1/3 Column</span> <span style="display: none;" class="dt_move"></span>
+    <div class="dt_module_options"> <span style="display: block;" class="dt_delete_column" title="Delete"></span> <span style="display: block;" class="dt_clone_column" title="Clone"></span> <span style="display: block;" class="dt_settings_arrow_column" title="Settings"></span> <span class="dt_add_module_column" title="Add Module" style="display:none;">A</span> </div>
+    <div class="dt_columndata_settings"></div>
+  </div>
+  <div aria-disabled="false" class="dt_modules_container ui-droppable ui-sortable">
+    <div class="dt_module dt_m_button dt_module_general ui-draggable ui-resizable dt_first" data-name="button" data-placeholder="Button" style="opacity: 1; z-index: 1;"><span class="ico-button dt_icon"></span> <span class="dt_module_name">Button</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">with-icon</div>
+        <div data-option_name="icon" class="icon dt_module_setting">fa-download</div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="size" class="size dt_module_setting">small</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting">blue</div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="target" class="target dt_module_setting">_blank</div>
+        <div data-option_name="class" class="class dt_module_setting dtthemes_module_content"></div>
+        <div data-option_name="button_content" class="button_content dt_module_setting dtthemes_module_content">Icon Button</div>
+      </div>
+    </div>
+    <div class="dt_module dt_m_clear dt_module_others dt_disable_resize ui-draggable dt_first" data-name="clear" data-placeholder="Clear" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Clear</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings"></div>
+    </div>
+    <div class="dt_module dt_m_button dt_module_general ui-draggable ui-resizable dt_first" data-name="button" data-placeholder="Button" style="opacity: 1; z-index: 1;"><span class="ico-button dt_icon"></span> <span class="dt_module_name">Button</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">with-icon</div>
+        <div data-option_name="icon" class="icon dt_module_setting">fa-download</div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="size" class="size dt_module_setting">medium</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting">blue</div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="target" class="target dt_module_setting">_blank</div>
+        <div data-option_name="class" class="class dt_module_setting dtthemes_module_content"></div>
+        <div data-option_name="button_content" class="button_content dt_module_setting dtthemes_module_content">Icon Button</div>
+      </div>
+    </div>
+    <div class="dt_module dt_m_clear dt_module_others dt_disable_resize ui-draggable dt_first" data-name="clear" data-placeholder="Clear" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Clear</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings"></div>
+    </div>
+    <div class="dt_module dt_m_button dt_module_general ui-draggable ui-resizable dt_first" data-name="button" data-placeholder="Button" style="opacity: 1; z-index: 1;"><span class="ico-button dt_icon"></span> <span class="dt_module_name">Button</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">with-icon</div>
+        <div data-option_name="icon" class="icon dt_module_setting">fa-download</div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="size" class="size dt_module_setting">large</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting">blue</div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="target" class="target dt_module_setting">_blank</div>
+        <div data-option_name="class" class="class dt_module_setting dtthemes_module_content"></div>
+        <div data-option_name="button_content" class="button_content dt_module_setting dtthemes_module_content">Icon Button</div>
+      </div>
+    </div>
+    <div class="dt_module dt_m_clear dt_module_others dt_disable_resize ui-draggable dt_first" data-name="clear" data-placeholder="Clear" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Clear</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings"></div>
+    </div>
+    <div class="dt_module dt_m_button dt_module_general ui-draggable ui-resizable dt_first" data-name="button" data-placeholder="Button" style="opacity: 1; z-index: 1;"><span class="ico-button dt_icon"></span> <span class="dt_module_name">Button</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">with-icon</div>
+        <div data-option_name="icon" class="icon dt_module_setting">fa-download</div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="size" class="size dt_module_setting">xlarge</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting">blue</div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="target" class="target dt_module_setting">_blank</div>
+        <div data-option_name="class" class="class dt_module_setting dtthemes_module_content"></div>
+        <div data-option_name="button_content" class="button_content dt_module_setting dtthemes_module_content">Icon Button</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dt_module dt_m_column dt_disable_resize dt_m_column_one_third ui-draggable dt_m_column_has_modules" data-name="one_third" data-placeholder="1/3 Column" style="opacity: 1; z-index: 1;">
+  <div class="dt_module_controls"> <span style="opacity: 1;" class="dt_module_name dt_column_name">1/3 Column</span> <span style="display: none;" class="dt_move"></span>
+    <div class="dt_module_options"> <span style="display: block;" class="dt_delete_column" title="Delete"></span> <span style="display: block;" class="dt_clone_column" title="Clone"></span> <span style="display: block;" class="dt_settings_arrow_column" title="Settings"></span> <span class="dt_add_module_column" title="Add Module" style="display:none;">A</span> </div>
+    <div class="dt_columndata_settings"></div>
+  </div>
+  <div aria-disabled="false" class="dt_modules_container ui-droppable ui-sortable">
+    <div class="dt_module dt_m_button dt_module_general ui-draggable ui-resizable dt_first" data-name="button" data-placeholder="Button" style="opacity: 1; z-index: 1;"><span class="ico-button dt_icon"></span> <span class="dt_module_name">Button</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">with-icon</div>
+        <div data-option_name="icon" class="icon dt_module_setting">fa-download</div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="size" class="size dt_module_setting">small</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting">green</div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="target" class="target dt_module_setting">_blank</div>
+        <div data-option_name="class" class="class dt_module_setting dtthemes_module_content"></div>
+        <div data-option_name="button_content" class="button_content dt_module_setting dtthemes_module_content">Icon Button</div>
+      </div>
+    </div>
+    <div class="dt_module dt_m_clear dt_module_others dt_disable_resize ui-draggable dt_first" data-name="clear" data-placeholder="Clear" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Clear</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings"></div>
+    </div>
+    <div class="dt_module dt_m_button dt_module_general ui-draggable ui-resizable dt_first" data-name="button" data-placeholder="Button" style="opacity: 1; z-index: 1;"><span class="ico-button dt_icon"></span> <span class="dt_module_name">Button</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">with-icon</div>
+        <div data-option_name="icon" class="icon dt_module_setting">fa-download</div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="size" class="size dt_module_setting">medium</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting">green</div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="target" class="target dt_module_setting">_blank</div>
+        <div data-option_name="class" class="class dt_module_setting dtthemes_module_content"></div>
+        <div data-option_name="button_content" class="button_content dt_module_setting dtthemes_module_content">Icon Button</div>
+      </div>
+    </div>
+    <div class="dt_module dt_m_clear dt_module_others dt_disable_resize ui-draggable dt_first" data-name="clear" data-placeholder="Clear" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Clear</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings"></div>
+    </div>
+    <div class="dt_module dt_m_button dt_module_general ui-draggable ui-resizable dt_first" data-name="button" data-placeholder="Button" style="opacity: 1; z-index: 1;"><span class="ico-button dt_icon"></span> <span class="dt_module_name">Button</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">with-icon</div>
+        <div data-option_name="icon" class="icon dt_module_setting">fa-download</div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="size" class="size dt_module_setting">large</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting">green</div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="target" class="target dt_module_setting">_blank</div>
+        <div data-option_name="class" class="class dt_module_setting dtthemes_module_content"></div>
+        <div data-option_name="button_content" class="button_content dt_module_setting dtthemes_module_content">Icon Button</div>
+      </div>
+    </div>
+    <div class="dt_module dt_m_clear dt_module_others dt_disable_resize ui-draggable dt_first" data-name="clear" data-placeholder="Clear" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Clear</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings"></div>
+    </div>
+    <div class="dt_module dt_m_button dt_module_general ui-draggable ui-resizable dt_first" data-name="button" data-placeholder="Button" style="opacity: 1; z-index: 1;"><span class="ico-button dt_icon"></span> <span class="dt_module_name">Button</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">with-icon</div>
+        <div data-option_name="icon" class="icon dt_module_setting">fa-download</div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="size" class="size dt_module_setting">xlarge</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting">green</div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="target" class="target dt_module_setting">_blank</div>
+        <div data-option_name="class" class="class dt_module_setting dtthemes_module_content"></div>
+        <div data-option_name="button_content" class="button_content dt_module_setting dtthemes_module_content">Icon Button</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dt_module dt_m_hr_invisible dt_module_others dt_disable_resize  ui-draggable dt_first" data-name="hr_invisible" data-placeholder="Whitespace" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Whitespace</span>
+  <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+  <div class="dt_preview"></div>
+  <div class="dt_module_settings"></div>
+</div>
+<div class="dt_module dt_m_h2 dt_module_others  ui-draggable ui-resizable dt_first" data-name="h2" data-placeholder="Heading 2" style="opacity: 1; z-index: 1;"><span class="ico-headings dt_icon"></span> <span class="dt_module_name">Heading 2</span>
+  <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+  <div class="dt_preview"></div>
+  <div class="dt_module_settings">
+    <div data-option_name="class" class="class dt_module_setting"></div>
+    <div data-option_name="content" class="content dt_module_setting dtthemes_module_content">TITLED BOXES</div>
+  </div>
+  <div style="z-index: 90;" class="ui-resizable-handle ui-resizable-e"></div>
+</div>
+<div class="dt_module dt_m_hr_invisible_small dt_module_others dt_disable_resize  ui-draggable dt_first" data-name="hr_invisible_small" data-placeholder="Whitespace Small" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Whitespace Small</span>
+  <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+  <div class="dt_preview"></div>
+  <div class="dt_module_settings"></div>
+</div>
+<div class="dt_module dt_m_column dt_disable_resize dt_m_column_one_half ui-draggable dt_m_column_has_modules dt_first" data-name="one_half" data-placeholder="1/2 Column" style="opacity: 1; z-index: 1;">
+  <div class="dt_module_controls"> <span style="opacity: 1;" class="dt_module_name dt_column_name">1/2 Column</span> <span style="display: none;" class="dt_move"></span>
+    <div class="dt_module_options"> <span style="display: block;" class="dt_delete_column" title="Delete"></span> <span style="display: block;" class="dt_clone_column" title="Clone"></span> <span style="display: block;" class="dt_settings_arrow_column" title="Settings"></span> <span class="dt_add_module_column" title="Add Module" style="display:none;">A</span> </div>
+    <div class="dt_columndata_settings"></div>
+  </div>
+  <div aria-disabled="false" class="dt_modules_container ui-droppable ui-sortable">
+    <div class="dt_module dt_m_titled_box dt_module_general  ui-draggable ui-resizable dt_first" data-name="titled_box" data-placeholder="Titled Box" style="opacity: 1; z-index: 1;"><span class="ico-box dt_icon"></span> <span class="dt_module_name">Titled Box</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"><span class="title"> Chocolate Titled Box</span></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">titled-box</div>
+        <div data-option_name="title" class="title dt_module_setting"> Chocolate Titled Box</div>
+        <div data-option_name="icon" class="icon dt_module_setting">fa-cloud</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting">chocolate</div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="box_content" class="box_content dt_module_setting dtthemes_module_content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra per inceptos himenaeos.,</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dt_module dt_m_column dt_disable_resize dt_m_column_one_half ui-draggable dt_m_column_has_modules" data-name="one_half" data-placeholder="1/2 Column" style="opacity: 1; z-index: 1;">
+  <div class="dt_module_controls"> <span style="opacity: 1;" class="dt_module_name dt_column_name">1/2 Column</span> <span style="display: none;" class="dt_move"></span>
+    <div class="dt_module_options"> <span style="display: block;" class="dt_delete_column" title="Delete"></span> <span style="display: block;" class="dt_clone_column" title="Clone"></span> <span style="display: block;" class="dt_settings_arrow_column" title="Settings"></span> <span class="dt_add_module_column" title="Add Module" style="display:none;">A</span> </div>
+    <div class="dt_columndata_settings"></div>
+  </div>
+  <div aria-disabled="false" class="dt_modules_container ui-droppable ui-sortable">
+    <div class="dt_module dt_m_titled_box dt_module_general  ui-draggable ui-resizable dt_first" data-name="titled_box" data-placeholder="Titled Box" style="opacity: 1; z-index: 1;"><span class="ico-box dt_icon"></span> <span class="dt_module_name">Titled Box</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"><span class="title">Blue Titled Box</span></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">titled-box</div>
+        <div data-option_name="title" class="title dt_module_setting">Blue Titled Box</div>
+        <div data-option_name="icon" class="icon dt_module_setting">fa-cloud</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting">blue</div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="box_content" class="box_content dt_module_setting dtthemes_module_content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra per inceptos himenaeos.,</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dt_module dt_m_column dt_disable_resize dt_m_column_one_half ui-draggable dt_m_column_has_modules dt_first" data-name="one_half" data-placeholder="1/2 Column" style="opacity: 1; z-index: 1;">
+  <div class="dt_module_controls"> <span style="opacity: 1;" class="dt_module_name dt_column_name">1/2 Column</span> <span style="display: none;" class="dt_move"></span>
+    <div class="dt_module_options"> <span style="display: block;" class="dt_delete_column" title="Delete"></span> <span style="display: block;" class="dt_clone_column" title="Clone"></span> <span style="display: block;" class="dt_settings_arrow_column" title="Settings"></span> <span class="dt_add_module_column" title="Add Module" style="display:none;">A</span> </div>
+    <div class="dt_columndata_settings"></div>
+  </div>
+  <div aria-disabled="false" class="dt_modules_container ui-droppable ui-sortable">
+    <div class="dt_module dt_m_titled_box dt_module_general  ui-draggable ui-resizable dt_first" data-name="titled_box" data-placeholder="Titled Box" style="opacity: 1; z-index: 1;"><span class="ico-box dt_icon"></span> <span class="dt_module_name">Titled Box</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"><span class="title">Default Titled Box</span></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">titled-box</div>
+        <div data-option_name="title" class="title dt_module_setting">Default Titled Box</div>
+        <div data-option_name="icon" class="icon dt_module_setting">fa-cloud</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting"></div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="box_content" class="box_content dt_module_setting dtthemes_module_content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra per inceptos himenaeos.,</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dt_module dt_m_column dt_disable_resize dt_m_column_one_half ui-draggable dt_m_column_has_modules" data-name="one_half" data-placeholder="1/2 Column" style="opacity: 1; z-index: 1;">
+  <div class="dt_module_controls"> <span style="opacity: 1;" class="dt_module_name dt_column_name">1/2 Column</span> <span style="display: none;" class="dt_move"></span>
+    <div class="dt_module_options"> <span style="display: block;" class="dt_delete_column" title="Delete"></span> <span style="display: block;" class="dt_clone_column" title="Clone"></span> <span style="display: block;" class="dt_settings_arrow_column" title="Settings"></span> <span class="dt_add_module_column" title="Add Module" style="display:none;">A</span> </div>
+    <div class="dt_columndata_settings"></div>
+  </div>
+  <div aria-disabled="false" class="dt_modules_container ui-droppable ui-sortable">
+    <div class="dt_module dt_m_titled_box dt_module_general  ui-draggable ui-resizable dt_first" data-name="titled_box" data-placeholder="Titled Box" style="opacity: 1; z-index: 1;"><span class="ico-box dt_icon"></span> <span class="dt_module_name">Titled Box</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"><span class="title"> Green Titled Box</span></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">titled-box</div>
+        <div data-option_name="title" class="title dt_module_setting"> Green Titled Box</div>
+        <div data-option_name="icon" class="icon dt_module_setting">fa-cloud</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting">green</div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="box_content" class="box_content dt_module_setting dtthemes_module_content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra per inceptos himenaeos.,</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dt_module dt_m_hr_invisible dt_module_others dt_disable_resize  ui-draggable dt_first" data-name="hr_invisible" data-placeholder="Whitespace" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Whitespace</span>
+  <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+  <div class="dt_preview"></div>
+  <div class="dt_module_settings"></div>
+</div>
+<div class="dt_module dt_m_h2 dt_module_others  ui-draggable ui-resizable dt_first" data-name="h2" data-placeholder="Heading 2" style="opacity: 1; z-index: 1;"><span class="ico-headings dt_icon"></span> <span class="dt_module_name">Heading 2</span>
+  <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+  <div class="dt_preview"></div>
+  <div class="dt_module_settings">
+    <div data-option_name="class" class="class dt_module_setting"></div>
+    <div data-option_name="content" class="content dt_module_setting dtthemes_module_content">NOTIFICATION BOXES</div>
+  </div>
+  <div style="z-index: 90;" class="ui-resizable-handle ui-resizable-e"></div>
+</div>
+<div class="dt_module dt_m_hr_invisible_small dt_module_others dt_disable_resize  ui-draggable dt_first" data-name="hr_invisible_small" data-placeholder="Whitespace Small" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Whitespace Small</span>
+  <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+  <div class="dt_preview"></div>
+  <div class="dt_module_settings"></div>
+</div>
+<div class="dt_module dt_m_column dt_disable_resize dt_m_column_one_half ui-draggable dt_m_column_has_modules dt_first" data-name="one_half" data-placeholder="1/2 Column" style="opacity: 1; z-index: 1;">
+  <div class="dt_module_controls"> <span style="opacity: 1;" class="dt_module_name dt_column_name">1/2 Column</span> <span style="display: none;" class="dt_move"></span>
+    <div class="dt_module_options"> <span style="display: block;" class="dt_delete_column" title="Delete"></span> <span style="display: block;" class="dt_clone_column" title="Clone"></span> <span style="display: block;" class="dt_settings_arrow_column" title="Settings"></span> <span class="dt_add_module_column" title="Add Module" style="display:none;">A</span> </div>
+    <div class="dt_columndata_settings"></div>
+  </div>
+  <div aria-disabled="false" class="dt_modules_container ui-droppable ui-sortable">
+    <div class="dt_module dt_m_titled_box dt_module_general  ui-draggable ui-resizable dt_first" data-name="titled_box" data-placeholder="Titled Box" style="opacity: 1; z-index: 1;"><span class="ico-box dt_icon"></span> <span class="dt_module_name">Titled Box</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"><span class="title">Title Comes Here</span></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">error-box</div>
+        <div data-option_name="title" class="title dt_module_setting">Title Comes Here</div>
+        <div data-option_name="icon" class="icon dt_module_setting">fa-cogs</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting"></div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="box_content" class="box_content dt_module_setting dtthemes_module_content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dt_module dt_m_column dt_disable_resize dt_m_column_one_half ui-draggable dt_m_column_has_modules" data-name="one_half" data-placeholder="1/2 Column" style="opacity: 1; z-index: 1;">
+  <div class="dt_module_controls"> <span style="opacity: 1;" class="dt_module_name dt_column_name">1/2 Column</span> <span style="display: none;" class="dt_move"></span>
+    <div class="dt_module_options"> <span style="display: block;" class="dt_delete_column" title="Delete"></span> <span style="display: block;" class="dt_clone_column" title="Clone"></span> <span style="display: block;" class="dt_settings_arrow_column" title="Settings"></span> <span class="dt_add_module_column" title="Add Module" style="display:none;">A</span> </div>
+    <div class="dt_columndata_settings"></div>
+  </div>
+  <div aria-disabled="false" class="dt_modules_container ui-droppable ui-sortable">
+    <div class="dt_module dt_m_titled_box dt_module_general  ui-draggable ui-resizable dt_first" data-name="titled_box" data-placeholder="Titled Box" style="opacity: 1; z-index: 1;"><span class="ico-box dt_icon"></span> <span class="dt_module_name">Titled Box</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"><span class="title">Title Comes Here</span></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">warning-box</div>
+        <div data-option_name="title" class="title dt_module_setting">Title Comes Here</div>
+        <div data-option_name="icon" class="icon dt_module_setting">fa-cogs</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting"></div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="box_content" class="box_content dt_module_setting dtthemes_module_content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dt_module dt_m_column dt_disable_resize dt_m_column_one_half ui-draggable dt_m_column_has_modules dt_first" data-name="one_half" data-placeholder="1/2 Column" style="opacity: 1; z-index: 1;">
+  <div class="dt_module_controls"> <span style="opacity: 1;" class="dt_module_name dt_column_name">1/2 Column</span> <span style="display: none;" class="dt_move"></span>
+    <div class="dt_module_options"> <span style="display: block;" class="dt_delete_column" title="Delete"></span> <span style="display: block;" class="dt_clone_column" title="Clone"></span> <span style="display: block;" class="dt_settings_arrow_column" title="Settings"></span> <span class="dt_add_module_column" title="Add Module" style="display:none;">A</span> </div>
+    <div class="dt_columndata_settings"></div>
+  </div>
+  <div aria-disabled="false" class="dt_modules_container ui-droppable ui-sortable">
+    <div class="dt_module dt_m_titled_box dt_module_general  ui-draggable ui-resizable dt_first" data-name="titled_box" data-placeholder="Titled Box" style="opacity: 1; z-index: 1;"><span class="ico-box dt_icon"></span> <span class="dt_module_name">Titled Box</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"><span class="title">Title Comes Here</span></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">success-box</div>
+        <div data-option_name="title" class="title dt_module_setting">Title Comes Here</div>
+        <div data-option_name="icon" class="icon dt_module_setting">fa-cogs</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting"></div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="box_content" class="box_content dt_module_setting dtthemes_module_content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dt_module dt_m_column dt_disable_resize dt_m_column_one_half ui-draggable dt_m_column_has_modules" data-name="one_half" data-placeholder="1/2 Column" style="opacity: 1; z-index: 1;">
+  <div class="dt_module_controls"> <span style="opacity: 1;" class="dt_module_name dt_column_name">1/2 Column</span> <span style="display: none;" class="dt_move"></span>
+    <div class="dt_module_options"> <span style="display: block;" class="dt_delete_column" title="Delete"></span> <span style="display: block;" class="dt_clone_column" title="Clone"></span> <span style="display: block;" class="dt_settings_arrow_column" title="Settings"></span> <span class="dt_add_module_column" title="Add Module" style="display:none;">A</span> </div>
+    <div class="dt_columndata_settings"></div>
+  </div>
+  <div aria-disabled="false" class="dt_modules_container ui-droppable ui-sortable">
+    <div class="dt_module dt_m_titled_box dt_module_general  ui-draggable ui-resizable dt_first" data-name="titled_box" data-placeholder="Titled Box" style="opacity: 1; z-index: 1;"><span class="ico-box dt_icon"></span> <span class="dt_module_name">Titled Box</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"><span class="title">Title Comes Here</span></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">info-box</div>
+        <div data-option_name="title" class="title dt_module_setting">Title Comes Here</div>
+        <div data-option_name="icon" class="icon dt_module_setting">fa-cogs</div>
+        <div data-option_name="bgcolor" class="bgcolor dt_module_setting"></div>
+        <div data-option_name="variation" class="variation dt_module_setting"></div>
+        <div data-option_name="textcolor" class="textcolor dt_module_setting"></div>
+        <div data-option_name="box_content" class="box_content dt_module_setting dtthemes_module_content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dt_module dt_m_hr_invisible dt_module_others dt_disable_resize  ui-draggable dt_first" data-name="hr_invisible" data-placeholder="Whitespace" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Whitespace</span>
+  <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+  <div class="dt_preview"></div>
+  <div class="dt_module_settings"></div>
+</div>
+<div class="dt_module dt_m_h2 dt_module_others  ui-draggable ui-resizable dt_first" data-name="h2" data-placeholder="Heading 2" style="opacity: 1; z-index: 1;"><span class="ico-headings dt_icon"></span> <span class="dt_module_name">Heading 2</span>
+  <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+  <div class="dt_preview"></div>
+  <div class="dt_module_settings">
+    <div data-option_name="class" class="class dt_module_setting"></div>
+    <div data-option_name="content" class="content dt_module_setting dtthemes_module_content">ICON BOXES</div>
+  </div>
+  <div style="z-index: 90;" class="ui-resizable-handle ui-resizable-e"></div>
+</div>
+<div class="dt_module dt_m_hr_invisible_small dt_module_others dt_disable_resize  ui-draggable dt_first" data-name="hr_invisible_small" data-placeholder="Whitespace Small" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Whitespace Small</span>
+  <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+  <div class="dt_preview"></div>
+  <div class="dt_module_settings"></div>
+</div>
+<div class="dt_module dt_m_column dt_disable_resize dt_m_column_one_third ui-draggable dt_m_column_has_modules dt_first" data-name="one_third" data-placeholder="1/3 Column" style="opacity: 1; z-index: 1;">
+  <div class="dt_module_controls"> <span style="opacity: 1;" class="dt_module_name dt_column_name">1/3 Column</span> <span style="display: none;" class="dt_move"></span>
+    <div class="dt_module_options"> <span style="display: block;" class="dt_delete_column" title="Delete"></span> <span style="display: block;" class="dt_clone_column" title="Clone"></span> <span style="display: block;" class="dt_settings_arrow_column" title="Settings"></span> <span class="dt_add_module_column" title="Add Module" style="display:none;">A</span> </div>
+    <div class="dt_columndata_settings"></div>
+  </div>
+  <div aria-disabled="false" class="dt_modules_container ui-droppable ui-sortable">
+    <div class="dt_module dt_m_icon_box dt_module_general  ui-draggable ui-resizable dt_first" data-name="icon_box" data-placeholder="Icon Box" style="opacity: 1; z-index: 1;"><span class="ico-iconbox dt_icon"></span> <span class="dt_module_name">Icon Box</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"><span class="title">Title Comes Here</span></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">type1</div>
+        <div data-option_name="fontawesome_icon" class="fontawesome_icon dt_module_setting">trophy</div>
+        <div data-option_name="custom_icon" class="custom_icon dt_module_setting"></div>
+        <div data-option_name="inner_image" class="inner_image dt_module_setting">http://placehold.it/620x237&amp;text=DesignThemes</div>
+        <div data-option_name="title" class="title dt_module_setting">Title Comes Here</div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="color" class="color dt_module_setting">chocolate</div>
+        <div data-option_name="ib_content" class="ib_content dt_module_setting dtthemes_module_content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras cursus sollicitudin nunc nec rhoncus.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dt_module dt_m_column dt_disable_resize dt_m_column_one_third ui-draggable dt_m_column_has_modules" data-name="one_third" data-placeholder="1/3 Column" style="opacity: 1; z-index: 1;">
+  <div class="dt_module_controls"> <span style="opacity: 1;" class="dt_module_name dt_column_name">1/3 Column</span> <span style="display: none;" class="dt_move"></span>
+    <div class="dt_module_options"> <span style="display: block;" class="dt_delete_column" title="Delete"></span> <span style="display: block;" class="dt_clone_column" title="Clone"></span> <span style="display: block;" class="dt_settings_arrow_column" title="Settings"></span> <span class="dt_add_module_column" title="Add Module" style="display:none;">A</span> </div>
+    <div class="dt_columndata_settings"></div>
+  </div>
+  <div aria-disabled="false" class="dt_modules_container ui-droppable ui-sortable">
+    <div class="dt_module dt_m_icon_box dt_module_general  ui-draggable ui-resizable dt_first" data-name="icon_box" data-placeholder="Icon Box" style="opacity: 1; z-index: 1;"><span class="ico-iconbox dt_icon"></span> <span class="dt_module_name">Icon Box</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"><span class="title">Title Comes Here</span></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">type1</div>
+        <div data-option_name="fontawesome_icon" class="fontawesome_icon dt_module_setting">trophy</div>
+        <div data-option_name="custom_icon" class="custom_icon dt_module_setting"></div>
+        <div data-option_name="inner_image" class="inner_image dt_module_setting">http://placehold.it/620x237&amp;text=DesignThemes</div>
+        <div data-option_name="title" class="title dt_module_setting">Title Comes Here</div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="color" class="color dt_module_setting">blue</div>
+        <div data-option_name="ib_content" class="ib_content dt_module_setting dtthemes_module_content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras cursus sollicitudin nunc nec rhoncus.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dt_module dt_m_column dt_disable_resize dt_m_column_one_third ui-draggable dt_m_column_has_modules" data-name="one_third" data-placeholder="1/3 Column" style="opacity: 1; z-index: 1;">
+  <div class="dt_module_controls"> <span style="opacity: 1;" class="dt_module_name dt_column_name">1/3 Column</span> <span style="display: none;" class="dt_move"></span>
+    <div class="dt_module_options"> <span style="display: block;" class="dt_delete_column" title="Delete"></span> <span style="display: block;" class="dt_clone_column" title="Clone"></span> <span style="display: block;" class="dt_settings_arrow_column" title="Settings"></span> <span class="dt_add_module_column" title="Add Module" style="display:none;">A</span> </div>
+    <div class="dt_columndata_settings"></div>
+  </div>
+  <div aria-disabled="false" class="dt_modules_container ui-droppable ui-sortable">
+    <div class="dt_module dt_m_icon_box dt_module_general  ui-draggable ui-resizable dt_first" data-name="icon_box" data-placeholder="Icon Box" style="opacity: 1; z-index: 1;"><span class="ico-iconbox dt_icon"></span> <span class="dt_module_name">Icon Box</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"><span class="title">Title Comes Here</span></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">type1</div>
+        <div data-option_name="fontawesome_icon" class="fontawesome_icon dt_module_setting">trophy</div>
+        <div data-option_name="custom_icon" class="custom_icon dt_module_setting"></div>
+        <div data-option_name="inner_image" class="inner_image dt_module_setting">http://placehold.it/620x237&amp;text=DesignThemes</div>
+        <div data-option_name="title" class="title dt_module_setting">Title Comes Here</div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="color" class="color dt_module_setting">green</div>
+        <div data-option_name="ib_content" class="ib_content dt_module_setting dtthemes_module_content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras cursus sollicitudin nunc nec rhoncus.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dt_module dt_m_hr_invisible_medium dt_module_others dt_disable_resize  ui-draggable dt_first" data-name="hr_invisible_medium" data-placeholder="Whitespace Medium" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Whitespace Medium</span>
+  <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+  <div class="dt_preview"></div>
+  <div class="dt_module_settings"></div>
+</div>
+<div class="dt_module dt_m_column dt_disable_resize dt_m_column_one_third ui-draggable dt_m_column_has_modules dt_first" data-name="one_third" data-placeholder="1/3 Column" style="opacity: 1; z-index: 1;">
+  <div class="dt_module_controls"> <span style="opacity: 1;" class="dt_module_name dt_column_name">1/3 Column</span> <span style="display: none;" class="dt_move"></span>
+    <div class="dt_module_options"> <span style="display: block;" class="dt_delete_column" title="Delete"></span> <span style="display: block;" class="dt_clone_column" title="Clone"></span> <span style="display: block;" class="dt_settings_arrow_column" title="Settings"></span> <span class="dt_add_module_column" title="Add Module" style="display:none;">A</span> </div>
+    <div class="dt_columndata_settings"></div>
+  </div>
+  <div aria-disabled="false" class="dt_modules_container ui-droppable ui-sortable">
+    <div class="dt_module dt_m_icon_box dt_module_general  ui-draggable ui-resizable dt_first" data-name="icon_box" data-placeholder="Icon Box" style="opacity: 1; z-index: 1;"><span class="ico-iconbox dt_icon"></span> <span class="dt_module_name">Icon Box</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"><span class="title">Title Comes Here</span></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">type2</div>
+        <div data-option_name="fontawesome_icon" class="fontawesome_icon dt_module_setting">trophy</div>
+        <div data-option_name="custom_icon" class="custom_icon dt_module_setting"></div>
+        <div data-option_name="inner_image" class="inner_image dt_module_setting">http://placehold.it/620x237&amp;text=DesignThemes</div>
+        <div data-option_name="title" class="title dt_module_setting">Title Comes Here</div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="color" class="color dt_module_setting">chocolate</div>
+        <div data-option_name="ib_content" class="ib_content dt_module_setting dtthemes_module_content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras cursus sollicitudin nunc nec rhoncus.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dt_module dt_m_column dt_disable_resize dt_m_column_one_third ui-draggable dt_m_column_has_modules" data-name="one_third" data-placeholder="1/3 Column" style="opacity: 1; z-index: 1;">
+  <div class="dt_module_controls"> <span style="opacity: 1;" class="dt_module_name dt_column_name">1/3 Column</span> <span style="display: none;" class="dt_move"></span>
+    <div class="dt_module_options"> <span style="display: block;" class="dt_delete_column" title="Delete"></span> <span style="display: block;" class="dt_clone_column" title="Clone"></span> <span style="display: block;" class="dt_settings_arrow_column" title="Settings"></span> <span class="dt_add_module_column" title="Add Module" style="display:none;">A</span> </div>
+    <div class="dt_columndata_settings"></div>
+  </div>
+  <div aria-disabled="false" class="dt_modules_container ui-droppable ui-sortable">
+    <div class="dt_module dt_m_icon_box dt_module_general  ui-draggable ui-resizable dt_first" data-name="icon_box" data-placeholder="Icon Box" style="opacity: 1; z-index: 1;"><span class="ico-iconbox dt_icon"></span> <span class="dt_module_name">Icon Box</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"><span class="title">Title Comes Here</span></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">type2</div>
+        <div data-option_name="fontawesome_icon" class="fontawesome_icon dt_module_setting">trophy</div>
+        <div data-option_name="custom_icon" class="custom_icon dt_module_setting"></div>
+        <div data-option_name="inner_image" class="inner_image dt_module_setting">http://placehold.it/620x237&amp;text=DesignThemes</div>
+        <div data-option_name="title" class="title dt_module_setting">Title Comes Here</div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="color" class="color dt_module_setting">chocolate</div>
+        <div data-option_name="ib_content" class="ib_content dt_module_setting dtthemes_module_content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras cursus sollicitudin nunc nec rhoncus.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dt_module dt_m_column dt_disable_resize dt_m_column_one_third ui-draggable dt_m_column_has_modules" data-name="one_third" data-placeholder="1/3 Column" style="opacity: 1; z-index: 1;">
+  <div class="dt_module_controls"> <span style="opacity: 1;" class="dt_module_name dt_column_name">1/3 Column</span> <span style="display: none;" class="dt_move"></span>
+    <div class="dt_module_options"> <span style="display: block;" class="dt_delete_column" title="Delete"></span> <span style="display: block;" class="dt_clone_column" title="Clone"></span> <span style="display: block;" class="dt_settings_arrow_column" title="Settings"></span> <span class="dt_add_module_column" title="Add Module" style="display:none;">A</span> </div>
+    <div class="dt_columndata_settings"></div>
+  </div>
+  <div aria-disabled="false" class="dt_modules_container ui-droppable ui-sortable">
+    <div class="dt_module dt_m_icon_box dt_module_general  ui-draggable ui-resizable dt_first" data-name="icon_box" data-placeholder="Icon Box" style="opacity: 1; z-index: 1;"><span class="ico-iconbox dt_icon"></span> <span class="dt_module_name">Icon Box</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"><span class="title">Title Comes Here</span></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">type2</div>
+        <div data-option_name="fontawesome_icon" class="fontawesome_icon dt_module_setting">trophy</div>
+        <div data-option_name="custom_icon" class="custom_icon dt_module_setting"></div>
+        <div data-option_name="inner_image" class="inner_image dt_module_setting">http://placehold.it/620x237&amp;text=DesignThemes</div>
+        <div data-option_name="title" class="title dt_module_setting">Title Comes Here</div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="color" class="color dt_module_setting">chocolate</div>
+        <div data-option_name="ib_content" class="ib_content dt_module_setting dtthemes_module_content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras cursus sollicitudin nunc nec rhoncus.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dt_module dt_m_hr_invisible_medium dt_module_others dt_disable_resize  ui-draggable dt_first" data-name="hr_invisible_medium" data-placeholder="Whitespace Medium" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Whitespace Medium</span>
+  <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+  <div class="dt_preview"></div>
+  <div class="dt_module_settings"></div>
+</div>
+<div class="dt_module dt_m_column dt_disable_resize dt_m_column_one_fourth ui-draggable dt_m_column_has_modules dt_first" data-name="one_fourth" data-placeholder="1/4 Column" style="opacity: 1; z-index: 1;">
+  <div class="dt_module_controls"> <span style="opacity: 1;" class="dt_module_name dt_column_name">1/4 Column</span> <span style="display: none;" class="dt_move"></span>
+    <div class="dt_module_options"> <span style="display: block;" class="dt_delete_column" title="Delete"></span> <span style="display: block;" class="dt_clone_column" title="Clone"></span> <span style="display: block;" class="dt_settings_arrow_column" title="Settings"></span> <span class="dt_add_module_column" title="Add Module" style="display:none;">A</span> </div>
+    <div class="dt_columndata_settings"></div>
+  </div>
+  <div aria-disabled="false" class="dt_modules_container ui-droppable ui-sortable">
+    <div class="dt_module dt_m_icon_box dt_module_general  ui-draggable ui-resizable dt_first" data-name="icon_box" data-placeholder="Icon Box" style="opacity: 1; z-index: 1;"><span class="ico-iconbox dt_icon"></span> <span class="dt_module_name">Icon Box</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"><span class="title">Title Comes Here</span></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">type3</div>
+        <div data-option_name="fontawesome_icon" class="fontawesome_icon dt_module_setting">trophy</div>
+        <div data-option_name="custom_icon" class="custom_icon dt_module_setting"></div>
+        <div data-option_name="inner_image" class="inner_image dt_module_setting">http://placehold.it/620x237&amp;text=DesignThemes</div>
+        <div data-option_name="title" class="title dt_module_setting">Title Comes Here</div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="color" class="color dt_module_setting">green</div>
+        <div data-option_name="ib_content" class="ib_content dt_module_setting dtthemes_module_content"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dt_module dt_m_column dt_disable_resize dt_m_column_one_fourth ui-draggable dt_m_column_has_modules" data-name="one_fourth" data-placeholder="1/4 Column" style="opacity: 1; z-index: 1;">
+  <div class="dt_module_controls"> <span style="opacity: 1;" class="dt_module_name dt_column_name">1/4 Column</span> <span style="display: none;" class="dt_move"></span>
+    <div class="dt_module_options"> <span style="display: block;" class="dt_delete_column" title="Delete"></span> <span style="display: block;" class="dt_clone_column" title="Clone"></span> <span style="display: block;" class="dt_settings_arrow_column" title="Settings"></span> <span class="dt_add_module_column" title="Add Module" style="display:none;">A</span> </div>
+    <div class="dt_columndata_settings"></div>
+  </div>
+  <div aria-disabled="false" class="dt_modules_container ui-droppable ui-sortable">
+    <div class="dt_module dt_m_icon_box dt_module_general  ui-draggable ui-resizable dt_first" data-name="icon_box" data-placeholder="Icon Box" style="opacity: 1; z-index: 1;"><span class="ico-iconbox dt_icon"></span> <span class="dt_module_name">Icon Box</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"><span class="title">Title Comes Here</span></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">type3</div>
+        <div data-option_name="fontawesome_icon" class="fontawesome_icon dt_module_setting">trophy</div>
+        <div data-option_name="custom_icon" class="custom_icon dt_module_setting"></div>
+        <div data-option_name="inner_image" class="inner_image dt_module_setting">http://placehold.it/620x237&amp;text=DesignThemes</div>
+        <div data-option_name="title" class="title dt_module_setting">Title Comes Here</div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="color" class="color dt_module_setting">green</div>
+        <div data-option_name="ib_content" class="ib_content dt_module_setting dtthemes_module_content"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dt_module dt_m_column dt_disable_resize dt_m_column_one_fourth ui-draggable dt_m_column_has_modules" data-name="one_fourth" data-placeholder="1/4 Column" style="opacity: 1; z-index: 1;">
+  <div class="dt_module_controls"> <span style="opacity: 1;" class="dt_module_name dt_column_name">1/4 Column</span> <span style="display: none;" class="dt_move"></span>
+    <div class="dt_module_options"> <span style="display: block;" class="dt_delete_column" title="Delete"></span> <span style="display: block;" class="dt_clone_column" title="Clone"></span> <span style="display: block;" class="dt_settings_arrow_column" title="Settings"></span> <span class="dt_add_module_column" title="Add Module" style="display:none;">A</span> </div>
+    <div class="dt_columndata_settings"></div>
+  </div>
+  <div aria-disabled="false" class="dt_modules_container ui-droppable ui-sortable">
+    <div class="dt_module dt_m_icon_box dt_module_general  ui-draggable ui-resizable dt_first" data-name="icon_box" data-placeholder="Icon Box" style="opacity: 1; z-index: 1;"><span class="ico-iconbox dt_icon"></span> <span class="dt_module_name">Icon Box</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"><span class="title">Title Comes Here</span></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">type3</div>
+        <div data-option_name="fontawesome_icon" class="fontawesome_icon dt_module_setting">trophy</div>
+        <div data-option_name="custom_icon" class="custom_icon dt_module_setting"></div>
+        <div data-option_name="inner_image" class="inner_image dt_module_setting">http://placehold.it/620x237&amp;text=DesignThemes</div>
+        <div data-option_name="title" class="title dt_module_setting">Title Comes Here</div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="color" class="color dt_module_setting">green</div>
+        <div data-option_name="ib_content" class="ib_content dt_module_setting dtthemes_module_content"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dt_module dt_m_column dt_disable_resize dt_m_column_one_fourth ui-draggable dt_m_column_has_modules" data-name="one_fourth" data-placeholder="1/4 Column" style="opacity: 1; z-index: 1;">
+  <div class="dt_module_controls"> <span style="opacity: 1;" class="dt_module_name dt_column_name">1/4 Column</span> <span style="display: none;" class="dt_move"></span>
+    <div class="dt_module_options"> <span style="display: block;" class="dt_delete_column" title="Delete"></span> <span style="display: block;" class="dt_clone_column" title="Clone"></span> <span style="display: block;" class="dt_settings_arrow_column" title="Settings"></span> <span class="dt_add_module_column" title="Add Module" style="display:none;">A</span> </div>
+    <div class="dt_columndata_settings"></div>
+  </div>
+  <div aria-disabled="false" class="dt_modules_container ui-droppable ui-sortable">
+    <div class="dt_module dt_m_icon_box dt_module_general  ui-draggable ui-resizable dt_first" data-name="icon_box" data-placeholder="Icon Box" style="opacity: 1; z-index: 1;"><span class="ico-iconbox dt_icon"></span> <span class="dt_module_name">Icon Box</span>
+      <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+      <div class="dt_preview"><span class="title">Title Comes Here</span></div>
+      <div class="dt_module_settings">
+        <div data-option_name="type" class="type dt_module_setting">type3</div>
+        <div data-option_name="fontawesome_icon" class="fontawesome_icon dt_module_setting">trophy</div>
+        <div data-option_name="custom_icon" class="custom_icon dt_module_setting"></div>
+        <div data-option_name="inner_image" class="inner_image dt_module_setting">http://placehold.it/620x237&amp;text=DesignThemes</div>
+        <div data-option_name="title" class="title dt_module_setting">Title Comes Here</div>
+        <div data-option_name="link" class="link dt_module_setting">#</div>
+        <div data-option_name="color" class="color dt_module_setting">green</div>
+        <div data-option_name="ib_content" class="ib_content dt_module_setting dtthemes_module_content"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dt_module dt_m_hr_invisible_medium dt_module_others dt_disable_resize  ui-draggable dt_first" data-name="hr_invisible_medium" data-placeholder="Whitespace Medium" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Whitespace Medium</span>
+  <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+  <div class="dt_preview"></div>
+  <div class="dt_module_settings"></div>
+</div>
+<div class="dt_module dt_m_h2 dt_module_others  ui-draggable ui-resizable dt_first" data-name="h2" data-placeholder="Heading 2" style="opacity: 1; z-index: 1;"><span class="ico-headings dt_icon"></span> <span class="dt_module_name">Heading 2</span>
+  <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+  <div class="dt_preview"></div>
+  <div class="dt_module_settings">
+    <div data-option_name="class" class="class dt_module_setting"></div>
+    <div data-option_name="content" class="content dt_module_setting dtthemes_module_content">PRICING TABLES</div>
+  </div>
+  <div style="z-index: 90;" class="ui-resizable-handle ui-resizable-e"></div>
+</div>
+<div class="dt_module dt_m_hr_invisible_small dt_module_others dt_disable_resize  ui-draggable dt_first" data-name="hr_invisible_small" data-placeholder="Whitespace Small" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Whitespace Small</span>
+  <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+  <div class="dt_preview"></div>
+  <div class="dt_module_settings"></div>
+</div>
+<div class="dt_module dt_m_pricing_table dt_module_general  ui-draggable ui-resizable dt_first" data-name="pricing_table" data-placeholder="Pricing Table" style="opacity: 1; z-index: 1;"><span class="ico-pricingtable dt_icon"></span> <span class="dt_module_name">Pricing Table</span>
+  <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+  <div class="dt_preview"></div>
+  <div class="dt_module_settings">
+    <div data-option_name="pt_content" class="pt_content dt_module_setting dtthemes_module_content">
+      <p>[dt_sc_one_fourth first]<br>
+        [dt_sc_pricing_table_item variation='gold' heading='gift' button_text='Donate Now' button_link='#' currency='$' price1='5' price2='.85']</p>
+      <ul>
+        <li>2 Pizza Slice</li>
+        <li>French Fries</li>
+        <li>Cola 1 Cup</li>
+        <li>Mini Burger 1 set</li>
+      </ul>
+      <p>[/dt_sc_pricing_table_item]<br>
+        [/dt_sc_one_fourth]</p>
+      <p>[dt_sc_one_fourth]<br>
+        [dt_sc_pricing_table_item variation='green' heading='gift' button_text='Donate Now' button_link='#' currency='$' price1='7' price2='.55' selected]</p>
+      <ul>
+        <li>2 Pizza Slice</li>
+        <li>French Fries</li>
+        <li>Cola 1 Cup</li>
+        <li>Mini Burger 1 set</li>
+      </ul>
+      <p>[/dt_sc_pricing_table_item]<br>
+        [/dt_sc_one_fourth]</p>
+      <p>[dt_sc_one_fourth]<br>
+        [dt_sc_pricing_table_item variation='blue' heading='gift' button_text='Donate Now' button_link='#' currency='$' price1='9' price2='.85']</p>
+      <ul>
+        <li>2 Pizza Slice</li>
+        <li>French Fries</li>
+        <li>Cola 1 Cup</li>
+        <li>Mini Burger 1 set</li>
+      </ul>
+      <p>[/dt_sc_pricing_table_item]<br>
+        [/dt_sc_one_fourth]</p>
+      <p>[dt_sc_one_fourth]<br>
+        [dt_sc_pricing_table_item variation='pink' heading='gift' button_text='Donate Now' button_link='#' currency='$' price1='15' price2='.85']</p>
+      <ul>
+        <li>2 Pizza Slice</li>
+        <li>French Fries</li>
+        <li>Cola 1 Cup</li>
+        <li>Mini Burger 1 set</li>
+      </ul>
+      <p>[/dt_sc_pricing_table_item]</p>
+      <p>[/dt_sc_one_fourth]</p>
+      <p>&nbsp;</p>
+    </div>
+  </div>
+  <div style="z-index: 90;" class="ui-resizable-handle ui-resizable-e"></div>
+</div>
+<div class="dt_module dt_m_hr_invisible_medium dt_module_others dt_disable_resize  ui-draggable dt_first" data-name="hr_invisible_medium" data-placeholder="Whitespace Medium" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Whitespace Medium</span>
+  <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+  <div class="dt_preview"></div>
+  <div class="dt_module_settings"></div>
+</div>
+<div class="dt_module dt_m_pricing_table_rounded dt_module_general  ui-draggable ui-resizable dt_first" data-name="pricing_table_rounded" data-placeholder="Rounded Pricing Table" style="opacity: 1; z-index: 1;"><span class="ico-pricingtable dt_icon"></span> <span class="dt_module_name">Rounded Pricing Table</span>
+  <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+  <div class="dt_preview"></div>
+  <div class="dt_module_settings">
+    <div data-option_name="pt_content" class="pt_content dt_module_setting dtthemes_module_content">
+      <p>[dt_sc_one_fourth first]</p>
+      <p>[dt_sc_pricing_table_item variation='gold' heading='gift' button_text='Donate Now' button_link='#' currency='$' price1='15' price2='.85']<br>
+        [dt_pricing_round_text title='Full Circle' subtitle='2 Person' text='Gift your loved ones a dinner at affordable price' /]<br>
+        [/dt_sc_pricing_table_item]<br>
+        [/dt_sc_one_fourth]</p>
+      <p>[dt_sc_one_fourth]<br>
+        [dt_sc_pricing_table_item variation='green' heading='gift' button_text='Donate Now' button_link='#' currency='$' price1='15' price2='.85']<br>
+        [dt_pricing_round_text title='Full Circle' subtitle='2 Person' text='Gift your loved ones a dinner at affordable price' /]<br>
+        [/dt_sc_pricing_table_item]<br>
+        [/dt_sc_one_fourth]</p>
+      <p>[dt_sc_one_fourth]<br>
+        [dt_sc_pricing_table_item variation='blue' heading='gift' button_text='Donate Now' button_link='#' currency='$' price1='15' price2='.85' selected]<br>
+        [dt_pricing_round_text title='Full Circle' subtitle='2 Person' text='Gift your loved ones a dinner at affordable price' /]<br>
+        [/dt_sc_pricing_table_item]<br>
+        [/dt_sc_one_fourth]</p>
+      <p>[dt_sc_one_fourth]<br>
+        [dt_sc_pricing_table_item variation='pink' heading='gift' button_text='Donate Now' button_link='#' currency='$' price1='15' price2='.85']<br>
+        [dt_pricing_round_text title='Full Circle' subtitle='2 Person' text='Gift your loved ones a dinner at affordable price' /]<br>
+        [/dt_sc_pricing_table_item]<br>
+        [/dt_sc_one_fourth]</p>
+    </div>
+  </div>
+  <div style="z-index: 90;" class="ui-resizable-handle ui-resizable-e"></div>
+</div>
+<div class="dt_module dt_m_hr_invisible_medium dt_module_others dt_disable_resize  ui-draggable dt_first" data-name="hr_invisible_medium" data-placeholder="Whitespace Medium" style="opacity: 1; z-index: 1;"><span class="ico-divider dt_icon"></span> <span class="dt_module_name">Whitespace Medium</span>
+  <div class="dt_module_options"><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span></div>
+  <div class="dt_preview"></div>
+  <div class="dt_module_settings"></div>
+</div>
+<div class="dt_module dt_m_pricing_table_with_image dt_module_general  ui-draggable ui-resizable dt_first" data-name="pricing_table_with_image" data-placeholder="Pricing Table with Image" style="opacity: 1; z-index: 1;"><span class="ico-pricingtable dt_icon"></span> <span class="dt_module_name">Pricing Table with Image</span>
+  <div class="dt_module_options"><span style="display: block;" class="dt_move"></span><span style="display: block;" class="dt_showorhide dt_show" title="Show"></span> <span style="display: block;" class="dt_delete" title="Delete"></span> <span style="display: block;" class="dt_clone_module" title="Clone"></span><span style="display: block;" class="dt_settings_arrow_module" title="Settings"></span></div>
+  <div class="dt_preview"></div>
+  <div class="dt_module_settings">
+    <div data-option_name="pt_content" class="pt_content dt_module_setting dtthemes_module_content">
+      <p>[dt_sc_one_fourth first]</p>
+      <p>[dt_sc_pricing_table_item title='Summer Special' thumb='http://placehold.it/300x200' variation='gold' heading='gift' button_text='Donate Now' button_link='#' currency='$' price1='15' price2='.85']</p>
+      <ul>
+        <li>2 Pizza Slice</li>
+        <li>French Fries</li>
+        <li>Cola 1 Cup</li>
+        <li>Mini Burger 1 set</li>
+      </ul>
+      <p>[/dt_sc_pricing_table_item]<br>
+        [/dt_sc_one_fourth]</p>
+      <p>[dt_sc_one_fourth]<br>
+        [dt_sc_pricing_table_item title='Summer Special Plus' thumb='http://placehold.it/300x200' variation='green' heading='gift' button_text='Donate Now' button_link='#' currency='$' price1='15' price2='.85' selected]</p>
+      <ul>
+        <li>2 Pizza Slice</li>
+        <li>French Fries</li>
+        <li>Cola 1 Cup</li>
+        <li>Mini Burger 1 set</li>
+      </ul>
+      <p>[/dt_sc_pricing_table_item]<br>
+        [/dt_sc_one_fourth]</p>
+      <p>[dt_sc_one_fourth]<br>
+        [dt_sc_pricing_table_item title='Summer Special Exclusive' thumb='http://placehold.it/300x200' variation='blue' heading='gift' button_text='Donate Now' button_link='#' currency='$' price1='15' price2='.85']</p>
+      <ul>
+        <li>2 Pizza Slice</li>
+        <li>French Fries</li>
+        <li>Cola 1 Cup</li>
+        <li>Mini Burger 1 set</li>
+      </ul>
+      <p>[/dt_sc_pricing_table_item]<br>
+        [/dt_sc_one_fourth]</p>
+      <p>[dt_sc_one_fourth]<br>
+        [dt_sc_pricing_table_item title='Summer Special Ultra' thumb='http://placehold.it/300x200' variation='pink' heading='gift' button_text='Donate Now' button_link='#' currency='$' price1='15' price2='.85']</p>
+      <ul>
+        <li>2 Pizza Slice</li>
+        <li>French Fries</li>
+        <li>Cola 1 Cup</li>
+        <li>Mini Burger 1 set</li>
+      </ul>
+      <p>[/dt_sc_pricing_table_item]<br>
+        [/dt_sc_one_fourth]</p>
+    </div>
+  </div>
+  <div style="z-index: 90;" class="ui-resizable-handle ui-resizable-e"></div>
+</div>

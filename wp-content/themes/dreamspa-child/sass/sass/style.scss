@@ -1,0 +1,368 @@
+/*
+Theme Name:     Yogavihar
+Theme URI: 		http://www.yogavihar.de
+Author: 		Linda Formumm
+Description:    responsive childtheme of dreamSpa, individualiced for yogavihar website
+Template:       dreamspa
+Version:        1.0/
+*/
+
+// Import all the variables into the main css file.
+@import "variables";
+
+// I gather this file is a starting point for the project.
+//@import "bootstrap";
+
+// Include responsive Bootstrap styles
+// @import "bootstrap-responsive";
+
+
+@import url("../dreamspa/style.css");
+
+#header{
+    padding-top: 0;
+}
+#main{
+    padding-bottom: 10px;
+}
+#main-menu{
+    background: #e2d9cd url(images/textured-pattern.png) center center repeat;
+    ul li.menu-item-simple-parent ul {
+        border: 1px solid #eeeeee;
+   }
+}
+body{
+  background: #fcf8f2;
+  color:#3a4f59;
+  
+  &.boxed .inner-wrapper {
+    background: #fcf8f2;
+  }
+  &.green{
+      background:$green-background-color; 
+      color:$green-font-color;
+      .inner-wrapper{
+        background:$green-background-color; 
+        color:$green-font-color;
+      }
+      th{
+          background-color: #82a366;
+      }
+      tbody tr:nth-child(2n+1) td {
+        background-color: #eff3ec;
+        }
+      a, #main-menu ul.menu > li > span.nolink-menu{
+          color:$green-font-color !important;
+      }
+      #main-menu { 
+          background-color:$green-menu-background-color; 
+          ul.menu > li > a { 
+              color:$green-menu-font-color; 
+          }
+          ul li.menu-item-simple-parent ul:before {
+            background: transparent;
+          }
+      }
+      .footer-widgets-wrapper, .content-full-width, .page-with-sidebar, #secondary-left, #secondary-right{
+        background: #ffffff url(images/border.png) top repeat-x !important;
+      }
+      h1, h3.widgettitle, .vcalendar li .entry-title a, .tribe-events-single-event-title,
+        #main-menu ul > li.current_page_item > a, #main-menu ul > li.current_page_parent > a{
+        color:$green-font-highlight-color !important;
+      }
+  }
+    &.blue{
+      background:$blue-background-color; 
+      color:$blue-font-color;
+      .inner-wrapper{
+        background:$blue-background-color; 
+        color:$blue-font-color;
+      }
+      
+      a, #main-menu ul.menu > li > span.nolink-menu{
+          color:$blue-font-color !important;
+      }
+      #main-menu { 
+          background-color:$blue-menu-background-color; 
+          ul.menu > li > a { 
+              color:$blue-menu-font-color;  
+          }
+          ul li.menu-item-simple-parent ul:before {
+            background: transparent;
+          }
+      }
+      .footer-widgets-wrapper, .content-full-width, .page-with-sidebar, #secondary-left, #secondary-right{
+        background: #ffffff url(images/border.png) top repeat-x !important;
+      }
+      h1, h3.widgettitle, .vcalendar li .entry-title a, .tribe-events-single-event-title,
+        #main-menu ul > li.current_page_item > a, #main-menu ul > li.current_page_parent > a{
+        color:$blue-font-highlight-color !important;
+      }
+    }
+}
+
+
+#slider-container{
+    position: relative;
+    .header-image-claim{
+        position: absolute;
+        top: 12%;
+        right: 6%;
+        text-align: right;
+        color:#d3c6b7;
+        font-family: Open Sans;//Courgette, cursive;
+        font-size:18px;
+        font-style:italic;
+        .author{
+            font-size:14px;
+              margin-right: 8px;
+              margin-top: 17px;
+              
+        }
+        
+    }
+
+}
+.main-menu-wrapper{
+	background:none;
+	padding-top:0;
+}
+
+
+.footer-widgets-wrapper{
+  background: #f4ede3 url(images/border.png) top repeat-x;
+}
+
+
+.content-full-width{
+	background: #f4ede3 url(images/border.png) top repeat-x !important;
+	margin-top:10px !important;
+        
+         
+        .fullwidth-section{
+             padding-left: 60px;
+            padding-right: 60px;
+            padding-top:55px;
+            box-sizing: border-box;
+        }
+       
+        
+        
+        
+        .termine{
+             background: #fcf8f2 !important;
+            padding-top:20px;
+            padding-bottom:20px;
+        }
+}
+
+#primary, #secondary-right, #secondary-left{
+   
+    //padding:55px 50px 20px;
+    box-sizing: border-box;
+      
+}
+//Flex Modell - noch responsive überlegen
+.container, #tribe-events-container, #image-section-container{
+    display: flex;
+  //overflow: hidden;
+}
+#primary.with-right-sidebar{
+  flex: 3;
+  order: 1;
+}
+#secondary-right{
+    flex: 1;
+    order: 2;
+}
+#image-section-container{
+    margin-top:10px;
+    .image-section{
+        flex: 1;
+          box-sizing: border-box;
+            margin-right: 10px;
+            &:last-of-type{
+                margin-right: 0;
+            }
+    }
+}
+
+.page-with-sidebar{
+    background: #f4ede3 url(images/border.png) top repeat-x !important;
+	margin-top:10px !important;
+    padding-top:55px !important;
+    margin-top:10px !important;
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+}
+
+#secondary-right, #secondary-left{
+     background: #f4ede3 url(images/border.png) top repeat-x;
+     padding-top:55px;
+   padding-left: 20px;
+    padding-right: 20px;
+    text-align:center;
+    margin-top:10px;
+}
+  .secondary-sidebar .widget h3.widgettitle, .type-page h1, .tribe-events-single-event-title { 
+      color:#fb6806; 
+      font-family: 'Open Sans', sans-serif; 
+      font-size:20px; 
+      font-weight: normal;
+      letter-spacing:0px; 
+      margin-top: 10px;
+      margin-bottom:30px;
+  }
+h1{
+font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  margin-bottom: 30px;
+  }
+  
+  #footer .container{
+      display: block;
+  }
+#footer .copyright {
+  background: none;
+  font-size:12px;
+}
+
+#slider{
+background:none;
+padding:0;
+}
+#shortcode{
+padding:0;
+width:auto;
+border:none;
+background: #f4ede3;
+}
+.post-edit-link {
+background: #e2d9cd;
+}
+.border-title h6 {
+  color: #3a4f59;
+}
+p{
+line-height:20px;
+}
+.footer-widgets-wrapper{
+    .container{
+        div.dt-sc-one-fourth{
+            width:20%;
+            &:last-of-type{
+                 width:34%;
+            }
+        }
+    }
+} 
+
+/*Kalender Sidebar*/
+.vcalendar{
+   padding: 0;
+}
+.vcalendar li{
+   
+   margin-bottom: 10px !important;
+}
+.vcalendar li .entry-title{
+     margin:0;
+   margin-bottom: 5px;
+   
+}
+.vcalendar li .entry-title a{
+   margin: 5px;
+   font-family: 'Tahoma', sans-serif; 
+   font-size:14px; 
+   color:#fb6806; 
+   font-weight:normal;
+}
+
+.tribe-events-widget-link{
+    font-size:12px;
+    
+}
+.tribe-events-list-widget .duration {
+  font-weight: normal;
+  font-size:13px;
+}
+
+.tt_timetable th{
+    //color:white;
+    font-weight:bold;
+    background-color: #e6e5d9 !important;
+}
+.tt_timetable .row_gray {
+  background-color: #e6e5d9 !important;
+}
+
+.tabs_box_navigation.sf-timetable-menu .tabs_box_navigation_selected label{
+      //border: 1px solid #d77d31;
+      //background: #d77d31;
+      color:#cccccc !important;
+}
+#termine-portfolio-title{
+      margin-bottom: 4%;
+}
+#termine-portfolio{
+    .dt-gallery{
+       box-sizing: border-box;
+       margin-left: 1.33%;
+       &.first{
+         margin-left: 0;  
+       }
+        
+    }
+    .dt-gallery-details{
+        background-image:none;
+        h5{
+            margin-top:6%;
+            font-family:'Tahoma', sans-serif; 
+            font-size:18px;
+        }
+        h6{
+            max-height: 32px;
+            overflow: hidden;
+        }
+        .timespan{
+            font-size: 12px;
+        }
+        .dt-gallery-details-inner{
+            background: none;
+            border:none;
+        }
+        
+    }
+    figure{
+        margin:0;
+    }
+}
+#tribe-events{
+    .page-with-sidebar{
+          padding-left: 40px !important;
+          padding-right: 40px !important;
+    }
+    .col1{
+        float:left;
+        width:10%;
+        .fa{
+            font-size: 2.2em;
+            margin-top: 0.3em;
+            margin-left: 0.4em;
+        }
+    } 
+     .col2{
+        float:right;
+        width:90%;
+        .tribe-events-single-event-title{
+            margin-top:10px;
+        }
+    }   
+}
+#shortcode {
+  white-space: nowrap;
+}
+
+  

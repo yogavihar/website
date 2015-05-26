@@ -1,0 +1,30 @@
+= Dream Spa - Responsive Beauty Salon WordPress Theme =
+
+18-07-2014 - version 1.0
+  * First Release! 
+
+30-09-2014 - version 1.1
+  * Added New Page Builder to create pages
+  * Now Compatible with Wordpress 4.0
+  * Updated Header Options with top bar enable/disable option
+  * Updated Sticky Header option
+  * Added Reservation Module ( includes Staffs, Services, Customers and Payments custom post types )
+  * Woocommerce 2.2.2 Compatible
+  * Included updated version of revolution slider
+
+08-10-2014 - version 1.2
+  * Fixed Featured Image issue
+
+20-10-2014 - version 1.3
+  * Fixed issue in disabling feature image for post
+  * Fixed Gallery Hover effect issue in smart devices
+  * Fixed isssue in adding custom css
+
+15-11-2014 - version 1.4
+  * Now Retina Ready
+
+02-09-2015 - version 1.5
+ * Fully optimized
+ * RTL Support
+ * Demo Slider Included
+ * Registered new image sizes for portfolio and blog

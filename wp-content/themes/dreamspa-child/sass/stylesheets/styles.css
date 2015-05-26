@@ -1,0 +1,238 @@
+/*
+Theme Name:     Yogavihar
+Theme URI: 		http://www.yogavihar.de
+Author: 		Linda Formumm
+Description:    responsive childtheme of dreamSpa, individualiced for yogavihar website
+Template:       dreamspa
+Version:        1.0/
+*/
+@import url("../dreamspa/style.css");
+/* line 22, ../sass/styles.scss */
+#main-menu {
+  background: #e2d9cd url(images/textured-pattern.png) center center repeat;
+}
+/* line 24, ../sass/styles.scss */
+#main-menu ul li.menu-item-simple-parent ul {
+  border: 1px solid #eeeeee;
+}
+
+/* line 28, ../sass/styles.scss */
+body {
+  background: #fcf8f2;
+  color: #3a4f59;
+}
+/* line 31, ../sass/styles.scss */
+body.green, body.green inner-wrapper {
+  background: #d5eac5;
+  color: #707070;
+}
+/* line 35, ../sass/styles.scss */
+body.green a, body.green #main-menu ul.menu > li > span.nolink-menu, body.green inner-wrapper a, body.green inner-wrapper #main-menu ul.menu > li > span.nolink-menu {
+  color: #707070 !important;
+}
+/* line 38, ../sass/styles.scss */
+body.green #main-menu, body.green inner-wrapper #main-menu {
+  background-color: #c1dcac;
+}
+/* line 40, ../sass/styles.scss */
+body.green #main-menu ul.menu > li > a, body.green inner-wrapper #main-menu ul.menu > li > a {
+  color: #37251b;
+}
+/* line 43, ../sass/styles.scss */
+body.green #main-menu ul li.menu-item-simple-parent ul:before, body.green inner-wrapper #main-menu ul li.menu-item-simple-parent ul:before {
+  background: transparent;
+}
+/* line 48, ../sass/styles.scss */
+body.blue, body.blue inner-wrapper {
+  background: #d5eac5;
+  color: #707070;
+}
+/* line 52, ../sass/styles.scss */
+body.blue a, body.blue #main-menu ul.menu > li > span.nolink-menu, body.blue inner-wrapper a, body.blue inner-wrapper #main-menu ul.menu > li > span.nolink-menu {
+  color: #707070 !important;
+}
+/* line 55, ../sass/styles.scss */
+body.blue #main-menu, body.blue inner-wrapper #main-menu {
+  background-color: #c1dcac;
+}
+/* line 57, ../sass/styles.scss */
+body.blue #main-menu ul.menu > li > a, body.blue inner-wrapper #main-menu ul.menu > li > a {
+  color: #37251b;
+}
+/* line 60, ../sass/styles.scss */
+body.blue #main-menu ul li.menu-item-simple-parent ul:before, body.blue inner-wrapper #main-menu ul li.menu-item-simple-parent ul:before {
+  background: transparent;
+}
+
+/* line 69, ../sass/styles.scss */
+.boxed .inner-wrapper {
+  background: #fcf8f2;
+}
+
+/* line 75, ../sass/styles.scss */
+.main-menu-wrapper {
+  background: none;
+  padding-top: 0;
+}
+
+/* line 81, ../sass/styles.scss */
+.footer-widgets-wrapper {
+  background: #f4ede3 url(images/border.png) top repeat-x;
+}
+
+/* line 84, ../sass/styles.scss */
+.fullwidth-section {
+  background: #f4ede3 url(images/border.png) top repeat-x !important;
+  margin-top: 10px !important;
+  padding-top: 55px;
+}
+/* line 88, ../sass/styles.scss */
+.fullwidth-section.termine {
+  background: transparent !important;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* line 95, ../sass/styles.scss */
+#primary, #secondary-right, #secondary-left {
+  box-sizing: border-box;
+}
+
+/* line 103, ../sass/styles.scss */
+.page-with-sidebar {
+  background: #f4ede3 url(images/border.png) top repeat-x !important;
+  margin-top: 10px !important;
+  padding-top: 55px !important;
+  margin-top: 10px !important;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+}
+
+/* line 112, ../sass/styles.scss */
+#secondary-right, #secondary-left {
+  background: #f4ede3 url(images/border.png) top repeat-x;
+  padding-top: 55px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* line 122, ../sass/styles.scss */
+body.green .footer-widgets-wrapper, body.green .fullwidth-section,
+body.green .page-with-sidebar, body.green #secondary-left,
+body.green #secondary-right {
+  background: white url(images/border.png) top repeat-x !important;
+}
+
+/* line 125, ../sass/styles.scss */
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  margin-bottom: 30px;
+}
+
+/* line 134, ../sass/styles.scss */
+#footer .copyright {
+  background: none;
+  font-size: 12px;
+}
+
+/* line 139, ../sass/styles.scss */
+#slider {
+  background: none;
+  padding: 0;
+}
+
+/* line 143, ../sass/styles.scss */
+#shortcode {
+  padding: 0;
+  width: auto;
+  border: none;
+  background: #f4ede3;
+}
+
+/* line 149, ../sass/styles.scss */
+.post-edit-link {
+  background: #e2d9cd;
+}
+
+/* line 152, ../sass/styles.scss */
+.border-title h6 {
+  color: #3a4f59;
+}
+
+/* line 155, ../sass/styles.scss */
+p {
+  line-height: 20px;
+}
+
+/* line 158, ../sass/styles.scss */
+.footer-widgets-wrapper .container div.dt-sc-one-fourth {
+  width: 20%;
+}
+
+/* line 161, ../sass/styles.scss */
+.footer-widgets-wrapper .container div.dt-sc-one-fourth:last-of-type {
+  width: 34%;
+}
+
+/*Kalender Sidebar*/
+/* line 166, ../sass/styles.scss */
+.vcalendar {
+  padding: 0;
+}
+
+/* line 169, ../sass/styles.scss */
+.vcalendar li {
+  margin-bottom: 10px !important;
+}
+
+/* line 172, ../sass/styles.scss */
+.vcalendar li .entry-title {
+  margin: 5px;
+}
+
+/* line 176, ../sass/styles.scss */
+.vcalendar li .entry-title a {
+  margin: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #fb6806;
+  font-weight: normal;
+}
+
+/* line 182, ../sass/styles.scss */
+body.green h1, body.green h3.widgettitle, body.green .vcalendar li .entry-title a,
+body.green #main-menu ul > li.current_page_item > a, body.green #main-menu ul > li.current_page_parent > a {
+  color: #6d8f55 !important;
+}
+
+/* line 185, ../sass/styles.scss */
+.tribe-events-widget-link {
+  font-size: 12px;
+}
+
+/* line 189, ../sass/styles.scss */
+.tribe-events-list-widget .duration {
+  font-weight: normal;
+  font-size: 13px;
+}
+
+/* line 194, ../sass/styles.scss */
+.tt_timetable th {
+  font-weight: bold;
+  background-color: #e6e5d9 !important;
+}
+
+/* line 199, ../sass/styles.scss */
+.tt_timetable .row_gray {
+  background-color: #e6e5d9 !important;
+}
+
+/* line 203, ../sass/styles.scss */
+.tabs_box_navigation.sf-timetable-menu .tabs_box_navigation_selected label {
+  color: #cccccc !important;
+}

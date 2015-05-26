@@ -1,0 +1,1232 @@
+/*
+Theme Name: Dream Spa
+Theme URI: http://wedesignthemes.com/themes/dt-dreamspa/
+Author: the DesignThemes team
+Author URI: http://themeforest.net/user/designthemes
+Description: Rejuvenating Beauty Salon and Wellness Treatments WordPress theme with tons of potential features for Spa Business.Whether you create a fresh website for your salon or need a feel good refreshing style for your existing web presence, Dream Spa will be the best choice. Overall Dream Spa is a versatile health care business theme suitable for spa, therapy, massage, yoga, wellness treatments, Ayurvedic cure, beauty salon website. We've made it very easy for you to add pages you want such as staff, blog, about, pricing, packages, services, partners, courses, contact, products, gallery.Fully flexible and responsive, WPML Compatible!
+Version: 1.5
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: dt_themes
+*/
+
+/* CSS Document */
+/*----*****---- << General >> ----*****----*/
+
+body {direction:rtl; unicode-bidi:embed;}
+
+/*----*****---- << Headings >> ----*****----*/
+
+.border-title.alignright {
+	text-align:right;
+}
+
+.border-title.alignright h2 {
+	padding-right:0px;
+	padding-left: 0;
+}
+
+.border-title.alignleft {
+	text-align:left;
+}
+
+.border-title.alignleft h2 {
+	padding-left:0px;
+	padding-right: 0;
+}
+
+/*----*****---- << Transition >> ----*****----*/
+
+/*----*****---- << Text Elements >> ----*****----*/
+
+ul li ul {
+	padding-right:20px;
+	padding-left: 0;
+}
+
+ol {
+	padding-right:20px;
+	padding-left: 0;
+}
+
+pre, code {
+	border-right:3px solid #d8d8cb;
+	border-left: none;
+}
+
+blockquote {
+	clear:right;
+}
+
+blockquote cite {
+	text-align:left;
+}
+
+blockquote.alignright {
+	margin-left:20px;
+	text-align:right;
+	float:right;
+	margin-right: auto;
+}
+
+blockquote.alignleft {
+	margin-right:20px;
+	text-align:right;
+	float:left;
+	margin-left: auto;
+}
+
+/* due to IE <HR> margin bugs I had to made classed and apply them to div to achieve the effect of a <HR> */
+	
+	.hr {
+	float:right;
+}
+
+.hr-border {
+	float:right;
+}
+
+.hr.top, .hr-border.top {
+	background-position:left center;
+	text-align:left;
+}
+
+.hr.top a, .hr-border.top a {
+	padding-right:5px;
+	left:-21px;
+	right: auto;
+	padding-left: 0;
+}
+
+.hr-border.top a {
+	left:-23px;
+	right: auto;
+}
+
+.float-left {
+	float:left;
+}
+
+.float-right {
+	float:right;
+}
+
+/*.hidden */
+
+.post-edit-link {
+	float:left;
+}
+
+.page-link {
+	float:right;
+}
+
+.page-link a {
+	float:right;
+}
+
+.page-link a span {
+	float:right;
+}
+
+.page-link span, .page-link a span:hover {
+	float:right;
+}
+
+#primary .widget.widget_search #searchform input[type="text"] {
+	margin-left:-57px;
+	padding:13px 20px 11px 65px;
+	margin-right: auto;
+}
+
+/*----*****---- << Tables >> ----*****----*/
+
+td {
+	background:#e6e5d9 url(images/textured-pattern.png) right center repeat;
+}
+
+/*----*****---- << Definition Lists >> ----*****----*/
+
+/*----*****---- << Forms >> ----*****----*/
+
+select {
+	*/ background-position:center left;
+	padding:15px 15px 14px 10px;
+}
+
+.selection-box:before {
+	left:17px;
+	border-right:7px solid transparent;
+	border-left:7px solid transparent;
+	right: auto;
+}
+
+.selection-box:after {
+	left:0px;
+	border-right:1px solid #e5e5d8;
+	border-left:1px solid #e5e5d8;
+	right: auto;
+}
+
+input[type="submit"], button, input[type="button"] {
+	float:left;
+	/*background:#cdccbb url(images/textured-pattern-light.png) left center repeat;*/
+}
+
+/*----*****---- << Images >> ----*****----*/
+
+.wp-caption {
+	padding:5px 5px 7px 7px;
+}
+
+.alignright, img.alignright {
+	float: right;
+	margin-left: 20px;
+	margin-right: auto;
+}
+
+.alignleft, img.alignleft {
+	float: left;
+	margin-right: 20px;
+	margin-left: auto;
+}
+
+.aligncenter, img.aligncenter {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.shadow {
+	float:right;
+}
+
+/*----*****---- << Widgets >> ----*****----*/
+	
+	.widget {
+	float:right;
+}
+
+.widget h3.widgettitle {
+	float:right;
+}
+
+.widget h3.widgettitle span {
+	right:0px;
+	left: auto;
+}
+
+.widget ul {
+	float:right;
+}
+
+.widget ul li {
+	padding:10px 35px 10px 0px;
+}
+
+.widget ul li:before {
+	right:10px;
+	left: auto;
+}
+
+.widget.widget_categories ul li {
+	padding-right:35px;
+	padding-left: 0;
+}
+
+.widget.widget_categories ul li:before {
+	right:10px;
+	left: auto;
+}
+
+.widget.widget_categories ul li span {
+	left:10px;
+	right: auto;
+}
+
+.widget.tweetbox ul li {
+	padding-right:0px;
+	padding-left: 0;
+}
+
+.widget.tweetbox ul li .tweet-thumb {
+	margin:5px 0px 0px 15px;
+	float:right;
+}
+
+.widget .recent-posts-widget ul li .entry-thumb {
+	float:right;
+	margin:0px 0px 10px 20px;
+}
+
+.widget .recent-posts-widget ul li .entry-details {
+	padding-right:75px;
+	padding-left: 0;
+}
+
+.widget.widget_tag_cloud .tagcloud a, .widget.widget_product_tag_cloud .tagcloud a {
+	margin:0px 0px 10px 1px;
+}
+
+.widget.widget_tag_cloud .tagcloud a:hover, .widget.widget_product_tag_cloud .tagcloud a:hover {
+	background:#cdccbb url(images/btn-bg.png) right top repeat-x;
+}
+
+.widget.widget_tag_cloud .tagcloud a:hover:before, .widget.widget_product_tag_cloud .tagcloud a:hover:before {
+	right:0px;
+	background:url(images/textured-pattern-light.png) left center repeat;
+	left: auto;
+}
+
+.widget.flickrbox .flickr-widget div {
+	float:right;
+	margin:0px 0px 7px 7px;
+}
+
+.widget .recent-dt-gallery-widget li {
+	padding-right:0px;
+	float:right;
+	padding-left: 0;
+}
+
+.widget .recent-dt-gallery-widget li .thumb {
+	float:right;
+	padding:0px 0px 15px 15px;
+}
+
+/* Safari only override */
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+/* Safari only override */
+
+}
+
+/*----*****---- << Layout >> ----*****----*/
+/*----*****---- << Container >> ----*****----*/
+
+.wrapper {
+	float:right;
+}
+
+.inner-wrapper {
+	float:right;
+}
+
+/*----*****---- << Header >> ----*****----*/
+	#header-wrapper {
+	float:right;
+}
+
+#header {
+	float:right;
+}
+
+#logo {
+	float:right;
+}
+
+/*----*****---- << Top Bar >> ----*****----*/
+	
+	.top-bar {
+	float:right;
+}
+
+.top-bar ul {
+	float:right;
+}
+
+.top-bar ul li span {
+	margin-left:5px;
+	margin-right: auto;
+}
+
+.top-bar ul.contact-details li {
+	border-left:1px solid #a5a38c;
+	padding:0px 0px 0px 10px;
+	margin:0px 0px 0px 10px;
+	border-right: none;
+}
+
+.top-bar ul.cart-details {
+	float:left;
+}
+
+.top-bar ul.cart-details li {
+	border-right:1px solid #a5a38c;
+	padding:0px 10px 0px 0px;
+	margin:0px 6px 0px 0px;
+	border-left: none;
+}
+
+/*----*****---- << Header Options >> ----*****----*/
+
+#header.header2 #logo, #header.header4 #logo {
+	float:right;
+}
+
+#header.header4 #main-menu ul.menu, #header.header2 #main-menu ul.menu {
+	text-align:right;
+}
+
+#header.header4 #main-menu ul.menu > li > a, #header.header2 #main-menu ul.menu > li > a {
+	padding:0px 0px 0px 50px;
+}
+
+#header .header-left-content {
+	float:left;
+}
+
+#header .dt-sc-social-icons {
+	float:right;
+}
+
+#header .dt-sc-social-icons li {
+	margin:0px 0px 0px 5px;
+	background-position:right center;
+}
+
+#header #searchform, #primary #searchform {
+	float:right;
+	margin:0px 0px 0px 20px;
+}
+
+#header #searchform input[type="text"], #primary #searchform input[type="text"] {
+	/*float:right;*/
+	margin:0px 0px 0px -1px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+}
+
+#main-menu ul.menu > li > a i {
+	margin-left:10px;
+	float:right;
+	margin-right: auto;
+}
+
+/*.is-sticky .top-bar, .is-sticky #header #logo, .is-sticky .header-right-content */
+
+*/
+	
+	/************* Menu ************/
+	
+	.main-menu-wrapper {
+	float:right;
+	background:url(images/header-border.png) right top repeat-x;
+}
+
+@media only screen and (max-width: 767px) {
+
+*/
+	
+	/************* Menu ************/
+	
+	.main-menu-wrapper {
+	float:right;
+	background:url(images/header-border.png) right top repeat-x;
+}
+
+}
+
+#main-menu {
+	float:right;
+}
+
+#main-menu ul.menu {
+	float:right;
+}
+
+/****** Simple Drop Down Menu *****/
+	
+	#main-menu ul li.menu-item-simple-parent ul, #main-menu ul li.menu-item-simple-parent ul li ul, #main-menu ul li.menu-item-simple-parent ul li ul li ul {
+	text-align:right;
+}
+
+/*#main-menu ul li.menu-item-simple-parent ul {
+	right:0px;
+	float:right;
+	left: auto;
+}
+
+#main-menu ul li.menu-item-simple-parent ul:before, .megamenu-child-container:before {
+	right:0px;
+	left: auto;
+}*/
+
+#main-menu ul li.menu-item-simple-parent ul li a {
+	padding:10px 10px 10px 0px;
+}
+
+/*#main-menu ul li.menu-item-simple-parent ul li ul {
+	right:220px;
+	left: auto;
+}
+
+#main-menu ul li.menu-item-simple-parent:last-child ul, #main-menu ul li.menu-item-simple-parent:nth-child(6) ul, #main-menu ul li.menu-item-simple-parent:nth-child(7) ul {
+	left:0px;
+	right:inherit;
+}
+
+#main-menu ul li.menu-item-simple-parent:last-child ul li ul, #main-menu ul li.menu-item-simple-parent:nth-child(6) ul li ul, #main-menu ul li.menu-item-simple-parent:nth-child(7) ul li ul {
+	left:220px;
+	right:inherit;
+}*/
+
+#main-menu ul li.menu-item-simple-parent ul li a .fa {
+	margin-left:5px;
+	margin-right: auto;
+}
+
+/****** Mega Menu *****/
+
+.megamenu-child-container {
+	/*right:0px;*/
+	float:right;
+	/*left: auto;*/
+}
+
+.megamenu-child-container > ul.sub-menu > li {
+	float:right;
+}
+
+.megamenu-child-container > ul.sub-menu {
+	text-align:right;
+}
+
+.megamenu-child-container > ul.sub-menu > li a .fa {
+	margin-left:5px;
+	margin-right: auto;
+}
+
+.megamenu-child-container ul.sub-menu > li > ul li a {
+	padding:10px 10px 10px 0px;
+}
+
+.megamenu-child-container ul.sub-menu > li > ul > li > ul {
+	padding-right:20px;
+	padding-left: 0;
+}
+
+/****** Mega Menu Widgets *****/
+
+.menu-item-widget-area-container .widget #searchform input[type="submit"] {
+	left:-25px;
+	right: auto;
+}
+
+.menu-item-widget-area-container li.widget.widget_text ul li {
+	padding:10px 10px 10px 0;
+}
+
+#main-menu ul.menu li .menu-item-widget-area-container ul.menu {
+	text-align:right;
+}
+
+#main-menu ul.menu li .menu-item-widget-area-container ul.menu li {
+	padding:10px 35px 10px 0px;
+}
+
+#main-menu ul.menu li .megamenu-child-container .menu-item-widget-area-container ul.sub-menu > li > ul li {
+	padding:10px 35px 10px 0;
+}
+
+.menu-item-widget-area-container .type2 .dt-sc-testimonial .author {
+	right:0px;
+	left:inherit;
+}
+
+.menu-item-widget-area-container .type2 .dt-sc-testimonial .author span {
+	float:right;
+}
+
+.menu-item-widget-area-container .dt-sc-testimonial cite {
+	float:right;
+	padding-right:80px;
+	padding-left: 0;
+}
+
+.menu-item-widget-area-container .dt-sc-testimonial blockquote q {
+	text-align:right;
+}
+
+.menu-item-widget-area-container .dt-sc-contact-info i {
+	text-align:right;
+}
+
+.menu-item-widget-area-container .dt-sc-contact-info span, .menu-item-widget-area-container .dt-sc-contact-info p, .menu-item-widget-area-container .dt-sc-contact-info a {
+	margin-left:0px;
+	margin-right: auto;
+}
+
+.menu-item-widget-area-container .contact-address {
+	float:right;
+}
+
+/****** Mobile Menu *****/
+
+.dt-menu-toggle-icon {
+	float:left;
+	text-align:right;
+}
+
+.dt-menu-toggle-icon:before, .dt-menu-toggle-icon:after {
+	right:0px;
+	left: auto;
+}
+
+.dt-menu-expand {
+	left:0px;
+	right: auto;
+}
+
+/* New Mega Menu Widget area styles */
+
+/*----*****---- << Main >> ----*****----*/
+	
+	#main {
+	float:right;
+}
+
+#primary {
+	float:right;
+}
+
+#primary.with-right-sidebar {
+	float:left;
+	margin-right:20px;
+	margin-left: auto;
+}
+
+#primary.with-left-sidebar {
+	float:right;
+	margin-left:20px;
+	margin-right: auto;
+}
+
+#primary.page-with-both-sidebar {
+	float:right;
+}
+
+#secondary, #secondary-left, #secondary-right {
+	float:right;
+}
+
+#secondary-left.secondary-has-left-sidebar {
+	float:left;
+}
+
+#secondary-right.secondary-has-right-sidebar {
+	float:right;
+}
+
+.side-navigation {
+	float:right;
+	margin:0px 0px 0px 2%;
+}
+
+.side-navigation-content {
+	float:right;
+}
+
+/*----*****---- << Slider >> ----*****----*/
+		#slider {
+	float:right;
+}
+
+/*----*****---- << Fullwidth Section >> ----*****----*/
+
+.fullwidth-section {
+	float:right;
+}
+
+/*----*****---- << Title Section >> ----*****----*/
+		.title-section {
+	float:right;
+}
+
+/*----*****---- << Portfolio >> ----*****----*/
+
+.dt-sc-gallery-container {
+	float:right;
+}
+
+.dt-sc-gallery-container .dt-gallery {
+	margin-right:0px;
+	margin-left: auto;
+}
+
+.dt-sc-sorting-container {
+	float:right;
+}
+
+.dt-sc-sorting-container a.active-sort, .dt-sc-sorting-container a:hover {
+	background:#cdccbb url(images/btn-bg.png) right top repeat-x;
+}
+
+.dt-sc-sorting-container a.active-sort:before, .dt-sc-sorting-container a:hover:before {
+	right:0px;
+	background:url(images/textured-pattern-light.png) left center repeat;
+	left: auto;
+}
+
+.dt-gallery .image-overlay {
+	right:0;
+	left:0;
+}
+
+.dt-gallery .image-overlay .links .views span {
+	margin:0px 0px 0px 1px;
+}
+
+.dt-gallery .close-overlay {
+	left:0;
+	right: auto;
+}
+
+.dt-gallery-details {
+	float:right;
+	background:url(images/textured-border.png) right bottom repeat-x;
+}
+
+.isotope .isotope-item {
+	-o-transition-property:         top, right, opacity;
+}
+
+/* Portfolio Single */
+		.dt-gallery-single {
+	float:right;
+}
+
+.dt-gallery-single:before {
+	right:0px;
+	left: auto;
+}
+
+/*.dt-gallery-single-slider-wrapper, .dt-gallery-single-slider {
+	float:right;
+}
+
+.dt-gallery-single-slider-wrapper #bx-pager {
+	float:right;
+}
+
+.dt-gallery-single-slider-wrapper #bx-pager a.active:before {
+	right:-1px;
+	left: auto;
+}*/
+
+.post-nav-container {
+	float:right;
+}
+
+.post-nav-container .post-prev-link a i {
+	margin-left:5px;
+	margin-right: auto;
+}
+
+.post-nav-container .post-next-link a i {
+	margin-right:5px;
+	margin-left: auto;
+}
+
+.post-nav-container .post-prev-link a, .post-nav-container .post-next-link a {
+	/*float:left;
+	background:#cdccbb url(images/btn-bg.png) right top repeat-x;
+	margin:0px 0px 0px 20px;*/
+}
+
+.post-nav-container .post-prev-link a:before, .post-nav-container .post-next-link a:before {
+	/*right:0px;
+	background:url(images/textured-pattern-light.png) left center repeat;
+	left: auto;*/
+}
+
+.post-nav-container .post-prev-link {
+	float:right;
+}
+
+.post-nav-container .post-next-link {
+	float:left;
+}
+
+.post-nav-container .post-next-link a {
+	margin-left:0px;
+	margin-right: auto;
+}
+
+/* Portfolio Carousel */
+
+.dt-gallery-carousel-wrapper, .dt-sc-gallery-carousel {
+	float:right;
+}
+
+.dt-sc-gallery-carousel li {
+	float:right;
+}
+
+/*----*****---- << Blog >> ----*****----*/
+		
+		.blog-entry {
+	float:right;
+}
+
+.blog-entry-inner {
+	padding:0px 140px 0px 0px;
+}
+
+.blog-thumb .entry-thumb {
+	float:right;
+	margin:0px 0px 0px 2%;
+}
+
+.blog-thumb .entry-details {
+	float:right;
+}
+
+.entry-meta {
+	right:0;
+	left: auto;
+}
+
+.entry-meta .entry_format {
+	border-right:4px solid;
+	border-left: none;
+}
+
+.entry-meta .date {
+	background:#d2c4b9 url(images/textured-pattern-light.png) right center repeat;
+}
+
+.entry-meta .date:before {
+	right:0px;
+	left:0px;
+}
+
+.entry-meta .date span {
+	right:0px;
+	left:0px;
+}
+
+.entry-meta .comments {
+	float:right;
+}
+
+.entry-meta .comments a span {
+	margin-left:5px;
+	margin-right: auto;
+}
+
+.entry-details .dt-sc-button {
+	float:left;
+}
+
+.entry-details .entry-metadata {
+	float:right;
+}
+
+.author-info {
+	float:right;
+}
+
+.author-info .thumb {
+	margin:0px 0px 0px 20px;
+	float:right;
+}
+
+.author-info .thumb:before {
+	right:0px;
+	left:0px;
+}
+
+.entry-metadata p {
+	float:right;
+	margin:0px 0px 0px 15px;
+}
+
+.sticky .featured-post, .featured-post {
+	padding:0px 50px 0px 0px;
+}
+
+.featured-post span {
+	right:0px;
+	left: auto;
+}
+
+.entry-thumb .bx-controls a.bx-prev {
+	right:0px;
+	left: auto;
+}
+
+.entry-thumb .bx-controls a.bx-next {
+	left:0px;
+	right: auto;
+}
+
+.tpl-blog-holder .column {
+	margin-right:0px;
+	margin-left:0px;
+}
+
+/*----*****---- << Blog Comment Entries >> ----*****----*/	
+		
+		.commententries {
+	float:right;
+}
+
+ul.commentlist {
+	float:right;
+}
+
+ul.commentlist li {
+	padding:0px 140px 0px 0px;
+}
+
+ul.commentlist li ul.children {
+	float:right;
+}
+
+ul.commentlist li .respond {
+	margin-right:69px;
+	margin-left: auto;
+}
+
+ul.commentlist li .comment-details:before {
+	right:0px;
+	left: auto;
+}
+
+ul.commentlist li .comment-author {
+	right:0px;
+	left: auto;
+}
+
+ul.commentlist li .comment-author:before {
+	right:0px;
+	left:0px;
+}
+
+ul.commentlist li .comment-author img {
+	float:right;
+}
+
+ul.commentlist li .author-name .reply {
+	float:left;
+}
+
+.social-share-icons {
+	float:right;
+}
+
+.social-share-icons li {
+	margin:0px 0px 0px 10px;
+}
+
+.comment-body ul li, .comment-body ol li {
+	padding-right:0px;
+	padding-left: 0;
+}
+
+/*----*****---- << Pagination >> ----*****----*/
+		.pagination {
+	float:right;
+}
+
+.pagination .prev-post a, .pagination .next-post a {
+	/*background:#cdccbb url(images/btn-bg.png) right top repeat-x;*/
+	margin:0px 0px 0px 15px;
+}
+
+.pagination .prev-post:before a, .pagination .next-post:before a {
+	right:0px;
+	/*background:url(images/textured-pattern-light.png) left center repeat;*/
+	left: auto;
+}
+
+.pagination .next-post a {
+	margin:0px 15px 0px 0px;
+}
+
+.blog-pagination {
+	text-align:left;
+}
+
+.product-pagination {
+	text-align:left;
+}
+
+/*----*****---- << Reservation >> ----*****----*/
+
+ul.time-table > li:after {
+	right:0px;
+	left: auto;
+}
+
+ul.time-table > li:before {
+	right:0px;
+	left: auto;
+}
+
+ul.time-table {
+	float: right;
+}
+
+ul.time-table > li {
+	float:right;
+	margin-left:2%;
+	margin-right: auto;
+}
+
+ul.time-table > li:nth-child(5n) {
+	margin-left:0px;
+	margin-right: auto;
+}
+
+ul.time-table > li ul.time-slots > li {
+	float: right;
+}
+
+.page-with-sidebar ul.time-table > li:nth-child(5n) {
+	margin-left:2%;
+	margin-right: auto;
+}
+
+.page-with-sidebar ul.time-table > li:nth-child(4n) {
+	margin-left:0px;
+	margin-right: auto;
+}
+
+/*ul.time-table > li:nth-child(5n+1) {
+	border-right: 1px solid #e3e3e3;
+	border-left: none;
+}
+
+/*.page-with-sidebar ul.time-table > li */
+
+.page-with-sidebar ul.time-table > li:nth-child(5n+1) {
+	border-right: inherit;
+	border-left: none;
+}
+
+.page-with-sidebar ul.time-table > li:nth-child(4n+1) {
+	border-right: 1px solid #e3e3e3;
+	border-left: none;
+}
+
+*/
+	
+	.personal-info {
+	float: right;
+}
+
+/*.schedule-it {
+	float: left;
+}
+
+/*----*****---- << 404 >> ----*****----*/
+	.error-info {
+	float:right;
+}
+
+/*----*****---- << Goto Top >> ----*****----*/
+	
+	#toTop {
+	left:30px;
+	background:url(images/ui.totop.png) no-repeat right top;
+	right: auto;
+}
+
+#toTopHover {
+	background:url(images/ui.totop.png) no-repeat right -40px;
+	float:right;
+}
+
+/*----*****---- << Footer >> ----*****----*/
+		
+		#footer {
+	float:right;
+}
+
+.footer-logo {
+	right:0px;
+	left:0px;
+}
+
+.footer-logo img {
+	right:0px;
+	left:0px;
+}
+
+.footer-widgets-wrapper {
+	float:right;
+}
+
+#footer .widget.widget_text ul li, #footer .widget.widget_nav_menu ul li {
+	float:right;
+}
+
+#footer .widget.widget_nav_menu ul li ul li {
+	padding-right:20px;
+	padding-left: 0;
+}
+
+#footer .widget .dt-sc-social-icons {
+	float:right;
+}
+
+#footer .widget.widget_text ul.dt-sc-social-icons li {
+	float:right;
+	text-align:right;
+}
+
+#footer .widget .dt-sc-social-icons li a {
+	text-align:right;
+}
+
+#footer .widget .dt-sc-social-icons li img {
+	float:right;
+}
+
+#footer .widget .dt-sc-social-icons li i {
+	margin-left:10px;
+	margin-right: auto;
+}
+
+#footer .copyleft {
+	float:right;
+}
+
+/*----*****---- << Contact Form 7 >> ----*****----*/
+
+.wpcf7-form span.wpcf7-not-valid-tip {
+	left:10px;
+	right: auto;
+}
+
+.wpcf7-form div.wpcf7-validation-errors, .wpcf7-form div.wpcf7-mail-sent-ok {
+	padding:15px 35px 15px 15px;
+	float:right;
+}
+
+.wpcf7-form div.wpcf7-validation-errors:before, .wpcf7-form div.wpcf7-mail-sent-ok:before {
+	right:10px;
+	left: auto;
+}
+
+.wpcf7-form span.wpcf7-list-item {
+	margin-left:25px;
+	margin-right: auto;
+}
+
+.wpcf7-form input[type="radio"] {
+	margin-left:5px;
+	margin-right: auto;
+}
+
+/*----*****---- << DreamSpa Style Picker >> ----*****----*/
+.dt-style-picker-wrapper {
+	right:0px;
+	left: auto;
+}
+
+#dt-style-picker {
+	float:right;
+}
+
+#dt-style-picker ul {
+	float:right;
+}
+
+#dt-style-picker .hr {
+	float:right;
+}
+
+/*.style-picker-ico {
+	right:225px;
+	left: auto;
+}
+
+*/
+
+.style-picker-ico {
+	right:225px;
+	left: auto;
+}
+
+.style-picker-ico img {
+	right:0px;
+	left:0px;
+}
+
+
+/* Safari and Chrome */
+
+/*----*****---- << Retina Images >> ----*****----*/
+
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), 
+only screen and (-o-min-device-pixel-ratio: 3/2), 
+only screen and (-webkit-min-device-pixel-ratio: 1.5), 
+only screen and (min-devicepixel-ratio: 1.5), 
+only screen and (min-resolution: 1.5dppx) {
+
+}
+
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), 
+only screen and (-o-min-device-pixel-ratio: 3/2), 
+only screen and (-webkit-min-device-pixel-ratio: 1.5), 
+only screen and (min-devicepixel-ratio: 1.5), 
+only screen and (min-resolution: 1.5dppx) and (max-width: 767px) {
+
+}
+
+
+/* Generated by the RTLer - http://wordpress.org/extend/plugins/rtler/ */
+
+
+
+.carousel-arrows a.testimonial-prev { margin-right:206px; }
+
+ul.dt-sc-fancy-list.type2 li i { margin-left:10px; margin-right:0px; }
+
+.entry-details .entry-metadata p i { margin-right:5px; margin-left:0px; }
+
+.dt-sc-testimonial-carousel-wrapper.type1 .carousel-arrows a.testimonial-prev { margin-right:5px; }
+.dt-sc-testimonial-carousel-wrapper.type1 .carousel-arrows, .dt-sc-images-carousel-wrapper .carousel-arrows { left:-15px; right:inherit; }
+.dt-sc-testimonial-carousel-wrapper.type1 .carousel-arrows a.testimonial-next, .dt-sc-images-carousel-wrapper .carousel-arrows .images-carousel-next { left:50px; position:relative; }
+
+.dt-sc-ico-content.type2 { text-align:right; }
+.dt-sc-ico-content.type2 { padding:0px 110px 0px 0px; }
+.dt-sc-ico-content.type2 .icon { right:0px; left:inherit; }
+
+.dt-sc-tabs-frame-content { text-align:right; }
+
+#header .header-right-content { float:left; }
+
+.dt-sc-error-box:before, .dt-sc-warning-box:before, .dt-sc-success-box:before, .dt-sc-info-box:before { left:inherit; right:18px; }
+.dt-sc-error-box, .dt-sc-warning-box, .dt-sc-success-box, .dt-sc-info-box { padding-left:15px; padding-right:45px; }
+
+ul.dt-sc-fancy-list li:before { right:0px; left:inherit; }
+ul.dt-sc-fancy-list li { padding-left:0px; padding-right:20px; } 
+
+ul.dt-sc-tabs-frame > li { float:right; }
+ul.dt-sc-tabs-vertical-frame { float:right; }
+ul.dt-sc-tabs-vertical-frame > li, ul.dt-sc-tabs-vertical-frame > li > a { text-align:right; }
+ul.dt-sc-tabs-vertical-frame > li > a { padding-right:15px; padding-left:0px; }
+
+ul.dt-sc-tabs-vertical-frame > li > a.current { border-left:0px; border-right:3px solid; }
+
+.dt-sc-titled-box h6.dt-sc-titled-box-title span { margin-left:5px; margin-right:0px; }
+
+
+.woocommerce ul.cart_list li img, .woocommerce-page ul.cart_list li img, .woocommerce ul.product_list_widget li img, .woocommerce-page ul.product_list_widget li img { margin-right:0px; margin-left:15px; }
+
+.woocommerce .quantity .plus, .woocommerce .quantity .minus, .woocommerce-page .quantity .plus, .woocommerce-page .quantity .minus { border-radius:0px 40px 40px 0px; }
+.woocommerce .quantity .plus, .woocommerce-page .quantity .plus { border-radius:40px 0px 0px 40px; }
+.payment_method_paypal .about_paypal { margin-left:0px; margin-right:10px; display:inline-block; }
+.woocommerce #payment ul.payment_methods li img, .woocommerce-page #payment ul.payment_methods li img { margin-right:10px; }
+
+.widget.widget_product_categories ul li span, .widget.woocommerce.widget_layered_nav ul li small { left:10px; right:inherit; }
+.widget.widget_product_categories ul li, .widget.woocommerce.widget_layered_nav ul li { padding-left:0px; padding-right:35px; }
+
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="tel"], input[type="number"], input[type="range"], input[type="date"], textarea, input.text, input[type="search"] { text-align:right; }

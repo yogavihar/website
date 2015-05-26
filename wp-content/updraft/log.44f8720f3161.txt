@@ -1,0 +1,200 @@
+0000.015 (0) Opened log file at time: Sun, 10 May 2015 13:54:33 +0000 on http://test.yogavihar.de
+0000.018 (0) UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.9.64 WP: 4.2.1 PHP: 5.3.29 (SunOS localhost 5.10 Generic_142901-13 i86pc) MySQL: 5.5.43-log Server: Apache/2.2.29 (Unix) safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 26.9M | 27.5M) multisite: N mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.029 (0) Free space on disk containing Updraft's temporary directory: Unknown
+0000.066 (0) Tasks: Backup files: 1 (schedule: weekly) Backup DB:  (schedule: weekly)
+0000.067 (0) Processed schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.128 (0) Requesting semaphore lock (fd)
+0000.133 (0) Set semaphore last lock (fd) time to 2015-05-10 13:54:33
+0000.134 (0) Semaphore lock (fd) complete
+0000.156 (0) Backup run: resumption=0, nonce=44f8720f3161, begun at=1431266073 (0s ago), job type=backup
+0000.158 (0) Scheduling a resumption (1) after 300 seconds (1431266373) in case this run gets aborted
+0000.186 (0) Checking if we have a zip executable available
+0000.188 (0) Testing: /usr/bin/zip
+0000.200 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.219 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.221 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.222 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=127) (out=105) (deflated 17%)
+0000.223 (0) Output: total bytes=127, compressed=105 -> 17% savings
+0000.246 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=134) (out=109) (deflated 19%)
+0000.249 (0) Output: total bytes=261, compressed=214 -> 18% savings
+0000.388 (0) Working binary zip found: /usr/bin/zip
+0000.392 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.393 (0) Creation of backups of directories: beginning
+0000.417 (0) Beginning creation of dump of plugins (split every: 500 Mb)
+0002.356 (0) Total entities for the zip file: 188 directories, 1336 files (0 skipped as non-modified), 19 Mb
+0002.399 (0) Zip: backup_2015-05-10-1354_Yogavihar_44f8720f3161-plugins.zip.tmp: 100 files added (on-disk size: 0 Kb)
+0002.497 (0) Zip: backup_2015-05-10-1354_Yogavihar_44f8720f3161-plugins.zip.tmp: 200 files added (on-disk size: 0 Kb)
+0002.548 (0) Zip: backup_2015-05-10-1354_Yogavihar_44f8720f3161-plugins.zip.tmp: 300 files added (on-disk size: 0 Kb)
+0002.594 (0) Zip: backup_2015-05-10-1354_Yogavihar_44f8720f3161-plugins.zip.tmp: 400 files added (on-disk size: 0 Kb)
+0002.644 (0) Zip: backup_2015-05-10-1354_Yogavihar_44f8720f3161-plugins.zip.tmp: 500 files added (on-disk size: 0 Kb)
+0002.646 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (14.6 Mb, 1336 files batched, 501 (501) added so far); re-opening (prior size: 0 Kb)
+0006.793 (0) backup_2015-05-10-1354_Yogavihar_44f8720f3161-plugins.zip.tmp: size is now: 4.50 Mb
+0006.861 (0) Zip: backup_2015-05-10-1354_Yogavihar_44f8720f3161-plugins.zip.tmp: 600 files added (on-disk size: 4610.4 Kb)
+0006.922 (0) Zip: backup_2015-05-10-1354_Yogavihar_44f8720f3161-plugins.zip.tmp: 700 files added (on-disk size: 4610.4 Kb)
+0006.988 (0) Zip: backup_2015-05-10-1354_Yogavihar_44f8720f3161-plugins.zip.tmp: 800 files added (on-disk size: 4610.4 Kb)
+0007.062 (0) Zip: backup_2015-05-10-1354_Yogavihar_44f8720f3161-plugins.zip.tmp: 900 files added (on-disk size: 4610.4 Kb)
+0007.134 (0) Zip: backup_2015-05-10-1354_Yogavihar_44f8720f3161-plugins.zip.tmp: 1000 files added (on-disk size: 4610.4 Kb)
+0007.137 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (1.8 Mb, 1336 files batched, 501 (1002) added so far); re-opening (prior size: 4610.4 Kb)
+0009.167 (0) Zip: backup_2015-05-10-1354_Yogavihar_44f8720f3161-plugins.zip.tmp: 1100 files added (on-disk size: 5414.9 Kb)
+0009.231 (0) Zip: backup_2015-05-10-1354_Yogavihar_44f8720f3161-plugins.zip.tmp: 1200 files added (on-disk size: 5414.9 Kb)
+0009.287 (0) Zip: backup_2015-05-10-1354_Yogavihar_44f8720f3161-plugins.zip.tmp: 1300 files added (on-disk size: 5414.9 Kb)
+0010.965 (0) Created plugins zip (0) - 6377.3 Kb in 10.5 s (604.9 Kb/s) (SHA1 checksum: 756a0af3522284b71fa7d4060d564f753e93a396)
+0010.970 (0) Beginning creation of dump of themes (split every: 500 Mb)
+0011.291 (0) Total entities for the zip file: 35 directories, 251 files (0 skipped as non-modified), 2.9 Mb
+0011.334 (0) Zip: backup_2015-05-10-1354_Yogavihar_44f8720f3161-themes.zip.tmp: 100 files added (on-disk size: 0 Kb)
+0011.380 (0) Zip: backup_2015-05-10-1354_Yogavihar_44f8720f3161-themes.zip.tmp: 200 files added (on-disk size: 0 Kb)
+0013.074 (0) backup_2015-05-10-1354_Yogavihar_44f8720f3161-themes.zip.tmp: size is now: 2.10 Mb
+0013.098 (0) Created themes zip (0) - 2106.2 Kb in 2.1 s (991.6 Kb/s) (SHA1 checksum: 727cad6e3c7398416dcc390992e0d66fa9ad9c83)
+0013.103 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone
+0013.104 (0) Looking for candidates to back up in: /mnt/webl/e2/69/51782469/htdocs/WordPress_02/wp-content/uploads
+0013.108 (0) finding files: 2015: adding to list (1)
+0013.109 (0) Beginning creation of dump of uploads (split every: 500 Mb)
+0013.136 (0) Total entities for the zip file: 3 directories, 0 files (0 skipped as non-modified), 0 Mb
+0013.198 (0) backup_2015-05-10-1354_Yogavihar_44f8720f3161-uploads.zip.tmp: size is now: 0.00 Mb
+0013.206 (0) Created uploads zip (0) - 0.5 Kb in 0.1 s (5.4 Kb/s) (SHA1 checksum: 6827520c3db75ac5b1cd6e6a8743d127a6adea58)
+0013.212 (0) Beginning backup of other directories found in the content directory (index: 0)
+0013.213 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups
+0013.216 (0) Looking for candidates to back up in: /mnt/webl/e2/69/51782469/htdocs/WordPress_02/wp-content
+0013.229 (0) finding files: themes: skipping: this is the themes directory
+0013.231 (0) finding files: index.php: adding to list (1)
+0013.232 (0) finding files: languages: adding to list (2)
+0013.234 (0) finding files: plugins: skipping: this is the plugins directory
+0013.235 (0) finding files: upgrade: skipping: excluded by options
+0013.236 (0) finding files: updraft: skipping: this is the updraft directory
+0013.239 (0) finding files: uploads: skipping: this is the uploads directory
+0013.430 (0) Total entities for the zip file: 3 directories, 391 files (0 skipped as non-modified), 34.5 Mb
+0013.486 (0) Zip: backup_2015-05-10-1354_Yogavihar_44f8720f3161-others.zip.tmp: 100 files added (on-disk size: 0 Kb)
+0013.560 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 25 Mb added on this batch (25.1 Mb, 391 files batched, 155 (155) added so far); re-opening (prior size: 0 Kb)
+0016.862 (0) backup_2015-05-10-1354_Yogavihar_44f8720f3161-others.zip.tmp: size is now: 7.10 Mb
+0016.866 (0) A useful amount of data was added after this amount of zip processing: 4.5 s (normalised: 4.5 s, rate: 5700.1 Kb/s)
+0016.869 (0) Performance is good - will increase the amount of data we attempt to batch (time=4.5125451087952, normalised_time=4.491173213861, max_time=-1, data points known=0, old_max_bytes=26214400, new_max_bytes=35021227)
+0016.892 (0) Zip: backup_2015-05-10-1354_Yogavihar_44f8720f3161-others.zip.tmp: 200 files added (on-disk size: 7260 Kb)
+0017.020 (0) Zip: backup_2015-05-10-1354_Yogavihar_44f8720f3161-others.zip.tmp: 300 files added (on-disk size: 7260 Kb)
+0018.662 (0) backup_2015-05-10-1354_Yogavihar_44f8720f3161-others.zip.tmp: size is now: 9.90 Mb
+0018.748 (0) Created others zip (0) - 10115.3 Kb in 5.5 s (1838.1 Kb/s) (SHA1 checksum: b35d035f263df4c11a55d8d754cd0d0df9cc7f96)
+0018.757 (0) Saving backup status to database (elements: 8)
+0018.761 (0) Beginning creation of database dump (WordPress DB)
+0018.767 (0) Testing: /usr/bin/mysqldump
+0018.847 (0) Binary mysqldump: error (code: 2)
+0018.849 (0) Testing: /bin/mysqldump
+0018.859 (0) Binary mysqldump: error (code: 2)
+0018.926 (0) Table yv_options: Total expected rows (approximate): 202
+0018.955 (0) Table yv_options: Total rows added: 192 in 0.03 seconds
+0018.958 (0) Table yv_options: finishing file (backup_2015-05-10-1354_Yogavihar_44f8720f3161-db-table-yv_options.table.gz - 34.5 Kb)
+0018.966 (0) Table yv_users: Total expected rows (approximate): 1
+0018.970 (0) Table yv_users: Total rows added: 1 in 0.00 seconds
+0018.972 (0) Table yv_users: finishing file (backup_2015-05-10-1354_Yogavihar_44f8720f3161-db-table-yv_users.table.gz - 0.5 Kb)
+0018.980 (0) Table yv_usermeta: Total expected rows (approximate): 15
+0018.984 (0) Table yv_usermeta: Total rows added: 15 in 0.00 seconds
+0018.986 (0) Table yv_usermeta: finishing file (backup_2015-05-10-1354_Yogavihar_44f8720f3161-db-table-yv_usermeta.table.gz - 0.9 Kb)
+0018.993 (0) Table yv_commentmeta: Total expected rows (approximate): 0
+0018.997 (0) Table yv_commentmeta: Total rows added: 0 in 0.00 seconds
+0019.007 (0) Table yv_commentmeta: finishing file (backup_2015-05-10-1354_Yogavihar_44f8720f3161-db-table-yv_commentmeta.table.gz - 0.3 Kb)
+0019.023 (0) Table yv_comments: Total expected rows (approximate): 1
+0019.027 (0) Table yv_comments: Total rows added: 1 in 0.00 seconds
+0019.029 (0) Table yv_comments: finishing file (backup_2015-05-10-1354_Yogavihar_44f8720f3161-db-table-yv_comments.table.gz - 0.6 Kb)
+0019.036 (0) Table yv_links: Total expected rows (approximate): 0
+0019.040 (0) Table yv_links: Total rows added: 0 in 0.00 seconds
+0019.043 (0) Table yv_links: finishing file (backup_2015-05-10-1354_Yogavihar_44f8720f3161-db-table-yv_links.table.gz - 0.4 Kb)
+0019.057 (0) Table yv_postmeta: Total expected rows (approximate): 1
+0019.061 (0) Table yv_postmeta: Total rows added: 1 in 0.00 seconds
+0019.063 (0) Table yv_postmeta: finishing file (backup_2015-05-10-1354_Yogavihar_44f8720f3161-db-table-yv_postmeta.table.gz - 0.4 Kb)
+0019.076 (0) Table yv_posts: Total expected rows (approximate): 3
+0019.082 (0) Table yv_posts: Total rows added: 3 in 0.00 seconds
+0019.085 (0) Table yv_posts: finishing file (backup_2015-05-10-1354_Yogavihar_44f8720f3161-db-table-yv_posts.table.gz - 1.4 Kb)
+0019.093 (0) Table yv_term_relationships: Total expected rows (approximate): 3
+0019.097 (0) Table yv_term_relationships: Total rows added: 3 in 0.00 seconds
+0019.099 (0) Table yv_term_relationships: finishing file (backup_2015-05-10-1354_Yogavihar_44f8720f3161-db-table-yv_term_relationships.table.gz - 0.3 Kb)
+0019.106 (0) Table yv_term_taxonomy: Total expected rows (approximate): 4
+0019.110 (0) Table yv_term_taxonomy: Total rows added: 4 in 0.00 seconds
+0019.112 (0) Table yv_term_taxonomy: finishing file (backup_2015-05-10-1354_Yogavihar_44f8720f3161-db-table-yv_term_taxonomy.table.gz - 0.5 Kb)
+0019.120 (0) Table yv_terms: Total expected rows (approximate): 4
+0019.124 (0) Table yv_terms: Total rows added: 4 in 0.00 seconds
+0019.126 (0) Table yv_terms: finishing file (backup_2015-05-10-1354_Yogavihar_44f8720f3161-db-table-yv_terms.table.gz - 0.4 Kb)
+0019.135 (0) backup_2015-05-10-1354_Yogavihar_44f8720f3161-db-table-yv_options.table.gz (1/11): adding to final database dump
+0019.161 (0) backup_2015-05-10-1354_Yogavihar_44f8720f3161-db-table-yv_users.table.gz (2/11): adding to final database dump
+0019.163 (0) backup_2015-05-10-1354_Yogavihar_44f8720f3161-db-table-yv_usermeta.table.gz (3/11): adding to final database dump
+0019.165 (0) backup_2015-05-10-1354_Yogavihar_44f8720f3161-db-table-yv_commentmeta.table.gz (4/11): adding to final database dump
+0019.167 (0) backup_2015-05-10-1354_Yogavihar_44f8720f3161-db-table-yv_comments.table.gz (5/11): adding to final database dump
+0019.169 (0) backup_2015-05-10-1354_Yogavihar_44f8720f3161-db-table-yv_links.table.gz (6/11): adding to final database dump
+0019.171 (0) backup_2015-05-10-1354_Yogavihar_44f8720f3161-db-table-yv_postmeta.table.gz (7/11): adding to final database dump
+0019.176 (0) backup_2015-05-10-1354_Yogavihar_44f8720f3161-db-table-yv_posts.table.gz (8/11): adding to final database dump
+0019.179 (0) backup_2015-05-10-1354_Yogavihar_44f8720f3161-db-table-yv_term_relationships.table.gz (9/11): adding to final database dump
+0019.181 (0) backup_2015-05-10-1354_Yogavihar_44f8720f3161-db-table-yv_term_taxonomy.table.gz (10/11): adding to final database dump
+0019.183 (0) backup_2015-05-10-1354_Yogavihar_44f8720f3161-db-table-yv_terms.table.gz (11/11): adding to final database dump
+0019.186 (0) backup_2015-05-10-1354_Yogavihar_44f8720f3161-db.gz: finished writing out complete database file (24 Kb)
+0019.361 (0) Total database tables backed up: 11 (backup_2015-05-10-1354_Yogavihar_44f8720f3161-db.gz, size: 38826, checksum (SHA1): 140ae4b2f910920b9c920a7fd12be1b64ba63f98)
+0019.365 (0) Saving backup history
+0019.371 (0) backup_2015-05-10-1354_Yogavihar_44f8720f3161-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0019.373 (0) backup_2015-05-10-1354_Yogavihar_44f8720f3161-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0019.374 (0) backup_2015-05-10-1354_Yogavihar_44f8720f3161-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0019.375 (0) backup_2015-05-10-1354_Yogavihar_44f8720f3161-others.zip: others: This file has not yet been successfully uploaded: will queue
+0019.376 (0) backup_2015-05-10-1354_Yogavihar_44f8720f3161-db.gz: db: This file has not yet been successfully uploaded: will queue
+0019.379 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0019.384 (0) Cloud backup selection (1/1): dropbox (last)
+0019.385 (0) Beginning dispatch of backup to remote (dropbox)
+0019.387 (0) Dropbox: begin cloud upload
+0019.396 (0) Dropbox: access gained
+0020.456 (0) Dropbox quota usage: normal=17.7 Mb, shared=366.2 Mb, total=2048 Mb, available=1664.1 Mb
+0020.457 (0) Dropbox: Attempt to upload: backup_2015-05-10-1354_Yogavihar_44f8720f3161-plugins.zip to: backup_2015-05-10-1354_Yogavihar_44f8720f3161-plugins.zip
+0022.936 (0) Dropbox chunked upload: 16.1 % uploaded (X8JTbKtxbiAFVS-1U6HONw, 1048576)
+0025.656 (0) Dropbox chunked upload: 32.1 % uploaded (X8JTbKtxbiAFVS-1U6HONw, 2097152)
+0031.160 (0) Dropbox chunked upload: 48.2 % uploaded (X8JTbKtxbiAFVS-1U6HONw, 3145728)
+0036.277 (0) Dropbox chunked upload: 64.2 % uploaded (X8JTbKtxbiAFVS-1U6HONw, 4194304)
+0038.873 (0) Dropbox chunked upload: 80.3 % uploaded (X8JTbKtxbiAFVS-1U6HONw, 5242880)
+0041.832 (0) Dropbox chunked upload: 96.3 % uploaded (X8JTbKtxbiAFVS-1U6HONw, 6291456)
+0044.215 (0) Dropbox chunked upload: 100 % uploaded (X8JTbKtxbiAFVS-1U6HONw, 6530401)
+0047.773 (0) Recording as successfully uploaded: backup_2015-05-10-1354_Yogavihar_44f8720f3161-plugins.zip (bb29c9d7b84731780cb2c00b1065ec5f)
+0047.799 (0) Deleting local file: backup_2015-05-10-1354_Yogavihar_44f8720f3161-plugins.zip: OK
+0047.806 (0) Dropbox: File upload success (backup_2015-05-10-1354_Yogavihar_44f8720f3161-plugins.zip): 6377 Kb in 27s (233 Kb/s)
+0048.754 (0) Dropbox quota usage: normal=23.9 Mb, shared=366.2 Mb, total=2048 Mb, available=1657.9 Mb
+0048.755 (0) Dropbox: Attempt to upload: backup_2015-05-10-1354_Yogavihar_44f8720f3161-themes.zip to: backup_2015-05-10-1354_Yogavihar_44f8720f3161-themes.zip
+0051.167 (0) Dropbox chunked upload: 48.6 % uploaded (AS8sq4PBDXpIyZ2kmKAhuQ, 1048576)
+0054.051 (0) Dropbox chunked upload: 97.2 % uploaded (AS8sq4PBDXpIyZ2kmKAhuQ, 2097152)
+0056.269 (0) Dropbox chunked upload: 100 % uploaded (AS8sq4PBDXpIyZ2kmKAhuQ, 2156760)
+0058.056 (0) Recording as successfully uploaded: backup_2015-05-10-1354_Yogavihar_44f8720f3161-themes.zip (e3606c938f3f956b154c3d3650def701)
+0058.078 (0) Deleting local file: backup_2015-05-10-1354_Yogavihar_44f8720f3161-themes.zip: OK
+0058.079 (0) Dropbox: File upload success (backup_2015-05-10-1354_Yogavihar_44f8720f3161-themes.zip): 2106 Kb in 9s (225 Kb/s)
+0058.985 (0) Dropbox quota usage: normal=26 Mb, shared=366.2 Mb, total=2048 Mb, available=1655.8 Mb
+0058.998 (0) Dropbox: Attempt to upload: backup_2015-05-10-1354_Yogavihar_44f8720f3161-uploads.zip to: backup_2015-05-10-1354_Yogavihar_44f8720f3161-uploads.zip
+0060.016 (0) Dropbox chunked upload: 100 % uploaded (SGbwNV5c9cQxPm8iUkUFTg, 496)
+0061.571 (0) Recording as successfully uploaded: backup_2015-05-10-1354_Yogavihar_44f8720f3161-uploads.zip (2286da1a41e97a1e00f7c395eae43ee5)
+0061.594 (0) Deleting local file: backup_2015-05-10-1354_Yogavihar_44f8720f3161-uploads.zip: OK
+0061.596 (0) Dropbox: File upload success (backup_2015-05-10-1354_Yogavihar_44f8720f3161-uploads.zip): 0 Kb in 2s (0 Kb/s)
+0062.513 (0) Dropbox quota usage: normal=26 Mb, shared=366.2 Mb, total=2048 Mb, available=1655.8 Mb
+0062.515 (0) Dropbox: Attempt to upload: backup_2015-05-10-1354_Yogavihar_44f8720f3161-others.zip to: backup_2015-05-10-1354_Yogavihar_44f8720f3161-others.zip
+0065.366 (0) Dropbox chunked upload: 10.1 % uploaded (8JJut5F4p7_3wJQIF8wj2Q, 1048576)
+0068.327 (0) Dropbox chunked upload: 20.2 % uploaded (8JJut5F4p7_3wJQIF8wj2Q, 2097152)
+0071.306 (0) Dropbox chunked upload: 30.4 % uploaded (8JJut5F4p7_3wJQIF8wj2Q, 3145728)
+0074.659 (0) Dropbox chunked upload: 40.5 % uploaded (8JJut5F4p7_3wJQIF8wj2Q, 4194304)
+0077.419 (0) Dropbox chunked upload: 50.6 % uploaded (8JJut5F4p7_3wJQIF8wj2Q, 5242880)
+0080.362 (0) Dropbox chunked upload: 60.7 % uploaded (8JJut5F4p7_3wJQIF8wj2Q, 6291456)
+0083.328 (0) Dropbox chunked upload: 70.9 % uploaded (8JJut5F4p7_3wJQIF8wj2Q, 7340032)
+0086.920 (0) Dropbox chunked upload: 81 % uploaded (8JJut5F4p7_3wJQIF8wj2Q, 8388608)
+0089.470 (0) Dropbox chunked upload: 91.1 % uploaded (8JJut5F4p7_3wJQIF8wj2Q, 9437184)
+0092.108 (0) Dropbox chunked upload: 100 % uploaded (8JJut5F4p7_3wJQIF8wj2Q, 10358044)
+0094.065 (0) Recording as successfully uploaded: backup_2015-05-10-1354_Yogavihar_44f8720f3161-others.zip (cb5e8585c86120e7bff8b377d482077b)
+0094.091 (0) Deleting local file: backup_2015-05-10-1354_Yogavihar_44f8720f3161-others.zip: OK
+0094.093 (0) Dropbox: File upload success (backup_2015-05-10-1354_Yogavihar_44f8720f3161-others.zip): 10115 Kb in 31s (320 Kb/s)
+0095.000 (0) Dropbox quota usage: normal=35.9 Mb, shared=366.2 Mb, total=2048 Mb, available=1645.9 Mb
+0095.002 (0) Dropbox: Attempt to upload: backup_2015-05-10-1354_Yogavihar_44f8720f3161-db.gz to: backup_2015-05-10-1354_Yogavihar_44f8720f3161-db.gz
+0096.980 (0) Dropbox chunked upload: 100 % uploaded (XEQM9Nql1j5QYNcgpgwlgQ, 38826)
+0098.430 (0) Recording as successfully uploaded: backup_2015-05-10-1354_Yogavihar_44f8720f3161-db.gz (e09164724e0e47b77493b13467b7ff57)
+0098.451 (0) Deleting local file: backup_2015-05-10-1354_Yogavihar_44f8720f3161-db.gz: OK
+0098.453 (0) Dropbox: File upload success (backup_2015-05-10-1354_Yogavihar_44f8720f3161-db.gz): 37 Kb in 3s (10 Kb/s)
+0098.456 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0098.459 (0) Number of backup sets in history: 2
+0098.464 (0) Examining backup set with datestamp: 1431266073 (May 10 2015 13:54:33)
+0098.465 (0) 1431266073: db: this set includes a database (backup_2015-05-10-1354_Yogavihar_44f8720f3161-db.gz); db count is now 1
+0098.468 (0) 1431266073: this backup set remains non-empty (1/1); will retain in history
+0098.470 (0) Examining backup set with datestamp: 1430321151 (Apr 29 2015 15:25:51)
+0098.471 (0) 1430321151: db: this set includes a database (backup_2015-04-29-1525_Yogavihar_3132a45271d0-db.gz); db count is now 2
+0098.475 (0) 1430321151: this backup set remains non-empty (1/1); will retain in history
+0098.476 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0098.480 (0) Resume backup (44f8720f3161, 0): finish run
+0098.483 (0) Decremented the semaphore (fd) by 1
+0098.485 (0) Semaphore (fd) unlocked
+0098.486 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0098.491 (0) The backup apparently succeeded and is now complete
+0098.493 (0) No email will/can be sent - the user has not configured an email address.
+0098.494 (0) Die Sicherung war anscheinend erfolgreich und ist nun vollständig
