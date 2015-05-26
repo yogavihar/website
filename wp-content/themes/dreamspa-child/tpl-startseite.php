@@ -14,28 +14,32 @@
                 <div class="container">
                     <div class='column dt-sc-one-third   first'>
                         <div class='dt-sc-ico-content  type2 cyan'>
+                            <a href='#'> 
                             <div class='icon'>
                                 <span>  <img style="  max-width: 55%;margin-top: 21%;color:#37251b;" src='wp-includes/images/meditation.svg' alt=''/>
                                     <!--img src='wp-includes/images/icon-meditation.png' alt=''/-->
                                 </span>
                             </div>
-                            <h2><a href='#'> Yoga Klassen </a></h2>
+                            <h2>Yoga Klassen </h2>
 
-                            <p>Nunc at pretium est curabitur commodo leact.</p></div>
+                            <p>Nunc at pretium est curabitur commodo leact.</p></a></div>
                     </div>
                     <div class='column dt-sc-one-third'>
                         <div class='dt-sc-ico-content  type2 gold'>
+                            <a href='#'> 
                             <div class='icon'><span class='fa fa-leaf'> </span></div>
-                            <h2><a href='#'> Retreats </a></h2>
+                            <h2>Retreats </h2>
 
-                            <p>Nunc at pretium est curabitur commodo leact.</p></div>
+                            <p>Nunc at pretium est curabitur commodo leact.</p>
+                        </a></div>
                     </div>
                     <div class='column dt-sc-one-third'>
                         <div class='dt-sc-ico-content  type2 electricblue'>
+                            <a href='dreamspa-test/wochenplan'>
                             <div class='icon'><span class='fa fa-calendar'> </span></div>
-                            <h2><a href='dreamspa-test/wochenplan'> Wochenplan </a></h2>
+                            <h2> Wochenplan </h2>
 
-                            <p>Nunc at pretium est curabitur commodo leact.</p></div>
+                            <p>Nunc at pretium est curabitur commodo leact.</p></a></div>
                     </div>
                 </div>
             </div>

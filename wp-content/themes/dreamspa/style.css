@@ -36,11 +36,11 @@ table { border-collapse:collapse; border-spacing:0; }
 	
 	/*----*****---- << Fonts >> ----*****----*/
 	
-	body, input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="tel"], input[type="number"], input[type="range"], input[type="date"], textarea, input.text, select, input[type="search"], .dt-sc-ico-content.type1 h2, .dt-sc-popular-procedures h2, .dt-gallery .image-overlay h5, .dt-sc-callout-box.type6 h5, .dt-sc-callout-box.type7 h5, .dt-sc-testimonial blockquote:before, .dt-sc-testimonial blockquote q, .dt-sc-team h5, h5.dt-sc-toggle, h5.dt-sc-toggle-accordion, .dt-gallery-details h6, .widget .recent-posts-widget ul li h4, .author-info h3 span, ul.commentlist li .author-name .reply a, .dt-sc-gift-card-section h6, .dt-sc-reservation .title h6, .dt-sc-ico-content.type3 h2, .dt-sc-callout-box h5, .menu-item-widget-area-container .widget h3.widgettitle, #main-menu ul.menu a.dt-menu-expand, #main-menu ul.menu li .menu-item-widget-area-container ul.menu li a { font-family:'Tahoma', sans-serif; }
+	body, input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="tel"], input[type="number"], input[type="range"], input[type="date"], textarea, input.text, select, input[type="search"], .dt-sc-ico-content.type1 h2, .dt-sc-popular-procedures h2, .dt-gallery .image-overlay h5, .dt-sc-callout-box.type6 h5, .dt-sc-callout-box.type7 h5, .dt-sc-testimonial blockquote:before, .dt-sc-testimonial blockquote q, .dt-sc-team h5, h5.dt-sc-toggle, h5.dt-sc-toggle-accordion, .dt-gallery-details h6, .widget .recent-posts-widget ul li h4, .author-info h3 span, ul.commentlist li .author-name .reply a, .dt-sc-gift-card-section h6, .dt-sc-reservation .title h6, .dt-sc-ico-content.type3 h2, .dt-sc-callout-box h5, .menu-item-widget-area-container .widget h3.widgettitle, #main-menu ul.menu a.dt-menu-expand, #main-menu ul.menu li .menu-item-widget-area-container ul.menu li a { font-family:'Open Sans', sans-serif; }	
 	
 	h1, h2, h3, h4, h5, h6, #main-menu ul.menu > li > a, #main-menu ul.menu > li > span.nolink-menu, .dt-menu-toggle, .entry-meta .date, ul.products li .product-details .price, ul.products li .product-details .price ins, ul.products li .product-details .price .amount, .dt-sc-popular-procedures .duration, .dt-sc-popular-procedures .price, ul.commentlist li .author-name a, .dt-sc-gift-card .price, .product .summary .price .amount, .megamenu-child-container > ul.sub-menu > li > a, .megamenu-child-container > ul.sub-menu > li > .nolink-menu, .menu-item-widget-area-container .widget h3.widgettitle { font-family:'Open Sans Condensed', sans-serif; }
 	
-	.border-title h6, #footer .widget h3.widgettitle, .dt-sc-team h6, .dt-sc-ico-content.type2 h2 a, .dt-sc-callout-box.type6 h4, .dt-sc-callout-box.type7 h4, .dt-sc-callout-box.type7 h4, .dt-sc-callout-box h4, .dt-sc-tb-content .dt-sc-rounded h3, .dt-sc-reservation h6.staff-name { font-family: 'Courgette', cursive; }
+	.border-title h6, #footer .widget h3.widgettitle, .dt-sc-team h6, .dt-sc-ico-content.type2 h2, .dt-sc-callout-box.type6 h4, .dt-sc-callout-box.type7 h4, .dt-sc-callout-box.type7 h4, .dt-sc-callout-box h4, .dt-sc-tb-content .dt-sc-rounded h3, .dt-sc-reservation h6.staff-name { font-family: 'Courgette', cursive; }
 	
 	/*----*****---- << Headings >> ----*****----*/
 	
@@ -312,7 +312,7 @@ table { border-collapse:collapse; border-spacing:0; }
 	.widget.widget_rss .rss-date, .widget.widget_rss cite { color:#ac9d8e; }	
 	.widget.widget_rss li:before { content:"\f09e"; top:7px; }
 	
-	.secondary-sidebar .widget h3.widgettitle { font-family: 'Tahoma', sans-serif; font-size:20px; color:#fb6806; font-weight:normal; letter-spacing:0px; margin-bottom:30px; }
+	.secondary-sidebar .widget h3.widgettitle { font-family: 'Open Sans', sans-serif; font-size:20px; color:#fb6806; font-weight:normal; letter-spacing:0px; margin-bottom:30px; }
 	.secondary-sidebar .dt-sc-popular-procedures-wrapper { background-color:#ffffff; }
 	
 	
@@ -329,8 +329,7 @@ table { border-collapse:collapse; border-spacing:0; }
 	.boxed .is-sticky #main-menu { width:1000px; }
 	
 	.fullwidth-section, #footer .footer-widgets-wrapper, .widget ul.tweet-list li .tweet-thumb, #logo a, #slider, .dt-gallery, sub, sup { line-height:0; }
-	.fullwidth-section .container, #footer .footer-widgets-wrapper .container { width:860px; line-height:22px; }
-	
+		
 	/*----*****---- << Header >> ----*****----*/
 	#header-wrapper { float:left; width:100%; margin:0px; padding:0px; z-index:9999; }
 	#header { width:100%; margin:0px; padding:20px 0px 0px; float:left; position:relative; }

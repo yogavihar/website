@@ -13,6 +13,7 @@
                             <?php
 
                             query_posts(array(
+                                'term' => 'retreat',
                                 'post_type' => 'tribe_events',
                                 'posts_per_page' => 6
                             ));

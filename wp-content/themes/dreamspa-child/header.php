@@ -54,8 +54,19 @@ else{
 							<img class="normal_logo" src="<?php echo CHILD_THEME_BASE_URL;?>images/logo.png" alt="yogaviha" title="yogavihar" />
 							<img class="retina_logo" src="<?php echo CHILD_THEME_BASE_URL;?>images/logo@2x.png" alt="yogavihar" title="yogavihar" style="width:70px; height:70px;"/>
 						</a>
-					</div>			
+					</div>
+                                     <ul id="language-switcher">
+                                        <?php 
+                                        $args =array(
+                                            'show_names'=>0,
+                                            'show_flags'=>1,
+                                            'hide_current'=>1
+
+                                        );
+                                        pll_the_languages($args);?>
+                                    </ul>
 				</div>
+                           
 				<div class="main-menu-wrapper">
 					<!-- **Navigation** -->
 					<nav id="main-menu">

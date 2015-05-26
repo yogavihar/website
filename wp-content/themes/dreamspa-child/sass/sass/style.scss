@@ -19,6 +19,15 @@ Version:        1.0/
 
 @import url("../dreamspa/style.css");
 
+
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+/*html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}*/
 #header{
     padding-top: 0;
 }
@@ -100,7 +109,12 @@ body{
       }
     }
 }
-
+.dt-sc-ico-content.type2 h2{
+   color: #fb6806
+}
+.dt-sc-ico-content p{
+   color: #3a4f59;
+}
 
 #slider-container{
     position: relative;
@@ -161,11 +175,6 @@ body{
     //padding:55px 50px 20px;
     box-sizing: border-box;
       
-}
-//Flex Modell - noch responsive überlegen
-.container, #tribe-events-container, #image-section-container{
-    display: flex;
-  //overflow: hidden;
 }
 #primary.with-right-sidebar{
   flex: 3;
@@ -251,10 +260,8 @@ line-height:20px;
 .footer-widgets-wrapper{
     .container{
         div.dt-sc-one-fourth{
-            width:20%;
-            &:last-of-type{
-                 width:34%;
-            }
+            width:100%;
+          
         }
     }
 } 
@@ -289,14 +296,35 @@ line-height:20px;
   font-size:13px;
 }
 
-.tt_timetable th{
-    //color:white;
-    font-weight:bold;
-    background-color: #e6e5d9 !important;
+.tt_timetable{
+    td{
+        height:60px !important;
+        overflow: hidden;
+    }
+    th{
+        font-weight:bold;
+        background-color: #e6e5d9 !important;
+    }
+    td,th{
+        width: 15% !important;
+        &.tt_hours_column{
+            width: 10% !important;
+        }
+    }
+    .row_gray {
+         background-color: #e6e5d9 !important;
+    }
+    .event_container {
+        padding: 7px 10px;
+        height: 90px;
+    }
+    .event hr {
+        height: 1.5px;
+        opacity: 1;
+    }
 }
-.tt_timetable .row_gray {
-  background-color: #e6e5d9 !important;
-}
+
+
 
 .tabs_box_navigation.sf-timetable-menu .tabs_box_navigation_selected label{
       //border: 1px solid #d77d31;
@@ -364,5 +392,49 @@ line-height:20px;
 #shortcode {
   white-space: nowrap;
 }
+#language-switcher{
+   position: absolute;
+    top: 35px;
+    right: 0;
+    list-style: none;
+    li{
+         display: inline;
+         margin-left: 5px;
+    }
+}
+/* responsive für samm unbedingt noch machen
+.container{
+    width:  90% !important;
+}*/
+/*----*****---- << Tablet Portrait >> ----*****----*/	
+    @media only screen and (min-width:650px) and (max-width:959px) {
+        .footer-widgets-wrapper{
+            .container{
+                div.dt-sc-one-fourth{
+                    width:48%;
+                }
+            }
+        } 
+    }
+/*----*****---- << Desktop >> ----*****----*/	
+	
+
+    @media only screen and (min-width:960px){
+        //Flex Modell - klappt leider responsive nicht
+        .container, #tribe-events-container, #image-section-container{
+            display: flex;
+        }
+        .fullwidth-section .container, #footer .footer-widgets-wrapper .container { width:860px; line-height:22px; }
+        .footer-widgets-wrapper{
+            .container{
+                div.dt-sc-one-fourth{
+                    width:20%;
+                    &:last-of-type{
+                         width:34%;
+                    }
+                }
+            }
+        } 
+    }
 
   
