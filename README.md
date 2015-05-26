@@ -1,13 +1,20 @@
 # website
 Wordpress Project of Yogavihar Webpage
 
-# in Verzeichnis Work/www/yv wechseln
-
 #mit github Account verbinden (vorher in ssh Key unter .ssh und github abgelegt)
 git remote add origin git@github-yv:yogavihar/website.git
 
-# alles pushen
-git push origin master
+# vor den Änderungen
+git pull
+
+# Vorgehen
+(ins Verzeichnis Work/www/yv wechseln)
+git status
+git add *
+git status
+git commit -m "Commitmessage"
+git pull (macht merge)
+git push oder git push origin master
 
 
 # Wichtige Git-Befehle
