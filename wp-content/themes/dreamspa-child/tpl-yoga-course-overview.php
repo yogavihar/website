@@ -1,4 +1,4 @@
-<?php /*Template Name: Retreats Overview Template*/?>
+<?php /*Template Name: Yoga Courses Overview Template*/?>
 <?php get_header();?>
 
 	<!-- ** Primary Section ** -->
@@ -29,7 +29,7 @@
 
 
                                     //nur Kategorie Retreat
-                                    if(!tribe_event_in_category("retreat"))
+                                    if(!tribe_event_in_category("kurs"))
                                         continue;
 
                                     $number++;
