@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-05-20 15:52:09+0000\n"
+"PO-Revision-Date: 2015-05-24 15:09:07+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1691,12 +1691,6 @@ msgstr[0] "%s на перевірці"
 msgstr[1] "%s на перевірці"
 msgstr[2] "%s на перевірці"
 
-#. translators: date and time format for recent posts on the dashboard, see
-#. http:php.net/date
-#: wp-admin/includes/dashboard.php:726
-msgid "M jS"
-msgstr "d.m.Y"
-
 #. translators: number of megabytes
 #: wp-admin/includes/dashboard.php:1146
 msgid "%s MB Space Allowed"
@@ -1713,6 +1707,12 @@ msgstr "%1$s МБ (%2$s%%) зайнято"
 msgid "<span>%1$s, %2$s</span> <a href=\"%3$s\">%4$s</a>"
 msgstr "<span>%1$s, %2$s</span> <a href=\"%3$s\">%4$s</a>"
 
+#. translators: date and time format for recent posts on the dashboard, see
+#. http:php.net/date
+#: wp-admin/includes/dashboard.php:726
+msgid "M jS"
+msgstr "d.m.y"
+
 #: wp-admin/includes/dashboard.php:239
 msgid "%s Comment"
 msgid_plural "%s Comments"
@@ -1726,7 +1726,7 @@ msgstr "На виду"
 
 #: wp-admin/options-reading.php:64
 msgid "When this setting is in effect, a reminder is shown in the At a Glance box of the Dashboard that says, &#8220;Search Engines Discouraged,&#8221; to remind you that your site is not being crawled."
-msgstr "Коли використовується цей параметр, у майстерні, а саме у віджеті \"На виду\", відображається пам'ятка \"Пошуковим системам запропоновано не індексувати сайт\", щоб нагадати вам, що сайт, найімовірніше, не індексується."
+msgstr "Коли використовується цей параметр, у віджеті Майстерні \"На виду\" відображається пам'ятка \"Пошуковим системам запропоновано не індексувати сайт\", щоб нагадати вам, що ваш сайт не індексується."
 
 #: wp-admin/includes/theme.php:223
 msgid "Accessibility Ready"
@@ -1877,7 +1877,7 @@ msgstr "Ви впевнені, що хочете видалити цю тему?
 
 #: wp-admin/index.php:55
 msgid "<strong>Screen Options</strong> - Use the Screen Options tab to choose which Dashboard boxes to show."
-msgstr "<strong>Параметри екрану</strong> - використовуйте вкладку \"Параметри екрану\", щоб вибрати потрібні блоки майстерні."
+msgstr "<strong>Параметри екрану</strong> - використовуйте вкладку \"Параметри екрану\", щоб вибрати потрібні блоки Майстерні."
 
 #: wp-admin/includes/class-wp-upgrader.php:3117
 msgid "WordPress site: %s"
@@ -3896,13 +3896,13 @@ msgstr[0] "Суперадміністратор <span class=\"count\">(%s)</span
 msgstr[1] "Суперадміністратори <span class=\"count\">(%s)</span>"
 msgstr[2] "Суперадміністратори <span class=\"count\">(%s)</span>"
 
+#: wp-admin/includes/ms.php:637 wp-admin/includes/ms.php:639
+msgid "You attempted to access the \"%1$s\" dashboard, but you do not currently have privileges on this site. If you believe you should be able to access the \"%1$s\" dashboard, please contact your network administrator."
+msgstr "Ви спробували увійти в Майстерню сайту \"%1$s\", але на даний момент у вас немає прав доступу. Якщо ви вважаєте, що повинні мати доступ до Майстерні сайту \"%1$s\", будь ласка, зв'яжіться з вашим адміністратором мережі."
+
 #: wp-admin/includes/ms.php:648
 msgid "Visit Dashboard"
 msgstr "Відвідати майстерню"
-
-#: wp-admin/includes/ms.php:637 wp-admin/includes/ms.php:639
-msgid "You attempted to access the \"%1$s\" dashboard, but you do not currently have privileges on this site. If you believe you should be able to access the \"%1$s\" dashboard, please contact your network administrator."
-msgstr "Ви спробували увійти в майстерню сайту \"%1$s\", але на даний момент у вас немає прав доступу. Якщо ви вважаєте, що повинні мати доступ до майстерні сайту \"%1$s\", будь ласка, зв'яжіться з вашим адміністратором мережі."
 
 #: wp-admin/my-sites.php:94
 msgid "Global Settings"
@@ -4203,7 +4203,7 @@ msgstr "Детальнішу інформацію можна <a href=\"%s\">пе
 
 #: wp-admin/index.php:32
 msgid "Welcome to your WordPress Dashboard! This is the screen you will see when you log in to your site, and gives you access to all the site management features of WordPress. You can get help for any screen by clicking the Help tab in the upper corner."
-msgstr "Ласкаво просимо до вашої майстерні WordPress! Цей екран ви будете бачити, коли зайдете на свій сайт. Тут ви маєте доступ до всіх аспектів керування сайтом на WordPress. Ви можете отримати допомогу натиснувши на вкладку \"Допомога\" в правому верхньому куті екрану."
+msgstr "Ласкаво просимо до вашої Майстерні WordPress! Цей екран ви будете бачити, коли зайдете на свій сайт. Тут ви маєте доступ до всіх аспектів керування сайтом на WordPress. Ви можете отримати допомогу натиснувши на вкладку \"Допомога\" в правому верхньому куті екрану."
 
 #: wp-admin/about.php:35 wp-admin/credits.php:91 wp-admin/freedoms.php:28
 msgid "What&#8217;s New"
@@ -4380,7 +4380,7 @@ msgstr "У секції «Завантаження файлів» можна в�
 
 #: wp-admin/options-writing.php:21
 msgid "You can submit content in several different ways; this screen holds the settings for all of them. The top section controls the editor within the dashboard, while the rest control external publishing methods. For more information on any of these methods, use the documentation links."
-msgstr "Ви можете додавати вміст декількома різними способами; цей екран містить налаштування для них всіх. Верхня частина контролює редактор майстерні, інші ж контролюють зовнішні методи публікації. Для отримання додаткової інформації про будь-який з цих методів, використовуйте посилання на документацію."
+msgstr "Ви можете додавати вміст декількома різними способами; цей екран містить налаштування для них всіх. Верхня частина контролює редактор Майстерні, інші ж контролюють зовнішні методи публікації. Для отримання додаткової інформації про будь-який з цих методів, використовуйте посилання на документацію."
 
 #: wp-admin/themes.php:63
 msgid "Installing themes on Multisite can only be done from the Network Admin section."
@@ -4480,7 +4480,7 @@ msgstr "Видалення посилань"
 
 #: wp-admin/index.php:46
 msgid "Links in the Toolbar at the top of the screen connect your dashboard and the front end of your site, and provide access to your profile and helpful WordPress information."
-msgstr "Посилання в панелі інструментів у верхній частині екрану з’єднують вашу майстерню та зовнішню частину вашого сайту, також вони забезпечують доступ до вашого облікового запису та корисної інформації про WordPress."
+msgstr "Посилання в панелі інструментів у верхній частині екрану з’єднують вашу Майстерню та зовнішню частину вашого сайту, також вони забезпечують доступ до вашого облікового запису та корисної інформації про WordPress."
 
 #: wp-admin/upload.php:182
 msgid "All the files you&#8217;ve uploaded are listed in the Media Library, with the most recent uploads listed first. You can use the Screen Options tab to customize the display of this screen."
@@ -4564,7 +4564,7 @@ msgstr "Під капотом"
 
 #: wp-admin/includes/dashboard.php:1293 wp-admin/includes/dashboard.php:1295
 msgid "Customize Your Site"
-msgstr "Налаштуйте свій сайт"
+msgstr "Налаштувати свій сайт"
 
 #: wp-admin/user-edit.php:191
 msgid "Profile updated."
@@ -4677,7 +4677,7 @@ msgstr "Встановити додаток для імпорту публіка
 
 #: wp-admin/includes/dashboard.php:1201
 msgid "<a href=\"%1$s\" class=\"update-browser-link\">Update %2$s</a> or learn how to <a href=\"%3$s\" class=\"browse-happy-link\">browse happy</a>"
-msgstr "<a href=\"%1$s\" class=\"update-browser-link\">Оновіть %2$s</a> або дізнайтеся про <a href=\"%3$s\" class=\"browse-happy-link\">сучасні браузери</a>"
+msgstr "<a href=\"%1$s\" class=\"update-browser-link\">Оновити %2$s</a> або дізнатись більше про <a href=\"%3$s\" class=\"browse-happy-link\">сучасні браузери</a>"
 
 #. translators: %1$s is link start tag, %2$s is link end tag, %3$d is width,
 #. %4$d is height
@@ -4735,13 +4735,13 @@ msgstr "Огляд"
 msgid "The left-hand navigation menu provides links to all of the WordPress administration screens, with submenu items displayed on hover. You can minimize this menu to a narrow icon strip by clicking on the Collapse Menu arrow at the bottom."
 msgstr "У меню навігації зліва розташовані посилання на всі екрани управління WordPress, а при наведенні курсору з'являються підменю. Можна згорнути меню у вузьку смужку іконок, натиснувши на посилання «Згорнути меню» внизу."
 
-#: wp-admin/index.php:54
-msgid "You can use the following controls to arrange your Dashboard screen to suit your workflow. This is true on most other administration screens as well."
-msgstr "Ви можете використовувати наступні елементи керування, щоб впорядкувати екрани майстерні на власний смак."
-
 #: wp-admin/index.php:56
 msgid "<strong>Drag and Drop</strong> - To rearrange the boxes, drag and drop by clicking on the title bar of the selected box and releasing when you see a gray dotted-line rectangle appear in the location you want to place the box."
 msgstr "<strong>Перетягування</strong> — щоб перегрупувати блоки, зробіть клацання на заголовку вибраного блоку, почніть перетягувати його і відпустіть, коли побачите прямокутник з пунктирною рамкою на тому місці, куди ви хочете помістити блок. "
+
+#: wp-admin/index.php:54
+msgid "You can use the following controls to arrange your Dashboard screen to suit your workflow. This is true on most other administration screens as well."
+msgstr "Ви можете використовувати наступні елементи керування, щоб впорядкувати екран Майстерні на власний смак. Також це підходить до більшості інших екранів адміністрування."
 
 #: wp-admin/includes/class-wp-ms-users-list-table.php:194
 #: wp-admin/user-edit.php:333
@@ -5306,7 +5306,7 @@ msgstr "Якщо ви хочете внести зміни, але не хоче
 
 #: wp-admin/index.php:65
 msgid "The boxes on your Dashboard screen are:"
-msgstr "На екрані майстерні доступні наступні блоки: "
+msgstr "На екрані Майстерні доступні наступні блоки: "
 
 #: wp-admin/tools.php:17
 msgid "Press This is a bookmarklet that makes it easy to blog about something you come across on the web. You can use it to just grab a link, or to post an excerpt. Press This will even allow you to choose from images included on the page and use them in your post. Just drag the Press This link on this screen to your bookmarks bar in your browser, and you&#8217;ll be on your way to easier content creation. Clicking on it while on another website opens a popup window with all these options."
@@ -5635,13 +5635,13 @@ msgstr[0] "%s користувач"
 msgstr[1] "%s користувачі"
 msgstr[2] "%s користувачів"
 
-#: wp-admin/includes/dashboard.php:344
-msgid "Create a New User"
-msgstr "Додати нового користувача"
-
 #: wp-admin/includes/dashboard.php:352
 msgid "You have %1$s and %2$s."
 msgstr "У Вас є %1$s та %2$s."
+
+#: wp-admin/includes/dashboard.php:344
+msgid "Create a New User"
+msgstr "Створити нового користувача"
 
 #: wp-admin/includes/dashboard.php:390 wp-admin/includes/dashboard.php:392
 msgid "Search Sites"
@@ -6054,7 +6054,7 @@ msgstr "Можна групувати публікації у категорії
 
 #: wp-admin/edit-tags.php:224
 msgid "You can change the display of this screen using the Screen Options tab to set how many items are displayed per screen and to display/hide columns in the table."
-msgstr "Ви можете налаштувати вигляд екрану на вкладці \"Параметри екрану\", вказавши цим скільки елементів виводити на екран та які стовпчики показувати чи ховати в таблиці."
+msgstr "Ви можете змінити вигляд цього екрану на вкладці \"Параметри екрану\", вказавши кількість елементів на екрані та видимі стовпчики в таблиці."
 
 #: wp-admin/upload.php:183
 msgid "You can narrow the list by file type/status using the text link filters at the top of the screen. You also can refine the list by date using the dropdown menu above the media table."
@@ -6139,10 +6139,6 @@ msgstr "Повернутися до оновлення WordPress"
 msgid "<strong>Discussion</strong> - You can turn comments and pings on or off, and if there are comments on the post, you can see them here and moderate them."
 msgstr "<strong>Коментування</strong> — Ви можете дозволити/заборонити коментування і отримання пінґбеків(трекбеків) для кожної публікації окремо."
 
-#: wp-admin/edit-form-advanced.php:369
-msgid "<strong>Featured Image</strong> - This allows you to associate an image with your post without inserting it. This is usually useful only if your theme makes use of the featured image as a post thumbnail on the home page, a custom header, etc."
-msgstr "<strong>Головне зображення</strong> — Дозволяє асоціювати матеріал із певним зображенням. Також можливе використання для власної верхньої частини."
-
 #: wp-admin/edit-form-advanced.php:362
 msgid "<strong>Publish</strong> - You can set the terms of publishing your post in the Publish box. For Status, Visibility, and Publish (immediately), click on the Edit link to reveal more options. Visibility includes options for password-protecting a post or making it stay at the top of your blog indefinitely (sticky). Publish (immediately) allows you to set a future or past date and time, so you can schedule a post to be published in the future or backdate a post."
 msgstr "<strong>Опублікувати</strong> — Можна задати певні умови публікації в блоці «Опублікувати». Щоб переглянути додаткові варіанти публікації для пунктів «Статус», «Видимість», «Опублікувати» натисніть на посилання «Редагувати», це дозволить змінити параметри публікації."
@@ -6150,6 +6146,10 @@ msgstr "<strong>Опублікувати</strong> — Можна задати п
 #: wp-admin/edit-form-advanced.php:295
 msgid "<strong>Title</strong> - Enter a title for your post. After you enter a title, you&#8217;ll see the permalink below, which you can edit."
 msgstr "<strong>Заголовок</strong> — Вкажіть заголовок публікації. Після цього під заголовком знизу з’явиться постійне посилання, яке ви можете відредагувати."
+
+#: wp-admin/edit-form-advanced.php:369
+msgid "<strong>Featured Image</strong> - This allows you to associate an image with your post without inserting it. This is usually useful only if your theme makes use of the featured image as a post thumbnail on the home page, a custom header, etc."
+msgstr "<strong>Головне зображення</strong> — Дозволяє асоціювати зображення з вашим записом без його вставлення. Зазвичай це корисно тільки якщо ваша тема може використовувати головне зображення як мініатюру запису на домашній сторінці, користувацький заголовок тощо."
 
 #: wp-admin/edit.php:193
 msgid "Hovering over a row in the posts list will display action links that allow you to manage your post. You can perform the following actions:"
@@ -6349,7 +6349,7 @@ msgstr "Створити меню"
 
 #: wp-admin/includes/dashboard.php:963
 msgid "WordPress Blog"
-msgstr "WordPress блоґ"
+msgstr "WordPress блог"
 
 #: wp-admin/user-edit.php:325 wp-admin/user-edit.php:327
 msgid "&mdash; No role for this site &mdash;"

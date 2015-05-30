@@ -11,87 +11,87 @@ msgstr ""
 "Project-Id-Version: Administration\n"
 
 #. translators: 1: Term splitting guide link
-#: wp-admin/about.php:115
+#: wp-admin/about.php:127
 msgid "Terms shared across multiple taxonomies will be split when one of them is updated. Find out more in the <a href=\"%1$s\">Plugin Developer Handbook</a>."
 msgstr "다중 텍소노미에 공유된 용어는 업데이트될 경우 분리됩니다. <a href=\"%1$s\">플러그인 개발 가이드</a>에서 더 알아보세요."
 
-#: wp-admin/about.php:71
+#: wp-admin/about.php:83
 msgid "Writing in WordPress, whatever your language, just got better. WordPress 4.2 supports a host of new characters out-of-the-box, including native Chinese, Japanese, and Korean characters, musical and mathematical symbols, and hieroglyphs."
 msgstr "어떤 언어라도 워드프레스에서 글쓰기는 더욱 좋아졌습니다. 워드프레스 4.2는 설치와 동시에 새로운 글자를 지원합니다. 여기에는 중국어, 일본어, 한국어 글자가 있으며 음악 부호, 수학 기호와 상형문자가 있습니다."
 
 #. translators: 1: heart emoji, 2: frog face emoji, 3, monkey emoji, 4: pizza
 #. emoji, 5: Emoji Codex link
-#: wp-admin/about.php:74
+#: wp-admin/about.php:86
 msgid "Don&#8217;t use any of those characters? You can still have fun &mdash; emoji are now available in WordPress! Get creative and decorate your content with %1$s, %2$s, %3$s, %4$s, and all the many other <a href=\"%5$s\">emoji</a>."
 msgstr "이런 글자를 전혀 사용하지 않는다고요? 그래도 재미 있는 것이 있습니다 &mdash; 이제 워드프레스에서 에모지를 사용할 수 있습니다. %1$s, %2$s, %3$s, %4$s로 자신의 콘텐츠를 창의적으로 장식해보세요. 더 많은 <a href=\"%5$s\">에모지</a>가 있습니다."
 
-#: wp-admin/about.php:82
+#: wp-admin/about.php:94
 msgid "Switch themes in the Customizer"
 msgstr "사용자 정의하기에서 테마 변경"
 
-#: wp-admin/about.php:52
+#: wp-admin/about.php:64
 msgid "Clip it, edit it, publish it. Get familiar with the new and improved Press This. From the <a href=\"%s\">Tools</a> menu, add Press This to your browser bookmark bar or your mobile device home screen. Once installed you can share your content with lightning speed. Sharing your favorite videos, images, and content has never been this fast or this easy."
 msgstr "붙여넣고 편집하고 발행하세요. 새롭게 개선된 끌어오기와 익숙해지세요. <a href=\"%s\">도구</a> 메뉴에서 브라우저 북마크 바나 모바일 기기의 홈 화면에 끌어오기를 추가하세요. 설치되면 콘텐츠를 빛의 속도로 빠르게 공유할 수 있습니다. 즐겨찾는 비디오, 이미지, 콘텐츠 공유는 이정도로 빠르고 쉬운 적이 없었습니다."
 
-#: wp-admin/about.php:70
+#: wp-admin/about.php:82
 msgid "Extended character support"
 msgstr "확장된 글자 지원"
 
-#: wp-admin/about.php:51
+#: wp-admin/about.php:63
 msgid "An easier way to share content"
 msgstr "콘텐츠를 공유하는 더 쉬운 방법"
 
-#: wp-admin/about.php:83
+#: wp-admin/about.php:95
 msgid "Browse and preview your installed themes from the Customizer. Make sure the theme looks great with <em>your</em> content, before it debuts on your site. "
 msgstr "사용자 정의하기에서 설치된 테마를 찾아 미리보기 해보세요. 사이트에 실제로 적용하기 전에 테마에 <em>자신의</em> 콘텐츠가 제대로 보이는지 확인하세요."
 
-#: wp-admin/about.php:88
+#: wp-admin/about.php:100
 msgid "Paste links from Tumblr.com and Kickstarter and watch them magically appear right in the editor. With every release, your publishing and editing experience get closer together."
 msgstr "Tumblr.com이나 Kickstarter에서 링크를 복사해 붙여넣고 편집기에 마술 같은 일이 벌어지는 것을 경험해보세요. 매 릴리즈마다 편집 화면과 실제 사이트의 차이가 없어지게 됩니다."
 
-#: wp-admin/about.php:93
+#: wp-admin/about.php:105
 msgid "Goodbye boring loading screen, hello smooth and simple plugin updates. Click <em>Update&nbsp;Now</em> and watch the magic happen."
 msgstr "지루한 로딩 화면은 이제 사라지고 부드럽고 단순한 플러그인 업데이트가 시작됩니다. <em>지금 업데이트</em>를 클릭하면 마술 같은 일이 벌어집니다."
 
-#: wp-admin/about.php:87
+#: wp-admin/about.php:99
 msgid "Even more embeds"
 msgstr "더 많은 임베드"
 
-#: wp-admin/about.php:92
+#: wp-admin/about.php:104
 msgid "Streamlined plugin updates"
 msgstr "유연한 플러그인 업데이트"
 
-#: wp-admin/about.php:102
+#: wp-admin/about.php:114
 msgid "utf8mb4 support"
 msgstr "utf8mb4 지원"
 
-#: wp-admin/about.php:103
+#: wp-admin/about.php:115
 msgid "Database character encoding has changed from utf8 to utf8mb4, which adds support for a whole range of new 4-byte characters."
 msgstr "데이터베이스 캐릭터 인코딩이 utf8에서 utf8mb4로 변경됐습니다. 이것은 새로운 4 바이트 캐릭터의 전 범위에 대한 지원을 추가합니다."
 
 #. translators: %s wp.a11y.speak()
-#: wp-admin/about.php:108
+#: wp-admin/about.php:120
 msgid "You can now send audible notifications to screen readers in JavaScript with %s. Pass it a string, and an update will be sent to a dedicated ARIA live notifications area."
 msgstr "%s로 자바스크립트를 사용해 스크린 리더에 듣기 가능한 알림을 보낼 수 있습니다. 스트링에 패스하면 독립된 ARIA 실시간 알림 영역에 업데이트를 보냅니다."
 
-#: wp-admin/about.php:105
+#: wp-admin/about.php:117
 msgid "JavaScript accessibility"
 msgstr "자바스크립트 접근성"
 
-#: wp-admin/about.php:112
+#: wp-admin/about.php:124
 msgid "Shared term splitting"
 msgstr "공유된 용어 분리"
 
 #. translators: 1: WP_Query, 2: WP_Comment_Query, 3: WP_User_Query
-#: wp-admin/about.php:121
+#: wp-admin/about.php:133
 msgid "%1$s, %2$s, and %3$s now support complex ordering with named meta query clauses."
 msgstr "%1$s, %2$s, %3$s는 이제 네임드 메타 쿼리 구문으로 복잡한 순서를 지원합니다."
 
-#: wp-admin/about.php:118
+#: wp-admin/about.php:130
 msgid "Complex query ordering"
 msgstr "복잡한 쿼리 순서"
 
-#: wp-admin/about.php:74
+#: wp-admin/about.php:86
 msgid "https://codex.wordpress.org/Emoji"
 msgstr "https://codex.wordpress.org/Emoji"
 
@@ -645,7 +645,7 @@ msgstr "끌어오기 설치"
 msgid "Bookmarklet"
 msgstr "북마크 도구"
 
-#: wp-admin/about.php:53 wp-admin/tools.php:48
+#: wp-admin/about.php:65 wp-admin/tools.php:48
 msgid "Drag the bookmarklet below to your bookmarks bar. Then, when you&#8217;re on a page you want to share, simply &#8220;press&#8221; it."
 msgstr "아래의 끌어오기를 북마크 바에 끌어놓으세요. 그런다음 공유를 원하는 페이지에서 끌어오기를 클릭하세요."
 
@@ -3030,7 +3030,7 @@ msgstr "즐겨찾기 가져오기"
 msgid "The \"%s\" options group has been removed. Use another settings group."
 msgstr "\"%s\" 옵션 그룹이 제거됐습니다. 다른 설정 그룹을 사용하세요."
 
-#: wp-admin/includes/update-core.php:1177 wp-admin/update-core.php:433
+#: wp-admin/includes/update-core.php:1180 wp-admin/update-core.php:433
 msgid "Welcome to WordPress %1$s. You will be redirected to the About WordPress screen. If not, click <a href=\"%2$s\">here</a>."
 msgstr "워드프레스 %1$s에 오신 것을 환영합니다. \"워드프레스에 관하여\" 화면으로 안내될 것입니다. 아닌 경우 <a href=\"%2$s\">여기</a>를 클릭하세요."
 
@@ -4113,26 +4113,26 @@ msgstr "기여하는 개발자들"
 msgid "Show Toolbar when viewing site"
 msgstr "사이트를 볼 때 툴바 보이기"
 
-#: wp-admin/about.php:166
+#: wp-admin/about.php:47 wp-admin/about.php:51 wp-admin/about.php:178
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "더 많은 정보는, <a href=\"%s\">릴리즈 노트</a>를 참조하세요."
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:159
+#: wp-admin/about.php:171
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "<strong>버전 %1$s</strong> 보안 문제와 %2$s 버그를 처리했습니다."
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:163
+#: wp-admin/about.php:45 wp-admin/about.php:175
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>버전 %1$s</strong> 몇가지 보안 문제를 처리했고 %2$s 버그를 수리했습니다."
 
 #. translators: 1: WordPress version number, 2: plural number of bugs.
-#: wp-admin/about.php:155
+#: wp-admin/about.php:167
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>버전 %1$s</strong>이(가) %2$s 버그를 해결함."
@@ -4145,23 +4145,23 @@ msgstr "워드프레스 알림판에 오신 것을 환영합니다! 이 화면�
 msgid "What&#8217;s New"
 msgstr "새로운 것"
 
-#: wp-admin/about.php:148
+#: wp-admin/about.php:44 wp-admin/about.php:160
 msgid "Maintenance and Security Release"
 msgid_plural "Maintenance and Security Releases"
 msgstr[0] "관리 보안 릴리즈"
 
-#: wp-admin/about.php:147
+#: wp-admin/about.php:159
 msgid "Security Release"
 msgid_plural "Security Releases"
 msgstr[0] "보안 릴리즈"
 
-#: wp-admin/about.php:146
+#: wp-admin/about.php:158
 msgid "Maintenance Release"
 msgid_plural "Maintenance Releases"
 msgstr[0] "관리 릴리즈"
 
 #. translators: 1: WordPress version number.
-#: wp-admin/about.php:151
+#: wp-admin/about.php:49 wp-admin/about.php:163
 msgid "<strong>Version %1$s</strong> addressed a security issue."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues."
 msgstr[0] "La <strong>버전 %1$s</strong> 보안 문제를 처리했습니다."
@@ -4170,11 +4170,11 @@ msgstr[0] "La <strong>버전 %1$s</strong> 보안 문제를 처리했습니다."
 msgid "This screen allows you to choose your default permalink structure. You can choose from common settings or create custom URL structures."
 msgstr "이 화면은 기본 고유주소 구조를 선택할 수 있게 해줍니다. 일반 설정에서 선택하거나 사용자 정의 URL 구조를 만들 수 있습니다."
 
-#: wp-admin/about.php:130
+#: wp-admin/about.php:142
 msgid "Return to Updates"
 msgstr "업데이트로 돌아가기"
 
-#: wp-admin/includes/update-core.php:1178 wp-admin/update-core.php:434
+#: wp-admin/includes/update-core.php:1181 wp-admin/update-core.php:434
 msgid "Welcome to WordPress %1$s. <a href=\"%2$s\">Learn more</a>."
 msgstr "워드프레스 %1$s에 오신 것을 환영합니다. <a href=\"%2$s\">자세히 보기</a>."
 
@@ -4470,11 +4470,11 @@ msgstr "add_meta_box()를 사용하기 위해서 wp-admin/includes/template.php�
 msgid "Welcome to WordPress %s"
 msgstr "WordPress %s 사용을 환영합니다"
 
-#: wp-admin/about.php:134
+#: wp-admin/about.php:146
 msgid "Go to Dashboard &rarr; Home"
 msgstr "대시보드 &rarr; 홈으로 가기"
 
-#: wp-admin/about.php:130
+#: wp-admin/about.php:142
 msgid "Return to Dashboard &rarr; Updates"
 msgstr "대시보드 &rarr; 업데이트로 돌아가기"
 
@@ -4486,7 +4486,7 @@ msgstr "워드프레스는 열정적인 개인들로 구성된 전세계 팀에 
 msgid "Core Developers"
 msgstr "코어 개발자들"
 
-#: wp-admin/about.php:98
+#: wp-admin/about.php:110
 msgid "Under the Hood"
 msgstr "개발 부분"
 
@@ -6746,7 +6746,7 @@ msgid "Update WordPress"
 msgstr "워드프레스 업데이트"
 
 #: wp-admin/includes/class-wp-upgrader.php:2672
-#: wp-admin/includes/update-core.php:1174 wp-admin/update-core.php:432
+#: wp-admin/includes/update-core.php:1177 wp-admin/update-core.php:432
 msgid "WordPress updated successfully"
 msgstr "워드프레스를 성공적으로 업데이트했습니다."
 
@@ -6821,7 +6821,7 @@ msgid "Must-Use <span class=\"count\">(%s)</span>"
 msgid_plural "Must-Use <span class=\"count\">(%s)</span>"
 msgstr[0] "Must-Use <span class=\"count\">(%s)</span>"
 
-#: wp-admin/about.php:134
+#: wp-admin/about.php:146
 msgid "Go to Dashboard"
 msgstr "대시보드로 가기 l&rsquo;홈"
 
@@ -7998,7 +7998,7 @@ msgstr "사용자 업데이트"
 msgid "Update to %s"
 msgstr "%s (으)로 업데이트"
 
-#: wp-admin/includes/update-core.php:1055
+#: wp-admin/includes/update-core.php:1058
 msgid "Upgrading database&#8230;"
 msgstr "데이터베이스를 업그레이드 하는중."
 
@@ -9300,7 +9300,7 @@ msgstr "댓글 템플릿"
 
 #: wp-admin/includes/file.php:664 wp-admin/includes/file.php:761
 #: wp-admin/includes/file.php:794 wp-admin/includes/update-core.php:1020
-#: wp-admin/includes/update-core.php:1123
+#: wp-admin/includes/update-core.php:1126
 msgid "Could not copy file."
 msgstr "파일을 복사할 수 없습니다."
 
@@ -9314,7 +9314,7 @@ msgstr "임시 파일을 생성할 수 없습니다."
 
 #: wp-admin/includes/class-wp-upgrader.php:133 wp-admin/includes/file.php:644
 #: wp-admin/includes/file.php:748 wp-admin/includes/file.php:799
-#: wp-admin/includes/update-core.php:1128
+#: wp-admin/includes/update-core.php:1131
 msgid "Could not create directory."
 msgstr "디렉터리를 생성할 수 없습니다."
 
@@ -9768,7 +9768,7 @@ msgstr "글이 업데이트되었습니다. <a href=\"%s\">글 보기</a>"
 msgid "Posts"
 msgstr "글"
 
-#: wp-admin/about.php:56 wp-admin/tools.php:16 wp-admin/tools.php:40
+#: wp-admin/about.php:68 wp-admin/tools.php:16 wp-admin/tools.php:40
 #: wp-admin/tools.php:51
 msgid "Press This"
 msgstr "끌어오기"

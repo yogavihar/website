@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-04-29 07:03:07+0000\n"
+"PO-Revision-Date: 2015-05-26 15:16:26+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -165,7 +165,7 @@ msgstr "ชื่อลำดับขั้นต้องมีตัวอั
 msgid "A term with the name already exists in this taxonomy."
 msgstr "เงื่อนไขพร้อมชื่อมีอยู่แล้วในลำดับขั้นนี้"
 
-#: wp-includes/taxonomy.php:4173
+#: wp-includes/taxonomy.php:4169
 msgid "Could not split shared term."
 msgstr "ไม่สามารถแยกเงื่อนไขร่วม"
 
@@ -733,7 +733,7 @@ msgstr "(ไม่มีป้ายชื่อ)"
 
 #. translators: %s: taxonomy label, %l: list of terms formatted as per
 #. $term_template
-#: wp-includes/taxonomy.php:4483
+#: wp-includes/taxonomy.php:4479
 msgid "%s: %l."
 msgstr "%s: %l"
 
@@ -2984,7 +2984,7 @@ msgstr "ธีมของคุณสนับสนุนหน้าแรก
 #: wp-includes/formatting.php:2667 wp-includes/script-loader.php:379
 msgctxt "word count: words or characters?"
 msgid "words"
-msgstr "จำนวนคำ"
+msgstr "characters"
 
 #: wp-includes/class-wp-xmlrpc-server.php:1180
 #: wp-includes/class-wp-xmlrpc-server.php:4714
@@ -5577,7 +5577,7 @@ msgid "Invalid Taxonomy"
 msgstr "Invalid Taxonomy"
 
 #: wp-includes/taxonomy.php:1318 wp-includes/taxonomy.php:3382
-#: wp-includes/taxonomy.php:4351
+#: wp-includes/taxonomy.php:4347
 msgid "Empty Term"
 msgstr "เงื่อนไขว่างเปล่า"
 
@@ -5795,7 +5795,7 @@ msgstr "ไม่สามารถอ่านขนาดรูปได้"
 msgid "Could not set that as the thumbnail image. Try a different attachment."
 msgstr "ไม่สามารถตั้งเป็นรูปขนาดเล็ก  โปรดลองไฟล์แนบที่ต่างออกไป"
 
-#: wp-includes/comment.php:2368
+#: wp-includes/comment.php:2375
 msgid "Could not update comment status"
 msgstr "ไม่สามารถอัปเดตสถานะความเห็น"
 
@@ -5828,7 +5828,7 @@ msgstr "เพิ่มป้ายกำกับอีก"
 msgid "Insert Page Break tag"
 msgstr "ใส่ตัวแบ่งหน้าป้ายกำกับ"
 
-#: wp-includes/taxonomy.php:4554
+#: wp-includes/taxonomy.php:4550
 msgid "Invalid object ID"
 msgstr "เลขที่ object ใช้งานไม่ได้"
 
@@ -6072,7 +6072,7 @@ msgstr "คำสั่งนี้ต้องการใช้เฟรมด
 msgid "<strong>ERROR</strong>: Your account has been marked as a spammer."
 msgstr "<strong>ผิดพลาด</strong>: บัญชีของคุณถูกตั้งว่าเป็น spammer"
 
-#: wp-includes/wp-db.php:2949
+#: wp-includes/wp-db.php:2991
 msgid "<strong>ERROR</strong>: WordPress %1$s requires MySQL %2$s or higher"
 msgstr "<strong>ผิดพลาด</strong>: เวิร์ดเพรส %1$s ต้องการ MySQL %2$s หรือรุ่นที่สูงกว่า"
 

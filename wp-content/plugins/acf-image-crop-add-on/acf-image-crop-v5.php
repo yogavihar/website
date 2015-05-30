@@ -707,7 +707,8 @@ class acf_field_image_crop extends acf_field_image {
     function displayHideFromMediaInput(){
         // Get plugin options
         $options = get_option( 'acf_image_crop_settings' );
-        $value = $options['hide_cropped'];
+        if(!empty($options['hide_cropped']))
+            $value = $options['hide_cropped'];
 
         // echo the field
         ?>
@@ -719,7 +720,8 @@ class acf_field_image_crop extends acf_field_image {
     function displayRetinaModeInput(){
         // Get plugin options
         $options = get_option( 'acf_image_crop_settings' );
-        $value = $options['retina_mode'];
+        if(!empty($options['retina_mode']))
+            $value = $options['retina_mode'];
 
         // echo the field
         ?>

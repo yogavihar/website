@@ -11,85 +11,85 @@ msgstr ""
 "Project-Id-Version: Administration\n"
 
 #. translators: 1: Term splitting guide link
-#: wp-admin/about.php:123
+#: wp-admin/about.php:127
 msgid "Terms shared across multiple taxonomies will be split when one of them is updated. Find out more in the <a href=\"%1$s\">Plugin Developer Handbook</a>."
 msgstr "เงื่อนไขการแบ่งปันระหว่างหลาย ๆ ลำดับขั้นจะถูกแบ่งเมื่อหนึ่งในพวกมันถูกอัปเดต  ค้นหาเพิ่มเติมใน <a href=\"%1$s\">คู่มือผู้พัฒนาปลั๊กอิน</a>"
 
 #. translators: %s wp.a11y.speak()
-#: wp-admin/about.php:116
+#: wp-admin/about.php:120
 msgid "You can now send audible notifications to screen readers in JavaScript with %s. Pass it a string, and an update will be sent to a dedicated ARIA live notifications area."
 msgstr "ตอนนี้คุณสามารถส่งคำเตือนเสียงไปยังหน้าจอผู้อ่านใน JavaScript ด้วย %s ส่งต่อมันเป็นคำ และการอัปเดตจะถูกส่งไปยังพื้นที่การเตือน ARIA โดยเฉพาะแบบสด"
 
-#: wp-admin/about.php:91
+#: wp-admin/about.php:95
 msgid "Browse and preview your installed themes from the Customizer. Make sure the theme looks great with <em>your</em> content, before it debuts on your site. "
 msgstr "เรียกดูและดูก่อนธีมที่ติดตั้งแล้วของคุณจากตัวปรับแต่ง  ทำให้แน่ใจว่า ธีมดูดีกับบทความ <em>ของคุณ</em> ก่อนใช้งานจริงกับเว็บไซต์ของคุณ"
 
-#: wp-admin/about.php:111
+#: wp-admin/about.php:115
 msgid "Database character encoding has changed from utf8 to utf8mb4, which adds support for a whole range of new 4-byte characters."
 msgstr "การเข้ารหัสตัวอักษรฐานข้อมูลเปลี่ยนจาก utf8 เป็น utf8mb4 ซึ่งได้เพิ่มการสนับสนุนสำหรับช่วงตัวอักษรแบบ 4 ไบต์ใหม่ทั้งหมด"
 
-#: wp-admin/about.php:60
+#: wp-admin/about.php:64
 msgid "Clip it, edit it, publish it. Get familiar with the new and improved Press This. From the <a href=\"%s\">Tools</a> menu, add Press This to your browser bookmark bar or your mobile device home screen. Once installed you can share your content with lightning speed. Sharing your favorite videos, images, and content has never been this fast or this easy."
 msgstr "ตัดมัน แก้ไขมัน และเผยแพร่มัน  ทำความคุ้นเคยกับ Press This แบบใหม่ที่พัฒนาขึ้น  จากเมนู <a href=\"%s\">เครื่องมือ</a> เพิ่ม Press This ไปยังที่คั่นหน้าเบราว์เซอร์ของคุณหรือหน้าจอหลักอุปกรณ์ของคุณ   เมื่อติดตั้งแล้ว  คุณสามารถแบ่งปันเนื้อหาของคุณด้วยความรวดเร็ว  แบ่งปันวีดีโอ  รูปภาพและบทความที่คุณชื่นชอบได้ไวและง่ายกว่าที่ผ่านมา"
 
-#: wp-admin/about.php:79
+#: wp-admin/about.php:83
 msgid "Writing in WordPress, whatever your language, just got better. WordPress 4.2 supports a host of new characters out-of-the-box, including native Chinese, Japanese, and Korean characters, musical and mathematical symbols, and hieroglyphs."
 msgstr "การเขียนในเวิร์ดเพรส  ไม่ว่าคุณจะใช้ภาษาอะไร  ก็ทำงานได้ดีกว่าเดิม  เวิร์ดเพรสรุ่น 4.2 สนับสนุนคำใหม่ที่ไม่เป็นทางการ  รวมถึงตัวอักษรดั้งเดิมของภาษาจีน  ญี่ปุ่นและเกาหลี  โน๊ตเพลง  สัญลักษณ์ทางคณิตศาสตร์และ ไฮโรกลิฟ (ตัวอักษรอียิปต์โบราณ)"
 
 #. translators: 1: heart emoji, 2: frog face emoji, 3, monkey emoji, 4: pizza
 #. emoji, 5: Emoji Codex link
-#: wp-admin/about.php:82
+#: wp-admin/about.php:86
 msgid "Don&#8217;t use any of those characters? You can still have fun &mdash; emoji are now available in WordPress! Get creative and decorate your content with %1$s, %2$s, %3$s, %4$s, and all the many other <a href=\"%5$s\">emoji</a>."
 msgstr "ไม่ใช้ตัวอักษรเหล่านั้นหรือ?  คุณยังสามารถใช้ไอคอนที่สนุก ๆ ได้&mdash; อีโมจิสามารถใช้งานได้ในเวิร์ดเพรสแล้ว  คุณสามารถสร้างสรรค์และตกแต่งบทความของคุณด้วย %1$s, %2$s, %3$s, %4$s, และ <a href=\"%5$s\">อีโมจิ</a> อื่น ๆ ทั้งหมด"
 
-#: wp-admin/about.php:96
+#: wp-admin/about.php:100
 msgid "Paste links from Tumblr.com and Kickstarter and watch them magically appear right in the editor. With every release, your publishing and editing experience get closer together."
 msgstr ""
 "วางลิงก์จาก Tumblr หรือ Kickstarter  แล้วดูสิ่งมหัศจรรย์เกิดขึ้นในตัวแก้ไข  \n"
 "ทำงานได้ในทุกรุ่นทำให้การเขียนของคุณไม่เป็นอุปสรรคกับการเผยแพร่"
 
-#: wp-admin/about.php:95
+#: wp-admin/about.php:99
 msgid "Even more embeds"
 msgstr "การเล่นไฟล์สื่อที่มากกว่าเดิม"
 
-#: wp-admin/about.php:101
+#: wp-admin/about.php:105
 msgid "Goodbye boring loading screen, hello smooth and simple plugin updates. Click <em>Update&nbsp;Now</em> and watch the magic happen."
 msgstr "บอกลาการโหลดหน้าจอที่น่าเบื่อ  ต้อนรับการอัปเดตปลั๊กอินที่ราบรื่นและง่ายดาย   กด <em>อัปเดต&nbsp;ตอนนี้</em> และดูสิ่งมหัศจรรย์ที่จะเกิดขึ้น"
 
-#: wp-admin/about.php:100
+#: wp-admin/about.php:104
 msgid "Streamlined plugin updates"
 msgstr "การอัปเดตปลั๊กอินที่เร็วขึ้น"
 
-#: wp-admin/about.php:110
+#: wp-admin/about.php:114
 msgid "utf8mb4 support"
 msgstr "การสนับสนุน utf8mb4"
 
-#: wp-admin/about.php:113
+#: wp-admin/about.php:117
 msgid "JavaScript accessibility"
 msgstr "การเข้ากันได้กับ JavaScript"
 
-#: wp-admin/about.php:120
+#: wp-admin/about.php:124
 msgid "Shared term splitting"
 msgstr "การแบ่งเงื่อนไขการแบ่งปัน"
 
 #. translators: 1: WP_Query, 2: WP_Comment_Query, 3: WP_User_Query
-#: wp-admin/about.php:129
+#: wp-admin/about.php:133
 msgid "%1$s, %2$s, and %3$s now support complex ordering with named meta query clauses."
 msgstr "%1$s, %2$s, และ %3$s ตอนนี้สนับสนุนการเรียงที่ซับซ้อนของชื่อ meta query clauses"
 
-#: wp-admin/about.php:126
+#: wp-admin/about.php:130
 msgid "Complex query ordering"
 msgstr "การเรียงคิวรีที่ซับซ้อน"
 
-#: wp-admin/about.php:90
+#: wp-admin/about.php:94
 msgid "Switch themes in the Customizer"
 msgstr "เปลี่ยนธีมในตัวปรับแต่ง"
 
-#: wp-admin/about.php:59
+#: wp-admin/about.php:63
 msgid "An easier way to share content"
 msgstr "วิธีที่ง่ายกว่าในการแบ่งปันเนื้อหา"
 
-#: wp-admin/about.php:78
+#: wp-admin/about.php:82
 msgid "Extended character support"
 msgstr "การสนับสนุนตัวอักษรเพิ่มเติม"
 
@@ -97,7 +97,7 @@ msgstr "การสนับสนุนตัวอักษรเพิ่ม
 msgid "Thank you for updating! WordPress %s helps you communicate and share, globally."
 msgstr "ขอบคุณสำหรับการอัปเดต  เวิร์ดเพรสรุ่น %s ช่วยให้คุณสื่อสารและแบ่งปันได้ทั่วโลก"
 
-#: wp-admin/about.php:82
+#: wp-admin/about.php:86
 msgid "https://codex.wordpress.org/Emoji"
 msgstr "https://codex.wordpress.org/Emoji"
 
@@ -612,7 +612,7 @@ msgstr ""
 msgid "Copy &#8220;Press This&#8221; bookmarklet code"
 msgstr "คัดลอก &#8220;Press This&#8221; โค้ด bookmarklet"
 
-#: wp-admin/about.php:61 wp-admin/tools.php:48
+#: wp-admin/about.php:65 wp-admin/tools.php:48
 msgid "Drag the bookmarklet below to your bookmarks bar. Then, when you&#8217;re on a page you want to share, simply &#8220;press&#8221; it."
 msgstr "ลาก bookmarklet ด้านล่างไปที่แถบที่คั่นหน้าเว็บของคุณ  แล้วเมื่อคุณเปิดหน้าที่คุณต้องการจะแบ่งปัน ก็เพียง &#8220;กด&#8221; มัน"
 
@@ -3031,7 +3031,7 @@ msgstr "แสดงรายการปลั๊กอินที่ชื่
 msgid "The \"%s\" options group has been removed. Use another settings group."
 msgstr "กลุ่มตัวเลือก \"%s\" ถูกลบแล้ว  โปรดใช้กลุ่มตั้งค่าอื่น"
 
-#: wp-admin/includes/update-core.php:1177 wp-admin/update-core.php:433
+#: wp-admin/includes/update-core.php:1180 wp-admin/update-core.php:433
 msgid "Welcome to WordPress %1$s. You will be redirected to the About WordPress screen. If not, click <a href=\"%2$s\">here</a>."
 msgstr "ยินดีต้อนรับสู่เวิร์ดเพรส %1$s ระบบจะนำคุณไปยังหน้าเกี่ยวกับเวิร์ดเพรส ถ้าไม่มีอะไรเกิดขึ้น โปรดกด <a href=\"%2$s\">ที่นี่</a>"
 
@@ -4120,24 +4120,24 @@ msgstr "แสดงแถบเครื่องมือเมื่อดู
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:167
+#: wp-admin/about.php:171
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "<strong>รุ่น %1$s</strong> อ้างถึงความปลอดภัยและแก้ไขความผิดพลาด %2$s"
 
-#: wp-admin/about.php:47 wp-admin/about.php:174
+#: wp-admin/about.php:47 wp-admin/about.php:51 wp-admin/about.php:178
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "สำหรับข้อมูลเพิ่มเติม ดูที่<a href=\"%s\">หมายเหตุที่ออกมา</a>"
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:171
+#: wp-admin/about.php:45 wp-admin/about.php:175
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>รุ่น %1$s</strong> อ้างถึงความปลอดภัยบางอย่างและแก้ไขความผิดพลาด %2$s"
 
 #. translators: 1: WordPress version number, 2: plural number of bugs.
-#: wp-admin/about.php:163
+#: wp-admin/about.php:167
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>รุ่น %1$s</strong> อ้างถึงความผิดพลาด %2$s"
@@ -4151,22 +4151,22 @@ msgid "What&#8217;s New"
 msgstr "มีอะไรใหม่"
 
 #. translators: 1: WordPress version number.
-#: wp-admin/about.php:45 wp-admin/about.php:159
+#: wp-admin/about.php:49 wp-admin/about.php:163
 msgid "<strong>Version %1$s</strong> addressed a security issue."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues."
 msgstr[0] "<strong>รุ่น %1$s</strong> อ้างถึงความปลอดภัย"
 
-#: wp-admin/about.php:154
+#: wp-admin/about.php:158
 msgid "Maintenance Release"
 msgid_plural "Maintenance Releases"
 msgstr[0] "การบำรุงรักษาที่ออกมา"
 
-#: wp-admin/about.php:44 wp-admin/about.php:155
+#: wp-admin/about.php:159
 msgid "Security Release"
 msgid_plural "Security Releases"
 msgstr[0] "ความปลอดภัยที่ออกมา"
 
-#: wp-admin/about.php:156
+#: wp-admin/about.php:44 wp-admin/about.php:160
 msgid "Maintenance and Security Release"
 msgid_plural "Maintenance and Security Releases"
 msgstr[0] "การบำรุงรักษาและความปลอดภัยที่ออกมา"
@@ -4175,11 +4175,11 @@ msgstr[0] "การบำรุงรักษาและความปลอ
 msgid "This screen allows you to choose your default permalink structure. You can choose from common settings or create custom URL structures."
 msgstr "หน้าจอนี้อนุญาตให้คุณเลือกโครงสร้างลิงก์ถาวรมาตรฐาน  คุณสามารถเลือกจากการตั้งค่าทั่วไปหรือสร้างโครงสร้าง URL แบบเฉพาะ"
 
-#: wp-admin/about.php:138
+#: wp-admin/about.php:142
 msgid "Return to Updates"
 msgstr "กลับไปที่อัปเดต"
 
-#: wp-admin/includes/update-core.php:1178 wp-admin/update-core.php:434
+#: wp-admin/includes/update-core.php:1181 wp-admin/update-core.php:434
 msgid "Welcome to WordPress %1$s. <a href=\"%2$s\">Learn more</a>."
 msgstr "ยินดีต้องรับสู่เวิร์ดเพรส %1$s <a href=\"%2$s\">เรียนรู้เพิ่มเติม</a>"
 
@@ -4475,11 +4475,11 @@ msgstr "เหมือนกับบทสรุปของ wp-admin/includes
 msgid "Welcome to WordPress %s"
 msgstr "ยินดีต้อนรับสู่เวิร์ดเพรส %s"
 
-#: wp-admin/about.php:138
+#: wp-admin/about.php:142
 msgid "Return to Dashboard &rarr; Updates"
 msgstr "กลับไปที่หน้าควบคุม  &rarr; อัปเดต"
 
-#: wp-admin/about.php:142
+#: wp-admin/about.php:146
 msgid "Go to Dashboard &rarr; Home"
 msgstr "ไปที่หน้าควบคุม &rarr; หน้าหลัก"
 
@@ -4491,7 +4491,7 @@ msgstr "เวิร์ดเพรสถูกสร้างขึ้นโด
 msgid "Core Developers"
 msgstr "ผู้พัฒนาหลัก"
 
-#: wp-admin/about.php:106
+#: wp-admin/about.php:110
 msgid "Under the Hood"
 msgstr "Under the Hood"
 
@@ -6742,7 +6742,7 @@ msgid "User already exists. Password inherited."
 msgstr "ผู้ใช้นี้มีอยู่แล้ว  รหัสผ่านได้ถูกส่งต่อ"
 
 #: wp-admin/includes/class-wp-upgrader.php:2672
-#: wp-admin/includes/update-core.php:1174 wp-admin/update-core.php:432
+#: wp-admin/includes/update-core.php:1177 wp-admin/update-core.php:432
 msgid "WordPress updated successfully"
 msgstr "อัปเดตเวิร์ดเพรสสำเร็จแล้ว"
 
@@ -6802,7 +6802,7 @@ msgid "Must-Use <span class=\"count\">(%s)</span>"
 msgid_plural "Must-Use <span class=\"count\">(%s)</span>"
 msgstr[0] "ต้องใช้ <span class=\"count\">(%s)</span>"
 
-#: wp-admin/about.php:142
+#: wp-admin/about.php:146
 msgid "Go to Dashboard"
 msgstr "ไปที่หน้าหลัก"
 
@@ -7995,7 +7995,7 @@ msgstr[0] "ทั้งหมด <span class=\"count\">(%s)</span>"
 msgid "Verifying the unpacked files&#8230;"
 msgstr "กำลังตรวจสอบไฟล์ที่แตกจากแพคเกจ&#8230;"
 
-#: wp-admin/includes/update-core.php:1055
+#: wp-admin/includes/update-core.php:1058
 msgid "Upgrading database&#8230;"
 msgstr "กำลังอัปเกรดฐานข้อมูล&#8230;"
 
@@ -9483,7 +9483,7 @@ msgstr "ไม่สามารถคัดลอกไฟล์"
 
 #: wp-admin/includes/class-wp-upgrader.php:133 wp-admin/includes/file.php:644
 #: wp-admin/includes/file.php:748 wp-admin/includes/file.php:799
-#: wp-admin/includes/update-core.php:1128
+#: wp-admin/includes/update-core.php:1131
 msgid "Could not create directory."
 msgstr "ไม่สามารถสร้างไดเรกทอรี่ได้"
 
@@ -9734,7 +9734,7 @@ msgstr "เรื่องที่อัปเดต"
 msgid "Post updated. <a href=\"%s\">View post</a>"
 msgstr "อัปเดตเรื่องแล้ว <a href=\"%s\">ดูเรื่องนี้</a>"
 
-#: wp-admin/about.php:64 wp-admin/tools.php:16 wp-admin/tools.php:40
+#: wp-admin/about.php:68 wp-admin/tools.php:16 wp-admin/tools.php:40
 #: wp-admin/tools.php:51
 msgid "Press This"
 msgstr "Press This"
@@ -10170,7 +10170,7 @@ msgstr "ไม่สามารถแตกไฟล์จากคลังเ
 
 #: wp-admin/includes/file.php:664 wp-admin/includes/file.php:761
 #: wp-admin/includes/file.php:794 wp-admin/includes/update-core.php:1020
-#: wp-admin/includes/update-core.php:1123
+#: wp-admin/includes/update-core.php:1126
 msgid "Could not copy file."
 msgstr "ไม่สามารถคัดลอกไฟล์"
 

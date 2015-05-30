@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-04-23 22:14:32+0000\n"
+"PO-Revision-Date: 2015-05-26 06:57:22+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -126,7 +126,7 @@ msgstr[0] "사용중인 테마가 %s개의 메뉴를 지원합니다. 각각의 
 msgid "Customizer"
 msgstr "사용자 정의 하기"
 
-#: wp-includes/taxonomy.php:4173
+#: wp-includes/taxonomy.php:4169
 msgid "Could not split shared term."
 msgstr "공유된 용어는 분리할 수 없습니다."
 
@@ -733,7 +733,7 @@ msgstr "(레이블 없음)"
 
 #. translators: %s: taxonomy label, %l: list of terms formatted as per
 #. $term_template
-#: wp-includes/taxonomy.php:4483
+#: wp-includes/taxonomy.php:4479
 msgid "%s: %l."
 msgstr "%s: %l."
 
@@ -2984,7 +2984,7 @@ msgstr "새로 고침"
 #: wp-includes/formatting.php:2667 wp-includes/script-loader.php:379
 msgctxt "word count: words or characters?"
 msgid "words"
-msgstr "단어들"
+msgstr "words"
 
 #: wp-includes/class-wp-xmlrpc-server.php:1180
 #: wp-includes/class-wp-xmlrpc-server.php:4714
@@ -5581,7 +5581,7 @@ msgid "Invalid Taxonomy"
 msgstr "잘못된 용어"
 
 #: wp-includes/taxonomy.php:1318 wp-includes/taxonomy.php:3382
-#: wp-includes/taxonomy.php:4351
+#: wp-includes/taxonomy.php:4347
 msgid "Empty Term"
 msgstr "빈 용어"
 
@@ -5600,7 +5600,7 @@ msgstr "이 용어를 위한 이름이 필요합니다."
 msgid "Could not insert term into the database"
 msgstr "데이터베이스에 용어를 추가할 수 없습니다."
 
-#: wp-includes/taxonomy.php:4554
+#: wp-includes/taxonomy.php:4550
 msgid "Invalid object ID"
 msgstr "잘못된 개체 ID"
 
@@ -5733,7 +5733,7 @@ msgstr "응답 취소"
 msgid "Duplicate comment detected; it looks as though you&#8217;ve already said that!"
 msgstr "중복된 댓글이 발견되었습니다; 이미 댓글을 다신 것 같습니다!"
 
-#: wp-includes/comment.php:2368
+#: wp-includes/comment.php:2375
 msgid "Could not update comment status"
 msgstr "댓글 상태를 업데이트할 수 없습니다."
 
@@ -6022,7 +6022,7 @@ msgstr "슬러그(Slug) &#8220;%s&#8221; 는 이미 다른 용어로 사용되�
 msgid "The parent theme is missing. Please install the \"%s\" parent theme."
 msgstr "상위 테마가 없습니다. \"%s\" 상위 테마를 설치하세요."
 
-#: wp-includes/wp-db.php:2835
+#: wp-includes/wp-db.php:2991
 msgid "<strong>ERROR</strong>: WordPress %1$s requires MySQL %2$s or higher"
 msgstr "<strong>에러</strong>: 워드프레스 %1$s는 MySQL %2$s 또는 그 이상을 필요로 합니다."
 

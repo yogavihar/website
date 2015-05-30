@@ -92,45 +92,27 @@ else{
 
         <!-- **Main** -->
         <div id="main">
-		<?php
-                    
-            #Header Image Section
+<?php                    
+#Header Image Section
 
-                $tpl_default_settings = get_post_meta($post->ID, '_tpl_default_settings', TRUE);
-                $tpl_default_settings = is_array($tpl_default_settings) ? $tpl_default_settings : array();
-                //Header Image von Event Page Type
-                $_EventHeaderImage = get_post_meta($post->ID, '_EventHeaderImage',TRUE);
-                
-                if(!empty($_EventHeaderImage)){
-                    $tpl_default_settings["show_slider"]=1;
-                    $tpl_default_settings['slider-image']=$_EventHeaderImage;
-                }
-                //var_dump($tpl_default_settings);
-                if (array_key_exists('show_slider', $tpl_default_settings)) :
+$header_image = get_field('header_image');
+$size = 'full'; // (thumbnail, medium, large, full or custom size)
 
-                    echo '<!-- **Slider Section** -->';
-                    echo '<div id="slider">';
-
-
-                    echo '<div id="slider-container">';
-       
-                        $img = isset($tpl_default_settings['slider-image']) ? "<div class='slider-image-only'><img src='{$tpl_default_settings['slider-image']}' alt=''/></div>" : "";
-                        echo $img;
-                        if( !empty($tpl_default_settings['image-claim'])):
-                            echo "<div class='header-image-claim'>&#8222;".stripslashes($tpl_default_settings['image-claim'])."&#8220;";
-                            echo "<p class='author'>".stripslashes($tpl_default_settings['image-claim-author'])."</p></div>";
-                        endif;
-                   
-                    echo '</div>';
-                    echo '</div><!-- **Slider Section - End** -->';
-                endif;
-
-
-             
-                ?>
-                <?php 
-           	
-if( !is_page_template( 'tpl-fullwidth.php' ) ):?>
-                <!-- ** Container ** -->
-                <div class="container"><?php 
-            endif; ?>			
+if( $header_image ) :?>
+    <!-- **Header Image Section** -->
+    <div id="slider">
+        <div id="slider-container">
+            <div class='slider-image-only'>
+            <?php echo wp_get_attachment_image( $header_image, $size );?>
+            </div>
+            <?php  if( get_field('with_quote') ):
+                echo "<div class='header-image-claim'>&#8222;".stripslashes(get_field('quote'))."&#8220;";
+                echo "<p class='author'>".stripslashes(get_field('name_of_author'))."</p></div>";
+            endif; ?>
+        </div>
+        </div><!-- **Header Image Section - End** -->
+<?php endif; ?>
+<?php if( !is_page_template( 'tpl-fullwidth.php' ) ):?>
+    <!-- ** Container ** -->
+    <div class="container"><?php 
+endif; ?>			
