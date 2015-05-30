@@ -188,32 +188,32 @@ div.hr {
 }
 
 .center2 {
-  #left: 50%;
+  /*left: 50%;*/
 }
 
 .center3 {
   margin: 0 auto;
-  #left: -50%;
+  /*left: -50%;*/
 }
 
 .center1, .vcenter1 {
   display: table;
-  #display: block;
-  #text-align: auto;
-  #position: relative;
+  /*display: block;
+  text-align: auto;
+  position: relative;*/
 }
 
 .center2, .vcenter2 {
   display: table-cell;
   vertical-align: middle;
-  #position: absolute;
-  #top: 50%;
+  /*position: absolute;
+  top: 50%;*/
 }
 
 .center3, .vcenter3 {
   display: block;
-  #position: relative;
-  #top: -50%;
+  /*position: relative;
+  top: -50%;*/
 }
 
 /*
@@ -274,8 +274,8 @@ a.bgfx:hover, a.bgfx1:hover, a.bgfx2:hover {
 }
 
 .hit .hit1 {
-  #background: #fff;
-  #filter: alpha(opacity=1);
+  /*background: #fff;
+  filter: alpha(opacity=1);*/
 }
 
 

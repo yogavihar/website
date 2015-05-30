@@ -112,7 +112,7 @@ function wcs3_get_day_schedule( $day, $location_id = NULL, $limit = NULL ) {
  * @param string $location
  * @param string $mode: 12 or 24.
  */
-function wcs3_get_classes( $layout, $location, $mode = '12' ) {
+function wcs3_get_classes( $layout, $location, $mode = '12', $instructor = 'all', $class = 'all' ) {
     global $wpdb;
     
     $format = ( $mode == '12' ) ? 'g:i a' : 'G:i';
@@ -122,7 +122,7 @@ function wcs3_get_classes( $layout, $location, $mode = '12' ) {
     $meta_table = $wpdb->prefix . 'postmeta';
     
     $query = "SELECT 
-                c.ID, c.post_title AS class_title, c.post_content AS class_desc,
+                c.post_title AS class_title, c.post_content AS class_desc,
                 i.post_title AS instructor_title, i.post_content AS instructor_desc,
                 l.post_title AS location_title, l.post_content AS location_desc,
                 s.weekday, s.start_hour, s.end_hour, 
@@ -138,10 +138,23 @@ function wcs3_get_classes( $layout, $location, $mode = '12' ) {
             $schedule_table,
             $posts_table,
             $meta_table );
-    
+
+    // Filter by location
     if ( $location != 'all' ) {
         $query .= " AND l.post_title = %s";
         $query = $wpdb->prepare( $query, array( $location ) );
+    }
+
+    // Filter by instructor
+    if ( $instructor != 'all' ) {
+        $query .= " AND i.post_title = %s";
+        $query = $wpdb->prepare( $query, array( $instructor ) );
+    }
+
+    // Filter by class
+    if ( $class != 'all' ) {
+        $query .= " AND c.post_title = %s";
+        $query = $wpdb->prepare( $query, array( $class ) );
     }
     
     $query .= " ORDER BY s.start_hour";

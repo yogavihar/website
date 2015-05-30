@@ -7,7 +7,7 @@
  * Standard [wcs] shortcode
  * 
  * Default:
- *     [wcs layout="normal" location="all"]
+ *     [wcs layout="normal" location="all" class="all" instructor="all"]
  */
 function wcs3_standard_shortcode( $atts ) {
     global $wcs3_js_data;
@@ -18,6 +18,8 @@ function wcs3_standard_shortcode( $atts ) {
 	extract( shortcode_atts( array(
 	    'layout' => 'normal',
 	    'location' => 'all',
+        'instructor' => 'all',
+        'class' => 'all',
 	    'style' => 'normal',
 	), $atts ) );
 	
@@ -30,7 +32,7 @@ function wcs3_standard_shortcode( $atts ) {
 	$weekdays = wcs3_get_indexed_weekdays( $abbr = TRUE, $first_day_of_week );
 	
 	// Render normal layout
-	$classes = wcs3_get_classes( $layout, $location, $mode );
+	$classes = wcs3_get_classes( $layout, $location, $mode, $instructor, $class );
 	
 	// Location
 	$location_slug = preg_replace( "/[^A-Za-z0-9]/", '-', $location );
@@ -108,30 +110,12 @@ function wcs3_render_normal_schedule( $classes, $location, $weekdays ) {
     }
     $output .= '</tr>';
         
-    /*for($i=8;$i<=22;$i+=2){
-        $output .= '<tr><th class="wcs3-hour-row-' . $i . '">' . $i. ':00</th>';
-         foreach ( $weekdays as $day => $index ) {
-             
-            $css_name = 'wcs3-hour-row-' . $hour . ' wcs3-day-col-' . $index . ' wcs3-abs-col-' . $counter.' class'.$v[0]->ID;
-            $output .= '<td class="wcs3-cell ' . $css_name . '"></td>';
-            $counter++;
-         }
-          $output .= '</tr>';
-          
-    }*/
-    
-    
     // Classes are grouped by start hour.
     foreach ( $classes as $hour => $v ) {
-        //echo("<pre>");
-        //var_dump($v);
         $output .= '<tr><th class="wcs3-hour-row-' . $hour . '">' . $v[0]->start_hour . '</th>';
         $counter = 0;
         foreach ( $weekdays as $day => $index ) {
             $css_name = 'wcs3-hour-row-' . $hour . ' wcs3-day-col-' . $index . ' wcs3-abs-col-' . $counter;
-            if($index==$v[0]->weekday){
-                $css_name .=' class'.$v[0]->ID;
-            }
             $output .= '<td class="wcs3-cell ' . $css_name . '"></td>';
             $counter++;
         }

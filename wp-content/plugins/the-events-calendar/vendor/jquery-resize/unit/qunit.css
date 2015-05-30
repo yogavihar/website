@@ -19,8 +19,8 @@ li {
 #qunit-tests {
   font-size: smaller;
   /* IE6/7 seem to have trouble displaying an OL with no LI children */
-  #border-bottom: 1px solid #fff;
-  #margin-bottom: -1px;
+  /*border-bottom: 1px solid #fff;
+  margin-bottom: -1px;*/
 }
 
 #qunit-tests li {

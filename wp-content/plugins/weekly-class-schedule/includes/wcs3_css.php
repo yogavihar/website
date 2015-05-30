@@ -24,7 +24,7 @@ function wcs3_load_dynamic_css() {
     <<<CSS
 <style>
 	.wcs3-class-container {
-	    //background-color: #$base_color;
+	    background-color: #$base_color;
 	    color: #$text;
 	}
 	.wcs3-class-container a {
