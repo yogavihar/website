@@ -99,126 +99,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 			</td>
 		</tr>
 	</table>
-        <table id="event_images" class="eventtable">
-
-            <tr>
-                <td colspan="2" class="tribe_sectionheader">
-                    <h4>Bilder</h4></td>
-            </tr>
-            <tr>
-                <td>Header Image</td>
-                <td>
-                    <div id="header-image" class="custom-box">
-                        <div class="custom-box">
-                            <div class="column one-sixth">
-                        <?php
-                        if(!empty( $_EventHeaderImage )){
-                            echo "<img style='max-width:100%;' src='".esc_attr( $_EventHeaderImage )."'>";
-                        }else{ 
-                          _e( 'Choose Header Image (1000px width)','dt_themes');  
-                        } ?>
-                            </div>
-                            <div class="column five-sixth last">
-                                <div class="image-preview-container">
-                                    <input name="EventHeaderImage" type="text" class="uploadfield medium" readonly="readonly" value="<?php echo ( isset( $_EventHeaderImage ) ) ? esc_attr( $_EventHeaderImage ) : ''; ?>"/>
-                                    <input type="button" value="<?php _e('Upload','dt_themes');?>" class="upload_image_button show_preview" />
-                                    <input type="button" value="<?php _e('Remove','dt_themes');?>" class="upload_image_reset" />
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>Bild 1</td>
-                <td>
-                    <div id="image1" class="custom-box">
-                        <div class="custom-box">
-                            <div class="column one-sixth">
-                              <?php
-                        if(!empty( $_EventImage1 )){
-                            echo "<img style='max-width:100%;' src='".esc_attr( $_EventImage1 )."'>";
-                        }else{ 
-                          _e( 'Choose Image','dt_themes');  
-                        } ?>
-                            </div>
-                            <div class="column five-sixth last">
-                                <div class="image-preview-container">
-                                    <input name="EventImage1" type="text" class="uploadfield medium" readonly="readonly" value="<?php echo ( isset( $_EventImage1 ) ) ? esc_attr( $_EventImage1 ) : ''; ?>"/>
-                                    <input type="button" value="<?php _e('Upload','dt_themes');?>" class="upload_image_button show_preview" />
-                                    <input type="button" value="<?php _e('Remove','dt_themes');?>" class="upload_image_reset" />
-                                </div>
-
-                            </div>
-                        </div>
-                        
-                    </div>
-            </td>
-        </tr>
-            <tr>
-                <td>Bild 2</td>
-                <td>
-                    <div id="image2" class="custom-box">
-                        <div class="custom-box">
-                            <div class="column one-sixth">
-                                                    <?php
-                        if(!empty( $_EventImage2 )){
-                            echo "<img style='max-width:100%;' src='".esc_attr( $_EventImage2 )."'>";
-                        }else{ 
-                          _e( 'Choose Image','dt_themes');  
-                        } ?>    
-                            </div>
-                            <div class="column five-sixth last">
-                                <div class="image-preview-container">
-                                    <input name="EventImage2" type="text" class="uploadfield medium" readonly="readonly" value="<?php echo ( isset( $_EventImage2 ) ) ? esc_attr( $_EventImage2 ) : ''; ?>"/>
-                                    <input type="button" value="<?php _e('Upload','dt_themes');?>" class="upload_image_button show_preview" />
-                                    <input type="button" value="<?php _e('Remove','dt_themes');?>" class="upload_image_reset" />
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>Bild 3</td>
-                <td>
-                    <div id="image3" class="custom-box">
-                        <div class="custom-box">
-                            <div class="column one-sixth">
-                                                  <?php
-                        if(!empty( $_EventImage3 )){
-                            echo "<img style='max-width:100%;' src='".esc_attr( $_EventImage3 )."'>";
-                        }else{ 
-                          _e( 'Choose Image','dt_themes');  
-                        } ?>
-                            </div>
-                            <div class="column five-sixth last">
-                                <div class="image-preview-container">
-                                    <input name="EventImage3" type="text" class="uploadfield medium" readonly="readonly" value="<?php echo ( isset( $_EventImage3 ) ) ? esc_attr( $_EventImage3 ) : ''; ?>"/>
-                                    <input type="button" value="<?php _e('Upload','dt_themes');?>" class="upload_image_button show_preview" />
-                                    <input type="button" value="<?php _e('Remove','dt_themes');?>" class="upload_image_reset" />
-                                </div>
-
-                            </div>
-                        </div>
-                   
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>Thumbnail auf Startseite:</td>
-                <td>
-                    <select tabindex="<?php tribe_events_tab_index(); ?>" name="EventTeaserImage">
-                        <option value="1" <?php if( isset( $_EventTeaserImage ) and $_EventTeaserImage=="1") echo "selected";?>>Bild 1</option>
-                        <option value="2" <?php if( isset( $_EventTeaserImage ) and $_EventTeaserImage=="2") echo "selected";?>>Bild 2</option>
-                        <option value="3" <?php if( isset( $_EventTeaserImage ) and $_EventTeaserImage=="3") echo "selected";?>>Bild 3</option>
-                    </select>
-                </td>
-            </tr>
-    </table>
-	
 	<table id="event_venue" class="eventtable">
 		<tr>
 			<td colspan="2" class="tribe_sectionheader">
@@ -262,6 +142,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			</tr>
 		
 		<?php endif; ?>
+        </table>
 		<?php $this->do_action( 'tribe_events_cost_table', $postId, true ) ?>
 
 

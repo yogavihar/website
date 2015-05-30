@@ -10,6 +10,7 @@
  *
  */
 
+
 if ( ! defined( 'ABSPATH' ) ) {
 	die( '-1' );
 }
@@ -23,7 +24,7 @@ $event_id = get_the_ID(); ?>
 <section id="primary" class="page-with-sidebar with-right-sidebar">
     <div class="col1">
         <?php if($mainCat=="Kurse"):?>
-            <span> <img src='<?php get_home_url();?>/wp-includes/images/icon-meditation.png' alt=''/></span>
+            <span> <img src='<?php echo site_url();?>/wp-includes/images/icon-meditation.png' alt=''/></span>
         <?php else:?>
             <span class='fa fa-leaf'> </span>
         <?php endif;?>
@@ -120,27 +121,26 @@ $event_id = get_the_ID(); ?>
 <section id="secondary-right" class="secondary-sidebar secondary-has-right-sidebar"><?php get_sidebar( );?></section>
 </div>
 <?php 
-$_EventImage1 = get_post_meta($post_ID, '_EventImage1',TRUE);
-$_EventImage2 = get_post_meta($post_ID, '_EventImage2',TRUE);
-$_EventImage3 = get_post_meta($post_ID, '_EventImage3',TRUE);
-if(!empty( $_EventImage1 )) :?>
-<section id="image-section-container">
-    <div class="image-section">
-        <img src="<?php echo($_EventImage1);?>">
-    </div>
-    <?php if(!empty( $_EventImage2 )) :?>
-        <div class="image-section">
-            <img src="<?php echo($_EventImage2);?>">
-        </div>
-    <?php endif; ?>
-    <?php if(!empty( $_EventImage3 )) :?>
-        <div class="image-section">
-            <img src="<?php echo($_EventImage3);?>">
-        </div>
-    <?php endif; ?>
-    
-    
-</section>
 
-<?php endif; ?>
+// check if the repeater field has rows of data
+if( have_rows('images') ):?>
+<section id="image-section-container"> 
 
+<?php // loop through the rows of data
+    while ( have_rows('images') ) : 
+        the_row();
+        $size = get_sub_field('size');
+        $image = get_sub_field('image_id');
+        
+        $style='';
+        if($size=="double")
+            $style=" style='flex:2;'";
+        
+        echo "<div class='image-section' ".$style.">";
+        echo wp_get_attachment_image( $image, 'full' );
+        echo "</div>";
+    ?>
+
+<?php endwhile;
+echo"</section>";
+endif;?>

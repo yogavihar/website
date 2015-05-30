@@ -1,5 +1,5 @@
 <?php /*
-  * Template Name: Startseite
+  * Template Name: Startseite english
   * Description: Layout der Startseite
   *
   * */ ?>
@@ -12,25 +12,25 @@
             <div class='fullwidth-section '
                  style="padding-top:95px;padding-bottom:50px;margin-top:-35px;">
                 <div class="container">
-                    <div class='column dt-sc-one-third   first'>
-                        <div class='dt-sc-ico-content  type2 cyan'>
-                            <a href='<?php echo site_url();?>/yoga'>
+                    <div class='column dt-sc-one-third first'>
+                        <div class='dt-sc-ico-content type2 cyan'>
+                            <a href='<?php echo site_url();?>/en/yoga'>
                                 <div class='icon'>
                                     <span>  <img style="  max-width: 55%;margin-top: 21%;color:#37251b;" src='<?php echo site_url();?>/wp-includes/images/meditation.svg' alt=''/>
                                         <!--img src='wp-includes/images/icon-meditation.png' alt=''/-->
                                     </span>
                                 </div>
-                                <h2>Yoga Klassen </h2>
-                                <p>Hier eine Übersicht über die Yogaklassen.</p>
+                                <h2>Yoga Classes </h2>
+                                <p>Here an overview of our classes.</p>
                             </a>
                         </div>
                     </div>
                     <div class='column dt-sc-one-third'>
                         <div class='dt-sc-ico-content  type2 gold'>
-                            <a href='<?php echo site_url();?>/retreats'>
+                            <a href='<?php echo site_url();?>/en/retreats'>
                                 <div class='icon'><span class='fa fa-leaf'> </span></div>
                                 <h2>Retreats </h2>
-                                <p>Momente der Stille und Praxis</p>
+                                <p>Moments of inner peace and yoga practise</p>
                             </a>
                         </div>
                     </div>
@@ -38,15 +38,15 @@
                         <div class='dt-sc-ico-content  type2 electricblue'>
                             <a href='<?php echo site_url();?>/wochenplan'>
                             <div class='icon'><span class='fa fa-calendar'> </span></div>
-                            <h2> Wochenplan </h2>
+                            <h2> Schedule </h2>
 
-                            <p>wöchentliche Yogakurse im Studio</p></a></div>
+                            <p>weekly courses in our studio</p></a></div>
                     </div>
                 </div>
             </div>
             <div class='fullwidth-section termine'>
                 <div class="container2">
-                    <div id="termine-portfolio-title" class="border-title aligncenter"><h2>Aktuelle Termine</h2></div>
+                    <div id="termine-portfolio-title" class="border-title aligncenter"><h2>Upcoming events</h2></div>
                     <div id="termine-portfolio">
 
 

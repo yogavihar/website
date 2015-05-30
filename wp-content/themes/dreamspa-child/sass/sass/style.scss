@@ -40,6 +40,9 @@ Version:        1.0/
         border: 1px solid #eeeeee;
    }
 }
+pre{
+    margin:0;
+}
 body{
   background: #fcf8f2;
   color:#3a4f59;
@@ -78,6 +81,9 @@ body{
       h1, h3.widgettitle, .vcalendar li .entry-title a, .tribe-events-single-event-title,
         #main-menu ul > li.current_page_item > a, #main-menu ul > li.current_page_parent > a{
         color:$green-font-highlight-color !important;
+      }
+      .termine{
+          background: #ffffff !important;
       }
   }
     &.blue{
@@ -152,6 +158,9 @@ body{
 	background: #f4ede3 url(images/border.png) top repeat-x !important;
 	margin-top:10px !important;
         
+         &.no-borduere{
+            background-image:none !important;
+        }
          
         .fullwidth-section{
              padding-left: 60px;

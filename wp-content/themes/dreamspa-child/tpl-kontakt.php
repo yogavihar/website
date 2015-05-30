@@ -2,7 +2,7 @@
 <?php get_header();?>
 
 	<!-- ** Primary Section ** -->
-	<section id="primary" class="content-full-width">
+	<section id="primary" class="content-full-width no-borduere">
             <?php
 		if( have_posts() ):
 			while( have_posts() ):
