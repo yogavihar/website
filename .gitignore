@@ -7,6 +7,15 @@ cache.properties
 .project
 _notes
 *.bak
+.htaccess
+wp-config.php
+wp-content/wp-cache-config.php
+
+#Verzeichnisse
+cache/*
+wp-content/uploads/*
+
+
 
 
 # Mac Spezielle Dateien
