@@ -41,11 +41,21 @@
                                     $event_date=date('d.m.Y', strtotime(get_post_meta(get_the_ID(), "_EventStartDate", true)))." - ".date('d.m.Y', strtotime(get_post_meta(get_the_ID(), "_EventEndDate", true)));
 
                                     ?>
-                                    <div id="termine-thumbnails-<?php echo the_ID();?>"
-                                         class="dt-gallery column dt-sc-one-third with-space <?php if($number%4==1) echo " first";?>">
+                             <div id="termine-thumbnails-<?php echo the_ID();?>"
+                                         class="dt-gallery column dt-sc-one-third with-space <?php if($number==1) echo " first";?>">
                                         <a href="<?php echo(get_the_permalink());?>" title="<?php echo(get_the_title());?>">
                                         <figure>
-                                            <img src="<?php echo(get_post_meta(get_the_ID(), '_EventImage1', true));?>" width="1060" height="795">
+                                            <?php if( have_rows('images') ):
+                                                $rows = get_field('images' ); 
+                                                $index= 0;    
+                                                if(get_field('thumnail_image' ))
+                                                    $index= get_field('thumnail_image' )-1;
+                                              
+                                                
+                                                $image = $rows[$index]['image_id'];
+                                                echo wp_get_attachment_image( $image, 'full' );
+                                                ?>
+                                            <?php endif;?>
                                         </figure>
                                         </a>
                                         <div class="dt-gallery-details">

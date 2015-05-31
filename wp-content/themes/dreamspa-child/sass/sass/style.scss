@@ -196,7 +196,7 @@ body{
 #image-section-container{
     margin-top:10px;
     .image-section{
-        flex: 1;
+        flex: 1.3333333;
           box-sizing: border-box;
             margin-right: 10px;
             &:last-of-type{
@@ -347,6 +347,9 @@ line-height:20px;
     .dt-gallery{
        box-sizing: border-box;
        margin-left: 1.33%;
+       &:nth-of-type(4n+0){
+         margin-left: 0;  
+       }
        &.first{
          margin-left: 0;  
        }
@@ -396,11 +399,20 @@ line-height:20px;
         .tribe-events-single-event-title{
             margin-top:10px;
         }
-    }   
+    }
+   
 }
+ #tribe-events-pg-template .tribe-events-content ul li{
+        margin:0;
+         line-height: 1.5;
+    }
+    #tribe-events .tribe-events-content p, .tribe-events-after-html p, .tribe-events-before-html p{
+        line-height: 1.5;
+    }
 #shortcode {
   white-space: nowrap;
 }
+
 #language-switcher{
    position: absolute;
     top: 35px;

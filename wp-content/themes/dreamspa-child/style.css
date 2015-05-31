@@ -219,7 +219,7 @@ body.blue #main-menu ul > li.current_page_item > a, body.blue #main-menu ul > li
 }
 /* line 198, sass/sass/style.scss */
 #image-section-container .image-section {
-  flex: 1;
+  flex: 1.3333333;
   box-sizing: border-box;
   margin-right: 10px;
 }
@@ -399,77 +399,92 @@ p {
   margin-left: 1.33%;
 }
 /* line 350, sass/sass/style.scss */
+#termine-portfolio .dt-gallery:nth-of-type(4n+0) {
+  margin-left: 0;
+}
+/* line 353, sass/sass/style.scss */
 #termine-portfolio .dt-gallery.first {
   margin-left: 0;
 }
-/* line 355, sass/sass/style.scss */
+/* line 358, sass/sass/style.scss */
 #termine-portfolio .dt-gallery-details {
   background-image: none;
 }
-/* line 357, sass/sass/style.scss */
+/* line 360, sass/sass/style.scss */
 #termine-portfolio .dt-gallery-details h5 {
   margin-top: 6%;
   font-family: 'Tahoma', sans-serif;
   font-size: 18px;
 }
-/* line 362, sass/sass/style.scss */
+/* line 365, sass/sass/style.scss */
 #termine-portfolio .dt-gallery-details h6 {
   max-height: 32px;
   overflow: hidden;
 }
-/* line 366, sass/sass/style.scss */
+/* line 369, sass/sass/style.scss */
 #termine-portfolio .dt-gallery-details .timespan {
   font-size: 12px;
 }
-/* line 369, sass/sass/style.scss */
+/* line 372, sass/sass/style.scss */
 #termine-portfolio .dt-gallery-details .dt-gallery-details-inner {
   background: none;
   border: none;
 }
-/* line 375, sass/sass/style.scss */
+/* line 378, sass/sass/style.scss */
 #termine-portfolio figure {
   margin: 0;
 }
 
-/* line 380, sass/sass/style.scss */
+/* line 383, sass/sass/style.scss */
 #tribe-events .page-with-sidebar {
   padding-left: 40px !important;
   padding-right: 40px !important;
 }
-/* line 384, sass/sass/style.scss */
+/* line 387, sass/sass/style.scss */
 #tribe-events .col1 {
   float: left;
   width: 10%;
 }
-/* line 387, sass/sass/style.scss */
+/* line 390, sass/sass/style.scss */
 #tribe-events .col1 .fa {
   font-size: 2.2em;
   margin-top: 0.3em;
   margin-left: 0.4em;
 }
-/* line 393, sass/sass/style.scss */
+/* line 396, sass/sass/style.scss */
 #tribe-events .col2 {
   float: right;
   width: 90%;
 }
-/* line 396, sass/sass/style.scss */
+/* line 399, sass/sass/style.scss */
 #tribe-events .col2 .tribe-events-single-event-title {
   margin-top: 10px;
 }
 
-/* line 401, sass/sass/style.scss */
+/* line 405, sass/sass/style.scss */
+#tribe-events-pg-template .tribe-events-content ul li {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* line 409, sass/sass/style.scss */
+#tribe-events .tribe-events-content p, .tribe-events-after-html p, .tribe-events-before-html p {
+  line-height: 1.5;
+}
+
+/* line 412, sass/sass/style.scss */
 #shortcode {
   white-space: nowrap;
 }
 
-/* line 404, sass/sass/style.scss */
+/* line 416, sass/sass/style.scss */
 #language-switcher {
   position: absolute;
   top: 35px;
   right: 0;
   list-style: none;
 }
-/* line 409, sass/sass/style.scss */
+/* line 421, sass/sass/style.scss */
 #language-switcher li {
   display: inline;
   margin-left: 5px;
@@ -481,29 +496,29 @@ p {
 }*/
 /*----*****---- << Tablet Portrait >> ----*****----*/
 @media only screen and (min-width: 650px) and (max-width: 959px) {
-  /* line 422, sass/sass/style.scss */
+  /* line 434, sass/sass/style.scss */
   .footer-widgets-wrapper .container div.dt-sc-one-fourth {
     width: 48%;
   }
 }
 /*----*****---- << Desktop >> ----*****----*/
 @media only screen and (min-width: 960px) {
-  /* line 431, sass/sass/style.scss */
+  /* line 443, sass/sass/style.scss */
   .container, #tribe-events-container, #image-section-container {
     display: flex;
   }
 
-  /* line 434, sass/sass/style.scss */
+  /* line 446, sass/sass/style.scss */
   .fullwidth-section .container, #footer .footer-widgets-wrapper .container {
     width: 860px;
     line-height: 22px;
   }
 
-  /* line 437, sass/sass/style.scss */
+  /* line 449, sass/sass/style.scss */
   .footer-widgets-wrapper .container div.dt-sc-one-fourth {
     width: 20%;
   }
-  /* line 439, sass/sass/style.scss */
+  /* line 451, sass/sass/style.scss */
   .footer-widgets-wrapper .container div.dt-sc-one-fourth:last-of-type {
     width: 34%;
   }
