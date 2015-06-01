@@ -9,8 +9,7 @@
     <section id="primary" class="content-full-width">
 
         <div id="post-109" class="post-109 page type-page status-publish hentry">
-            <div class='fullwidth-section '
-                 style="padding-top:95px;padding-bottom:50px;margin-top:-35px;">
+            <div id="teaser-area" class='fullwidth-section'>
                 <div class="container">
                     <div class='column dt-sc-one-third first'>
                         <div class='dt-sc-ico-content type2 cyan'>

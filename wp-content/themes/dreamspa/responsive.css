@@ -30,7 +30,11 @@
 		
 		.page-with-sidebar ul.products li .product-wrapper.product-four-column .product-details .price { width:88%; }
 		.page-with-sidebar ul.products li .product-wrapper.product-four-column .product-buttons { float:left; margin:0px 0px 0px 20px; padding-bottom:10px; }
-		
+                #teaser-area{
+                    padding-top:95px;
+                    padding-bottom:50px;
+                    margin-top:-35px;
+                }
 	}
 
 	/*----*****---- << Desktop >> ----*****----*/	
@@ -123,8 +127,8 @@
 
     @media only screen and (min-width:768px) and (max-width:959px) {
 		
-		.container { width:710px; }
-		.boxed .wrapper, .boxed .is-sticky #main-menu { width:750px; }
+		.container { width:100%; }
+		.boxed .wrapper, .boxed .is-sticky #main-menu { width:100%; }
 		
 		/*----*****---- << Header >> ----*****----*/		
 		#main-menu ul.menu > li > a { padding:0px 12px; font-size:14px; }
@@ -502,8 +506,8 @@
 
     @media only screen and (min-width: 480px) and (max-width: 767px) {
 		
-		.container { width:420px; }
-		.boxed .wrapper, .boxed .is-sticky #main-menu { width:460px; }
+		.container { width:90%; }
+		.boxed .wrapper, .boxed .is-sticky #main-menu { width:90%; }
 		
 		/*----*****---- << Woocommerce >> ----*****----*/		
 		.shop_table.cart .checkout-button { margin-top:10px; }
@@ -643,9 +647,14 @@
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (min-width: 320px) and (max-width: 479px) {
 		
-		.container { width:290px; }
+		.container { width:95% }
 		.boxed .wrapper, .boxed .is-sticky #main-menu { width:100%; }
-		
+                .content-full-width .fullwidth-section {
+                    padding-left: 5%;
+                    padding-right: 5%;
+                    padding-bottom: 0;
+                }
+
 		/*----*****---- << Shortcodes >> ----*****----*/
 		ul.dt-sc-tabs-frame > li { margin-bottom:20px; }
 		ul.dt-sc-tabs-frame { margin-bottom:0px; }
@@ -672,7 +681,7 @@
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 319px) {
 		
-		.container { width:200px; }
+		.container { width:95% }
 		.boxed .wrapper, .boxed .is-sticky #main-menu { width:100%; }
 		
 		/*----*****---- << Headings >> ----*****----*/

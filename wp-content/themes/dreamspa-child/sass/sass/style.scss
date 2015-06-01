@@ -151,6 +151,8 @@ body{
 
 .footer-widgets-wrapper{
   background: #f4ede3 url(images/border.png) top repeat-x;
+    padding: 75px 5% 0px;
+    box-sizing: border-box;
 }
 
 
@@ -427,12 +429,39 @@ line-height:20px;
 .container{
     width:  90% !important;
 }*/
+
 /*----*****---- << Tablet Portrait >> ----*****----*/	
-    @media only screen and (min-width:650px) and (max-width:959px) {
+    @media only screen and  (max-width:959px) {
+        .footer-widgets-wrapper{
+            .container{
+                div.dt-sc-one-fourth{
+                     aside{
+                        padding-bottom:10px;
+                    }
+                }
+            }
+        } 
+    }
+/*----*****---- << Tablet Portrait >> ----*****----*/	
+    @media only screen and (min-width:500px) and (max-width:649px) {
         .footer-widgets-wrapper{
             .container{
                 div.dt-sc-one-fourth{
                     width:48%;
+                }
+            }
+        } 
+    }
+    /*----*****---- << Tablet Portrait >> ----*****----*/	
+    @media only screen and (min-width:630px) and (max-width:959px) {
+        
+        .footer-widgets-wrapper{
+            .container{
+                div.dt-sc-one-fourth{
+                    width:32%;
+                    &:last-of-type{
+                         width:100%;
+                    }
                 }
             }
         } 
@@ -443,6 +472,10 @@ line-height:20px;
         .container, #tribe-events-container, #image-section-container{
             display: flex;
         }
+        .footer-widgets-wrapper{
+            padding: 75px 0px 0px;
+        }
+        
         .fullwidth-section .container, #footer .footer-widgets-wrapper .container { width:860px; line-height:22px; }
         .footer-widgets-wrapper{
             .container{
