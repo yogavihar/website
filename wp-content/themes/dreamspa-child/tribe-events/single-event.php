@@ -137,7 +137,8 @@ if( have_rows('images') ):?>
             $style=" style='flex:2;'";
         
         echo "<div class='image-section' ".$style.">";
-        echo wp_get_attachment_image( $image, 'full' );
+        //echo wp_get_attachment_image( $image, false );
+        echo '<img src="'.wp_get_attachment_url($image).'" alt="" />';
         echo "</div>";
     ?>
 

@@ -96,14 +96,16 @@ else{
 #Header Image Section
 
 $header_image = get_field('header_image');
-$size = 'full'; // (thumbnail, medium, large, full or custom size)
+//$size = 'full'; // (thumbnail, medium, large, full or custom size)
 
 if( $header_image ) :?>
     <!-- **Header Image Section** -->
     <div id="slider">
         <div id="slider-container">
             <div class='slider-image-only'>
-            <?php echo wp_get_attachment_image( $header_image, $size );?>
+            <?php // echo wp_get_attachment_image( $header_image, $size );
+            echo '<img src="'.wp_get_attachment_url($header_image).'" alt="" />';
+            ?>
             </div>
             <?php  if( get_field('with_quote') ):
                 echo "<div class='header-image-claim'>&#8222;".stripslashes(get_field('quote'))."&#8220;";

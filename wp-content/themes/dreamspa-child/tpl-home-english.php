@@ -55,8 +55,11 @@
 
                             query_posts(array(
                                 'post_type' => 'tribe_events',
-                                'posts_per_page' => 6
+                                'lang' => 'en',
+                                'posts_per_page' => 6,
+                                
                             ));
+                            
 
                             if (have_posts()):
                                 //echo"<pre>";
@@ -109,6 +112,7 @@
                     <div class='dt-sc-hr-invisible-small  '></div>
                 </div>
             </div>
+            <?php echo $GLOBALS['wp_query']->request; ?>
 
 
 

@@ -55,6 +55,7 @@
 
                             query_posts(array(
                                 'post_type' => 'tribe_events',
+                                'lang' => 'es',
                                 'posts_per_page' => 6
                             ));
 

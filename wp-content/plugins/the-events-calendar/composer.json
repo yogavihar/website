@@ -1,9 +1,9 @@
 {
-	"name": "moderntribe/the-events-calendar",
+	"name": "Lindas Events Calendar",
 	"description": "The Events Calendar WordPress plugin by Modern Tribe und Linda",
 	"type": "project",
 	"keywords": ["wordpress", "events"],
-	"homepage": "http://tri.be/shop/wordpress-events-calendar/",
+	"homepage": "",
 	"license": "GPL-2.0",
 	"require-dev": {
 		"codeception/codeception": "2.*",

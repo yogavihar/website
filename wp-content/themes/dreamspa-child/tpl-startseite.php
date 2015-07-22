@@ -13,9 +13,9 @@
                 <div class="container">
                     <div class='column dt-sc-one-third   first'>
                         <div class='dt-sc-ico-content  type2 cyan'>
-                            <a href='<?php echo site_url();?>/yoga'>
+                            <a href='<?php echo site_url();?>/yoga/yoga-kurse/'>
                                 <div class='icon'>
-                                    <span>  <img style="  max-width: 55%;margin-top: 21%;color:#37251b;" src='<?php echo site_url();?>/wp-includes/images/meditation.svg' alt=''/>
+                                    <span>  <img style="  max-width: 55%;margin-top: 21%;color:#37251b;" src='<?php echo site_url();?>/wp-includes/images/icon-meditation.png' alt=''/>
                                         <!--img src='wp-includes/images/icon-meditation.png' alt=''/-->
                                     </span>
                                 </div>

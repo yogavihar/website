@@ -43,7 +43,7 @@ if ( ! class_exists( 'TribeEventsAPI' ) ) {
 
 			if ( ! is_wp_error( $eventId ) ) {
 				TribeEventsAPI::saveEventMeta( $eventId, $args, get_post( $eventId ) );
-
+                                //hier noch Language in Taxomony speichern....
 				return $eventId;
 			}
 		}
@@ -197,6 +197,12 @@ if ( ! class_exists( 'TribeEventsAPI' ) ) {
 				);
 				wp_update_post( $update_event );
 			}
+                            
+                        //Sprache
+                        //wp_set_post_terms( $event_id, 46 );
+                        //wp_set_object_terms($event_id, 46);
+                        //pll_save_term_translations($arr)
+                        //$term_taxonomy_ids = wp_set_object_terms( $event_id, 'pll_12356765', 'post_translations');
 
 			do_action( 'tribe_events_update_meta', $event_id, $data );
 		}
