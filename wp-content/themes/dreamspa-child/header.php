@@ -24,10 +24,10 @@ $section_id = empty( $post->ancestors ) ? $post->ID : end( $post->ancestors );
  * 735 oder so
  */
  $body_class="";
-if ($section_id==739)
+if ($section_id==739 or $section_id==994 or $section_id==996)
     $body_class="blue";
 
-elseif($section_id==756)
+elseif($section_id==756 or $section_id==998 or $section_id==1000)
     $body_class="green";
 else{
     if($post->post_type =="tribe_events"){

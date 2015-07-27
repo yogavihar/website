@@ -43,6 +43,13 @@ msgstr "Programm"
 msgid "Event Category:"
 msgstr "Kategorie"
 
+
+msgid "Actual Yoga classes"
+msgstr "Aktuelle Yoga-Klassen"
+
+msgid "Actual Retreats"
+msgstr "Aktuelle Retreats"
+
 # @ tribe-events-calendar
 #: ../admin-views/admin-update-message.php:9
 #: ../admin-views/admin-welcome-message.php:11

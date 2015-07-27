@@ -156,7 +156,7 @@ jQuery(document).ready(function() {
 			  var pagger = jQuery(this).parents(".dt-sc-testimonial-carousel-wrapper").find("div.carousel-arrows"),
 			      next = pagger.find("a.testimonial-next"),
 				  prev = pagger.find("a.testimonial-prev") ;
-			  		
+              
 			  jQuery(this).carouFredSel({
 				  responsive:true,
 				  auto:false,
@@ -183,7 +183,7 @@ jQuery(document).ready(function() {
 				  $min = jQuery(this).parents(".dt-sc-images-carousel-wrapper").data('min'),
 				  $max = jQuery(this).parents(".dt-sc-images-carousel-wrapper").data('max'),
 				  $width = jQuery(this).parents(".dt-sc-images-carousel-wrapper").data('width');
-
+                         
 			jQuery(this).carouFredSel({
 				  responsive:true,
 				  auto:false,

@@ -5,7 +5,7 @@
 	<section id="primary" class="content-full-width">
             <div class='fullwidth-section termine'>
                 <div class="container2">
-                    <div id="termine-portfolio-title" class="border-title aligncenter"><h2>Aktuelle Retreats</h2></div>
+                    <div id="termine-portfolio-title" class="border-title aligncenter"><h2><?php _e( 'Actual Retreats', 'tribe-events-calendar' ) ?></h2></div>
                     <div id="termine-portfolio">
 
                         <div class="dt-sc-gallery-container gallery with-space  isotope">

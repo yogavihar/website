@@ -1330,8 +1330,6 @@ only screen and (min-resolution: 1.5dppx) {
 	
 	.dt-sc-gift-card .price { background-image:url(../images/gift-card-texture@2x.jpg); background-size:114px 170px; }
 
-	.dt-sc-ico-content.type2 .icon:before { background-image:url(../images/bordered-circle@2x.png); background-size:80px 80px; }
-	.dt-sc-ico-content.type3 .icon:before { background-image:url(../images/bordered-circle@2x.png); background-size:80px 80px; }
 	.dt-sc-popular-procedures .image:before { background-image:url(../images/bordered-circle@2x.png); background-size:216px 216px; }
 	.dt-sc-testimonial .author span:before {  background-image:url(../images/bordered-circle@2x.png); background-size:110px 110px; }
 	.secondary-sidebar .dt-sc-popular-procedures .image:before { background-size:170px 170px; }

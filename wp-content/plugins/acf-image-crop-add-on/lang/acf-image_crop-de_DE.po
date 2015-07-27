@@ -354,7 +354,7 @@ msgstr "Vorschau"
 #: acf-image-crop-v5.php:370
 #@ acf-image_crop
 msgid "Cancel"
-msgstr "Abbrechen"
+msgstr "Originalbild nutzen"
 
 #: acf-image-crop-v5.php:370
 #@ acf-image_crop

@@ -55,8 +55,14 @@
 
                             query_posts(array(
                                 'post_type' => 'tribe_events',
-                                'lang' => 'es',
-                                'posts_per_page' => 6
+                                'posts_per_page' => 6,
+                                'meta_query'	=> array(
+                                    array(
+                                            'key'		=> 'title_es',
+                                            'value'		=> '',
+                                            'compare'           => '!='
+                                    )
+                                )
                             ));
 
                             if (have_posts()):
@@ -70,19 +76,28 @@
                                     //var_dump(get_post());
 
                                     //Datum des Events
-                                    $event_date=date('d.m.Y', strtotime(get_post_meta(get_the_ID(), "_EventStartDate", true)))." - ".date('d.m.Y', strtotime(get_post_meta(get_the_ID(), "_EventEndDate", true)));
-
+                                    $startDate=date('d.m.Y', strtotime(get_post_meta(get_the_ID(), "_EventStartDate", true)));
+                                    $endDate=date('d.m.Y', strtotime(get_post_meta(get_the_ID(), "_EventEndDate", true)));
+                                    if($startDate==$endDate){
+                                        $event_date=$startDate;
+                                    }
+                                    else{
+                                        $event_date=$startDate." - ".$endDate;
+                                    }
+                                    //Permalink für Sprache anpassen
+                                    $permalink=get_the_permalink();
+                                    $permalink = str_replace( '/event/','/es/event/',$permalink);
+                                    
                                     ?>
                                     <div id="termine-thumbnails-<?php echo the_ID();?>"
                                          class="dt-gallery column dt-sc-one-third with-space <?php if($number==1) echo " first";?>">
-                                        <a href="<?php echo(get_the_permalink());?>" title="<?php echo(get_the_title());?>">
+                                        <a href="<?php echo( $permalink);?>" title="<?php echo(get_field('title_es' ));?>">
                                         <figure>
                                            <?php if( have_rows('images') ):
                                                 $rows = get_field('images' ); 
                                                 $index= 0;    
                                                 if(get_field('thumnail_image' ))
                                                     $index= get_field('thumnail_image' )-1;
-                                                echo get_field('thumnail_image' );
                                                 
                                                 $image = $rows[$index]['image_id'];
                                                 echo wp_get_attachment_image( $image, 'full' );
@@ -90,11 +105,12 @@
                                             <?php endif;?>                                        
                                         </figure>
                                         </a>
+                                       
                                         <div class="dt-gallery-details">
                                             <div class="dt-gallery-details-inner">
                                                 <span class="timespan"><?php echo($event_date);?></span>
-                                                <h5><a href="<?php echo(get_the_permalink());?>" title="<?php echo(get_the_title());?>"><?php echo(get_the_title());?></a></h5>
-                                                <h6><?php echo(get_the_excerpt());?></h6>
+                                                <h5><a href="<?php echo( $permalink);?>" title="<?php echo(get_field('title_es' ));?>"><?php echo(get_field('title_es' ));?></a></h5>
+                                                <h6><?php echo(get_field('excerpt_es' ));?></h6>
                                             </div>
                                         </div>
                                     </div>

@@ -28,6 +28,12 @@ Version:        1.0/
 *, *:before, *:after {
   box-sizing: inherit;
 }*/
+
+//colors
+$background-brown: #e2d9cd;
+$background-beige: #fcf8f2;
+$orange:#fb6806;
+
 #header{
     padding-top: 0;
 }
@@ -35,20 +41,36 @@ Version:        1.0/
     padding-bottom: 10px;
 }
 #main-menu{
-    background: #e2d9cd url(images/textured-pattern.png) center center repeat;
+    background: $background-brown;
     ul li.menu-item-simple-parent ul {
         border: 1px solid #eeeeee;
    }
 }
+.dt-sc-toggle-frame h5.dt-sc-toggle, .dt-sc-toggle-frame .dt-sc-toggle-content{
+    background: $background-brown;
+}
 pre{
     margin:0;
 }
+ul, ol{
+     
+  
+  li{
+      margin:0 !important;
+      padding-bottom: 5px !important;
+  }
+}
+ul{
+    list-style: disc;
+    padding-left: 20px;
+    padding-top: 10px;
+}
 body{
-  background: #fcf8f2;
+  background: $background-beige;
   color:#3a4f59;
   
   &.boxed .inner-wrapper {
-    background: #fcf8f2;
+    background: $background-beige;
   }
   &.green{
       background:$green-background-color; 
@@ -94,9 +116,11 @@ body{
         color:$blue-font-color;
       }
       
-      a, #main-menu ul.menu > li > span.nolink-menu{
+      
+      #main-menu a, #main-menu ul.menu > li > span.nolink-menu{
           color:$blue-font-color !important;
       }
+      #main-menu a:hover{color:$blue-font-highlight-color !important;} 
       #main-menu { 
           background-color:$blue-menu-background-color; 
           ul.menu > li > a { 
@@ -109,14 +133,35 @@ body{
       .footer-widgets-wrapper, .content-full-width, .page-with-sidebar, #secondary-left, #secondary-right{
         background: #ffffff url(images/border.png) top repeat-x !important;
       }
-      h1, h3.widgettitle, .vcalendar li .entry-title a, .tribe-events-single-event-title,
+      #main a, h1, h3.widgettitle, .vcalendar li .entry-title a, .tribe-events-single-event-title,
         #main-menu ul > li.current_page_item > a, #main-menu ul > li.current_page_parent > a{
         color:$blue-font-highlight-color !important;
       }
+      #main a:hover{
+          color:lighten($blue-font-highlight-color,20) !important;
+      }
     }
 }
+.dt-sc-toggle-content { 
+    clear:both; 
+    padding:10px 0px 0 30px; 
+    line-height:20px; 
+    display:none; 
+}
+.dt-sc-toggle{
+    a{
+        &:hover{
+            color: $orange !important;
+        }
+    }
+}
+
+.dt-sc-toggle.active a{
+    color: $orange !important;
+}
+
 .dt-sc-ico-content.type2 h2{
-   color: #fb6806
+   color: $orange;
 }
 .dt-sc-ico-content p{
    color: #3a4f59;
@@ -126,7 +171,7 @@ body{
     position: relative;
     .header-image-claim{
         position: absolute;
-        top: 12%;
+        top: 10%;
         right: 6%;
         text-align: right;
         color:#d3c6b7;
@@ -136,7 +181,7 @@ body{
         .author{
             font-size:14px;
               margin-right: 8px;
-              margin-top: 17px;
+              margin-top: 7px;
               
         }
         
@@ -176,7 +221,7 @@ body{
         
         
         .termine{
-             background: #fcf8f2 !important;
+             background: $background-beige !important;
             padding-top:20px;
             padding-bottom:20px;
         }
@@ -190,20 +235,28 @@ body{
 }
 #primary.with-right-sidebar{
   flex: 3;
+  -webkit-flex:3;
   order: 1;
 }
 #secondary-right{
     flex: 1;
+    -webkit-flex:1;
     order: 2;
 }
 #image-section-container{
     margin-top:10px;
     .image-section{
         flex: 1.3333333;
+        -webkit-flex:1.3333333;
+
           box-sizing: border-box;
             margin-right: 10px;
             &:last-of-type{
                 margin-right: 0;
+            }
+            &.double{
+                 flex: 2;
+                -webkit-flex:2;
             }
     }
 }
@@ -226,20 +279,31 @@ body{
     margin-top:10px;
 }
   .secondary-sidebar .widget h3.widgettitle, .type-page h1, .tribe-events-single-event-title { 
-      color:#fb6806; 
-      font-family: 'Open Sans', sans-serif; 
+      color:$orange; 
+      /*font-family: 'Open Sans', sans-serif; 
       font-size:20px; 
+      margin-bottom:30px;*/
       font-weight: normal;
       letter-spacing:0px; 
-      margin-top: 10px;
-      margin-bottom:30px;
+      margin-top: 10px;   
+      font-family: 'courgette', sans-serif;
+      font-size: 22px;
+      margin-bottom: 20px;
   }
 h1{
-font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
+font-family: 'courgette', sans-serif;
+      font-size: 22px;
+      margin-bottom: 20px;
   font-weight: normal;
   letter-spacing: 0px;
-  margin-bottom: 30px;
+  }
+  h2{
+      letter-spacing: 1px;
+  }
+
+  .subtitle, h5{
+        font-weight: bold !important;
+  font-family: "Open Sans Condensed";
   }
   
   #footer .container{
@@ -261,7 +325,7 @@ border:none;
 background: #f4ede3;
 }
 .post-edit-link {
-background: #e2d9cd;
+background: $background-brown;
 }
 .border-title h6 {
   color: #3a4f59;
@@ -295,7 +359,7 @@ line-height:20px;
    margin: 5px;
    font-family: 'Tahoma', sans-serif; 
    font-size:14px; 
-   color:#fb6806; 
+   color:$orange; 
    font-weight:normal;
 }
 
@@ -351,7 +415,8 @@ line-height:20px;
        box-sizing: border-box;
        margin-left: 1.33%;
        &:nth-of-type(4n+0){
-         margin-left: 0;  
+         margin-left: 0;
+           clear: both;
        }
        &.first{
          margin-left: 0;  
@@ -364,6 +429,7 @@ line-height:20px;
             margin-top:6%;
             font-family:'Tahoma', sans-serif; 
             font-size:18px;
+            font-weight: normal !important;
         }
         h6{
             max-height: 32px;
@@ -382,11 +448,72 @@ line-height:20px;
         margin:0;
     }
 }
-#tribe-events{
-    .page-with-sidebar{
-          padding-left: 40px !important;
-          padding-right: 40px !important;
+.contact-page{
+    h2{
+        margin-bottom: 15px;
     }
+    .container{
+        display: block;
+          width: 100% !important;
+    }
+    .fullwidth-section{
+          padding: 1% 5% 3% 5%;
+    }
+   
+    .dt-sc-contact-info{
+        margin-bottom:10px;
+        .details{
+            display: none;
+        }
+        p,a{
+            width:50%;
+        }
+        span {
+            width: 25%;
+        }
+    }
+    
+    .opening-hours{
+ 
+        .column{
+            margin-bottom: 5px;
+        }
+        .day{
+            margin-left: 0;
+        }
+  
+    }
+}
+//Kundenmeinungen-Carousel
+.dt-sc-testimonial {
+    box-sizing: border-box;
+  margin: 0px;
+    padding: 0px 30px 0px 140px;
+  min-height:140px;
+  blockquote{
+        padding: 10px 0px;
+        q{
+              text-align: left;
+                font-family: 'Courgette', cursive !important;
+                font-style: normal;
+                &:before, &:after{
+                      font-size: 30px;
+                      margin-right: 0;
+                      margin-left: 0;
+                        top: 10px;
+                }
+        }
+  }
+  cite {
+    margin-right: 20px;
+    padding-bottom: 10px;
+    font-family: 'Courgette', cursive !important;
+                font-weight: normal;
+  }
+
+}
+#tribe-events{
+    
     .col1{
         float:left;
         width:10%;
@@ -394,6 +521,7 @@ line-height:20px;
             font-size: 2.2em;
             margin-top: 0.3em;
             margin-left: 0.4em;
+              color: #685e58;
         }
     } 
      .col2{
@@ -403,11 +531,42 @@ line-height:20px;
             margin-top:10px;
         }
     }
+    #tribe-events-footer .dt-sc-button{
+        float:right;
+        background-color: #e2d9cd;
+        border: none;
+        text-shadow:none;
+        margin-top:20px;
+        
+        &:before{
+            background: none;
+        }
+        i{
+            padding: 8px 15px;
+            border: none;
+  margin-top: 0;
+  background-color: lighten(#685e58,20);
+        }
+        span{
+              padding: 6px 0px;
+              color: #685e58;
+              top:0;
+        }
+        &:hover{
+            background-color: darken(#e2d9cd,10);
+            
+        }
+    }
    
 }
+#tribe-events-pg-template{
+     padding:0;
+}
+ 
  #tribe-events-pg-template .tribe-events-content ul li{
         margin:0;
          line-height: 1.5;
+        
     }
     #tribe-events .tribe-events-content p, .tribe-events-after-html p, .tribe-events-before-html p{
         line-height: 1.5;
@@ -423,7 +582,7 @@ line-height:20px;
     list-style: none;
     li{
          display: inline;
-         margin-left: 5px;
+         margin-left: 5px !important;
     }
 }
 /* responsive für samm unbedingt noch machen
@@ -467,12 +626,68 @@ line-height:20px;
             }
         } 
     }
-/*----*****---- << Desktop >> ----*****----*/
-    @media only screen and (min-width:960px){
-        //Flex Modell - klappt leider responsive nicht
+     /*----*****---- << Smartphone >> ----*****----*/	
+    @media only screen and (max-width:630px)  {
+    .contact-page .opening-hours{
+        h2{
+            margin-top:0;
+        }
+        }
+        #tribe-events {
+            position: relative;
+            .col1 {
+                position: absolute;
+                  right: 3%;
+                    top: 5%;
+            }
+            .col2{
+                  width: 100%;
+            }
+ 
+        }
+         .main-menu-wrapper{
+             margin-top: 0;
+           
+        }
+        
+    }
+    
+     /*----*****---- << Tablet Portrait >> ----*****----*/	
+    @media only screen and (min-width:630px)  {
         .container, #tribe-events-container, #image-section-container{
             display: flex;
+            display:-webkit-flex;
+
+            
         }
+    .contact-page .opening-hours{
+        .day{
+            width:23%;
+          
+        }
+        .time{
+            width:75%;
+        }
+        }
+        #tribe-events{
+            .page-with-sidebar{
+                  padding-left: 40px !important;
+                  padding-right: 40px !important;
+            }
+        }  
+    }
+    /*----*****---- << Tablet Portrait >> ----*****----*/	
+    @media only screen and (max-width:960px)  {
+        .contact-page{
+        .dt-sc-one-third{
+            width:100%;
+            margin-left:0;
+        }
+        }
+    }
+/*----*****---- << Desktop >> ----*****----*/
+    @media only screen and (min-width:960px){
+        
         .footer-widgets-wrapper{
             padding: 75px 0px 0px;
         }
@@ -487,7 +702,16 @@ line-height:20px;
                     }
                 }
             }
-        } 
+        }
+        .contact-page{
+            .address{
+              padding-top: 6% !important;
+              width:26%;
+            }
+            .opening-hours{
+                width:40%;
+            }
+        }
     }
 
   

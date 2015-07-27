@@ -10,7 +10,7 @@
  *
  */
 
-
+     
 if ( ! defined( 'ABSPATH' ) ) {
 	die( '-1' );
 }
@@ -32,24 +32,37 @@ $event_id = get_the_ID(); ?>
     </div>
     <div class="col2">
         
-   
-
 	<!-- Notices -->
 	<?php tribe_events_the_notices() ?>
-
-	<?php the_title( '<h2 class="tribe-events-single-event-title summary entry-title">', '</h2>' ); ?>
-
+        
 	
 
-	<?php while ( have_posts() ) :  the_post(); ?>
-		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<?php while ( have_posts() ) :  the_post(); 
+    $curr_lang=get_locale();
+ 
+       $custom_fields = get_post_custom();
+if($curr_lang=="en_GB"){
+    $content=get_field('contend_en' );
+    $title=get_field('title_en' );
+}
+else if($curr_lang=="es_ES"){
+     $content=get_field('contend_es' );
+    $title=get_field('title_es' );
+}
+else{
+    $content=get_the_content();
+    $title=get_the_title();
+}
+        ?>
+        <h2 class="tribe-events-single-event-title summary entry-title"><?php echo($title); ?></h2>
+	<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<!-- Event featured image, but exclude link -->
 			<?php echo tribe_event_featured_image( $event_id, 'full', false ); ?>
 
 			<!-- Event content -->
 			<?php do_action( 'tribe_events_single_event_before_the_content' ) ?>
 			<div class="tribe-events-single-event-description tribe-events-content entry-content description">
-				<?php the_content(); ?>
+				<?php echo($content); ?>
 			</div>
 			<!-- .tribe-events-single-event-description -->
 			<?php do_action( 'tribe_events_single_event_after_the_content' ) ?>
@@ -90,7 +103,7 @@ $event_id = get_the_ID(); ?>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><?php the_title();?></td>
+                                <td><?php echo $title;?></td>
                                 <td><?php echo tribe_events_event_schedule_details( $event_id, '<span>', '</span>' );?></td>
                                 <?php if ($mainCat=="Kurse") echo "<td>".tribe_get_start_date( $event_id, false, "l" )."s: ".tribe_get_start_date( $event_id, false, "H:i" )." - ".tribe_get_end_date( $event_id, false, "H:i" )."</td>";?>
                                 <td><?php esc_html_e( tribe_get_formatted_cost() ) ?></td>
@@ -102,9 +115,12 @@ $event_id = get_the_ID(); ?>
 
 	<!-- Event footer -->
 	<div id="tribe-events-footer">
-		<p class="tribe-events-back">
-                    <a href="<?php echo esc_url( tribe_get_events_link() ); ?>"> <?php _e( '&laquo; All Events', 'tribe-events-calendar' ) ?></a>
-                </p>
+            <!--a href="mailto:info@yogavihar.de?subject=Buchungsanfrage%20für%20<?php //echo $title;?>" class="dt-sc-button small with-icon"><span>Buchung anfragen</span><i class="fa fa-envelope"> </i></a-->
+            <a href="mailto:info@yogavihar.de?subject=Buchungsanfrage%20für%20<?php echo $title;?>" class="dt-sc-button small"><span>Kurs anfragen</span></a>
+	
+		<!--p class="tribe-events-back">
+                    <a href="<?php //echo esc_url( tribe_get_events_link() ); ?>"> <?php //_e( '&laquo; All Events', 'tribe-events-calendar' ) ?></a>
+                </p-->
 		<!-- Navigation -->
 <!--		<h3 class="tribe-events-visuallyhidden"><?php //_e( 'Event Navigation', 'tribe-events-calendar' ) ?></h3>
 		<ul class="tribe-events-sub-nav">
@@ -132,11 +148,11 @@ if( have_rows('images') ):?>
         $size = get_sub_field('size');
         $image = get_sub_field('image_id');
         
-        $style='';
+        $class='';
         if($size=="double")
-            $style=" style='flex:2;'";
+            $class=" double";
         
-        echo "<div class='image-section' ".$style.">";
+        echo "<div class='image-section".$class."'>";
         //echo wp_get_attachment_image( $image, false );
         echo '<img src="'.wp_get_attachment_url($image).'" alt="" />';
         echo "</div>";

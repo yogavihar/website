@@ -214,10 +214,10 @@
 	/* --- tabs box navigation --- */
 	.tt_responsive.tabs_box_navigation.sf-timetable-menu .tabs_box_navigation_selected
 	{
-		width: 220px;
+		width: 200px;
 	}
 	.tt_responsive.tabs_box_navigation.sf-timetable-menu li ul
 	{
-		width: 258px;
+		width: 238px;
 	}
 }

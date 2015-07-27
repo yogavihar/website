@@ -109,6 +109,7 @@
 		#primary.page-with-both-sidebar { width:100%; }
 		
 		#secondary, #secondary-right, #secondary-left { display: none; }
+                 #primary.with-right-sidebar{margin-right: 0;}
 		#image-section-container{clear:both;}
 		
 		/*----*****---- << Shortcodes >> ----*****----*/
@@ -430,7 +431,13 @@
 		
 		.container, #footer { width:90%; }
 		.boxed .wrapper, .boxed .is-sticky #main-menu { width:100%; }
-		
+		.content-full-width .fullwidth-section, .page-with-sidebar {
+                    padding: 40px 10% 0 !important;
+                }
+                .fullwidth-section.termine{
+                    padding: 0 !important;
+                }
+                .fullwidth-section.termine h2{margin-top: 0};
 		/*----*****---- << Shortcodes >> ----*****----*/
 		ul.dt-sc-tabs-frame > li { margin-bottom:20px; }
 		ul.dt-sc-tabs-frame { margin-bottom:0px; }

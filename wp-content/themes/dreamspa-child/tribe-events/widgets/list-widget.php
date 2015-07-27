@@ -31,14 +31,32 @@ if ( $posts ) {
 	<ol class="hfeed vcalendar">
 		<?php
 		foreach ( $posts as $post ) :
-			setup_postdata( $post );
+                    setup_postdata( $post );
+                     $custom_fields = get_post_custom();
+                     $curr_lang=get_locale();
+
+$event_link=esc_url( tribe_get_event_link() );
+ 
+if($curr_lang=="en_GB"){
+    if(get_field('title_en' )=="") continue;
+    $title=get_field('title_en' );
+    $event_link = str_replace( '/event/','/en/event/',$event_link);
+}
+else if($curr_lang=="es_ES"){
+    if (get_field('title_es' )=="")  continue;
+    $title=get_field('title_es' );
+    $event_link = str_replace( '/event/','/es/event/',$event_link);
+}
+else{
+    $title=get_the_title();
+}
 			?>
 			<li class="tribe-events-list-widget-events <?php tribe_events_event_classes() ?>">
 
 				<?php do_action( 'tribe_events_list_widget_before_the_event_title' ); ?>
 				<!-- Event Title -->
 				<h4 class="entry-title summary">
-					<a href="<?php echo esc_url( tribe_get_event_link() ); ?>" rel="bookmark"><?php the_title(); ?></a>
+					<a href="<?php echo $event_link; ?>" rel="bookmark"><?php echo($title); ?></a>
 				</h4>
 
 				<?php do_action( 'tribe_events_list_widget_after_the_event_title' ); ?>

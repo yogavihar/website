@@ -42,11 +42,11 @@ table { border-collapse:collapse; border-spacing:0; }
 
 /*----*****---- << General >> ----*****----*/
 	
-	body { font-weight:normal; font-size:14px; line-height:28px; background:#f6f6e9; color:#ac9d8e; }
+	body { font-weight:normal; font-size:14px; line-height:20px; background:#f6f6e9; color:#ac9d8e; }
 	
 	/*----*****---- << Fonts >> ----*****----*/
 	
-	body, input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="tel"], input[type="number"], input[type="range"], input[type="date"], textarea, input.text, select, input[type="search"], .dt-sc-ico-content.type1 h2, .dt-sc-popular-procedures h2, .dt-gallery .image-overlay h5, .dt-sc-callout-box.type6 h5, .dt-sc-callout-box.type7 h5, .dt-sc-testimonial blockquote:before, .dt-sc-testimonial blockquote q, .dt-sc-team h5, h5.dt-sc-toggle, h5.dt-sc-toggle-accordion, .dt-gallery-details h6, .widget .recent-posts-widget ul li h4, .author-info h3 span, ul.commentlist li .author-name .reply a, .dt-sc-gift-card-section h6, .dt-sc-reservation .title h6, .dt-sc-ico-content.type3 h2, .dt-sc-callout-box h5, .menu-item-widget-area-container .widget h3.widgettitle, #main-menu ul.menu a.dt-menu-expand, #main-menu ul.menu li .menu-item-widget-area-container ul.menu li a { font-family:'Tahoma', sans-serif; }
+	body, input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="tel"], input[type="number"], input[type="range"], input[type="date"], textarea, input.text, select, input[type="search"], .dt-sc-ico-content.type1 h2, .dt-sc-popular-procedures h2, .dt-gallery .image-overlay h5, .dt-sc-callout-box.type6 h5, .dt-sc-callout-box.type7 h5, .dt-sc-testimonial blockquote:before, .dt-sc-testimonial blockquote q, .dt-sc-team h5, h5.dt-sc-toggle-accordion, .dt-gallery-details h6, .widget .recent-posts-widget ul li h4, .author-info h3 span, ul.commentlist li .author-name .reply a, .dt-sc-gift-card-section h6, .dt-sc-reservation .title h6, .dt-sc-ico-content.type3 h2, .dt-sc-callout-box h5, .menu-item-widget-area-container .widget h3.widgettitle, #main-menu ul.menu a.dt-menu-expand, #main-menu ul.menu li .menu-item-widget-area-container ul.menu li a { font-family:'Tahoma', sans-serif; }
 	
 	h1, h2, h3, h4, h5, h6, #main-menu ul.menu > li > a, #main-menu ul.menu > li > span.nolink-menu, .dt-menu-toggle, .entry-meta .date, ul.products li .product-details .price, ul.products li .product-details .price ins, ul.products li .product-details .price .amount, .dt-sc-popular-procedures .duration, .dt-sc-popular-procedures .price, ul.commentlist li .author-name a, .dt-sc-gift-card .price, .product .summary .price .amount, .megamenu-child-container > ul.sub-menu > li > a, .megamenu-child-container > ul.sub-menu > li > .nolink-menu, .menu-item-widget-area-container .widget h3.widgettitle { font-family:'Open Sans Condensed', sans-serif; }
 	
@@ -54,11 +54,14 @@ table { border-collapse:collapse; border-spacing:0; }
 	
 	/*----*****---- << Headings >> ----*****----*/
 	
-	h1, h2, h3, h4, h5, h6 { color:#37251b; font-weight:bold; line-height:normal; margin-bottom:30px; }	
-	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color:#37251b; }
+	h1, h2, h3, h4, h5, h6 { color:#685e58; font-weight:bold; line-height:normal; margin-bottom:30px; }	
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color:#685e58; }
 	
 	h1{ font-size:30px; }
-	h2{ font-size:26px; letter-spacing:3px; }
+	h2{ margin-top: 20px;
+            font-size: 18px;
+            letter-spacing: 2px;
+            margin-bottom: 10px; }
 	h3{ font-size:24px; }
 	h4{ font-size:20px; }
 	h5{ font-size:18px; }
@@ -164,9 +167,30 @@ table { border-collapse:collapse; border-spacing:0; }
 	
 	/*----*****---- << Tables >> ----*****----*/
 	
-	table{ border-collapse:separate; border-spacing:0; margin-bottom:20px; width:100%; clear:both;  }
-	th{ color:#ffffff; border-bottom:1px solid #d6d5c9; padding:15px; font-size:14px; line-height:normal; font-weight:600; text-transform:uppercase; text-align:center; }
-	td{ border-bottom:1px solid #d6d5c9; background:#e6e5d9 url(images/textured-pattern.png) left center repeat; font-size:14px; line-height:normal; text-align:center; padding:13px 15px; }
+	table{ border-collapse:separate; border-spacing:0; margin-bottom:20px; margin-top:10px; width:100%; clear:both;  }
+	th{ 
+            color: #ffffff;
+            border-bottom: 1px solid #d6d5c9;
+            border-right: 1px dotted white;
+            padding: 10px 20px;
+            font-size: 14px;
+            line-height: normal;
+            font-weight: 100;
+            text-transform: uppercase;
+            text-align: center; 
+        }
+         th:last-of-type{border-right: none;}
+	
+        td{ 
+            border-bottom:1px solid #d6d5c9; 
+            border-right: 1px dotted #d6d5c9;
+            background:#e6e5d9 url(images/textured-pattern.png) left center repeat; 
+            font-size:14px; 
+            line-height:normal; 
+            text-align:center; 
+            padding:13px 10px; 
+        }
+         td:last-of-type{border-right: none;}
 	tbody tr:nth-child(2n+1) td { background:#f6f6e9 url(images/textured-pattern.png) center center repeat; }
 	tbody td .dt-sc-button.small { padding:7px 14px; font-size:12px; margin:0px; }
 	
@@ -234,7 +258,7 @@ table { border-collapse:collapse; border-spacing:0; }
 	
 	/*----*****---- << Widgets >> ----*****----*/
 	
-	.widget { float:left; width:100%; padding:0px 0px 50px; margin:0px; }
+	.widget { float:left; width:100%; padding:0px 0px 30px; margin:0px; }
 	
 	.widget h3.widgettitle { position:relative; font-size:24px; float:left; clear:both; width:100%; }
 	.widget h3.widgettitle span { width:80px; height:1px; position:absolute; left:0px; bottom:-3px; }
@@ -338,7 +362,7 @@ table { border-collapse:collapse; border-spacing:0; }
 	
 	.boxed .is-sticky #main-menu { width:1000px; }
 	
-	.fullwidth-section, #footer .footer-widgets-wrapper, .widget ul.tweet-list li .tweet-thumb, #logo a, #slider, .dt-gallery, sub, sup { line-height:0; }
+	/*.fullwidth-section, #footer .footer-widgets-wrapper, .widget ul.tweet-list li .tweet-thumb, #logo a, #slider, .dt-gallery, sub, sup { line-height:0; }*/
 		
 	/*----*****---- << Header >> ----*****----*/
 	#header-wrapper { float:left; width:100%; margin:0px; padding:0px; z-index:9999; }
@@ -790,7 +814,7 @@ table { border-collapse:collapse; border-spacing:0; }
 		/*----*****---- << Footer >> ----*****----*/
 		
 		#footer { width:100%; margin:0 auto; padding:0px; position:relative; font-size:13px; }
-		
+		#footer .widget{padding-bottom:50px;}
 		.footer-logo { position:absolute; width:104px; height:104px; left:0px; right:0px; top:-45px; margin:auto; background:#ffffff; border:2px solid #edeceb; border-radius:104px; }
 		.footer-logo img { position:absolute; left:0px; right:0px; top:8px; margin:auto; max-width:104px; }
 		
