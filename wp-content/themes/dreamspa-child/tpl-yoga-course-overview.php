@@ -45,17 +45,10 @@
                                          class="dt-gallery column dt-sc-one-third with-space <?php if($number==1) echo " first";?>">
                                         <a href="<?php echo(get_the_permalink());?>" title="<?php echo(get_the_title());?>">
                                         <figure>
-                                            <?php if( have_rows('images') ):
-                                                $rows = get_field('images' ); 
-                                                $index= 0;    
-                                                if(get_field('thumnail_image' ))
-                                                    $index= get_field('thumnail_image' )-1;
-                                              
-                                                
-                                                $image = $rows[$index]['image_id'];
+                                            <?php  $image = get_field('thumbnail_image');
                                                 echo wp_get_attachment_image( $image, 'full' );
                                                 ?>
-                                            <?php endif;?>
+                                           
                                         </figure>
                                         </a>
                                         <div class="dt-gallery-details">

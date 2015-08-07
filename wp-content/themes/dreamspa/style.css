@@ -186,7 +186,7 @@ table { border-collapse:collapse; border-spacing:0; }
             border-right: 1px dotted #d6d5c9;
             background:#e6e5d9 url(images/textured-pattern.png) left center repeat; 
             font-size:14px; 
-            line-height:normal; 
+            line-height:1.4; 
             text-align:center; 
             padding:13px 10px; 
         }

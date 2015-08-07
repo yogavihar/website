@@ -65,28 +65,31 @@
                                     $number++;
                                     the_post();
                                     $custom_fields = get_post_custom();
+                                    //echo "<pre>";
                                     //var_dump($custom_fields);
                                     //var_dump(get_post());
 
-                                    //Datum des Events
-                                    $event_date=date('d.m.Y', strtotime(get_post_meta(get_the_ID(), "_EventStartDate", true)))." - ".date('d.m.Y', strtotime(get_post_meta(get_the_ID(), "_EventEndDate", true)));
-
+                                   //Datum des Events
+                                    $startDate=date('d.m.Y', strtotime(get_post_meta(get_the_ID(), "_EventStartDate", true)));
+                                    $endDate=date('d.m.Y', strtotime(get_post_meta(get_the_ID(), "_EventEndDate", true)));
+                                    if($startDate==$endDate){
+                                        $event_date=$startDate;
+                                    }
+                                    else{
+                                        $event_date=$startDate." - ".$endDate;
+                                    }
                                     ?>
                                     <div id="termine-thumbnails-<?php echo the_ID();?>"
                                          class="dt-gallery column dt-sc-one-third with-space <?php if($number==1) echo " first";?>">
                                         <a href="<?php echo(get_the_permalink());?>" title="<?php echo(get_the_title());?>">
                                         <figure>
-                                            <?php if( have_rows('images') ):
-                                                $rows = get_field('images' ); 
-                                                $index= 0;    
-                                                if(get_field('thumnail_image' ))
-                                                    $index= get_field('thumnail_image' )-1;
-                                              
-                                                
-                                                $image = $rows[$index]['image_id'];
+                                            <?php 
+                           
+                                                $image = get_field('thumbnail_image');
+                                                //var_dump($image);
                                                 echo wp_get_attachment_image( $image, 'full' );
                                                 ?>
-                                            <?php endif;?>
+                                      
                                         </figure>
                                         </a>
                                         <div class="dt-gallery-details">

@@ -92,26 +92,27 @@ if ( ! class_exists( 'TribeEventsAPI' ) ) {
 		 * @return void
 		 */
 		public static function saveEventMeta( $event_id, $data, $event = null ) {
-                    /*echo "<pre>";
-                    var_dump($data);
-                    die;*/
+                    //echo "<pre>";
+                    //var_dump($data);
+
+                    $startDateArray=explode(".",get_field('courses__0_dates_0_begin'));
+                    $endDateArray=explode(".",get_field('courses__0_dates_0_end'));
+                    $startTimeArray=explode(":",get_field('courses__0_dates_0_begin_time'));
+                    $endTimeArray=explode(":",get_field('courses__0_dates_0_end_time'));              
                     $tec = TribeEvents::instance();
 
-			if ( isset( $data['EventAllDay'] ) && ( $data['EventAllDay'] == 'yes' || $data['EventAllDay'] == true || ! isset( $data['EventStartDate'] ) ) ) {
-				$data['EventStartDate'] = tribe_event_beginning_of_day( $data['EventStartDate'] );
-				$data['EventEndDate']   = tribe_event_end_of_day( $data['EventEndDate'] );
-			} else {
-				delete_post_meta( $event_id, '_EventAllDay' );
-				if ( isset( $data['EventStartMeridian'] ) ) {
-					$data['EventStartDate'] = date( TribeDateUtils::DBDATETIMEFORMAT, strtotime( $data['EventStartDate'] . " " . $data['EventStartHour'] . ":" . $data['EventStartMinute'] . ":00 " . $data['EventStartMeridian'] ) );
-					$data['EventEndDate']   = date( TribeDateUtils::DBDATETIMEFORMAT, strtotime( $data['EventEndDate'] . " " . $data['EventEndHour'] . ":" . $data['EventEndMinute'] . ":00 " . $data['EventEndMeridian'] ) );
-
-				} else {
-					$data['EventStartDate'] = date( TribeDateUtils::DBDATETIMEFORMAT, strtotime( $data['EventStartDate'] . " " . $data['EventStartHour'] . ":" . $data['EventStartMinute'] . ":00" ) );
-					$data['EventEndDate']   = date( TribeDateUtils::DBDATETIMEFORMAT, strtotime( $data['EventEndDate'] . " " . $data['EventEndHour'] . ":" . $data['EventEndMinute'] . ":00" ) );
-				}
+			if ( get_field("courses__0_ganztaegig") == '1'  ) {
+				$data['EventStartDate'] = $startDateArray[2]."-".$startDateArray[1]."-".$startDateArray[0]." 00:00:00";
+				$data['EventEndDate']   = $endDateArray[2]."-".$endDateArray[1]."-".$endDateArray[0]." 00:00:00";
+                                $data['EventAllDay']="true";
+                                
+                        } else {
+				
+				$data['EventStartDate'] = $startDateArray[2]."-".$startDateArray[1]."-".$startDateArray[0]." " . $startTimeArray[0] . ":" . $startTimeArray[1] . ":00";
+				$data['EventEndDate']   = $endDateArray[2]."-".$endDateArray[1]."-".$endDateArray[0]." " . $endTimeArray[0] . ":" . $endTimeArray[1] . ":00";
+				$data['EventAllDay']="false";
 			}
-
+                       
 			if ( empty ( $data['EventHideFromUpcoming'] ) ) {
 				delete_post_meta( $event_id, '_EventHideFromUpcoming' );
 			}

@@ -434,10 +434,14 @@
 		.content-full-width .fullwidth-section, .page-with-sidebar {
                     padding: 40px 10% 0 !important;
                 }
+                #teaser-area{
+                    padding-left: 2% !important;
+                    padding-right: 2% !important;
+                }
                 .fullwidth-section.termine{
                     padding: 0 !important;
                 }
-                .fullwidth-section.termine h2{margin-top: 0};
+                .fullwidth-section.termine h2{margin-top: 4%};
 		/*----*****---- << Shortcodes >> ----*****----*/
 		ul.dt-sc-tabs-frame > li { margin-bottom:20px; }
 		ul.dt-sc-tabs-frame { margin-bottom:0px; }

@@ -233,7 +233,7 @@ if ( ! class_exists( 'Tribe_Events_Month_Template' ) ) {
 					'no_found_rows'  => true,
 					'posts_per_page' => self::$posts_per_page_limit,
 				), self::$args
-			);
+			);                    
 			$result = TribeEventsQuery::getEvents( $args, true );
 
 			return $result;
@@ -283,6 +283,7 @@ if ( ! class_exists( 'Tribe_Events_Month_Template' ) ) {
 					'view_more'    => self::view_more_link( $date, self::$tribe_bar_args ),
 					'month'        => $month_type
 				);
+                               
 
 				// Record the indicies marking the portion of the array relating to the current month
 				if ( ! isset( $this->current_month_begins ) && self::CURRENT_MONTH === $month_type ) {
@@ -295,6 +296,7 @@ if ( ! class_exists( 'Tribe_Events_Month_Template' ) ) {
 				// Advance forward one day
 				$date = date( TribeDateUtils::DBDATEFORMAT, strtotime( "$date +1 day" ) );
 			}
+                        
 
 			// If the month ended without bleeding into the next month, our current_month_ends property may not be set
 			if ( ! isset( $this->current_month_ends ) ) {

@@ -41,6 +41,9 @@ $event_id = get_the_ID(); ?>
     $curr_lang=get_locale();
  
        $custom_fields = get_post_custom();
+       //echo "<pre>";
+       //var_dump($custom_fields);
+       
 if($curr_lang=="en_GB"){
     $content=get_field('contend_en' );
     $title=get_field('title_en' );
@@ -55,7 +58,7 @@ else{
 }
         ?>
         <h2 class="tribe-events-single-event-title summary entry-title"><?php echo($title); ?></h2>
-	<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<!-- Event featured image, but exclude link -->
 			<?php echo tribe_event_featured_image( $event_id, 'full', false ); ?>
 
@@ -102,12 +105,34 @@ else{
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                           
+                           <?php if( have_rows('courses_') ): ?>
+                                
+                               <?php while( have_rows('courses_') ): the_row(); ?>
+                                
+                             <tr>
                                 <td><?php echo $title;?></td>
-                                <td><?php echo tribe_events_event_schedule_details( $event_id, '<span>', '</span>' );?></td>
-                                <?php if ($mainCat=="Kurse") echo "<td>".tribe_get_start_date( $event_id, false, "l" )."s: ".tribe_get_start_date( $event_id, false, "H:i" )." - ".tribe_get_end_date( $event_id, false, "H:i" )."</td>";?>
-                                <td><?php esc_html_e( tribe_get_formatted_cost() ) ?></td>
+                                <td>
+                                <?php 
+                                while( have_rows('dates') ): the_row(); 
+                                    echo get_sub_field('begin')." - ".get_sub_field('end')."<br>";
+                                endwhile; ?>
+                                </td>
+                                 <?php if ($mainCat=="Kurse"): ?>
+                                 <td>
+                                     <?php while( have_rows('dates') ): the_row();
+                                     $weekday=date_i18n("l",strtotime(get_sub_field('begin')));?>
+                                     <?php echo $weekday.": ".get_sub_field('begin_time')." - ".get_sub_field('end_time')."</br>";?>
+                                 <?php endwhile; ?>
+                                 </td>
+                                 <?php endif;?>
+                            <td><?php esc_html_e( tribe_get_formatted_cost() ) ?></td>
+                         
                             </tr>
+                                <?php endwhile; ?>
+                            
+                            
+                            <?php endif;?>
                         </tbody>
                         </table>
                 </div>
@@ -139,25 +164,36 @@ else{
 <?php 
 
 // check if the repeater field has rows of data
-if( have_rows('images') ):?>
+if( get_field('bottom_images') ):?>
 <section id="image-section-container"> 
 
 <?php // loop through the rows of data
-    while ( have_rows('images') ) : 
-        the_row();
-        $size = get_sub_field('size');
-        $image = get_sub_field('image_id');
-        
-        $class='';
-        if($size=="double")
-            $class=" double";
-        
-        echo "<div class='image-section".$class."'>";
-        //echo wp_get_attachment_image( $image, false );
-        echo '<img src="'.wp_get_attachment_url($image).'" alt="" />';
-        echo "</div>";
-    ?>
+if(get_field("images_layout")=="1"):?>
+    <div class='image-section large'>
+    <img src="<?php echo wp_get_attachment_url(get_field("image_layout_1"));?>" alt="" />
+    </div>
+   
+<?php elseif(get_field("images_layout")=="2"):?>
+    <div class='image-section double'>
+    <img src="<?php echo wp_get_attachment_url(get_field("images_layout_2_0_1"));?>" alt="" />
+    </div>
+    <div class='image-section'>
+        <img src="<?php echo wp_get_attachment_url(get_field("images_layout_2_0_2"));?>" alt="" />
+    </div>
+    <div class='image-section'>
+        <img src="<?php echo wp_get_attachment_url(get_field("images_layout_2_0_3"));?>" alt="" />
+    </div>  
+<?php elseif(get_field("images_layout")=="3"):?>
+    <div class='image-section'>
+    <img src="<?php echo wp_get_attachment_url(get_field("images_layout_3_0_1"));?>" alt="" />
+    </div>
+    <div class='image-section'>
+        <img src="<?php echo wp_get_attachment_url(get_field("images_layout_3_0_2"));?>" alt="" />
+    </div>
+    <div class='image-section double'>
+        <img src="<?php echo wp_get_attachment_url(get_field("images_layout_3_0_3"));?>" alt="" />
+    </div>   
+<?php endif;?>
 
-<?php endwhile;
-echo"</section>";
-endif;?>
+</section>
+<?php endif;?>

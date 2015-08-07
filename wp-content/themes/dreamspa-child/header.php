@@ -108,8 +108,8 @@ if( $header_image ) :?>
             ?>
             </div>
             <?php  if( get_field('with_quote') ):
-                echo "<div class='header-image-claim'>&#8222;".stripslashes(get_field('quote'))."&#8220;";
-                echo "<p class='author'>".stripslashes(get_field('author_quote'))."</p></div>";
+                echo "<div class='header-image-claim ".get_field('quote_style')."'>&#8222;".stripslashes(get_field('quote'))."&#8220;";
+                echo "<p class='author ".get_field('quote_style')."'>".stripslashes(get_field('author_quote'))."</p></div>";
             endif; ?>
         </div>
         </div><!-- **Header Image Section - End** -->

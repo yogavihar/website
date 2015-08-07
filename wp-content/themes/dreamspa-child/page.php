@@ -52,4 +52,40 @@
 			<section id="secondary-right" class="secondary-sidebar <?php echo $sidebar_class;?>"><?php get_sidebar( );?></section><?php
 		endif;
 	endif;
+        ?>
+                        </div>
+        <?php // check if the repeater field has rows of data
+if( get_field('bottom_images') ):?>
+<section id="image-section-container"> 
+
+<?php // loop through the rows of data
+if(get_field("images_layout")=="1"):?>
+    <div class='image-section large'>
+    <img src="<?php echo wp_get_attachment_url(get_field("image_layout_1"));?>" alt="" />
+    </div>
+   
+<?php elseif(get_field("images_layout")=="2"):?>
+    <div class='image-section double'>
+    <img src="<?php echo wp_get_attachment_url(get_field("images_layout_2_0_1"));?>" alt="" />
+    </div>
+    <div class='image-section'>
+        <img src="<?php echo wp_get_attachment_url(get_field("images_layout_2_0_2"));?>" alt="" />
+    </div>
+    <div class='image-section'>
+        <img src="<?php echo wp_get_attachment_url(get_field("images_layout_2_0_3"));?>" alt="" />
+    </div>  
+<?php elseif(get_field("images_layout")=="3"):?>
+    <div class='image-section'>
+    <img src="<?php echo wp_get_attachment_url(get_field("images_layout_3_0_1"));?>" alt="" />
+    </div>
+    <div class='image-section'>
+        <img src="<?php echo wp_get_attachment_url(get_field("images_layout_3_0_2"));?>" alt="" />
+    </div>
+    <div class='image-section double'>
+        <img src="<?php echo wp_get_attachment_url(get_field("images_layout_3_0_3"));?>" alt="" />
+    </div>   
+<?php endif;?>
+
+</section>
+<?php endif;
 get_footer();?>

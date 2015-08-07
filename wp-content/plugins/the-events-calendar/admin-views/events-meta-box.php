@@ -27,78 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<?php wp_nonce_field( TribeEvents::POSTTYPE, 'ecp_nonce' ); ?>
 	<?php do_action( 'tribe_events_eventform_top', $postId ); ?>
     	</table>
-    <table cellspacing="0" cellpadding="0" id="EventInfo">
-		<tr>
-			<td colspan="2" class="tribe_sectionheader">
-				<div class="tribe_sectionheader" style="">
-					<h4><?php _e( 'Event Time &amp; Date', 'tribe-events-calendar' ); ?></h4></div>
-			</td>
-		</tr>
-		<tr>
-			<td colspan="2">
-				<table class="eventtable">
-					<tr id="recurrence-changed-row">
-						<td colspan='2'><?php _e( "You have changed the recurrence rules of this event.  Saving the event will update all future events.  If you did not mean to change all events, then please refresh the page.", 'tribe-events-calendar' ) ?></td>
-					</tr>
-					<tr>
-						<td><?php _e( 'All Day Event:', 'tribe-events-calendar' ); ?></td>
-						<td>
-							<input tabindex="<?php tribe_events_tab_index(); ?>" type="checkbox" id="allDayCheckbox" name="EventAllDay" value="yes" <?php echo $isEventAllDay; ?> />
-						</td>
-					</tr>
-                                        <tr>
-						<td><?php _e( 'Weekly recurring Event:', 'tribe-events-calendar' ); ?></td>
-						<td>
-							<input tabindex="<?php tribe_events_tab_index(); ?>" type="checkbox" id="weeklyCheckbox" name="EventWeekly" value="yes" <?php echo $isEventWeekly; ?> />
-						</td>
-					</tr>
-					<tr>
-						<td style="width:175px;"><?php _e( 'Start Date &amp; Time:', 'tribe-events-calendar' ); ?></td>
-						<td id="tribe-event-datepickers" data-startofweek="<?php echo get_option( 'start_of_week' ); ?>">
-							<input autocomplete="off" tabindex="<?php tribe_events_tab_index(); ?>" type="text" class="tribe-datepicker" name="EventStartDate" id="EventStartDate" value="<?php echo esc_attr( $EventStartDate ) ?>" />
-							<span class="helper-text hide-if-js"><?php _e( 'YYYY-MM-DD', 'tribe-events-calendar' ) ?></span>
-				<span class="timeofdayoptions">
-					um
-					<select tabindex="<?php tribe_events_tab_index(); ?>" name="EventStartHour">
-						<?php echo $startHourOptions; ?>
-					</select>
-					<select tabindex="<?php tribe_events_tab_index(); ?>" name="EventStartMinute">
-						<?php echo $startMinuteOptions; ?>
-					</select> Uhr
-					<?php if ( ! TribeEventsViewHelpers::is_24hr_format() ) : ?>
-						<select tabindex="<?php tribe_events_tab_index(); ?>" name="EventStartMeridian">
-							<?php echo $startMeridianOptions; ?>
-						</select>
-					<?php endif; ?>
-				</span>
-						</td>
-					</tr>
-					<tr>
-						<td><?php _e( 'End Date &amp; Time:', 'tribe-events-calendar' ); ?></td>
-						<td>
-							<input autocomplete="off" type="text" class="tribe-datepicker" name="EventEndDate" id="EventEndDate" value="<?php echo esc_attr( $EventEndDate ); ?>" />
-							<span class="helper-text hide-if-js"><?php _e( 'YYYY-MM-DD', 'tribe-events-calendar' ) ?></span>
-				<span class="timeofdayoptions">
-					um 
-					<select class="tribeEventsInput" tabindex="<?php tribe_events_tab_index(); ?>" name="EventEndHour">
-						<?php echo $endHourOptions; ?>
-					</select>
-					<select tabindex="<?php tribe_events_tab_index(); ?>" name="EventEndMinute">
-						<?php echo $endMinuteOptions; ?>
-					</select> Uhr
-					<?php if ( ! TribeEventsViewHelpers::is_24hr_format() ) : ?>
-						<select tabindex="<?php tribe_events_tab_index(); ?>" name="EventEndMeridian">
-							<?php echo $endMeridianOptions; ?>
-						</select>
-					<?php endif; ?>
-				</span>
-						</td>
-					</tr>
-					<?php $this->do_action( 'tribe_events_date_display', $postId, true ) ?>
-				</table>
-			</td>
-		</tr>
-	</table>
+   
 	<table id="event_venue" class="eventtable">
 		<tr>
 			<td colspan="2" class="tribe_sectionheader">

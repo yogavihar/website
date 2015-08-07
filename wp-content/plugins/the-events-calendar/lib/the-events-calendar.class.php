@@ -126,7 +126,6 @@ if ( ! class_exists( 'TribeEvents' ) ) {
 
 		public $metaTags = array(
 			'_EventAllDay',
-                        '_EventWeekly',
 			'_EventStartDate',
 			'_EventEndDate',
 			'_EventDuration',
@@ -2931,7 +2930,7 @@ if ( ! class_exists( 'TribeEvents' ) ) {
 		 * @return void
 		 */
 		public function addEventMeta( $postId, $post ) {
-
+         
 			// Remove this hook to avoid an infinite loop, because saveEventMeta calls wp_update_post when the post is set to always show in calendar
 			remove_action( 'save_post', array( $this, 'addEventMeta' ), 15, 2 );
 
@@ -3455,59 +3454,8 @@ if ( ! class_exists( 'TribeEvents' ) ) {
 				}
 
 			}
-
-			$_EventAllDay    = isset( $_EventAllDay ) ? $_EventAllDay : false;
-			$_EventStartDate = ( isset( $_EventStartDate ) ) ? $_EventStartDate : null;
-
-			if ( isset( $_EventEndDate ) ) {
-				if ( $_EventAllDay && TribeDateUtils::timeOnly( $_EventEndDate ) != '23:59:59' && TribeDateUtils::timeOnly( tribe_event_end_of_day() ) != '23:59:59' ) {
-
-					// If it's an all day event and the EOD cutoff is later than midnight
-					// set the end date to be the previous day so it displays correctly in the datepicker
-					// so the datepickers will match. we'll set the correct end time upon saving
-					// @todo: remove this once we're allowed to have all day events without a start/end time
-
-					$_EventEndDate = date_create( $_EventEndDate );
-					$_EventEndDate->modify( '-1 day' );
-					$_EventEndDate = $_EventEndDate->format( TribeDateUtils::DBDATETIMEFORMAT );
-
-				}
-			} else {
-				$_EventEndDate = null;
-			}
-			$isEventAllDay        = ( $_EventAllDay == 'yes' || ! TribeDateUtils::dateOnly( $_EventStartDate ) ) ? 'checked="checked"' : ''; // default is all day for new posts
-                        $isEventWeekly        = ( $_EventWeekly == 'yes') ? 'checked="checked"' : ''; // default is all day for new posts
-			$startMinuteOptions   = TribeEventsViewHelpers::getMinuteOptions( $_EventStartDate, true );
-			$endMinuteOptions     = TribeEventsViewHelpers::getMinuteOptions( $_EventEndDate );
-			$startHourOptions     = TribeEventsViewHelpers::getHourOptions( $_EventAllDay == 'yes' ? null : $_EventStartDate, true );
-			$endHourOptions       = TribeEventsViewHelpers::getHourOptions( $_EventAllDay == 'yes' ? null : $_EventEndDate );
-			$startMeridianOptions = TribeEventsViewHelpers::getMeridianOptions( $_EventStartDate, true );
-			$endMeridianOptions   = TribeEventsViewHelpers::getMeridianOptions( $_EventEndDate );
-
-			if ( $_EventStartDate ) {
-				$start = TribeDateUtils::dateOnly( $_EventStartDate );
-			}
-
-			$EventStartDate = ( isset( $start ) && $start ) ? $start : date( 'Y-m-d' );
-
-			if ( ! empty( $_REQUEST['eventDate'] ) ) {
-				$EventStartDate = esc_attr( $_REQUEST['eventDate'] );
-			}
-
-			if ( $_EventEndDate ) {
-				$end = TribeDateUtils::dateOnly( $_EventEndDate );
-			}
-
-			$EventEndDate = ( isset( $end ) && $end ) ? $end : date( 'Y-m-d' );
-			$recStart     = isset( $_REQUEST['event_start'] ) ? esc_attr( $_REQUEST['event_start'] ) : null;
-			$recPost      = isset( $_REQUEST['post'] ) ? absint( $_REQUEST['post'] ) : null;
-
-
-			if ( ! empty( $_REQUEST['eventDate'] ) ) {
-				$duration     = get_post_meta( $postId, '_EventDuration', true );
-				$start_time   = isset( $_EventStartDate ) ? TribeDateUtils::timeOnly( $_EventStartDate ) : TribeDateUtils::timeOnly( tribe_get_start_date( $post->ID ) );
-				$EventEndDate = TribeDateUtils::dateOnly( strtotime( $_REQUEST['eventDate'] . ' ' . $start_time ) + $duration, true );
-			}
+     
+			
 
 			$events_meta_box_template = $this->pluginPath . 'admin-views/events-meta-box.php';
 			$events_meta_box_template = apply_filters( 'tribe_events_meta_box_template', $events_meta_box_template );
