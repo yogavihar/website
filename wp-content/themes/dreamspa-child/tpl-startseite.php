@@ -11,35 +11,43 @@
         <div id="post-109" class="post-109 page type-page status-publish hentry">
             <div id="teaser-area" class='fullwidth-section'>
                 <div class="container">
-                    <div class='column dt-sc-one-third   first'>
-                        <div class='dt-sc-ico-content  type2 cyan'>
+                    <div class='column dt-sc-one-fourth first'>
+                        <div class='dt-sc-ico-content  type2 '>
                             <a href='<?php echo site_url();?>/yoga/yoga-kurse/'>
                                 <div class='icon'>
-                                    <span>  <img style="  max-width: 55%;margin-top: 21%;color:#37251b;" src='<?php echo site_url();?>/wp-includes/images/icon-meditation.png' alt=''/>
+                                    <span>  <img style="  max-width: 60%;margin-top: 21%;color:#37251b;" src='<?php echo site_url();?>/wp-includes/images/icon-meditation.png' alt=''/>
                                         <!--img src='wp-includes/images/icon-meditation.png' alt=''/-->
                                     </span>
                                 </div>
-                                <h2>Yoga Klassen </h2>
-                                <p>Hier eine Übersicht über die Yogaklassen.</p>
+                                <h2>Spezialkurse</h2>
+                                <p>wechselnde Kurse</p>
                             </a>
                         </div>
                     </div>
-                    <div class='column dt-sc-one-third'>
-                        <div class='dt-sc-ico-content  type2 gold'>
-                            <a href='<?php echo site_url();?>/retreats'>
-                                <div class='icon'><span class='fa fa-leaf'> </span></div>
-                                <h2>Retreats </h2>
-                                <p>Momente der Stille und Praxis</p>
+                    <div class='column dt-sc-one-fourth'>
+                        <div class='dt-sc-ico-content type2'>
+                            <a href='<?php echo site_url();?>/beratung'>
+                                <div class='icon'><span class='fa fa-question'> </span></div>
+                                <h2>Beratung</h2>
+                                <p>Individuell für Sie</p>
                             </a>
                         </div>
                     </div>
-                    <div class='column dt-sc-one-third'>
-                        <div class='dt-sc-ico-content  type2 electricblue'>
+                    <div class='column dt-sc-one-fourth'>
+                        <div class='dt-sc-ico-content type2 '>
+                            <a href='<?php echo site_url();?>/privatunterricht'>
+                                <div class='icon'><span class='fa fa-user'> </span></div>
+                                <h2>Privat-<br>unterricht</h2>
+                                <p></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class='column dt-sc-one-fourth'>
+                        <div class='dt-sc-ico-content type2'>
                             <a href='<?php echo site_url();?>/wochenplan'>
                             <div class='icon'><span class='fa fa-calendar'> </span></div>
                             <h2> Wochenplan </h2>
-
-                            <p>wöchentliche Yogakurse im Studio</p></a></div>
+                            <p>wöchentliche Kurse</p></a></div>
                     </div>
                 </div>
             </div>

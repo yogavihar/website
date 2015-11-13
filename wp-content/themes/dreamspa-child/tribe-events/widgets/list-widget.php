@@ -26,7 +26,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 //Check if any posts were found
 if ( $posts ) {
-	?>
+    $section_id = empty( $post->ancestors ) ? $post->ID : end( $post->ancestors );
+	    
+    ?>
 
 	<ol class="hfeed vcalendar">
 		<?php
@@ -36,7 +38,7 @@ if ( $posts ) {
                      $curr_lang=get_locale();
 
 $event_link=esc_url( tribe_get_event_link() );
- 
+
 if($curr_lang=="en_GB"){
     if(get_field('title_en' )=="") continue;
     $title=get_field('title_en' );
@@ -48,7 +50,17 @@ else if($curr_lang=="es_ES"){
     $event_link = str_replace( '/event/','/es/event/',$event_link);
 }
 else{
-    $title=get_the_title();
+    $title="";
+        //den Custom Title holen
+        $custom_fields = get_post_custom();
+       while( have_rows('courses_') ): the_row();
+        if(get_sub_field('title')):
+           $title=get_sub_field('title');
+         endif;
+     endwhile;
+
+    if(!$title)
+        $title=get_the_title();
 }
 			?>
 			<li class="tribe-events-list-widget-events <?php tribe_events_event_classes() ?>">

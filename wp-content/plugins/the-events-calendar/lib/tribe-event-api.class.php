@@ -62,7 +62,7 @@ if ( ! class_exists( 'TribeEventsAPI' ) ) {
 			if ( ! in_array( TribeEvents::POSTTYPE, (array) $args['post_type'] ) ) {
 				return false;
 			}
-
+              
 			if ( wp_update_post( $args ) ) {
 				TribeEventsAPI::saveEventMeta( $eventId, $args, get_post( $eventId ) );
 			}
@@ -92,8 +92,12 @@ if ( ! class_exists( 'TribeEventsAPI' ) ) {
 		 * @return void
 		 */
 		public static function saveEventMeta( $event_id, $data, $event = null ) {
+                    
+   
+                    //hier sind die <p>s leider schone raus
                     //echo "<pre>";
                     //var_dump($data);
+                    //die;
 
                     $startDateArray=explode(".",get_field('courses__0_dates_0_begin'));
                     $endDateArray=explode(".",get_field('courses__0_dates_0_end'));

@@ -38,8 +38,8 @@ msgstr "Curso"
 msgid "Program"
 msgstr "Programa"
 
-msgid "Actual Yoga classes"
-msgstr "Clases de yoga actuales"
+msgid "Special Yoga courses"
+msgstr "Cursos especiales de yoga"
 
 msgid "Actual Retreats"
 msgstr "Retiros actuales"

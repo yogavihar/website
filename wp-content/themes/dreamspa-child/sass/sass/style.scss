@@ -45,6 +45,28 @@ $orange:#fb6806;
     ul li.menu-item-simple-parent ul {
         border: 1px solid #eeeeee;
    }
+  ul.sub-menu li{
+      &.menu-item-has-children{
+          &:before{
+              font: normal normal normal 14px/1 FontAwesome;
+              content: "\f054";
+              position: absolute;
+              right: 10px;
+              top: 15px;
+              color:#cccccc;
+              
+          }
+      }
+      
+           &:hover{
+                background-color: #f9bb52;//#d77d31;//lighten(#685e58,15);//#e2d9cd;//lighten($orange,15); 
+                > a{
+                    color:white !important;//white !important;
+                }
+                
+            
+           }
+  }
 }
 .dt-sc-toggle-frame h5.dt-sc-toggle, .dt-sc-toggle-frame .dt-sc-toggle-content{
     background: $background-brown;
@@ -73,49 +95,77 @@ body{
     background: $background-beige;
   }
   &.green{
-      background:$green-background-color; 
+      //background:$green-background-color; 
       color:$green-font-color;
       .inner-wrapper{
-        background:$green-background-color; 
+        //background:$green-background-color; 
         color:$green-font-color;
       }
       th{
-          background-color: #82a366;
+          background-color: $green-menu-background-color;
       }
       tbody tr:nth-child(2n+1) td {
-        background-color: #eff3ec;
+        background-color: #f5f9f2;
         }
       a, #main-menu ul.menu > li > span.nolink-menu{
           color:$green-font-color !important;
       }
+      #tribe-events #tribe-events-footer .dt-sc-button, .post-edit-link {
+          background-color:lighten($green-menu-background-color,30); 
+      }
       #main-menu { 
           background-color:$green-menu-background-color; 
-          ul.menu > li > a { 
-              color:$green-menu-font-color; 
-          }
+          
           ul li.menu-item-simple-parent ul:before {
             background: transparent;
           }
       }
       .footer-widgets-wrapper, .content-full-width, .page-with-sidebar, #secondary-left, #secondary-right{
-        background: #ffffff url(images/border.png) top repeat-x !important;
+        background: $light_background_green url(images/border.png) top repeat-x !important;
       }
-      h1, h3.widgettitle, .vcalendar li .entry-title a, .tribe-events-single-event-title,
-        #main-menu ul > li.current_page_item > a, #main-menu ul > li.current_page_parent > a{
+      h1, h3.widgettitle, .vcalendar li .entry-title a, .tribe-events-single-event-title{
         color:$green-font-highlight-color !important;
       }
+      #main-menu ul > li >a{
+        color:$light_background_green !important;
+      }
+      #main-menu ul.sub-menu li{
+            a{
+                color:$green-font-highlight-color !important;
+           }
+           &:hover{
+                background-color: $green-menu-background-color;
+                > a{
+                    color:$light_background_green !important;
+                }
+                
+            
+           }
+      }
+      #main-menu ul > li.current_page_item > a, #main-menu ul > li.current_page_parent > a{
+           color:$green-font-highlight-color !important;
+      }
+      
       .termine{
-          background: #ffffff !important;
+          background: $light_background_green !important;
       }
   }
     &.blue{
-      background:$blue-background-color; 
+      //background:$blue-background-color; 
       color:$blue-font-color;
       .inner-wrapper{
-        background:$blue-background-color; 
+        //background:$blue-background-color; 
         color:$blue-font-color;
       }
-      
+      th{
+          background-color: $blue-menu-background-color;
+      }
+      tbody tr td{
+          background-color: #dae9ed;
+      }
+      tbody tr:nth-child(2n+1) td {
+        background-color: #f2f8fa;
+        }
       
       #main-menu a, #main-menu ul.menu > li > span.nolink-menu{
           color:$blue-font-color !important;
@@ -123,22 +173,38 @@ body{
       #main-menu a:hover{color:$blue-font-highlight-color !important;} 
       #main-menu { 
           background-color:$blue-menu-background-color; 
-          ul.menu > li > a { 
-              color:$blue-menu-font-color;  
-          }
+         
           ul li.menu-item-simple-parent ul:before {
             background: transparent;
           }
       }
-      .footer-widgets-wrapper, .content-full-width, .page-with-sidebar, #secondary-left, #secondary-right{
-        background: #ffffff url(images/border.png) top repeat-x !important;
+      #tribe-events #tribe-events-footer .dt-sc-button, .post-edit-link {
+          background-color:lighten($blue-menu-background-color,40); 
       }
-      #main a, h1, h3.widgettitle, .vcalendar li .entry-title a, .tribe-events-single-event-title,
-        #main-menu ul > li.current_page_item > a, #main-menu ul > li.current_page_parent > a{
+      .footer-widgets-wrapper, .content-full-width, .page-with-sidebar, #secondary-left, #secondary-right{
+        background: $light_background_blue url(images/border.png) top repeat-x !important;
+      }
+      #main a, h1, h3.widgettitle, .vcalendar li .entry-title a, .tribe-events-single-event-title, h5.dt-sc-toggle:before, h5.dt-sc-toggle-accordion:before{
         color:$blue-font-highlight-color !important;
       }
-      #main a:hover{
-          color:lighten($blue-font-highlight-color,20) !important;
+       #main-menu ul > li >a{
+        color:$light_background_green !important;
+      }
+           #main-menu ul.sub-menu li{
+            a{
+                color:$blue-font-highlight-color !important;
+           }
+           &:hover{
+                background-color: $blue-menu-background-color;
+                > a{
+                    color:$light_background_blue !important;
+                }
+                
+            
+           }
+      }
+      #main-menu ul > li.current_page_item > a, #main-menu ul > li.current_page_parent > a{
+           color:$blue-font-highlight-color !important;
       }
     }
 }
@@ -165,6 +231,61 @@ body{
 }
 .dt-sc-ico-content p{
    color: #3a4f59;
+}
+
+.dt-sc-ico-content.type2 { 
+    padding:0px 0px 0px 80px; 
+    position:relative; 
+    width:auto; 
+    display:block; 
+    float:none; 
+    text-align:left; 
+    min-height:60px; 
+    h2 { 
+        font-size:16px; 
+        text-transform:none; 
+        letter-spacing:0px; 
+        margin-bottom:5px; 
+        font-weight:normal; }
+    .icon{
+         position:absolute; 
+         left:0px; 
+         top:-5px; 
+         background:#e2d9cd; 
+         width:60px; 
+         height:60px; 
+         color:#37251b; 
+         border-radius:60px; 
+         text-align:center;
+         &:before{
+             content:""; 
+             background-image:url(images/bg-icon-small.png); 
+             background-repeat:no-repeat; 
+             background-size:60px 60px; 
+             width:60px; 
+             height:60px; 
+             position:absolute; 
+             left:0px; 
+             right:0px; 
+             margin:auto; 
+             top:0px; 
+             z-index:1;
+         }
+             
+         span{
+             line-height:60px; 
+             text-align:center; 
+             font-size:30px; 
+             position:relative; 
+             z-index:2;
+         }
+    }
+    p{
+        font-size:13px; 
+    }
+    .image{
+        display:none;
+    }
 }
 
 #slider-container{
@@ -372,6 +493,11 @@ line-height:20px;
     font-size:12px;
     
 }
+.tribe-events-notices {
+    background: white;
+    border:none;
+    color:#707070;
+}
 .tribe-events-list-widget .duration {
   font-weight: normal;
   font-size:13px;
@@ -405,7 +531,9 @@ line-height:20px;
     }
 }
 
-
+.event-table{
+    margin-top:15px;
+}
 
 .tabs_box_navigation.sf-timetable-menu .tabs_box_navigation_selected label{
       //border: 1px solid #d77d31;

@@ -5,7 +5,7 @@
 	<section id="primary" class="content-full-width">
             <div class='fullwidth-section termine'>
                 <div class="container2">
-                    <div id="termine-portfolio-title" class="border-title aligncenter"><h2><?php _e( 'Actual Yoga classes', 'tribe-events-calendar' ) ?></h2></div>
+                    <div id="termine-portfolio-title" class="border-title aligncenter"><h2><?php _e( 'Special Yoga courses', 'tribe-events-calendar' ) ?></h2></div>
                     <div id="termine-portfolio">
 
                         <div class="dt-sc-gallery-container gallery with-space  isotope">
@@ -13,8 +13,7 @@
                             <?php
 
                             query_posts(array(
-                                'post_type' => 'tribe_events',
-                                'posts_per_page' => 6
+                                'post_type' => 'tribe_events'
                             ));
 
                             $today = date('Y-m-d');
@@ -34,7 +33,7 @@
 
                                     $number++;
 
-                                    if($number >5)
+                                    if($number >6)
                                         break;
 
                                     //Datum des Events

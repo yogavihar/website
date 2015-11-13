@@ -2930,7 +2930,9 @@ if ( ! class_exists( 'TribeEvents' ) ) {
 		 * @return void
 		 */
 		public function addEventMeta( $postId, $post ) {
-         
+                        //hier sind die <p>s leider schone raus
+                        //var_dump($post); 
+                        //die;
 			// Remove this hook to avoid an infinite loop, because saveEventMeta calls wp_update_post when the post is set to always show in calendar
 			remove_action( 'save_post', array( $this, 'addEventMeta' ), 15, 2 );
 

@@ -19,19 +19,20 @@ $white:                 #fff;
 
 // Retreats Bereich
 // -------------------------
-$green-background-color:        #d5eac5; 
+//$green-background-color:        #d5eac5; 
 $green-font-color:              #707070;
 $green-menu-font-color:         #37251b;
-$green-font-highlight-color:    #6d8f55;
-$green-menu-background-color:   #c1dcac; 
+$green-font-highlight-color:    #577344;
+$green-menu-background-color:   #82a366; 
+$light_background_green:        #eef2eb;//#ebf2e4;
 
 // Ayurveda Bereich
 // -------------------------
-$blue-background-color:         #e4eef0; 
+//$blue-background-color:         #e4eef0; 
 $blue-font-color:               #707070;
-$blue-menu-background-color:    #ffffff; 
-$blue-menu-font-color:          #37251b; 
-$blue-font-highlight-color:    #5bb5cb;
+$blue-menu-background-color:    #458899; 
+$blue-font-highlight-color:    darken($blue-menu-background-color,12);
+$light_background_blue:        #ebf1f2;//#ebf4e3; 192 / 3 / 95
 
 
 // Accent colors

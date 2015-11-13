@@ -33,7 +33,7 @@ $event_id = get_the_ID(); ?>
     <div class="col2">
         
 	<!-- Notices -->
-	<?php tribe_events_the_notices() ?>
+	<?php //tribe_events_the_notices() ?>
         
 	
 
@@ -54,7 +54,14 @@ else if($curr_lang=="es_ES"){
 }
 else{
     $content=get_the_content();
+    
+     $content = str_replace("\r\n\r\n", "</p><p>", $content); 
+     $content = str_replace("\n\n", "</p><p>", $content); 
+     //$content= str_replace("\r\n", "<br />", $content); 
+     //$content = str_replace("\n", "<br />", $content);
     $title=get_the_title();
+    
+    
 }
         ?>
         <h2 class="tribe-events-single-event-title summary entry-title"><?php echo($title); ?></h2>
@@ -92,7 +99,7 @@ else{
                         
                         ?>
 		</div> <!-- #post-x -->
-                <div>
+                <div class="event-table">
                     <table>
                         <thead>
                             <tr>
@@ -111,7 +118,16 @@ else{
                                <?php while( have_rows('courses_') ): the_row(); ?>
                                 
                              <tr>
-                                <td><?php echo $title;?></td>
+                                <td>
+                                <?php  
+                                if(get_sub_field('title')):
+                                    echo(get_sub_field('title'));
+                                else:
+                                    echo($title);
+                                endif;
+                                ?>
+                                
+                               </td>
                                 <td>
                                 <?php 
                                 while( have_rows('dates') ): the_row(); 
