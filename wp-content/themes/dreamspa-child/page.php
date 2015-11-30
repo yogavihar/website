@@ -25,6 +25,11 @@
 
 		
 	}
+        $top_image = get_field('top_image');
+        if($top_image){
+            $page_layout .= " with_top_image";
+            $sidebar_class .= " with_top_image";
+        }
 
 	if ( $show_sidebar ):
 		if ( $show_left_sidebar ): ?>

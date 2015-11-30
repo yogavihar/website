@@ -40,34 +40,6 @@ $orange:#fb6806;
 #main{
     padding-bottom: 10px;
 }
-#main-menu{
-    background: $background-brown;
-    ul li.menu-item-simple-parent ul {
-        border: 1px solid #eeeeee;
-   }
-  ul.sub-menu li{
-      &.menu-item-has-children{
-          &:before{
-              font: normal normal normal 14px/1 FontAwesome;
-              content: "\f054";
-              position: absolute;
-              right: 10px;
-              top: 15px;
-              color:#cccccc;
-              
-          }
-      }
-      
-           &:hover{
-                background-color: #f9bb52;//#d77d31;//lighten(#685e58,15);//#e2d9cd;//lighten($orange,15); 
-                > a{
-                    color:white !important;//white !important;
-                }
-                
-            
-           }
-  }
-}
 .dt-sc-toggle-frame h5.dt-sc-toggle, .dt-sc-toggle-frame .dt-sc-toggle-content{
     background: $background-brown;
 }
@@ -107,43 +79,18 @@ body{
       tbody tr:nth-child(2n+1) td {
         background-color: #f5f9f2;
         }
-      a, #main-menu ul.menu > li > span.nolink-menu{
+      a{
           color:$green-font-color !important;
       }
       #tribe-events #tribe-events-footer .dt-sc-button, .post-edit-link {
           background-color:lighten($green-menu-background-color,30); 
       }
-      #main-menu { 
-          background-color:$green-menu-background-color; 
-          
-          ul li.menu-item-simple-parent ul:before {
-            background: transparent;
-          }
-      }
+      
       .footer-widgets-wrapper, .content-full-width, .page-with-sidebar, #secondary-left, #secondary-right{
         background: $light_background_green url(images/border.png) top repeat-x !important;
       }
       h1, h3.widgettitle, .vcalendar li .entry-title a, .tribe-events-single-event-title{
         color:$green-font-highlight-color !important;
-      }
-      #main-menu ul > li >a{
-        color:$light_background_green !important;
-      }
-      #main-menu ul.sub-menu li{
-            a{
-                color:$green-font-highlight-color !important;
-           }
-           &:hover{
-                background-color: $green-menu-background-color;
-                > a{
-                    color:$light_background_green !important;
-                }
-                
-            
-           }
-      }
-      #main-menu ul > li.current_page_item > a, #main-menu ul > li.current_page_parent > a{
-           color:$green-font-highlight-color !important;
       }
       
       .termine{
@@ -167,17 +114,6 @@ body{
         background-color: #f2f8fa;
         }
       
-      #main-menu a, #main-menu ul.menu > li > span.nolink-menu{
-          color:$blue-font-color !important;
-      }
-      #main-menu a:hover{color:$blue-font-highlight-color !important;} 
-      #main-menu { 
-          background-color:$blue-menu-background-color; 
-         
-          ul li.menu-item-simple-parent ul:before {
-            background: transparent;
-          }
-      }
       #tribe-events #tribe-events-footer .dt-sc-button, .post-edit-link {
           background-color:lighten($blue-menu-background-color,40); 
       }
@@ -186,25 +122,6 @@ body{
       }
       #main a, h1, h3.widgettitle, .vcalendar li .entry-title a, .tribe-events-single-event-title, h5.dt-sc-toggle:before, h5.dt-sc-toggle-accordion:before{
         color:$blue-font-highlight-color !important;
-      }
-       #main-menu ul > li >a{
-        color:$light_background_green !important;
-      }
-           #main-menu ul.sub-menu li{
-            a{
-                color:$blue-font-highlight-color !important;
-           }
-           &:hover{
-                background-color: $blue-menu-background-color;
-                > a{
-                    color:$light_background_blue !important;
-                }
-                
-            
-           }
-      }
-      #main-menu ul > li.current_page_item > a, #main-menu ul > li.current_page_parent > a{
-           color:$blue-font-highlight-color !important;
       }
     }
 }
@@ -290,6 +207,14 @@ body{
 
 #slider-container{
     position: relative;
+    .slider-image-only.height200{
+        max-height:200px;
+        overflow:hidden;
+    }
+     .slider-image-only.height300{
+        max-height:300px;
+        overflow:hidden;
+    }
     .header-image-claim{
         position: absolute;
         top: 10%;
@@ -357,6 +282,14 @@ body{
    
     //padding:55px 50px 20px;
     box-sizing: border-box;
+    a:hover{
+        text-decoration:underline;
+    }
+    .dt-sc-ico-content{
+         a:hover{
+            text-decoration:none;
+        }
+    }
       
 }
 #primary.with-right-sidebar{
@@ -394,6 +327,9 @@ body{
     margin-top:10px !important;
     padding-left: 60px !important;
     padding-right: 60px !important;
+     &.with_top_image{
+         margin-top:0 !important;
+    }
 }
 
 #secondary-right, #secondary-left{
@@ -403,6 +339,9 @@ body{
     padding-right: 20px;
     text-align:center;
     margin-top:10px;
+    &.with_top_image{
+         margin-top:0;
+    }
 }
   .secondary-sidebar .widget h3.widgettitle, .type-page h1, .tribe-events-single-event-title { 
       color:$orange; 
@@ -738,7 +677,7 @@ line-height:20px;
          margin-left: 5px !important;
     }
 }
-/* responsive für samm unbedingt noch machen
+/* responsive fÃ¼r samm unbedingt noch machen
 .container{
     width:  90% !important;
 }*/
@@ -807,6 +746,117 @@ line-height:20px;
     
      /*----*****---- << Tablet Portrait >> ----*****----*/	
     @media only screen and (min-width:630px)  {
+         #main-menu{
+            background: $background-brown;
+            span.nolink-menu{
+                cursor:pointer;
+            }
+            ul li.menu-item-simple-parent ul {
+                border: 1px solid #eeeeee;
+           }
+           ul li.menu-item:hover{
+               & > ul{
+                   display:block !important;
+               }
+           }
+           ul.sub-menu{
+               li{
+                    &.menu-item-has-children{
+                        &:before{
+                            font: normal normal normal 14px/1 FontAwesome;
+                            content: "\f054";
+                            position: absolute;
+                            right: 10px;
+                            top: 15px;
+                            color:#cccccc;
+
+                        }
+                    }
+
+                    &:hover{
+                        background-color: #FFA000;//#f9bb52;//#d77d31;//lighten(#685e58,15);//#e2d9cd;//lighten($orange,15); 
+                        > a{
+                            color:white !important;//white !important;
+                        }
+                        &.menu-item-has-children:before{
+                            color:#ffffff;
+                        }
+                    }
+                 }
+          }
+        }
+        body{
+  
+            &.green{
+                //background:$green-background-color; 
+               #main-menu { 
+                    background-color:$green-menu-background-color; 
+
+                    ul li.menu-item-simple-parent ul:before {
+                      background: transparent;
+                    }
+                }
+               
+               #main-menu ul > li >a, #main-menu ul.menu > li > span.nolink-menu{
+                    color:$light_background_green !important;
+                  }
+                  #main-menu ul.sub-menu li{
+                        a{
+                            color:$green-font-highlight-color !important;
+                       }
+                       &:hover{
+                            background-color: $green-menu-background-color;
+                            > a{
+                                color:$light_background_green !important;
+                            }
+
+
+                       }
+                  }
+                  #main-menu ul > li.current_page_item > a, #main-menu ul > li.current_page_parent > a{
+                       color:$green-font-highlight-color !important;
+                  }
+                  #main-menu ul > li.current-menu-item.menu-item-depth-1 > a {
+                    color:lighten($green-font-highlight-color,30)  !important;
+                }
+            }
+            &.blue{
+                #main-menu a{
+                    color:$blue-font-color !important;
+                }
+                #main-menu a:hover{color:$blue-font-highlight-color !important;} 
+                #main-menu { 
+                    background-color:$blue-menu-background-color; 
+
+                    ul li.menu-item-simple-parent ul:before {
+                      background: transparent;
+                    }
+                }
+
+                 #main-menu ul > li >a, #main-menu ul > li > span.nolink-menu{
+                    color:$light_background_green !important;
+                }
+                     #main-menu ul.sub-menu li{
+                      a{
+                          color:$blue-font-highlight-color !important;
+                     }
+                     &:hover{
+                          background-color: $blue-menu-background-color;
+                          > a{
+                              color:$light_background_blue !important;
+                          }
+
+
+                     }
+                }
+                #main-menu ul > li.current_page_item > a, #main-menu ul > li.current_page_parent > a{
+                     color:$blue-font-highlight-color !important;
+                }
+                 #main-menu ul > li.current-menu-item.menu-item-depth-1 > a {
+                    color:lighten($blue-font-highlight-color,30)  !important;
+                }
+              }
+        }
         .container, #tribe-events-container, #image-section-container{
             display: flex;
             display:-webkit-flex;
@@ -840,7 +890,7 @@ line-height:20px;
     }
 /*----*****---- << Desktop >> ----*****----*/
     @media only screen and (min-width:960px){
-        
+
         .footer-widgets-wrapper{
             padding: 75px 0px 0px;
         }
@@ -853,6 +903,14 @@ line-height:20px;
                     &:last-of-type{
                          width:34%;
                     }
+                }
+            }
+        }
+        .treatment-table{
+            tr{
+                td:first-of-type{
+                    text-align: left;
+                    width: 430px;
                 }
             }
         }

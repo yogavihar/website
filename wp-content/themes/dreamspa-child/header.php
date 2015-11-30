@@ -96,13 +96,20 @@ else{
 #Header Image Section
 
 $header_image = get_field('header_image');
+$slider_image_class='';
+if(get_field('top_image')=='1'){
+    $slider_image_class=' height300';
+}
+elseif(get_field('top_image')=='2'){
+    $slider_image_class=' height200';
+}
 //$size = 'full'; // (thumbnail, medium, large, full or custom size)
 
 if( $header_image ) :?>
     <!-- **Header Image Section** -->
     <div id="slider">
         <div id="slider-container">
-            <div class='slider-image-only'>
+            <div class='slider-image-only<?php echo $slider_image_class!=''?$slider_image_class:'';?>'>
             <?php // echo wp_get_attachment_image( $header_image, $size );
             echo '<img src="'.wp_get_attachment_url($header_image).'" alt="" />';
             ?>

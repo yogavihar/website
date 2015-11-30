@@ -19,9 +19,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 $post_ID=get_the_id();
 $categories_array= get_the_terms( $post_ID, $tribe_ecp->get_event_taxonomy());
 $mainCat=$categories_array[0]->name;
-$event_id = get_the_ID(); ?>
+$event_id = get_the_ID(); 
+
+$top_image = get_field('top_image');
+?>
 <div id="tribe-events-container">
-<section id="primary" class="page-with-sidebar with-right-sidebar">
+<section id="primary" class="page-with-sidebar with-right-sidebar<?php echo $top_image?' with_top_image':''?>">
     <div class="col1">
         <?php if($mainCat=="Kurse"):?>
             <span> <img src='<?php echo site_url();?>/wp-includes/images/icon-meditation.png' alt=''/></span>
@@ -37,8 +40,9 @@ $event_id = get_the_ID(); ?>
         
 	
 
-	<?php while ( have_posts() ) :  the_post(); 
+<?php while ( have_posts() ) :  the_post(); 
     $curr_lang=get_locale();
+    //echo $curr_lang;
  
        $custom_fields = get_post_custom();
        //echo "<pre>";
@@ -63,7 +67,13 @@ else{
     
     
 }
+
         ?>
+        <!-- Notices -->
+	<?php 
+$notices = TribeEvents::getNotices(); //Kurs abgelaufen
+//var_dump($notices);
+//tribe_events_the_notices() ?>
         <h2 class="tribe-events-single-event-title summary entry-title"><?php echo($title); ?></h2>
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<!-- Event featured image, but exclude link -->
@@ -99,6 +109,7 @@ else{
                         
                         ?>
 		</div> <!-- #post-x -->
+                <?php if( have_rows('courses_') and empty( $notices ) ): ?>
                 <div class="event-table">
                     <table>
                         <thead>
@@ -113,7 +124,7 @@ else{
                         </thead>
                         <tbody>
                            
-                           <?php if( have_rows('courses_') ): ?>
+                           
                                 
                                <?php while( have_rows('courses_') ): the_row(); ?>
                                 
@@ -148,16 +159,15 @@ else{
                                 <?php endwhile; ?>
                             
                             
-                            <?php endif;?>
+                           
                         </tbody>
                         </table>
+                     
                 </div>
-	<?php endwhile; ?>
-
 	<!-- Event footer -->
 	<div id="tribe-events-footer">
             <!--a href="mailto:info@yogavihar.de?subject=Buchungsanfrage%20für%20<?php //echo $title;?>" class="dt-sc-button small with-icon"><span>Buchung anfragen</span><i class="fa fa-envelope"> </i></a-->
-            <a href="mailto:info@yogavihar.de?subject=Buchungsanfrage%20für%20<?php echo $title;?>" class="dt-sc-button small"><span>Kurs anfragen</span></a>
+            <a href="mailto:info@yogavihar.de?subject=Buchungsanfrage%20für%20<?php echo $title;?>" class="dt-sc-button small"><span><?php _e( 'request for course', 'tribe-events-calendar' ) ?></span></a>
 	
 		<!--p class="tribe-events-back">
                     <a href="<?php //echo esc_url( tribe_get_events_link() ); ?>"> <?php //_e( '&laquo; All Events', 'tribe-events-calendar' ) ?></a>
@@ -170,12 +180,14 @@ else{
 		</ul>-->
 		<!-- .tribe-events-sub-nav -->
 	</div>
+        <?php endif;?>
+        <?php endwhile; ?>
 	<!-- #tribe-events-footer -->
  </div>
 
 </section>
 <!-- Secondary Right -->
-<section id="secondary-right" class="secondary-sidebar secondary-has-right-sidebar"><?php get_sidebar( );?></section>
+<section id="secondary-right" class="secondary-sidebar secondary-has-right-sidebar<?php echo $top_image?' with_top_image':''?>"><?php get_sidebar( );?></section>
 </div>
 <?php 
 

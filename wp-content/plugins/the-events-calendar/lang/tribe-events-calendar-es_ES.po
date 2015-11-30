@@ -4162,6 +4162,11 @@ msgstr "Ver Todos los Eventos"
 msgid "There are no upcoming events at this time."
 msgstr "No hay eventos programados en este momento"
 
+# @ tribe-events-calendar
+#: ../single-event.php
+msgid "request for course"
+msgstr "solicitud de curso"
+
 #~ msgid "Organizer Name:"
 #~ msgstr "Nombre del Organizador:"
 

@@ -5124,3 +5124,9 @@ msgstr "Alle Veranstaltungen ansehen"
 #: ../views/widgets/list-widget.php:70
 msgid "There are no upcoming events at this time."
 msgstr "Es gibt derzeit keine anstehenden Veranstaltungen."
+
+# @ tribe-events-calendar
+#: ../single-event.php
+msgid "request for course"
+msgstr "Kurs anfragen"
+

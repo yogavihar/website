@@ -355,6 +355,18 @@ class DTFrontEndMenuWalker extends Walker {
 		$notext = get_post_meta( $item->ID, '_dt-disable-text', true);
 		$custom_content = get_post_meta( $item->ID, '_dt-custom-content', true);
 		
+              
+                 $curr_lang=get_locale();
+                //echo $curr_lang;
+    
+                if($curr_lang=="en_GB"){
+                    $item->url = str_replace( '/event/','/en/event/',$item->url);
+                }
+                else if($curr_lang=="es_ES"){
+                    $item->url = str_replace( '/event/','/es/event/',$item->url);
+                }
+                //echo $item->url; 
+                
 		$attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
 		$attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
 		$attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
