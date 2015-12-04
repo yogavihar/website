@@ -1,5 +1,6 @@
 <?php
 /*
+ * BACKUP FALLS PLUGIN Geupdatet wird
 Plugin Name: Timetable Responsive Schedule For WordPress
 Plugin URI: http://codecanyon.net/item/timetable-responsive-schedule-for-wordpress/7010836?ref=QuanticaLabs
 Description: Timetable Responsive Schedule For WordPress is a powerful and easy-to-use schedule plugin for WordPress. It will help you to create a timetable view of your events in minutes. It is perfect for gym classes, school or kindergarten classes, medical departments, nightclubs, lesson plans, meal plans etc. It comes with Events Manager, Event Occurrences Shortcode, Timetable Shortcode Generator and Upcoming Events Widget.

@@ -15,21 +15,21 @@
                         <div class='dt-sc-ico-content  type2 '>
                             <a href='<?php echo site_url();?>/yoga/yoga-kurse/'>
                                 <div class='icon'>
-                                    <span>  <img style="  max-width: 60%;margin-top: 21%;color:#37251b;" src='<?php echo site_url();?>/wp-includes/images/icon-meditation.png' alt=''/>
+                                    <span>  <img style="max-width: 60%;margin-top: 21%;color:#37251b;" src='<?php echo site_url();?>/wp-includes/images/icon-meditation.png' alt=''/>
                                         <!--img src='wp-includes/images/icon-meditation.png' alt=''/-->
                                     </span>
                                 </div>
                                 <h2>Spezialkurse</h2>
-                                <p>wechselnde Kurse</p>
+                               
                             </a>
                         </div>
                     </div>
                     <div class='column dt-sc-one-fourth'>
                         <div class='dt-sc-ico-content type2'>
                             <a href='<?php echo site_url();?>/beratung'>
-                                <div class='icon'><span class='fa fa-question'> </span></div>
+                                <div class='icon'><span class='fa fa-leaf'> </span></div>
                                 <h2>Beratung</h2>
-                                <p>Individuell für Sie</p>
+                                
                             </a>
                         </div>
                     </div>
@@ -37,8 +37,8 @@
                         <div class='dt-sc-ico-content type2 '>
                             <a href='<?php echo site_url();?>/privatunterricht'>
                                 <div class='icon'><span class='fa fa-user'> </span></div>
-                                <h2>Privat-<br>unterricht</h2>
-                                <p></p>
+                                <h2>Privatklasse</h2>
+                            
                             </a>
                         </div>
                     </div>
@@ -47,7 +47,8 @@
                             <a href='<?php echo site_url();?>/wochenplan'>
                             <div class='icon'><span class='fa fa-calendar'> </span></div>
                             <h2> Wochenplan </h2>
-                            <p>wöchentliche Kurse</p></a></div>
+                            
+                            </a></div>
                     </div>
                 </div>
             </div>
@@ -60,24 +61,25 @@
                         <div class="dt-sc-gallery-container gallery with-space  isotope">
 
                             <?php
-
-                            query_posts(array(
-                                'post_type' => 'tribe_events',
-                                'posts_per_page' => 6
-                            ));
-
-                            if (have_posts()):
-                                //echo"<pre>";
-                                $number=0;
-                                while (have_posts()):
-                                    $number++;
-                                    the_post();
-                                    $custom_fields = get_post_custom();
-                                    //echo "<pre>";
-                                    //var_dump($custom_fields);
-                                    //var_dump(get_post());
-
-                                   //Datum des Events
+                            $posts = tribe_get_events(
+                                 apply_filters(
+                                         'tribe_events_list_widget_query_args', array(
+                                                 'eventDisplay'   => 'list',
+                                                 'posts_per_page' => 6
+                                         )
+                                 )
+                            );
+                               //var_dump($posts);
+                            $number=0;
+                            //Check if any posts were found
+                            if ( $posts ) :
+                            foreach ( $posts as $post ) :
+                                setup_postdata( $post );
+                                $custom_fields = get_post_custom();
+                                //echo(get_the_title()."<br>");
+                                
+                                $number++;
+                                 //Datum des Events
                                     $startDate=date('d.m.Y', strtotime(get_post_meta(get_the_ID(), "_EventStartDate", true)));
                                     $endDate=date('d.m.Y', strtotime(get_post_meta(get_the_ID(), "_EventEndDate", true)));
                                     if($startDate==$endDate){
@@ -108,11 +110,10 @@
                                             </div>
                                         </div>
                                     </div>
-
-                                <?php endwhile;
-                            endif; ?>
-
+                     
+                           <?php endforeach; endif;?>
                             
+                                                   
                         </div>
 
 

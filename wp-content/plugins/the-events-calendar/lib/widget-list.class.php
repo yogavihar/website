@@ -107,7 +107,7 @@ class TribeEventsListWidget extends WP_Widget {
 		if ( ! $posts && $no_upcoming_events ) {
 			return;
 		}
-
+                
 		echo $before_widget;
 		do_action( 'tribe_events_before_list_widget' );
 		do_action( 'tribe_events_list_widget_before_the_title' );

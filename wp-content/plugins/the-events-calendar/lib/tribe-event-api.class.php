@@ -116,9 +116,17 @@ if ( ! class_exists( 'TribeEventsAPI' ) ) {
 				$data['EventEndDate']   = $endDateArray[2]."-".$endDateArray[1]."-".$endDateArray[0]." " . $endTimeArray[0] . ":" . $endTimeArray[1] . ":00";
 				$data['EventAllDay']="false";
 			}
-                       
+                        
+                       echo ($data['EventHideFromUpcoming']);
+                        if ( get_field('teasered_event')!=1 ) { 
+                            $data['EventHideFromUpcoming']="yes";
+                        }
+                         /*echo (get_field('teasered_event'));
+                         echo ($data['EventHideFromUpcoming']);
+                        die;*/
+                        
 			if ( empty ( $data['EventHideFromUpcoming'] ) ) {
-				delete_post_meta( $event_id, '_EventHideFromUpcoming' );
+				delete_post_meta( $event_id, '_EventHideFromUpcoming' );                           
 			}
 
 			// sanity check that start date < end date

@@ -7251,3 +7251,7 @@ msgstr "Du hast nicht die erforderlichen Rechte, um Dateien hochzuladen."
 #: wp-includes/post.php:1639
 msgid "No posts found."
 msgstr "Keine Beiträge gefunden."
+
+#: Schedule
+msgid "Special Courses"
+msgstr "Spezielle Kurse"

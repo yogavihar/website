@@ -11,35 +11,43 @@
         <div id="post-109" class="post-109 page type-page status-publish hentry">
             <div id="teaser-area" class='fullwidth-section'>
                 <div class="container">
-                    <div class='column dt-sc-one-third first'>
-                        <div class='dt-sc-ico-content type2 cyan'>
-                            <a href='<?php echo site_url();?>/en/yoga'>
+                    <div class='column dt-sc-one-fourth first'>
+                        <div class='dt-sc-ico-content type2'>
+                            <a href='<?php echo site_url();?>/en/yoga-courses/'>
                                 <div class='icon'>
-                                    <span>  <img style="  max-width: 55%;margin-top: 21%;color:#37251b;" src='<?php echo site_url();?>/wp-includes/images/meditation.svg' alt=''/>
+                                    <span>  <img style="max-width: 60%;margin-top: 21%;color:#37251b;" src='<?php echo site_url();?>/wp-includes/images/icon-meditation.png' alt=''/>
                                         <!--img src='wp-includes/images/icon-meditation.png' alt=''/-->
                                     </span>
                                 </div>
                                 <h2>Yoga Classes </h2>
-                                <p>Here an overview of our classes.</p>
+                                
                             </a>
                         </div>
                     </div>
-                    <div class='column dt-sc-one-third'>
-                        <div class='dt-sc-ico-content  type2 gold'>
-                            <a href='<?php echo site_url();?>/en/retreats'>
+                    <div class='column dt-sc-one-fourth'>
+                        <div class='dt-sc-ico-content  type2'>
+                            <a href='<?php echo site_url();?>/en/consultation'>
                                 <div class='icon'><span class='fa fa-leaf'> </span></div>
-                                <h2>Retreats </h2>
-                                <p>Moments of inner peace and yoga practise</p>
+                                <h2>Consultation </h2>
+                              
+                            </a>
+                        </div>
+                    </div>
+                    <div class='column dt-sc-one-fourth'>
+                        <div class='dt-sc-ico-content type2 '>
+                            <a href='<?php echo site_url();?>/en/private-class'>
+                                <div class='icon'><span class='fa fa-user'> </span></div>
+                                <h2>Private Class</h2>
+      
                             </a>
                         </div>
                     </div>
                     <div class='column dt-sc-one-third'>
-                        <div class='dt-sc-ico-content  type2 electricblue'>
-                            <a href='<?php echo site_url();?>/wochenplan'>
+                        <div class='dt-sc-ico-content  type2 '>
+                            <a href='<?php echo site_url();?>/en/weekly-schedule/'>
                             <div class='icon'><span class='fa fa-calendar'> </span></div>
                             <h2> Schedule </h2>
-
-                            <p>weekly courses in our studio</p></a></div>
+</a></div>
                     </div>
                 </div>
             </div>
@@ -53,29 +61,23 @@
 
                             <?php
 
-                            query_posts(array(
-                                'post_type' => 'tribe_events',
-                                'posts_per_page' => 6,
-                                'meta_query'	=> array(
-                                    array(
-                                            'key'		=> 'title_en',
-                                            'value'		=> '',
-                                            'compare'           => '!='
-                                    )
-                                )
-                                
-                            ));
-                            
-
-                            if (have_posts()):
-                                //echo"<pre>";
-                                $number=0;
-                                while (have_posts()):
+                            $posts = tribe_get_events(
+                                 apply_filters(
+                                         'tribe_events_list_widget_query_args', array(
+                                                 'eventDisplay'   => 'list',
+                                                 'posts_per_page' => 6
+                                         )
+                                 )
+                            );
+                               //var_dump($posts);
+                            $number=0;
+                            //Check if any posts were found
+                            if ( $posts ) :
+                            foreach ( $posts as $post ) :
+                                setup_postdata( $post );
+                                $custom_fields = get_post_custom();
                                     $number++;
-                                    the_post();
-                                    $custom_fields = get_post_custom();
-                                    //var_dump($custom_fields);
-                                    //var_dump(get_post());
+                                    
 
                                     //Datum des Events
                                     $startDate=date('d.m.Y', strtotime(get_post_meta(get_the_ID(), "_EventStartDate", true)));
@@ -110,10 +112,7 @@
                                         </div>
                                     </div>
 
-                                <?php endwhile;
-                            endif; ?>
-
-                            
+                               <?php endforeach; endif;?>
                         </div>
 
 

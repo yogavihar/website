@@ -7260,3 +7260,7 @@ msgstr "¡Tu cuenta ahora está activada!"
 #: wp-activate.php:103
 msgid "An error occurred during the activation"
 msgstr "Ha habido un error en la activación"
+
+#: Schedule
+msgid "Special Courses"
+msgstr "Cursos Especiales"
