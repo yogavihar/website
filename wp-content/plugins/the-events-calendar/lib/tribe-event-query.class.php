@@ -263,6 +263,8 @@ if ( ! class_exists( 'TribeEventsQuery' ) ) {
 							}
 							$query->set( 'orderby', self::set_orderby( null, $query ) );
 							$query->set( 'hide_upcoming', true );
+                                                        $query->set( 'lang',"de" );
+                                                        //var_dump($query);
 							break;
 					}
 				} else {

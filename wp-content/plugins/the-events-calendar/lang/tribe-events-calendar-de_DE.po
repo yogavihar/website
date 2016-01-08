@@ -2833,6 +2833,12 @@ msgid "Calendar"
 msgstr "Kalender"
 
 # @ tribe-events-calendar
+#: ../lib/the-events-calendar.class.php:4346
+msgid "Course Calendar"
+msgstr "Kurs-Kalender"
+
+
+# @ tribe-events-calendar
 #: ../lib/the-events-calendar.class.php:4420
 msgid "List"
 msgstr "Liste"

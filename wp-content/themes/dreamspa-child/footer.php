@@ -17,7 +17,7 @@
         		</div><?php endif;?>
         		<div class="copyright">
         			<div class="container">
-        				<div class="copyright-content">Integral Yoga - Ayurveda Institute  |  Kaiser-Friedrich-Str.51  |  10627 Berlin-Charlottenburg  |  Tel &amp; Fax: 030 - 31997452  |  Email: 
+        				<div class="copyright-content">Yoga Vihar  |  Kaiser-Friedrich-Str. 51  |  10627 Berlin-Charlottenburg  |  Tel &amp; Fax: 030 - 31997452  |  E-Mail: 
                                         <a href="mailto:info@yogavihar.com">info@yogavihar.com</a>
                                         </div>
         			</div>

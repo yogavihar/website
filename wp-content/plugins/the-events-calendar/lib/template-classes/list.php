@@ -58,7 +58,7 @@ if ( ! class_exists( 'Tribe_Events_List_Template' ) ) {
 			TribeEventsQuery::init();
 
 			$tribe_paged = ( ! empty( $_POST['tribe_paged'] ) ) ? intval( $_POST['tribe_paged'] ) : 1;
-
+                           
 			$args = array(
 				'eventDisplay' => 'list',
 				'post_type'    => TribeEvents::POSTTYPE,

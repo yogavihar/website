@@ -19,8 +19,6 @@ Version:        1.0/
 
 @import url("../dreamspa/style.css");
 
-
-
 /* apply a natural box layout model to all elements, but allowing components to change */
 /*html {
   box-sizing: border-box;
@@ -210,6 +208,14 @@ body{
         display:none;
     }
 }
+.treatment-table{
+    tr{
+        td:first-of-type{
+            text-align: left;
+            width: 430px;
+        }
+    }
+}
 
 #slider-container{
     position: relative;
@@ -273,6 +279,9 @@ body{
             padding-bottom:5%;
             box-sizing: border-box;
         }
+        &.with_top_image{
+         margin-top:0 !important;
+    }
        
         
         
@@ -451,6 +460,42 @@ line-height:20px;
   font-size:13px;
 }
 
+//Kurs-Kalender (List-ansicht)
+ #tribe-events-pg-template {
+    width: 100%;
+    margin: 0;
+}
+.tribe-events-list{
+   
+    h2.tribe-events-page-title{
+        font-size: 28px;
+        letter-spacing: 0;
+        font-weight: 100;
+        padding: 0;
+        margin: 0;
+        color:$orange;
+       font-family: "Tahoma";//'courgette', sans-serif;
+       margin-bottom: 10px;
+    }
+    .type-tribe_events h2 {
+        font-size: 1.4em;
+    }
+    .tribe-events-list-separator-month {
+        text-transform: none;
+        font-size: 20px;
+        line-height: 58px;
+        margin: 0.8em auto;
+       span {
+            background-color: #fcf8f2;
+            padding: 0 7.5%;
+            line-height: 2;
+            display: inline-block;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+} 
+
 .tt_timetable{
     td{
         height:60px !important;
@@ -503,7 +548,12 @@ line-height:20px;
        &:nth-of-type(4n+0){
          margin-left: 0;
            clear: both;
-       }
+       }.ul-YoutubeGallery li.li-YoutubeGallery {
+    float: left;
+    margin: 0 12px 15px;
+    width: 45%;
+    list-style-type: none;
+    margin-left: 20px !important;
        &.first{
          margin-left: 0;  
        }
@@ -518,7 +568,7 @@ line-height:20px;
             font-weight: normal !important;
         }
         h6{
-            max-height: 32px;
+            max-height: 50px;
             overflow: hidden;
         }
         .timespan{
@@ -536,7 +586,11 @@ line-height:20px;
     }
     figure{
         margin:0;
+         img{
+             max-height: 210px;
+        }
     }
+}
 }
 .contact-page{
     h2{
@@ -582,6 +636,8 @@ line-height:20px;
   min-height:140px;
 
   .author{
+          height: 150px;
+          margin-top:10px;
       img{
           border-radius: 15px;
               max-height: 130px;
@@ -681,7 +737,7 @@ line-height:20px;
 }
 //Gallery
 #bwg_container1_0 #bwg_container2_0 .bwg_album_thumb_spun1_0:hover , #bwg_container1_0 #bwg_container2_0 .bwg_standart_thumb_spun1_0:hover{        
-    opacity: 0.6 !important;        
+         
     filter: Alpha(opacity=60) !important;         
     transform: scale(1.0) !important;        
     -ms-transform: scale(1.0) !important;         
@@ -691,10 +747,17 @@ line-height:20px;
     -moz-backface-visibility: hidden !important;          
     -ms-backface-visibility: hidden !important;         
     z-index: 102 !important; 
+    img{
+        opacity: 0.3 !important;   
+    }
    
 } 
 #bwg_container1_0 #bwg_container2_0 .bwg_title_spun2_0 {
-  color: #000000 !important;
+    color: #3a4f59 !important;
+    text-shadow: none !important;
+    font-size: 20px !important;
+    font-weight: normal !important;
+    font-family: tahoma !important;
   text-shadow:none !important;
 }
 
@@ -706,6 +769,10 @@ line-height:20px;
     li{
          display: inline;
          margin-left: 5px !important;
+         //SPANISCH ERSTMAL AUSBLENDEN
+         &.lang-item-es{
+             display:none;
+         }
     }
 }
 /* responsive fÃ¼r samm unbedingt noch machen
@@ -751,33 +818,112 @@ line-height:20px;
     }
      /*----*****---- << Smartphone >> ----*****----*/	
     @media only screen and (max-width:630px)  {
-    .contact-page .opening-hours{
-        h2{
-            margin-top:0;
+        .contact-page .opening-hours{
+            h2{
+                margin-top:0;
+            }
         }
+        #slider{
+            display:none;
+        }
+        #primary.with-right-sidebar{
+            min-height: auto;
+            padding-bottom:20px !important;
         }
         #tribe-events {
             position: relative;
             .col1 {
                 position: absolute;
-                  right: 3%;
-                    top: 5%;
+                left: 7px;
+                top: 35px;
+                float: initial;
+                .fa{
+                        margin-top: 0px;
+                }
             }
             .col2{
                   width: 100%;
             }
  
         }
+        .dt-sc-testimonial {
+            .author{
+                margin-top:0;
+            }
+        }
+        #termine-portfolio{
+             figure{
+                margin-left:20px;
+               
+            }
+        }
          .main-menu-wrapper{
              margin-top: 0;
            
+        }
+         #footer .widget{
+            padding-bottom:10px;
+        }
+        .dt-gallery.column {
+            margin-bottom: 5px;
+        }
+        .secondary-sidebar .widget h3.widgettitle, .type-page h1, .tribe-events-single-event-title {
+            margin-top:0;
+        }
+        .dt-sc-toggle-content {
+            padding: 5px 0px 0 3px;
+        }
+        h5.dt-sc-toggle, h5.dt-sc-toggle-accordion{
+            line-height:1.4;
         }
         
     }
     
      /*----*****---- << Tablet Portrait >> ----*****----*/	
     @media only screen and (min-width:630px)  {
-         #main-menu{
+        #footer .widget{
+            padding-bottom:50px;
+        }
+        .container, #tribe-events-container, #image-section-container{
+            display: flex;
+            display:-webkit-flex;
+
+            
+        }
+    .contact-page .opening-hours{
+        .day{
+            width:23%;
+          
+        }
+        .time{
+            width:75%;
+        }
+        }
+        #tribe-events{
+            .page-with-sidebar{
+                  padding-left: 40px !important;
+                  padding-right: 40px !important;
+            }
+        }
+        
+        //Home
+        #teaser-area{
+          padding-top: 75px;
+              padding-bottom: 45px;
+        }
+    }
+    /*----*****---- << Tablet Portrait >> ----*****----*/	
+    @media only screen and (max-width:960px)  {
+        .contact-page{
+        .dt-sc-one-third{
+            width:100%;
+            margin-left:0;
+        }
+        }
+    }
+        /*----*****---- << Navigation große Version (ohne Top-Bar) >> ----*****----*/	
+    @media only screen and (min-width:768px)  {
+             #main-menu{
             background: $background-brown;
             span.nolink-menu{
                 cursor:pointer;
@@ -888,42 +1034,6 @@ line-height:20px;
                 }
               }
         }
-        .container, #tribe-events-container, #image-section-container{
-            display: flex;
-            display:-webkit-flex;
-
-            
-        }
-    .contact-page .opening-hours{
-        .day{
-            width:23%;
-          
-        }
-        .time{
-            width:75%;
-        }
-        }
-        #tribe-events{
-            .page-with-sidebar{
-                  padding-left: 40px !important;
-                  padding-right: 40px !important;
-            }
-        }
-        
-        //Home
-        #teaser-area{
-          padding-top: 75px;
-              padding-bottom: 45px;
-        }
-    }
-    /*----*****---- << Tablet Portrait >> ----*****----*/	
-    @media only screen and (max-width:960px)  {
-        .contact-page{
-        .dt-sc-one-third{
-            width:100%;
-            margin-left:0;
-        }
-        }
     }
 /*----*****---- << Desktop >> ----*****----*/
     @media only screen and (min-width:960px){
@@ -943,14 +1053,6 @@ line-height:20px;
                 }
             }
         }
-        .treatment-table{
-            tr{
-                td:first-of-type{
-                    text-align: left;
-                    width: 430px;
-                }
-            }
-        }
         .contact-page{
             .address{
               padding-top: 6% !important;
@@ -960,6 +1062,16 @@ line-height:20px;
                 width:40%;
             }
         }
+        .ul-YoutubeGallery li.li-YoutubeGallery {
+            width: 45% !important;
+            margin-left: 20px !important;
+            .chr-size-thumb {
+                width: 320px!important;
+               height: auto;
+            }
+            h3.title-YoutubeGallery{
+                font-size:20px;
+            }
+        }
     }
 
-  

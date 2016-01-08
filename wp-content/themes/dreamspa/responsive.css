@@ -391,7 +391,7 @@
 		ul.dt-sc-tabs-vertical-frame { width:100%; margin:0px; }
 		.dt-sc-tabs-vertical-frame-content { padding:20px 5%; width:90%; clear:both; }
 		
-		.carousel-arrows { top:0px; }
+		.carousel-arrows { top:-30px; }
 		.dt-sc-testimonial-carousel-wrapper.type1 .dt-sc-testimonial-carousel li { margin-top:40px; }
 		.dt-sc-testimonial { padding-left:0px; }
 		.dt-sc-testimonial .author { position:inherit; width:100%; text-align:center; margin-top:20px; }
@@ -432,7 +432,7 @@
 		.container, #footer { width:90%; }
 		.boxed .wrapper, .boxed .is-sticky #main-menu { width:100%; }
 		.content-full-width .fullwidth-section, .page-with-sidebar {
-                    padding: 40px 10% 0 !important;
+                    padding: 55px 7% 0 !important;
                 }
                 #teaser-area{
                     padding-left: 2% !important;
