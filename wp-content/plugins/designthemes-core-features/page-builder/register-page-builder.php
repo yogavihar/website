@@ -48,9 +48,9 @@ if (! class_exists ( 'DTCorePageBuilder' )) {
 	
 			/* Front End CSS & jQuery */
 			if (! is_admin ()) {
-				wp_enqueue_style( 'dt-animations', DESIGNTHEMES_PB_URI . '/css/animations.css', array() );
-				wp_enqueue_script( 'dt-inviewjs', DESIGNTHEMES_PB_URI . '/js/jquery.inview.js', array (), false, true );
-				wp_enqueue_script( 'dt-custompublicjs', DESIGNTHEMES_PB_URI . '/js/custom-public.js', array (), false, true );
+				//wp_enqueue_style( 'dt-animations', DESIGNTHEMES_PB_URI . '/css/animations.css', array() );
+				//wp_enqueue_script( 'dt-inviewjs', DESIGNTHEMES_PB_URI . '/js/jquery.inview.js', array (), false, true );
+				//wp_enqueue_script( 'dt-custompublicjs', DESIGNTHEMES_PB_URI . '/js/custom-public.js', array (), false, true );
 			}
 			
 			if (! current_user_can ( 'edit_posts' ) && ! current_user_can ( 'edit_pages' )) {

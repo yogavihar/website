@@ -2712,7 +2712,7 @@ function bwg_front_end_scripts() {
   wp_enqueue_script('bwg_3DEngine', WD_BWG_FRONT_URL . '/js/3DEngine/3DEngine.js', array(), '1.0.0');
   wp_enqueue_script('bwg_Sphere', WD_BWG_FRONT_URL . '/js/3DEngine/Sphere.js', array(), '1.0.0');
 }
-add_action('wp_enqueue_scripts', 'bwg_front_end_scripts');
+//add_action('wp_enqueue_scripts', 'bwg_front_end_scripts');
 
 /* Add bwg scheduled event for autoupdatable galleries.*/
 
