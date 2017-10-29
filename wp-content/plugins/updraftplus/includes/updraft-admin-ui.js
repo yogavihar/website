@@ -71,6 +71,28 @@ function updraft_restore_setoptions(entities) {
 	jQuery('#updraft-restore-modal').dialog("option", "height", height);
 }
 
+function updraft_backup_dialog_open() {
+	if(updraft_settings_form_changed){
+		if(window.confirm(updraftlion.unsavedsettingsbackup)){
+			jQuery('#backupnow_label').val(''); 
+			jQuery('#updraft-backupnow-modal').dialog('open');
+		}
+	} else {
+		jQuery('#backupnow_label').val(''); 
+		jQuery('#updraft-backupnow-modal').dialog('open');
+	}
+}
+
+
+function updraft_migrate_dialog_open() {
+	jQuery('#updraft_migrate_modal_alt').hide();
+	updraft_migrate_modal_default_buttons = {};
+	updraft_migrate_modal_default_buttons[updraftlion.close] = function() { jQuery(this).dialog("close"); };
+	jQuery("#updraft-migrate-modal").dialog("option", "buttons", updraft_migrate_modal_default_buttons);
+	jQuery('#updraft-migrate-modal').dialog('open');
+	jQuery('#updraft_migrate_modal_main').show();
+}
+
 var updraft_restore_stage = 1;
 var lastlog_lastmessage = "";
 var lastlog_lastdata = "";
@@ -114,7 +136,7 @@ var updraft_backupnow_nonce = '';
 var updraft_activejobslist_backupnownonce_only = 0;
 var updraft_inpage_hasbegun = 0;
 
-function updraft_backupnow_inpage_go(success_callback, onlythisfileentity) {
+function updraft_backupnow_inpage_go(success_callback, onlythisfileentity, extradata) {
 	// N.B. This function should never be called on the UpdraftPlus settings page - it is assumed we are elsewhere. So, it is safe to fake the console-focussing parameter.
 	updraft_console_focussed_tab = 1;
 	updraft_inpage_success_callback = success_callback;
@@ -125,7 +147,7 @@ function updraft_backupnow_inpage_go(success_callback, onlythisfileentity) {
 	jQuery('#updraft_inpage_backup').show();
 	updraft_activejobslist_backupnownonce_only = 1;
 	updraft_inpage_hasbegun = 0;
-	updraft_backupnow_go(0, 0, 0, onlythisfileentity);
+	updraft_backupnow_go(0, 0, 0, onlythisfileentity, extradata, updraftlion.automaticbackupbeforeupdate);
 }
 
 function updraft_activejobs_update(force) {
@@ -225,11 +247,19 @@ function updraft_activejobs_update(force) {
 			if (resp.j != null && resp.j != '') {
 				jQuery('#updraft_activejobsrow').show();
 
-			if (gdata.hasOwnProperty('thisjobonly') && !updraft_inpage_hasbegun && jQuery('#updraft-jobid-'+gdata.thisjobonly).length) {
+				if (gdata.hasOwnProperty('thisjobonly') && !updraft_inpage_hasbegun && jQuery('#updraft-jobid-'+gdata.thisjobonly).length) {
 					updraft_inpage_hasbegun = 1;
 					console.log('UpdraftPlus: the start of the requested backup job has been detected');
-				}
-				if (updraft_inpage_hasbegun == 1 && jQuery('#updraft-jobid-'+gdata.thisjobonly+'.updraft_finished').length) {
+				} else if (!updraft_inpage_hasbegun && updraft_activejobslist_backupnownonce_only && jQuery('.updraft_jobtimings.isautobackup').length) {
+					autobackup_nonce = jQuery('.updraft_jobtimings.isautobackup').first().data('jobid');
+					if (autobackup_nonce) {
+						updraft_inpage_hasbegun = 1;
+						updraft_backupnow_nonce = autobackup_nonce;
+						gdata.thisjobonly = autobackup_nonce;
+						console.log('UpdraftPlus: the start of the requested backup job has been detected; id: '+autobackup_nonce);
+					}
+				} else if (updraft_inpage_hasbegun == 1 && jQuery('#updraft-jobid-'+gdata.thisjobonly+'.updraft_finished').length) {
+					// This block used to be a straightforward 'if'... switching to 'else if' ensures that it cannot fire on the same run. (If the backup hasn't started, it may be detected as finished before to it began, on an overloaded server if there's a race).
 					// Don't reset to 0 - this will cause the 'began' event to be detected again
 					updraft_inpage_hasbegun = 2;
 // 					var updraft_inpage_modal_buttons = {};
@@ -313,7 +343,7 @@ function updraft_popuplog(backup_nonce) {
 			jQuery('#updraft-poplog-content').html(resp.html);
 			
 			var log_popup_buttons = {};
-			log_popup_buttons[updraftlion.download] = function() { window.location.href = download_url; };
+			log_popup_buttons[updraftlion.downloadlogfile] = function() { window.location.href = download_url; };
 			log_popup_buttons[updraftlion.close] = function() { jQuery(this).dialog("close"); };
 			
 			//Set the dialog buttons: Download log, Close log
@@ -486,13 +516,19 @@ function updraftplus_diskspace_entity(key) {
 }
 
 function updraft_iframe_modal(getwhat, title) {
+	var width=780;
+	var height=500;
 	jQuery('#updraft-iframe-modal-innards').html('<iframe width="100%" height="430px" src="'+ajaxurl+'?action=updraft_ajax&subaction='+getwhat+'&nonce='+updraft_credentialtest_nonce+'"></iframe>');
-	jQuery('#updraft-iframe-modal').dialog('option', 'title', title).dialog('open');
+	jQuery('#updraft-iframe-modal').dialog('option', 'title', title).dialog('option', 'width', width).dialog('option', 'height', height).dialog('open');
 }
 
-function updraft_html_modal(showwhat, title) {
+function updraft_html_modal(showwhat, title, width, height) {
 	jQuery('#updraft-iframe-modal-innards').html(showwhat);
-	jQuery('#updraft-iframe-modal').dialog('option', 'title', title).dialog('open');
+	var updraft_html_modal_buttons = {};
+	if (width < 450) {
+		updraft_html_modal_buttons[updraftlion.close] = function() { jQuery(this).dialog("close"); };
+	}
+	jQuery('#updraft-iframe-modal').dialog('option', 'title', title).dialog('option', 'width', width).dialog('option', 'height', height).dialog('option', 'buttons', updraft_html_modal_buttons).dialog('open');
 }
 
 function updraftplus_diskspace() {
@@ -532,7 +568,7 @@ function updraft_downloader(base, nonce, what, whicharea, set_contents, prettyda
 		var itext = (set_contents[i] == 0) ? '' : ' ('+show_index+')';
 		if (!jQuery('#'+stid).length) {
 			var prdate = (prettydate) ? prettydate : nonce;
-			jQuery(whicharea).append('<div style="clear:left; border: 1px solid; padding: 8px; margin-top: 4px; max-width:840px;" id="'+stid+'" class="updraftplus_downloader"><button onclick="jQuery(\'#'+stid+'\').fadeOut().remove();" type="button" style="float:right; margin-bottom: 8px;">X</button><strong>Download '+what+itext+' ('+prdate+')</strong>:<div class="raw">'+updraftlion.begunlooking+'</div><div class="file" id="'+stid+'_st"><div class="dlfileprogress" style="width: 0;"></div></div>');
+			jQuery(whicharea).append('<div style="clear:left; border: 1px solid; padding: 8px; margin-top: 4px; max-width:840px;" id="'+stid+'" class="updraftplus_downloader"><button onclick="jQuery(\'#'+stid+'\').fadeOut().remove();" type="button" style="float:right; margin-bottom: 8px;">X</button><strong>'+updraftlion.download+' '+what+itext+' ('+prdate+')</strong>:<div class="raw">'+updraftlion.begunlooking+'</div><div class="file" id="'+stid+'_st"><div class="dlfileprogress" style="width: 0;"></div></div>');
 			jQuery('#'+stid).data('downloaderfor', { base: base, nonce: nonce, what: what, index: i });
 			// Legacy: set up watcher
 			//(function(base, nonce, what, i) {
@@ -561,6 +597,7 @@ jQuery(document).ajaxError(function( event, jqxhr, settings, exception ) {
 	console.log("Error caught by UpdraftPlus ajaxError handler (follows) for "+settings.url);
 	console.log(exception);
 	if (settings.url.search(ajaxurl) == 0) {
+		// TODO subaction=downloadstatus is no longer used. This should be adjusted to the current set-up.
 		if (settings.url.search('subaction=downloadstatus') >= 0) {
 			var timestamp = settings.url.match(/timestamp=\d+/);
 			var type = settings.url.match(/type=[a-z]+/);
@@ -590,9 +627,7 @@ function updraft_restorer_checkstage2(doalert) {
 	}
 	// Allow pressing 'Restore' to proceed
 	jQuery('#updraft-restore-modal-stage2a').html(updraftlion.processing);
-	jQuery.get(ajaxurl, {
-		action: 'updraft_ajax',
-		subaction: 'restore_alldownloaded', 
+	jQuery.post(ajaxurl+'?action=updraft_ajax&subaction=restore_alldownloaded', {
 		nonce: updraft_credentialtest_nonce,
 		timestamp: jQuery('#updraft_restore_timestamp').val(),
 		restoreopts: jQuery('#updraft_restore_form').serialize()
@@ -620,41 +655,40 @@ function updraft_restorer_checkstage2(doalert) {
 		}
 	});
 }
-var dlstatus_sdata = {
-	action: 'updraft_ajax',
-	subaction: 'downloadstatus',
-};
-dlstatus_lastlog = '';
+// var dlstatus_sdata = {
+// 	action: 'updraft_ajax',
+// 	subaction: 'downloadstatus',
+// };
+// dlstatus_lastlog = '';
 function updraft_downloader_status(base, nonce, what, findex) {
 // Short-circuit
 return;
-
-	if (findex == null || findex == 0 || findex == '') { findex='0'; }
-	// Get the DOM id of the status div (add _st for the id of the file itself)
-	var stid = base+nonce+'_'+what+'_'+findex;
-	if (!jQuery('#'+stid).length) { return; }
-//console.log(stid+": "+jQuery('#'+stid).length);
-	dlstatus_sdata.nonce=updraft_credentialtest_nonce;
-	dlstatus_sdata.timestamp = nonce;
-	dlstatus_sdata.type = what;
-	dlstatus_sdata.findex = findex;
-	// This goes in because we want to read it back on any ajaxError event
-	dlstatus_sdata.base = base;
-	jQuery.get(ajaxurl, dlstatus_sdata, function(response) {
-		nexttimer = 1250;
-		if (dlstatus_lastlog == response) { nexttimer = 3000; }
-		try {
-			var resp = jQuery.parseJSON(response);
-			var cancel_repeat = updraft_downloader_status_update(base, nonce, what, findex, resp, response);
-			if (cancel_repeat == 0) {
-				(function(base, nonce, what, findex) {
-					setTimeout(function(){updraft_downloader_status(base, nonce, what, findex)}, nexttimer);
-				})(base, nonce, what, findex);
-			}
-		} catch(err) {
-			alert(updraftlion.notunderstood+' '+updraftlion.error+' '+err);
-		}
-	});
+// Old code
+// 	if (findex == null || findex == 0 || findex == '') { findex='0'; }
+// 	// Get the DOM id of the status div (add _st for the id of the file itself)
+// 	var stid = base+nonce+'_'+what+'_'+findex;
+// 	if (!jQuery('#'+stid).length) { return; }
+// 	dlstatus_sdata.nonce=updraft_credentialtest_nonce;
+// 	dlstatus_sdata.timestamp = nonce;
+// 	dlstatus_sdata.type = what;
+// 	dlstatus_sdata.findex = findex;
+// 	// This goes in because we want to read it back on any ajaxError event
+// 	dlstatus_sdata.base = base;
+// 	jQuery.get(ajaxurl, dlstatus_sdata, function(response) {
+// 		nexttimer = 1250;
+// 		if (dlstatus_lastlog == response) { nexttimer = 3000; }
+// 		try {
+// 			var resp = jQuery.parseJSON(response);
+// 			var cancel_repeat = updraft_downloader_status_update(base, nonce, what, findex, resp, response);
+// 			if (cancel_repeat == 0) {
+// 				(function(base, nonce, what, findex) {
+// 					setTimeout(function(){updraft_downloader_status(base, nonce, what, findex)}, nexttimer);
+// 				})(base, nonce, what, findex);
+// 			}
+// 		} catch(err) {
+// 			alert(updraftlion.notunderstood+' '+updraftlion.error+' '+err);
+// 		}
+// 	});
 }
 
 function updraft_downloader_status_update(base, nonce, what, findex, resp, response) {
@@ -698,7 +732,7 @@ function updraft_downloader_status_update(base, nonce, what, findex, resp, respo
 				jQuery('#'+stid+' .raw').html(updraftlion.fileready+' '+ updraftlion.youshould+' <button type="button" onclick="updraftplus_downloadstage2(\''+nonce+'\', \''+what+'\', \''+findex+'\')\">'+updraftlion.downloadtocomputer+'</button> '+updraftlion.andthen+' <button id="uddownloaddelete_'+nonce+'_'+what+'" type="button" onclick="updraftplus_deletefromserver(\''+nonce+'\', \''+what+'\', \''+findex+'\')\">'+updraftlion.deletefromserver+'</button>');
 			}
 		}
-		dlstatus_lastlog = response;
+// 		dlstatus_lastlog = response;
 	} else if (resp.m != null) {
 			jQuery('#'+stid+' .raw').html(resp.m);
 	} else {
@@ -708,8 +742,7 @@ function updraft_downloader_status_update(base, nonce, what, findex, resp, respo
 	return cancel_repeat;
 }
 
-
-function updraft_backupnow_go(backupnow_nodb, backupnow_nofiles, backupnow_nocloud, onlythisfileentity) {
+function updraft_backupnow_go(backupnow_nodb, backupnow_nofiles, backupnow_nocloud, onlythisfileentity, extradata, label) {
 
 	jQuery('#updraft_backup_started').html('<em>'+updraftlion.requeststart+'</em>').slideDown('');
 	setTimeout(function() {jQuery('#updraft_backup_started').fadeOut('slow');}, 75000);
@@ -721,12 +754,12 @@ function updraft_backupnow_go(backupnow_nodb, backupnow_nofiles, backupnow_noclo
 		backupnow_nodb: backupnow_nodb,
 		backupnow_nofiles: backupnow_nofiles,
 		backupnow_nocloud: backupnow_nocloud,
-		backupnow_label: jQuery('#backupnow_label').val()
+		backupnow_label: label,
+		extradata: extradata
 	};
 	
 	if ('' != onlythisfileentity) {
 		params.onlythisfileentity = onlythisfileentity;
-		params.backupnow_label = updraftlion.automaticbackupbeforeupdate;
 	}
 	
 	jQuery.post(ajaxurl, params, function(response) {
@@ -748,7 +781,135 @@ function updraft_backupnow_go(backupnow_nodb, backupnow_nofiles, backupnow_noclo
 
 jQuery(document).ready(function($){
 
-	jQuery("#updraft-navtab-settings-content form input, #updraft-navtab-settings-content form select").change(function(e){
+	jQuery('#updraftvault_settings_cell').on('click', '.updraftvault_backtostart', function(e) {
+		e.preventDefault();
+		jQuery('#updraftvault_settings_showoptions').slideUp();
+		jQuery('#updraftvault_settings_connect').slideUp();
+		jQuery('#updraftvault_settings_connected').slideUp();
+		jQuery('#updraftvault_settings_default').slideDown();
+	});
+	
+	// Prevent default event when pressing return in the form
+	jQuery('#updraftvault_settings_connect input').keypress(function(e) {
+		if (e.which == 13) {
+			jQuery('#updraftvault_connect_go').click();
+			return false;
+		}
+	});
+	
+	jQuery('#updraftvault_settings_cell').on('click', '#updraftvault_recountquota', function(e) {
+		e.preventDefault();
+		jQuery('#updraftvault_recountquota').html(updraftlion.counting);
+		try {
+			jQuery.post(ajaxurl,  {
+				action: 'updraft_ajax',
+			subaction: 'vault_recountquota',
+			nonce: updraft_credentialtest_nonce
+			}, function(response) {
+				jQuery('#updraftvault_recountquota').html(updraftlion.updatequotacount);
+				try {
+					resp = jQuery.parseJSON(response);
+					if (resp.hasOwnProperty('html')) {
+						jQuery('#updraftvault_settings_connected').html(resp.html);
+						if (resp.hasOwnProperty('connected')) {
+							if (resp.connected) {
+								jQuery('#updraftvault_settings_default').hide();
+								jQuery('#updraftvault_settings_connected').show();
+							} else {
+								jQuery('#updraftvault_settings_connected').hide();
+								jQuery('#updraftvault_settings_default').show();
+							}
+						}
+					}
+				} catch (err) {
+					alert(updraftlion.unexpectedresponse+' '+response);
+					console.log(err);
+				} 
+			});
+		} catch (err) {
+			jQuery('#updraftvault_recountquota').html(updraftlion.updatequotacount);
+			console.log(err);
+		}
+	});
+	
+	jQuery('#updraftvault_settings_cell').on('click', '#updraftvault_disconnect', function(e) {
+		e.preventDefault();
+		jQuery('#updraftvault_disconnect').html(updraftlion.disconnecting);
+		try {
+			jQuery.post(ajaxurl,  {
+				action: 'updraft_ajax',
+			subaction: 'vault_disconnect',
+			nonce: updraft_credentialtest_nonce
+			}, function(response) {
+				jQuery('#updraftvault_disconnect').html(updraftlion.disconnect);
+				try {
+					resp = jQuery.parseJSON(response);
+					if (resp.hasOwnProperty('html')) {
+						jQuery('#updraftvault_settings_connected').html(resp.html).slideUp();
+						jQuery('#updraftvault_settings_default').slideDown();
+					}
+				} catch (err) {
+					alert(updraftlion.unexpectedresponse+' '+response);
+					console.log(response);
+					console.log(err);
+				} 
+			});
+		} catch (err) {
+			jQuery('#updraftvault_disconnect').html(updraftlion.disconnect);
+			console.log(err);
+		}
+	});
+	
+	jQuery('#updraftvault_connect').click(function(e) {
+		e.preventDefault();
+		jQuery('#updraftvault_settings_default').slideUp();
+		jQuery('#updraftvault_settings_connect').slideDown();
+	});
+	
+	jQuery('#updraftvault_showoptions').click(function(e) {
+		e.preventDefault();
+		jQuery('#updraftvault_settings_default').slideUp();
+		jQuery('#updraftvault_settings_showoptions').slideDown();
+	});
+	
+	jQuery('#updraftvault_connect_go').click(function(e) {
+		jQuery('#updraftvault_connect_go').html(updraftlion.connecting);
+		jQuery.post(ajaxurl,  {
+			action: 'updraft_ajax',
+			subaction: 'vault_connect',
+			nonce: updraft_credentialtest_nonce,
+			email: jQuery('#updraftvault_email').val(),
+			pass: jQuery('#updraftvault_pass').val(),
+		}, function(response) {
+			jQuery('#updraftvault_connect_go').html(updraftlion.connect);
+			try {
+				resp = jQuery.parseJSON(response);
+			} catch(err) {
+				console.log(err);
+				console.log(response);
+				alert(updraftlion.unexpectedresponse+' '+response);
+				return;
+			}
+			if (resp.hasOwnProperty('e')) {
+				updraft_html_modal('<h4 style="margin-top:0px; padding-top:0px;">'+updraftlion.errornocolon+'</h4><p>'+resp.e+'</p>', updraftlion.disconnect, 400, 250);
+				if (resp.hasOwnProperty('code') && resp.code == 'no_quota') {
+					jQuery('#updraftvault_settings_connect').slideUp();
+					jQuery('#updraftvault_settings_default').slideDown();
+				}
+			} else if (resp.hasOwnProperty('connected') && resp.connected && resp.hasOwnProperty('html')) {
+				jQuery('#updraftvault_settings_connect').slideUp();
+				jQuery('#updraftvault_settings_connected').html(resp.html).slideDown();
+			} else {
+				console.log(response);
+				console.log(resp);
+				alert(updraftlion.unexpectedresponse+' '+response);
+			}
+			
+		});
+		return false;
+	});
+	
+	jQuery("#updraft-navtab-settings-content form input:not('.udignorechange'), #updraft-navtab-settings-content form select").change(function(e){
 		updraft_settings_form_changed = true;
 	});
 	jQuery("#updraft-navtab-settings-content form input[type='submit']").click(function (e) {
@@ -859,8 +1020,46 @@ jQuery(document).ready(function($){
 				var pretty_date = jQuery('.updraft_restore_date').first().text();
 				// Create the downloader active widgets
 
-				for (var i=0; i<whichselected.length; i++) {
-					updraft_downloader('udrestoredlstatus_', jQuery('#updraft_restore_timestamp').val(), whichselected[i][0], '#ud_downloadstatus2', whichselected[i][1], pretty_date, false);
+				// See if we some are already known to be downloaded - in which case, skip creating the download widget. (That saves on HTTP round-trips, as each widget creates a new POST request. Of course, this is at the expense of one extra one here).
+				var which_to_download = whichselected;
+				var backup_timestamp = jQuery('#updraft_restore_timestamp').val();
+
+				try {
+					jQuery.post(ajaxurl,  {
+						action: 'updraft_ajax',
+						subaction: 'whichdownloadsneeded',
+						nonce: updraft_credentialtest_nonce,
+						downloads: whichselected,
+						timestamp: backup_timestamp
+					}, function(response) {
+						try {
+							resp = jQuery.parseJSON(response);
+							if (resp.hasOwnProperty('downloads')) {
+								console.log('UpdraftPlus: items which still require downloading follow');
+								which_to_download = resp.downloads;
+								console.log(which_to_download);
+							}
+						} catch (err) {
+							console.log("UpdraftPlus: error (follows) when parsing response on items needing downloading");
+							console.log(err);
+						}
+
+						// Download time.
+						// The check on what's already downloaded may have returned the result that everything is
+						if (which_to_download.length == 0) {
+							updraft_restorer_checkstage2(0);
+						} else {
+							for (var i=0; i<which_to_download.length; i++) {
+								updraft_downloader('udrestoredlstatus_', backup_timestamp, which_to_download[i][0], '#ud_downloadstatus2', which_to_download[i][1], pretty_date, false);
+							}
+						}
+
+						
+					});
+				} catch (err) {
+					console.log("UpdraftPlus: error (follows) when looking for items needing downloading");
+					console.log(err);
+					alert(updraftlion.jsonnotunderstood);
 				}
 
 				// Make sure all are downloaded
@@ -909,7 +1108,7 @@ jQuery(document).ready(function($){
 			});
 		}, 1700);
 		
-		updraft_backupnow_go(backupnow_nodb, backupnow_nofiles, backupnow_nocloud, '');
+		updraft_backupnow_go(backupnow_nodb, backupnow_nofiles, backupnow_nocloud, '', '', jQuery('#backupnow_label').val());
 	};
 	backupnow_modal_buttons[updraftlion.cancel] = function() { jQuery(this).dialog("close"); };
 	
@@ -918,13 +1117,10 @@ jQuery(document).ready(function($){
 		buttons: backupnow_modal_buttons
 	});
 
-	var migrate_modal_buttons = {};
-	migrate_modal_buttons[updraftlion.close] = function() { jQuery(this).dialog("close"); };
 	jQuery("#updraft-migrate-modal").dialog({
-		autoOpen: false, height: 355, width: 485, modal: true,
-		buttons: migrate_modal_buttons
+		autoOpen: false, height: updraftlion.migratemodalheight, width: updraftlion.migratemodalwidth, modal: true,
 	});
-	
+
 	jQuery( "#updraft-poplog" ).dialog({
 		autoOpen: false, height: 600, width: '75%', modal: true,
 	});
@@ -1215,7 +1411,7 @@ jQuery(document).ready(function($){
 		e.preventDefault();
 		var data = jQuery(this).data('rawbackup');
 		if (data != null && data != '') {
-			updraft_html_modal(data, updraftlion.raw);
+			updraft_html_modal(data, updraftlion.raw, 780, 500);
 		}
 	});
 	

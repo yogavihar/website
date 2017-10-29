@@ -153,7 +153,7 @@ class acf_field_image_crop extends acf_field_image
 		do_action('acf/create_field', array(
 			'type'    =>  'text',
 			'name'    =>  'fields[' . $key . '][width]',
-			'value'   =>  $field['width'],
+			'value'   =>  isset($field['width']) ? $field['width'] : '',
 			'class'	  =>  'width dimension',
 			'placeholder' => 'Width'
 		));
@@ -163,7 +163,7 @@ class acf_field_image_crop extends acf_field_image
 		do_action('acf/create_field', array(
 			'type'    =>  'text',
 			'name'    =>  'fields[' . $key . '][height]',
-			'value'   =>  $field['height'],
+			'value'   =>  isset($field['height']) ? $field['height'] : '',
 			'class'	  =>  'height dimension',
 			'placeholder' => 'Height'
 		));
@@ -361,7 +361,7 @@ class acf_field_image_crop extends acf_field_image
             $height = $height * 2;
         }
 		?>
-<div class="acf-image-uploader clearfix <?php echo $o['class']; ?>" data-field-id="<?php echo $field['key'] ?>" data-preview_size="<?php echo $field['preview_size']; ?>" data-library="<?php echo isset($field['library']) ? $field['library'] : 'all'; ?>" data-width="<?php echo $width ?>" data-height="<?php echo $height ?>" data-crop-type="<?php echo $field['crop_type'] ?>" <?php echo ($field['force_crop'] == 'yes' ? 'data-force-crop="true"' : '')?> data-save-to-media-library="<?php echo $field['save_in_media_library'] ?>"  >
+<div class="acf-image-uploader clearfix acf-image-crop <?php echo $o['class']; ?>" data-field-id="<?php echo $field['key'] ?>" data-preview_size="<?php echo $field['preview_size']; ?>" data-library="<?php echo isset($field['library']) ? $field['library'] : 'all'; ?>" data-width="<?php echo $width ?>" data-height="<?php echo $height ?>" data-crop-type="<?php echo $field['crop_type'] ?>" <?php echo ($field['force_crop'] == 'yes' ? 'data-force-crop="true"' : '')?> data-save-to-media-library="<?php echo $field['save_in_media_library'] ?>"  >
 	<input class="acf-image-value" data-original-image="<?php echo $imageData->original_image ?>"  data-cropped-image="<?php echo json_encode($imageData->cropped_image) ?>" type="hidden" name="<?php echo $field['name']; ?>" value="<?php echo htmlspecialchars($field['value']); ?>" />
 	<div class="has-image">
 		<div class="image-section">
@@ -594,13 +594,10 @@ class acf_field_image_crop extends acf_field_image
 
         function input_admin_enqueue_scripts()
         {
-                // Note: This function can be removed if not used
-
-
                 // register acf scripts
-                wp_register_script('acf-input-image_crop', $this->settings['dir'] . 'js/input-v4.js', array('acf-input', 'imgareaselect'), $this->settings['version']);
+                wp_register_script('acf-input-image_crop', plugins_url('js/input-v4.js', __FILE__), array('acf-input', 'imgareaselect'), $this->settings['version']);
 
-                wp_register_style('acf-input-image_crop', $this->settings['dir'] . 'css/input.css', array('acf-input'), $this->settings['version']);
+                wp_register_style('acf-input-image_crop', plugins_url('css/input.css', __FILE__), array('acf-input'), $this->settings['version']);
                 wp_register_script( 'jcrop', includes_url( 'js/jcrop/jquery.Jcrop.min.css' ));
 
 
@@ -780,7 +777,7 @@ class acf_field_image_crop extends acf_field_image
 	        $originalFileExtension = array_pop($originalFileName);
 
 	        // Generate new base filename
-	        $targetFileName = implode('.', $originalFileName) . '_' . $targetW . 'x' . $targetH . '_acf_cropped'  . '.' . $originalFileExtension;
+	        $targetFileName = implode('.', $originalFileName) . '_' . $targetW . 'x' . $targetH . apply_filters('acf-image-crop/filename_postfix', '_acf_cropped')  . '.' . $originalFileExtension;
 
 	        // Generate target path new file using existing media library
 	        $targetFilePath = $mediaDir['path'] . '/' . wp_unique_filename( $mediaDir['path'], $targetFileName);
@@ -892,7 +889,7 @@ class acf_field_image_crop extends acf_field_image
 	function filterMediaQuery($args){
         // get options
         $options = get_option( 'acf_image_crop_settings' );
-        $hide = $options['hide_cropped'];
+        $hide = isset($options['hide_cropped']) && $options['hide_cropped'];
 
         // If hide option is enabled, do not select items with the acf_is_cropped meta-field
         if($hide){
@@ -940,28 +937,24 @@ class acf_field_image_crop extends acf_field_image
     function displayHideFromMediaInput(){
         // Get plugin options
         $options = get_option( 'acf_image_crop_settings' );
-        $value=0;
-		if(!empty($options['hide_cropped']))
-			$value = $options['hide_cropped'];
+        $hide = isset($options['hide_cropped']) && $options['hide_cropped'];
 
         // echo the field
         ?>
     <input name='acf_image_crop_settings[hide_cropped]'
-     type='checkbox' <?php echo $value ? 'checked' :  '' ?> value='true' />
+     type='checkbox' <?php echo $hide ? 'checked' :  '' ?> value='true' />
         <?php
     }
 
     function displayRetinaModeInput(){
         // Get plugin options
         $options = get_option( 'acf_image_crop_settings' );
-         $value=0;
-		if(!empty($options['retina_mode']))
-			$value = $options['retina_mode'];
+        $retina = isset($options['retina_mode']) && $options['retina_mode'];
 
         // echo the field
         ?>
     <input id="acf-image-crop-retina-mode" name='acf_image_crop_settings[retina_mode]'
-     type='checkbox' <?php echo $value ? 'checked' :  '' ?> value='true' />
+     type='checkbox' <?php echo $retina ? 'checked' :  '' ?> value='true' />
         <?php
     }
 

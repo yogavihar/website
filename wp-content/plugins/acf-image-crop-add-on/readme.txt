@@ -2,8 +2,8 @@
 Contributors: andersthorborg
 Tags: afc, advanced custom fields, image crop, image, crop
 Requires at least: 3.5
-Tested up to: 4.1.1
-Stable tag: 1.4.4
+Tested up to: 4.6
+Stable tag: 1.4.12
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -60,6 +60,32 @@ function my_register_fields()
 
 
 == Changelog ==
+
+= 1.4.12 =
+* Fix compatibility with ACF Pro 5.6.0
+
+= 1.4.11 =
+* Address issue with changed ACF Pro validation behavior causing php warnings when saving fields
+
+= 1.4.10 =
+* Add compatibility with ACF Pro 5.5.5
+
+= 1.4.9 =
+* Use acf-image-crop/filename_postfix to allow custom filename postfixes
+
+= 1.4.8 =
+* Fix button styling
+* Prevent php warnings for unset field settings
+
+= 1.4.7 =
+* Added compatibility with ACF PRO 5.4.2.2 icons
+
+= 1.4.6 =
+* Added compatibility with ACF 4.4.2 and ACF PRO 5.2.9
+
+= 1.4.5 =
+* Added compatibility with ACF 5.2.7
+* Added image quality filter (needs testing)
 
 = 1.4.4 =
 * Fixed migration from image field to not only return image ID

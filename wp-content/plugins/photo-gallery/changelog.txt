@@ -1,0 +1,301 @@
+Photo Gallery
+
+1.2.50
+  Fixed: Javascript conflict with some themes.
+
+1.2.49
+  Added: Call photo gallery by php function.
+
+1.2.48
+  Fixed: Back to previous album/gallery.
+
+1.2.47
+  Added: Transition for mosaic view.
+  Added: New version notification in pro versions.
+
+1.2.46
+  Changed: Activate, Deactivate hooks for multisite.
+
+1.2.45
+  Added: Choose a user type who can add/edit galleries, images, albums and tags.
+
+1.2.44
+  Fixed: "Open image in original size" and "Download original image" for embed.
+  Fixed: Instagram thumbnail.
+  Fixed: Instagram with utf8mb4 characters.
+  Fixed: Watermark link.
+
+1.2.43
+  New: Image filters.
+
+1.2.42
+  Fixed: SQL injection.
+
+1.2.41
+  Fixed: Embed media for wordpress lower than 4.0.0.
+
+1.2.40
+  Changed: Save images ordering in admin.
+  Fixed: Warnings in filemanager.
+  Fixed: Prevent opening lightbox on swipe.
+
+1.2.39
+  New: Search by name in file manager.
+
+1.2.38
+  New: Carousel view.
+  Fixed: Horizontal Mosaic view bug.
+  Fixed: Print bug.
+
+1.2.37
+  New: Load more with scroll.
+  Fixed: Thumbnail size on recover.
+
+1.2.36
+  Changed: Featured plugins page.
+  Fixed: Mosaic view show title.
+  Fixed: AddThis javascript bug.
+
+1.2.35
+  New: Addthis (pro version).
+  Fixed: Link text font size in extended album description.
+  Fixed: Thumbnail on share screen.
+
+1.2.34
+  New: Recreate thumbnail button in gallery page.
+
+1.2.33
+  Fixed: Delete/update custom posts on gallery/album edit.
+  Fixed: Image width/height size with open commetns.
+
+1.2.32
+  New: Loop option for lightbox.
+  Fixed: Embed media by YouTube short url.
+  Fixed: Masonry, mosaic views images loading with more button.
+
+1.2.31
+  New: Load more button instead of pagination (optional).
+  Fixed: Minor bug on gallery save on php5.3.
+
+1.2.30
+  Change links.
+
+1.2.29
+  Changed: Featured plugins page.
+  New: Featured themes page.
+
+1.2.28
+  Changed: Remove width, height attributes from image tag.
+  Fixed: Hide info div in GalleryBox, if image alt and description are empty.
+
+1.2.27
+  Fixed: Galery type notice in gallery page.
+
+1.2.26
+  Fixed: Lightbox opening bug for ios.
+
+1.2.25
+  Fixed: Lightbox opening bug for mobile browsers.
+
+1.2.24
+  Fixed: Removed duplicated ids from slideshow view.
+  Changed: Depricated options removed.
+
+1.2.23
+  Fixed: Pagination bug for multiple galleries in one page.
+
+1.2.21
+  Fixed: Scripts and styles loading problem.
+  Changed: Hide pagination while loading.
+
+1.2.20
+  Fixed: Lightbox opening problem on some themes.
+  Fixed: Lightbox url in frontend.
+
+1.2.19
+  Fixed: Photo Gallery Widget bug.
+  Changed: Removed onClick attribute from Album views.
+
+1.2.18
+  New: Bottom pagination in admin views.
+  New: Loading in masonry and mosaic views.
+  New: SEO.
+  New: Autohide option for slideshow and lightbox navigation buttons.
+  New: Read image meta data.
+  Fixed: Slideshow bullets centering.
+  Fixed: Admin-ajax url for frontend.
+  Fixed: Upload images to .original not resized.
+  Fixed: Order by filename.
+  
+1.2.16
+  New: Embed support.
+  New: Instagram gallery.
+  New: Photo gallery can be loaded through AJAX request.
+  New: Image meta auto-filling. 
+  Changed: Deleted tag posts.
+  Changed: Improved security of backend.
+  Fixed: Thumbnail and filmstrip sizes for embeds.
+  Fixed: Mosaic id conflict in extended and compact albums.
+  Fixed: Search in backend galleries view.
+  Fixed: Gallery box image URL on a page with multiple galleries.
+  Fixed: Maximize/resize buttons in gallery box when exiting fullscreen.
+  Fixed: Photo gallery tag cloud widget rotation.
+  Fixed: Other minor bugs.
+
+1.2.15
+  Changed: Large image url in page.
+  Fixed: SQL injection (order_by to wd_ord, sort_by to wd_sor).
+
+1.2.14
+  Fixed: Shortcode issue.
+
+1.2.13
+  Fixed: Security issue in filemanager.
+
+1.2.12
+  New: Front-end image sorting possibility (dropdown) for the users.
+
+1.2.11
+  Fixed: Security issue.
+  Fixed: Fullscreen button and laoding image animation.
+
+1.2.9
+  Changed: Updated font-awesome to 4.2.0 version.
+  Fixed: Sort in ligthbox.
+
+1.2.8
+  Fixed: Security issue.
+
+1.2.7
+  New: Masonry album view type (pro version).
+  Fixed: Single quota in image.
+
+1.2.6
+  Fixed: New image save fixed.
+
+1.2.5
+  New: Wrap around in lightbox.
+
+1.2.4
+  New: Pagination input.
+
+1.2.3
+  New: Play icon over the video thumbnail (optional).
+
+1.2.2
+  New: Upload images with custom size.
+
+1.2.1
+  Changed: Minor changes in shortcode generation code.
+
+1.2.0
+  Changed: Shortcodes.
+
+1.1.30
+  New: Images count in ligthbox (optional - only in options page).
+  New: Images count column in galleries table.
+  New: WordPress Search Integration by gallery title.
+  New: Show gallery, album title (optional - only in options page).
+
+1.1.29
+  Fixed: Tag cloud widget.
+
+1.1.28
+  Fixed: Filemanager.
+
+1.1.27
+  Changed: Loading.
+
+1.1.26
+  New: Option "Import from Media Library".
+
+1.1.25
+  Fixed: Save gallery.
+
+1.1.24
+  New: Add tags to all images.
+  Fixed: Improve translation.
+
+1.1.23
+  New: Redirect from widget.
+  Changed: Unique tags name.
+
+1.1.22
+  New: Order option for album images.
+
+1.1.21
+  New: Option for sorting gallery images within album.
+
+1.1.20
+  Fixed: lightbox.
+
+1.1.19
+  New: Preload images count options.
+
+1.1.18
+  New: Redirect url optional.
+
+1.1.15
+  New: Search images in gallery (optional).
+  New: Optional info.
+  New: Resize images.
+
+1.1.14
+  New: Option for show image title/description on lightbox.
+
+1.1.13
+  New: Tag cloud ordering option.
+  New: Keep aspect ratio option in crop.
+
+1.1.12
+  New: youtube, vimeo (pro version).
+
+1.1.11
+  New: Added tag cloud options.
+  New: Zip upload.
+
+1.1.10
+  Fixed: On WP 3.9 editor.
+
+1.1.9
+  Fixed: Gallery alignment.
+
+1.1.8
+  New: Added slideshow widget filmstrip height option.
+  Fixed: Album ordering.
+
+1.1.7
+  New: Added swipe effect on lightbox.
+
+1.1.6
+  New: Added option disable/enable right click.
+
+1.1.5
+  Fixed: Slideshow.
+
+1.1.4
+  Fixed: Removed enters from code (conflicts fixed).
+
+1.1.2
+  Fixed: Critical bug with uninstall.
+
+1.0.8
+  Changed: Improved file upload and save on gallery.
+
+1.0.6
+  Changed: improved filemanager functionality.
+  Fixed: Widget.
+
+1.0.5
+  Fixed: File manager.
+
+1.0.4
+  New: Added shortcode generator
+  New: Thumbnail title, thumb size in filemanager.
+  Fixed: Slideshow.
+
+1.0.3
+  Fixed: Album view.
+
+1.0.2
+  Fixed: php 5.2 capability.
