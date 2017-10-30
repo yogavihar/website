@@ -4,87 +4,116 @@
  * Plugin URI: https://www.cozmsolabs.com
  * Version: 0.1
  * Description: Filter particular scripts and style to load in posts or pages that don't need it.
- * Author: Cristian Antohe
+ * Author: Linda Formumm
  * Author URI: https://www.cozmoslabs.com/
 */
  
  
-// remove script handles we don't need, each with their own conditions
+// remove script and style handles we don't need, each with their own conditions
  
 add_action('wp_print_scripts', 'wra_filter_scripts', 100000);
-add_action('wp_print_footer_scripts',  'wra_filter_scripts', 100000);
+add_action('wp_print_footer_scripts', 'wra_filter_scripts', 100000);
+
+// remove styles we don't need
+add_action('wp_print_styles', 'wra_filter_styles', 100000);
+add_action('wp_print_footer_scripts', 'wra_filter_styles', 100000);
+
+function wra_filter_styles(){
+    if (!is_page("wochenplan") && !is_page("weekly-schedule")) {
+
+        wp_deregister_style('timetable_sf_style');
+        wp_dequeue_style('timetable_sf_style');
+
+        wp_deregister_style('timetable_style');
+        wp_dequeue_style('timetable_style');
+
+        wp_deregister_style('timetable_event_template'); 
+        wp_dequeue_style('timetable_event_template');
+
+        wp_deregister_style('timetable_responsive_style');
+        wp_dequeue_style('timetable_responsive_style');
+
+        wp_deregister_style('timetable_font_lato');
+        wp_dequeue_style('timetable_font_lato');
+
+    }
+
+    //Kontakt und Kursanmeldung
+    if (!is_page("contact") && !is_page("kontakt") && !is_page("anmeldung") && !is_page("course-registration")) {
+        wp_deregister_style('contact-form-7');
+        wp_dequeue_style('contact-form-7');
+    }
+
+     //Kontakt
+    if (!is_page("contact") && !is_page("kontakt")) {
+        wp_deregister_style('responsive_map_css');
+        wp_dequeue_style('responsive_map_css');
+    }
+        
+}  
+
  
 function wra_filter_scripts(){
     #wp_deregister_script($handle);
     #wp_dequeue_script($handle);
 
-    wp_deregister_script('bbpress-editor');
-    wp_dequeue_script('bbpress-editor');
- 
-    // Device Pixels support
-    // This improves the resolution of gravatars and wordpress.com uploads on hi-res and zoomed browsers. We only have gravatars so we should be ok without it.
-    wp_deregister_script('devicepx');
-    wp_dequeue_script('devicepx');
- 
-    if( !is_singular( 'docs' ) ){
-        // the table of contents plugin is being used on documentation pages only
-        wp_deregister_script('toc-front');
-        wp_dequeue_script('toc-front');
-    }
- 
-    if( !is_singular( array('docs', 'post' ) ) ){
-        wp_deregister_script('codebox');
-        wp_dequeue_script('codebox');
-    }
- 
- 
-}
- 
-// Jetpack
-add_action('jetpack_implode_frontend_css', 'wra_remove_jetpack');
-function wra_remove_jetpack(){
-    return false;
-}
- 
- 
- 
-// remove styles we don't need
-add_action('wp_print_styles', 'wra_filter_styles', 100000);
-add_action('wp_print_footer_scripts', 'wra_filter_styles', 100000);
-function wra_filter_styles(){
- 
-    #wp_deregister_style($handle);
-    #wp_dequeue_style($handle);
 
-    //no more bbpress styles.
-    wp_deregister_style('bbp-default');
-    wp_dequeue_style('bbp-default');
- 
-    // download monitor is not used in the front-end.
-    wp_deregister_style('wp_dlmp_styles');
-    wp_dequeue_style('wp_dlmp_styles');
- 
-    if( !is_singular( 'docs' ) ){
-        // the table of contents plugin is being used on documentation pages only
-        wp_deregister_style('toc-screen');
-        wp_dequeue_style('toc-screen');
+        //Skripte und Styles bereiningen 
+        //Wochenplan
+    //if (current_user_can('delete_users') ){
+      // $post= get_post();
+    //echo($post->post_name);
+    //}
+    
+
+    //JQuery und Shortcodes
+    if (!is_page("videos") && !is_page("videos-2") &&  !is_page("treatments") && !is_page("behandlungen") && !is_page("meinungen") && !is_page("testimonials") && !is_page("wochenplan") && !is_page("weekly-schedule") && !is_page("mantra-cd") && !is_page("mantra-cd-2")) {
+         wp_deregister_script('jquery');
+         wp_dequeue_script('jquery');
+         
+         wp_deregister_script('dt-sc-script');
+         wp_dequeue_script('dt-sc-script');
     }
- 
-    if ( !( is_page( 'account' ) || is_page( 'edit-profile' )) ){
-        // this should not be like this. Need to look into it.
-        wp_deregister_style('wppb_stylesheet');
-        wp_dequeue_style('wppb_stylesheet');
+    
+  
+     if (!is_page("meinungen") && !is_page("testimonials")) {
+         wp_deregister_script('dt-sc-carouFredSel-script');
+         wp_dequeue_script('dt-sc-carouFredSel-script');
     }
- 
-    if( !is_singular( array('docs', 'post' ) ) ){
-        wp_deregister_style('codebox');
-        wp_dequeue_style('codebox');
+    
+    if (!is_page("wochenplan") && !is_page("weekly-schedule")) {
+        
+        wp_deregister_script('jquery-ui-core');
+        wp_dequeue_script('jquery-ui-core');
+
+        wp_deregister_script('jquery-ui-tabs');
+        wp_dequeue_script('jquery-ui-tabs');
+
+        wp_deregister_script("jquery-ba-bqq");
+        wp_dequeue_script("jquery-ba-bqq");
+
+        wp_deregister_script("jquery-carouFredSel");
+        wp_dequeue_script("jquery-carouFredSel");
+
+        wp_deregister_script('timetable_main');
+        wp_dequeue_script('timetable_main');
+    }
+
+    //Kontakt und Kursanmeldung
+    if (!is_page("contact") && !is_page("kontakt") && !is_page("anmeldung") && !is_page("course-registration")) {
+        wp_deregister_script('contact-form-7');
+        wp_dequeue_script('contact-form-7');
+    }
+
+     //Kontakt
+    if (!is_page("contact") && !is_page("kontakt")) {
+        wp_deregister_script('jquerygmap');
+        wp_dequeue_script('jquerygmap');
+
     }
 }
  
- 
- 
- 
+
 // list loaded assets by our theme and plugins so we know what we're dealing with. This is viewed by admin users only.
 add_action('wp_print_footer_scripts', 'wra_list_assets', 900000);
 function wra_list_assets(){
