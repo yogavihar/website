@@ -703,7 +703,7 @@ function dttheme_load_basic_css() {
 	//wp_enqueue_style ( 'skin', IAMD_BASE_URL . "skins/" . $dttheme_options ['appearance'] ['skin'] . "/style.css" );
 	#For CDN
 	#wp_enqueue_style ( 'custom-font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' );
-	wp_enqueue_style ( 'custom-font-awesome', IAMD_BASE_URL . 'css/font-awesome.min.css', array (), '4.1.0' );
+	//wp_enqueue_style ( 'custom-font-awesome', IAMD_BASE_URL . 'css/font-awesome.min.css', array (), '4.1.0' );
 
 	// enqueue only in IE 7
 	/*wp_register_style ( 'custom-font-awesome-ie7', IAMD_BASE_URL . 'css/font-awesome-ie7.min.css' );
@@ -720,9 +720,11 @@ add_action( 'wp_enqueue_scripts', 'dttheme_load_basic_css', '100' );
 
 // # --- **** dttheme_set_layout *** --- ###
 function dttheme_set_layout() {
-	if (dttheme_option ( "mobile", "is-theme-responsive" )) {
+	/*if (dttheme_option ( "mobile", "is-theme-responsive" )) {
 		wp_enqueue_style ( 'responsive', IAMD_BASE_URL . "responsive.css" );
 	}
+       
+         */
 	
 	$dttheme_options = get_option ( IAMD_THEME_SETTINGS );
 	$dttheme_mobile = array_key_exists("mobile",$dttheme_options ) ?  $dttheme_options ['mobile'] : array();

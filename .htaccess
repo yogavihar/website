@@ -30,6 +30,8 @@ RewriteRule . /index.php [L]
  AddOutputFilterByType DEFLATE application/javascript
  AddOutputFilterByType DEFLATE application/x-javascript
  AddOutputFilterByType DEFLATE application/x-shockwave-flash
+AddType image/svg+xml .svg
+AddOutputFilterByType DEFLATE image/svg+xml
 </IfModule>
 
 <IfModule mod_gzip.c>
@@ -53,12 +55,13 @@ RewriteRule . /index.php [L]
  ExpiresByType application/xhtml-xml "access plus 600 seconds"
  ExpiresByType image/gif "access plus 1 month"
  ExpiresByType image/jpeg "access plus 1 month"
+ ExpiresByType image/svg "access plus 1 month"
  ExpiresByType image/png "access plus 1 month"
  ExpiresByType image/x-icon "access plus 1 month"
 </IfModule>
 
 <ifmodule mod_headers.c>
-<filesmatch "\\.(ico|jpe?g|png|gif|swf)$">
+<filesmatch "\\.(ico|jpe?g|png|gif|svg|swf)$">
  Header set Cache-Control "max-age=2592000, public"
 </filesmatch>
  <filesmatch "\\.(css)$">

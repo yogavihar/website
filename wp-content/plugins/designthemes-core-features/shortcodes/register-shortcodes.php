@@ -44,10 +44,10 @@ if (! class_exists ( 'DTCoreShortcodes' )) {
 			if (! is_admin ()) {
 
 				/*wp_enqueue_style ( 'dt-animation-css', plugin_dir_url ( __FILE__ ) . 'css/animations.css' );
-				wp_enqueue_style ( 'dt-flex-css', plugin_dir_url ( __FILE__ ) . 'css/flexslider.css' );*/
+				wp_enqueue_style ( 'dt-flex-css', plugin_dir_url ( __FILE__ ) . 'css/flexslider.css' );
 				wp_enqueue_style ( 'dt-sc-css', plugin_dir_url ( __FILE__ ) . 'css/shortcodes.css' );
-				
-				wp_enqueue_script ( 'jquery' );
+				*/
+				//wp_enqueue_script ( 'jquery' );
 
 				/*wp_enqueue_script ( 'dt-sc-inview-script', plugin_dir_url ( __FILE__ ) . 'js/inview.js', array (), false, true );
 				wp_enqueue_script ( 'dt-sc-flexslider-script', plugin_dir_url ( __FILE__ ) . 'js/jquery.flexslider.js', array (), false, true );
@@ -59,7 +59,7 @@ if (! class_exists ( 'DTCoreShortcodes' )) {
 				wp_enqueue_script ( 'dt-sc-scrollto-script', plugin_dir_url ( __FILE__ ) . 'js/jquery.scrollto.js', array (), false, true );				
 				wp_enqueue_script ( 'dt-sc-onepage-nav-script', plugin_dir_url ( __FILE__ ) . 'js/jquery.nav.js', array (), false, true );*/
                                 wp_enqueue_script ( 'dt-sc-carouFredSel-script', plugin_dir_url ( __FILE__ ) . 'js/jquery.carouFredSel-6.2.1-packed.js', array (), false, true );
-				wp_enqueue_script ( 'dt-sc-script', plugin_dir_url ( __FILE__ ) . 'js/shortcodes.js', array (), false, true );
+				//wp_enqueue_script ( 'dt-sc-script', plugin_dir_url ( __FILE__ ) . 'js/shortcodes.js', array (), false, true );
 			}
 			
 			if (! current_user_can ( 'edit_posts' ) && ! current_user_can ( 'edit_pages' )) {

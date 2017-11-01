@@ -40,8 +40,8 @@
           })(window,document,'script','dataLayer','GTM-MRD853V');</script>
           <!-- End Google Tag Manager -->
          */ ?>
+            <script type="text/javascript" src="/wp-content/themes/dreamspa-child/script.js"></script>
   
-        <!--link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'-->
 <?php wp_head();?>
     </head>
     <?php
@@ -157,5 +157,5 @@
                         <?php endif; ?>
                         <?php if (!is_page_template('tpl-fullwidth.php')): ?>
                         <!-- ** Container ** -->
-                        <div class="container"><?php endif;
-                        ?>			
+                        <div class="container">
+                            <?php endif;?>			

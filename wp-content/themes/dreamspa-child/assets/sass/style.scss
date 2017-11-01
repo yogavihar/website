@@ -8,7 +8,9 @@ Version:        1.0/
 */
 
 // Import all the variables into the main css file.
-@import "variables";
+@import "includes/variables";
+@import "includes/shortcodes";
+@import "includes/font-awesome-reduced";
 
 // I gather this file is a starting point for the project.
 //@import "bootstrap";
@@ -17,15 +19,8 @@ Version:        1.0/
 // @import "bootstrap-responsive";
 
 
-@import url("../dreamspa/style.css");
-
-/* apply a natural box layout model to all elements, but allowing components to change */
-/*html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}*/
+@import "includes/dreamspa-style";
+@import "includes/responsive";
 
 //colors
 $background-brown: #e2d9cd;
@@ -41,6 +36,14 @@ $orange:#fb6806;
 .dt-sc-toggle-frame h5.dt-sc-toggle, .dt-sc-toggle-frame .dt-sc-toggle-content{
     background: $background-brown;
 }
+a, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .dt-sc-testimonial cite, .carousel-arrows a:hover, #footer .widget h3.widgettitle, #footer .widget.widget_text ul li a:hover, #footer .dt-sc-social-icons li a:hover, .entry-meta .comments a:hover, .entry-details .entry-metadata p a:hover, .dt-sc-ico-content.type2 p a, .dt-sc-callout-box.type6 h4, .dt-sc-callout-box.type7 h4, .dt-gallery:hover .dt-gallery-details h5 a, .widget .recent-posts-widget ul li .entry-details >  a:hover, .widget ul li a:hover, /*.widget ul li:hover:before, */.widget.tweetbox ul li a, .widget .recent-posts-widget ul li h4 a:hover, ul.commentlist li .author-name .reply a, ul.dt-sc-tabs-frame > li > a > span, ul.dt-sc-tabs-frame > li > a:hover, .dt-sc-gift-card:hover .price, .dt-sc-gift-card.selected .price, .dt-sc-gift-card-section h6 span, .dt-sc-ico-content.type3 h2 a, ul.dt-sc-fancy-list li a:hover, ul.dt-sc-fancy-list.procedures li.selected a, .dt-sc-callout-box h4, ul.dt-sc-tabs-vertical-frame > li > a > span, .widget .recent-posts-widget ul li .entry-details .entry-metadata p a:hover span, .widget.widget_rss h3.widgettitle a, ul.cart-details li a:hover, .menu-item-widget-area-container .widget h3.widgettitle, .menu-item-widget-area-container .widget h3.widgettitle a, #main-menu ul.menu li .menu-item-widget-area-container ul.menu li a:hover, .dt-sc-reservation .title h6 span, .dt-sc-reservation h6.staff-name { color:#fb6806; }
+
+#main-menu ul li a:hover, #main-menu ul > li.current_page_item > a, #main-menu ul > li.current_page_ancestor > a, #main-menu ul > li.current-menu-item > a, #main-menu ul > li.current-menu-ancestor > a, #main-menu ul li.menu-item-simple-parent ul > li.current_page_item > a, #main-menu ul li.menu-item-simple-parent ul > li.current_page_ancestor > a, #main-menu ul li.menu-item-simple-parent ul > li.current-menu-item > a, #main-menu ul li.menu-item-simple-parent ul > li.current-menu-ancestor > a { color:#d77d31; }
+
+#main-menu ul li.menu-item-simple-parent ul li a:hover, #main-menu ul li.menu-item-megamenu-parent:hover > a, #main-menu ul > li.menu-item-simple-parent:hover > a, #main-menu ul li.menu-item-simple-parent ul li:hover > a { color:#d77d31; }
+
+th, .dt-sc-button, .dt-sc-sorting-container a.active-sort, .dt-sc-sorting-container a:hover, .pagination .prev-post a, .pagination .next-post a, .post-nav-container .post-prev-link a, .post-nav-container .post-next-link a, .widget.widget_tag_cloud .tagcloud a:hover, .widget.widget_product_tag_cloud .tagcloud a:hover, input[type="submit"], button, input[type="button"], .dt-sc-ico-content.type2 .icon:after, .sticky .entry-meta .date, .widget.flickrbox .flickr-widget div a, .post-edit-link:hover, #header .dt-sc-social-icons li:hover, #header #searchform input[type="submit"]:hover, #primary #searchform input[type="submit"]:hover, ul.time-table > li:before, ul.time-table > li.selected { background-color:#d77d31; }
+
 pre{
     margin:0;
 }
@@ -83,7 +86,7 @@ body{
       a{
           color:$green-font-color !important;
       }
-      #tribe-events #tribe-events-footer .dt-sc-button, .post-edit-link {
+      .tribe-events #tribe-events-footer .dt-sc-button, .post-edit-link {
           background-color:lighten($green-menu-background-color,30); 
       }
       
@@ -115,7 +118,7 @@ body{
         background-color: #f2f8fa;
         }
       
-      #tribe-events #tribe-events-footer .dt-sc-button, .post-edit-link {
+      .tribe-events #tribe-events-footer .dt-sc-button, .post-edit-link {
           background-color:lighten($blue-menu-background-color,40); 
       }
       .footer-widgets-wrapper, .content-full-width, .page-with-sidebar, #secondary-left, #secondary-right{
@@ -144,9 +147,6 @@ body{
     color: $orange !important;
 }
 
-.dt-sc-ico-content.type2 h2{
-   color: $orange;
-}
 .dt-sc-ico-content p{
    color: #3a4f59;
 }
@@ -159,14 +159,16 @@ body{
     float:none; 
     text-align:left; 
     min-height:60px; 
-    h2 { 
-        font-size:16px; 
+    p { 
+         color: $orange;
+        font-size:16px !important; 
         text-transform:none; 
         letter-spacing:0px; 
         margin-bottom:5px; 
         font-weight:normal; 
         display: inline-block;
         margin-top: 10px;
+        font-family: 'Courgette', cursive;
     }
     .icon{
          position:absolute; 
@@ -428,6 +430,7 @@ line-height:20px;
 /*Kalender Sidebar*/
 .vcalendar{
    padding: 0;
+   list-style:none;
 }
 .vcalendar li{
    
@@ -446,55 +449,6 @@ line-height:20px;
    font-weight:normal;
 }
 
-.tribe-events-widget-link{
-    font-size:12px;
-    
-}
-.tribe-events-notices {
-    background: white;
-    border:none;
-    color:#707070;
-}
-.tribe-events-list-widget .duration {
-  font-weight: normal;
-  font-size:13px;
-}
-
-//Kurs-Kalender (List-ansicht)
- #tribe-events-pg-template {
-    width: 100%;
-    margin: 0;
-}
-.tribe-events-list{
-   
-    h2.tribe-events-page-title{
-        font-size: 28px;
-        letter-spacing: 0;
-        font-weight: 100;
-        padding: 0;
-        margin: 0;
-        color:$orange;
-       font-family: "Tahoma";//'courgette', sans-serif;
-       margin-bottom: 10px;
-    }
-    .type-tribe_events h2 {
-        font-size: 1.4em;
-    }
-    .tribe-events-list-separator-month {
-        text-transform: none;
-        font-size: 20px;
-        line-height: 58px;
-        margin: 0.8em auto;
-       span {
-            background-color: #fcf8f2;
-            padding: 0 7.5%;
-            line-height: 2;
-            display: inline-block;
-            font-size: 18px;
-            font-weight: bold;
-        }
-    }
-} 
 
 .tt_timetable{
     td{
@@ -548,28 +502,26 @@ line-height:20px;
        &:nth-of-type(4n+0){
          margin-left: 0;
            clear: both;
-       }.ul-YoutubeGallery li.li-YoutubeGallery {
-    float: left;
-    margin: 0 12px 15px;
-    width: 45%;
-    list-style-type: none;
-    margin-left: 20px !important;
-       &.first{
-         margin-left: 0;  
        }
-        
-    }
     .dt-gallery-details{
         background-image:none;
-        h5{
+        h3{
             margin-top:6%;
+            margin-bottom: 0px;
             font-family:'Tahoma', sans-serif; 
             font-size:18px;
             font-weight: normal !important;
+            
         }
-        h6{
-            max-height: 50px;
+        p{
+            max-height: 66px;
             overflow: hidden;
+            font-size: 13px;
+            font-weight: normal;
+            color: #a5a38c;
+            text-transform: none;
+            margin: 10px 0px 0px;
+            line-height: 1.3;
         }
         .timespan{
             font-size: 12px;
@@ -670,7 +622,7 @@ line-height:20px;
   }
 
 }
-#tribe-events{
+.tribe-events{
     
     .col1{
         float:left;
@@ -680,6 +632,16 @@ line-height:20px;
             margin-top: 0.3em;
             margin-left: 0.4em;
               color: #685e58;
+        }
+        .icon-meditation{
+            margin-top: 4px;
+            opacity: 0.9;
+            display:block;
+            svg{
+                width:35px;
+                height:35px;
+                fill:#685e58;
+            }
         }
     } 
      .col2{
@@ -775,6 +737,75 @@ line-height:20px;
          }
     }
 }
+//popup Angebote Breite
+.wdpu-msg {
+    max-width: 95% !important;
+}
+
+
+//Kurs-Calendar
+.list-separator-month {
+    text-transform: none;
+    font-size: 20px;
+    line-height: 58px;
+    //margin: 0.8em auto;
+    display: block;
+    text-align: center;
+    position: relative;
+    background-color: transparent;
+    z-index: 1;
+    font-weight: 700;
+    padding: 6px 10px;
+    clear: both;
+    span{
+        background-color: #fcf8f2;
+        padding: 0 7.5%;
+        line-height: 2;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    &:after{
+        content: '';
+        border-bottom: 1px solid #c2c2c2;
+        height: 1px;
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        z-index: -1;
+    }
+}
+.calendar{
+    padding-top: 10px !important;
+    .border-title{
+        margin: 0 0 0 20px;
+    }
+}
+#course-calendar{
+    img.size-mini{
+        width:140px;
+        height:auto;
+    }
+    .course{
+        //text-align:center;
+        margin-bottom: 20px;
+        .timespan, .teaser, .cost, .more-link{
+            font-size:13px;
+            line-height:1.5;
+        }
+        
+        h5{
+            margin-top:10px;
+            margin-bottom:10px;
+        }
+        .teaser{
+              margin-bottom: 10px;
+        }
+        
+    }
+}
 /* responsive fÃ¼r samm unbedingt noch machen
 .container{
     width:  90% !important;
@@ -829,13 +860,15 @@ line-height:20px;
         #primary.with-right-sidebar{
             min-height: auto;
             padding-bottom:20px !important;
+            padding-left: 40px !important;
+            padding-right: 40px !important;
         }
-        #tribe-events {
+        .tribe-events {
             position: relative;
             .col1 {
                 position: absolute;
-                left: 7px;
-                top: 35px;
+                right: 25px;
+                top: 55px;
                 float: initial;
                 .fa{
                         margin-top: 0px;
@@ -899,7 +932,7 @@ line-height:20px;
             width:75%;
         }
         }
-        #tribe-events{
+        .tribe-events{
             .page-with-sidebar{
                   padding-left: 40px !important;
                   padding-right: 40px !important;

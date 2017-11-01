@@ -19,8 +19,12 @@ add_action('wp_print_styles', 'wra_filter_styles', 100000);
 add_action('wp_print_footer_scripts', 'wra_filter_styles', 100000);
 
 function wra_filter_styles(){
-    if (!is_page("wochenplan") && !is_page("weekly-schedule")) {
-
+    if ( current_user_can('delete_users') ){
+        return;
+    }
+ 
+    if (!is_page("wochenplan") && !is_page("weekly-schedule") && !is_page("yoga-fuer-anfaenger") && !is_page("yoga-for-beginners") && !is_page("yoga-fuer-mittelstufe-und-fortgeschrittene") && !is_page("intermediate-level")) {
+    
         wp_deregister_style('timetable_sf_style');
         wp_dequeue_style('timetable_sf_style');
 
@@ -49,40 +53,49 @@ function wra_filter_styles(){
         wp_deregister_style('responsive_map_css');
         wp_dequeue_style('responsive_map_css');
     }
+    /*if (current_user_can('delete_users') ){
+       $post= get_post();
+        echo($post->post_name);
+    }*/
         
 }  
-
  
 function wra_filter_scripts(){
     #wp_deregister_script($handle);
     #wp_dequeue_script($handle);
-
-
-        //Skripte und Styles bereiningen 
-        //Wochenplan
-    //if (current_user_can('delete_users') ){
-      // $post= get_post();
-    //echo($post->post_name);
-    //}
     
+     if ( current_user_can('delete_users') ){
+        return;
+    }
+ 
+     
+        
+    if (!is_page("contact") && !is_page("kontakt") && !is_page("wochenplan") && !is_page("weekly-schedule") && !is_page("yoga-fuer-anfaenger") && !is_page("yoga-for-beginners") && !is_page("yoga-fuer-mittelstufe-und-fortgeschrittene") && !is_page("intermediate-level")) {
+           
+      wp_deregister_script('jquery');
+        wp_dequeue_script('jquery');
+        
+    }
 
-    //JQuery und Shortcodes
-    if (!is_page("videos") && !is_page("videos-2") &&  !is_page("treatments") && !is_page("behandlungen") && !is_page("meinungen") && !is_page("testimonials") && !is_page("wochenplan") && !is_page("weekly-schedule") && !is_page("mantra-cd") && !is_page("mantra-cd-2")) {
-         wp_deregister_script('jquery');
-         wp_dequeue_script('jquery');
-         
-         wp_deregister_script('dt-sc-script');
-         wp_dequeue_script('dt-sc-script');
+
+   if (!is_page("videos") && !is_page("videos-2")) {
+       wp_deregister_style('yottie-lite-admin');
+        wp_dequeue_style('yottie-lite-admin');
+        wp_deregister_script('yottie-lite');
+        wp_dequeue_script('yottie-lite');
+        wp_deregister_script('yottie-lite-admin');
+        wp_dequeue_script('yottie-lite-admin');
+           
     }
     
-  
      if (!is_page("meinungen") && !is_page("testimonials")) {
          wp_deregister_script('dt-sc-carouFredSel-script');
          wp_dequeue_script('dt-sc-carouFredSel-script');
     }
     
-    if (!is_page("wochenplan") && !is_page("weekly-schedule")) {
-        
+    if (!is_page("wochenplan") && !is_page("weekly-schedule") && !is_page("yoga-fuer-anfaenger") && !is_page("yoga-for-beginners") && !is_page("yoga-fuer-mittelstufe-und-fortgeschrittene") && !is_page("intermediate-level")) {
+
+    
         wp_deregister_script('jquery-ui-core');
         wp_dequeue_script('jquery-ui-core');
 
@@ -117,9 +130,9 @@ function wra_filter_scripts(){
 // list loaded assets by our theme and plugins so we know what we're dealing with. This is viewed by admin users only.
 add_action('wp_print_footer_scripts', 'wra_list_assets', 900000);
 function wra_list_assets(){
-    if ( !current_user_can('delete_users') ){
+    //if ( !current_user_can('delete_users') ){
         return;
-    }
+    //}
  
     echo '<h2>List of all scripts loaded on this particular page.</h2>';
     echo '<p>This can differ from page to page depending of what is loaded in that particular page.</p>';

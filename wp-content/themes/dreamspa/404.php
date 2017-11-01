@@ -33,7 +33,7 @@
 	endif;?>
 			<section id="primary" class="<?php echo $page_layout;?>">
 				<div class="error-info">
-					<?php echo stripcslashes(dttheme_option('specialty','404-message'));?>
+					Die Seite konnte leider nicht aufgeruen werden.
 					<a href="<?php echo home_url();?>" title="" class="dt-sc-button small"><?php _e('Back to Home','dt_themes');?></a>
 				</div>
 			</section><!-- **Primary - End** --><?php

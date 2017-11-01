@@ -23,7 +23,7 @@ $event_id = get_the_ID();
 
 $top_image = get_field('top_image');
 ?>
-<div id="tribe-events-container">
+
 <section id="primary" class="page-with-sidebar with-right-sidebar<?php echo $top_image?' with_top_image':''?>">
     <div class="col1">
         <?php if($mainCat=="Kurse"):?>
@@ -188,7 +188,7 @@ $notices = TribeEvents::getNotices(); //Kurs abgelaufen
 </section>
 <!-- Secondary Right -->
 <section id="secondary-right" class="secondary-sidebar secondary-has-right-sidebar<?php echo $top_image?' with_top_image':''?>"><?php get_sidebar( );?></section>
-</div>
+
 <?php 
 
 // check if the repeater field has rows of data

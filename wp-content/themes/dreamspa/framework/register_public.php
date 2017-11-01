@@ -136,10 +136,12 @@ function plugin_head_styles_scripts() {
 	
 
 	#Theme Picker 		
-	if( dttheme_option("general","disable-picker") === NULL  && !is_user_logged_in() ):
+	/*if( dttheme_option("general","disable-picker") === NULL  && !is_user_logged_in() ):
 		wp_enqueue_script('theme-cookies', IAMD_FW_URL.'js/public/jquery.cookie.js',array(),false,true);
 		wp_enqueue_script('theme-picker', IAMD_FW_URL.'js/public/picker.js',array(),false,true);
 	endif;
+   
+         */
 
 	//wp_enqueue_script('fitvids-script', IAMD_FW_URL.'js/public/jquery.fitvids.js',array(),false,true);
 	//wp_enqueue_script('bx-script', IAMD_FW_URL.'js/public/jquery.bxslider.js',array(),false,true);
@@ -413,7 +415,7 @@ function dttheme_appearance_load_fonts() {
 		$font .= "Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic|Open+Sans+Condensed:300,300italic,700|Courgette";
 		$protocol = is_ssl() ? 'https' : 'http';
 		$query_args = array('family' => $font, 'subset' => $subset);
-		wp_enqueue_style('mytheme-google-fonts', add_query_arg($query_args, "$protocol://fonts.googleapis.com/css" ), array(), null);
+		//wp_enqueue_style('mytheme-google-fonts', add_query_arg($query_args, "$protocol://fonts.googleapis.com/css" ), array(), null);
 
 }
 ### --- ****  dttheme_appearance_load_fonts() *** --- ###
