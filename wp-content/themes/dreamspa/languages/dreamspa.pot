@@ -4685,3 +4685,46 @@ msgstr ""
 # </div>
 msgid "<span class=\"fa fa-comments\"> </span> 0"
 msgstr ""
+
+# @ Courses
+msgid "Dates"
+msgstr "Zeitraum"
+
+msgid "Time"
+msgstr "Zeit"
+
+msgid "Price"
+msgstr "Kosten"
+
+msgid "Course"
+msgstr "Kurs"
+
+msgid "Program"
+msgstr "Programm"
+
+msgid "Event Category:"
+msgstr "Kategorie"
+
+msgid "Special Yoga courses"
+msgstr "Besondere Yoga-Kurse"
+
+msgid "Actual Retreats"
+msgstr "Aktuelle Retreats"
+
+msgid "Cost:"
+msgstr "Kosten:"
+
+msgid "Mo/Wed"
+msgstr "Mo/Mi"
+
+msgid "View All Events"
+msgstr "Alle Veranstaltungen ansehen"
+
+msgid "There are no upcoming events at this time."
+msgstr "Es gibt derzeit keine anstehenden Veranstaltungen."
+
+msgid "request for course"
+msgstr "Kurs anfragen"
+
+msgid "Course Calendar"
+msgstr "Kurs Kalender"

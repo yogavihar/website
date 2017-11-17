@@ -69,13 +69,13 @@ function wra_filter_scripts(){
     }
  
      
-        
-    if (!is_page("contact") && !is_page("kontakt") && !is_page("wochenplan") && !is_page("weekly-schedule") && !is_page("yoga-fuer-anfaenger") && !is_page("yoga-for-beginners") && !is_page("yoga-fuer-mittelstufe-und-fortgeschrittene") && !is_page("intermediate-level")) {
+     //für popup wird es gebraucht   
+    /*if (!is_page("contact") && !is_page("kontakt") && !is_page("wochenplan") && !is_page("weekly-schedule") && !is_page("yoga-fuer-anfaenger") && !is_page("yoga-for-beginners") && !is_page("yoga-fuer-mittelstufe-und-fortgeschrittene") && !is_page("intermediate-level")) {
            
       wp_deregister_script('jquery');
         wp_dequeue_script('jquery');
         
-    }
+    }*/
 
 
    if (!is_page("videos") && !is_page("videos-2")) {
@@ -95,7 +95,6 @@ function wra_filter_scripts(){
     
     if (!is_page("wochenplan") && !is_page("weekly-schedule") && !is_page("yoga-fuer-anfaenger") && !is_page("yoga-for-beginners") && !is_page("yoga-fuer-mittelstufe-und-fortgeschrittene") && !is_page("intermediate-level")) {
 
-    
         wp_deregister_script('jquery-ui-core');
         wp_dequeue_script('jquery-ui-core');
 
