@@ -56,7 +56,7 @@ function  course_save_postdata($post_id){
         $datum_von=date("Y-m-d",strtotime ($_POST["acf"]['field_57f946f9528db'][0]["field_56b5f78f680de"]))." ". $_POST["acf"]['field_57f946f9528db'][0]["field_56b5f78f688af"].":00";
         $datum_bis=date("Y-m-d",strtotime ($_POST["acf"]['field_57f946f9528db'][0]["field_56b5f78f684c6"]))." ". $_POST["acf"]['field_57f946f9528db'][0]["field_56b5f78f68c97"].":59";
     }*/
-    if($_POST["acf"]['field_580cee8f78340']==1){
+     if($_POST["acf"]['field_580cee8f78340']==1 or empty($_POST["acf"]['field_580ceec578341'][0]["field_580cefc878344"]) or empty($_POST["acf"]['field_580ceec578341'][0]["field_580cf01678346"])){
         $datum_von=date("Y-m-d",strtotime ($_POST["acf"]['field_580ceec578341'][0]["field_580ceef078342"]))." 00:00:00";
         $datum_bis=date("Y-m-d",strtotime ($_POST["acf"]['field_580ceec578341'][0]["field_580cef3b78343"]))." 23:59:59";
     }

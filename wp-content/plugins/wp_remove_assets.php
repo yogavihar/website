@@ -22,7 +22,11 @@ function wra_filter_styles(){
     if ( current_user_can('delete_users') ){
         return;
     }
- 
+    
+    //popup
+    wp_deregister_style('spu-public-css');
+    wp_dequeue_style('spu-public-css');
+
     if (!is_page("wochenplan") && !is_page("weekly-schedule") && !is_page("yoga-fuer-anfaenger") && !is_page("yoga-for-beginners") && !is_page("yoga-fuer-mittelstufe-und-fortgeschrittene") && !is_page("intermediate-level")) {
     
         wp_deregister_style('timetable_sf_style');
