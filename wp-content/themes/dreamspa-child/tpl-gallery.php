@@ -111,7 +111,11 @@
 			<!-- Gallery Items Container Start-->
 			<div class="dt-sc-gallery-container gallery <?php echo $allow_space;?>"><?php
 				$args = array();
-				$categories = array_filter($tpl_default_settings['gallery-categories']);
+                                $categories=false;
+                                if(!empty($tpl_default_settings['gallery-categories'])){
+                                 $categories = array_filter($tpl_default_settings['gallery-categories']);
+                                }
+				
 
 				if(is_array($categories) && !empty($categories)):
 					$terms = $categories;

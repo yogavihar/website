@@ -2166,7 +2166,7 @@ function tt_get_timetable($atts, $event = null)
 	foreach($weekdays as $weekday)
 	{                
                 //LFORMUMM Ampassung nötig
-		$output .= '	<th>' . _x( $weekday->post_title) . '</th>';
+		$output .= '	<th>' . _x( $weekday->post_title,false) . '</th>';
 	}
 	$output .= '	</tr>
 				</thead>
@@ -2393,7 +2393,7 @@ function tt_get_timetable($atts, $event = null)
 			if(isset($event_hours_tt[$weekday_fixed_number]))
 			{
 				$output .= '<h3 class="box_header' . ($l>0 ? ' page_margin_top' : '') . '">
-					' . $weekday->post_title . '
+					' . _x( $weekday->post_title,false). '
 				</h3>
 				<ul class="tt_items_list thin page_margin_top timetable_clearfix' . (isset($mode) && $mode=='12h' ? ' mode12' : '') . '">';
 					$event_hours_count = count($event_hours_tt[$weekday_fixed_number]);

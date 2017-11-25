@@ -40,8 +40,7 @@
           })(window,document,'script','dataLayer','GTM-MRD853V');</script>
           <!-- End Google Tag Manager -->
          */ ?>
-            <script type="text/javascript" src="/wp-content/themes/dreamspa-child/script.js"></script>
-  
+              
 <?php wp_head();?>
     </head>
     <?php

@@ -33,5 +33,7 @@
 	if(dttheme_option('integration', 'enable-body-code') != '') 
 		echo stripslashes(dttheme_option('integration', 'body-code'));
 	wp_footer(); ?>
+<script type="text/javascript" src="/wp-content/themes/dreamspa-child/script.js" defer></script>
+
 </body>
 </html>

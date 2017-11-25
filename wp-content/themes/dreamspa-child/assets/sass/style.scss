@@ -87,7 +87,7 @@ body{
       a{
           color:$green-font-color !important;
       }
-      .tribe-events #tribe-events-footer .dt-sc-button, .post-edit-link {
+      .dt-sc-button, .post-edit-link {
           background-color:lighten($green-menu-background-color,30); 
       }
       
@@ -119,7 +119,7 @@ body{
         background-color: #f2f8fa;
         }
       
-      .tribe-events #tribe-events-footer .dt-sc-button, .post-edit-link {
+      .dt-sc-button, .post-edit-link {
           background-color:lighten($blue-menu-background-color,40); 
       }
       .footer-widgets-wrapper, .content-full-width, .page-with-sidebar, #secondary-left, #secondary-right{
@@ -351,6 +351,12 @@ body{
      &.with_top_image{
          margin-top:0 !important;
     }
+    h2{
+        font-family: 'Tahoma', sans-serif;
+        font-weight:bold;
+        font-size:14px;
+        letter-spacing:0;
+    }
 }
 
 #secondary-right, #secondary-left{
@@ -581,6 +587,37 @@ line-height:20px;
   
     }
 }
+.dt-sc-button{
+        float:right;
+         background-:none;
+        background-color: #e2d9cd;
+        border: none;
+        text-shadow:none;
+        margin-top:10px;
+          margin-bottom: 20px;
+          &:hover{
+             text-decoration:none;
+          }
+        &:before{
+            background: none;
+        }
+        i{
+            padding: 8px 15px;
+            border: none;
+  margin-top: 0;
+  background-color: lighten(#685e58,20);
+        }
+        span{
+              padding: 6px 0px;
+              color: #685e58;
+              top:0;
+        }
+        &:hover{
+            background-color: darken(#e2d9cd,10);
+            text-decoration: none;
+            
+        }
+    }
 //Kundenmeinungen-Carousel
 .dt-sc-testimonial {
     box-sizing: border-box;
@@ -652,35 +689,7 @@ line-height:20px;
             margin-top:10px;
         }
     }
-    #tribe-events-footer .dt-sc-button{
-        float:right;
-        background-color: #e2d9cd;
-        border: none;
-        text-shadow:none;
-        margin-top:10px;
-          margin-bottom: 20px;
-          &:hover{
-             text-decoration:none;
-          }
-        &:before{
-            background: none;
-        }
-        i{
-            padding: 8px 15px;
-            border: none;
-  margin-top: 0;
-  background-color: lighten(#685e58,20);
-        }
-        span{
-              padding: 6px 0px;
-              color: #685e58;
-              top:0;
-        }
-        &:hover{
-            background-color: darken(#e2d9cd,10);
-            
-        }
-    }
+    
    
 }
 #tribe-events-pg-template{
